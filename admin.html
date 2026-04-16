@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wien Low Budget – Admin</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="translations.js"></script>
+  <script src="i18n.js"></script>
+  <style>
+    :root {
+      --bg-primary: #FAFAF8;
+      --bg-secondary: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-hover: #F5F5F3;
+      --text-primary: #1A1A1A;
+      --text-secondary: #6B6B6B;
+      --text-muted: #A0A0A0;
+      --accent: #E63946;
+      --accent-light: rgba(230, 57, 70, 0.08);
+      --border: #E8E8E8;
+      --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.08);
+      --radius: 6px;
+      --radius-sm: 4px;
+      --transition: 0.2s ease;
+      --font-heading: 'Space Grotesk', -apple-system, sans-serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 15px; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .admin-header {
+      width: 100%; padding: 0 24px; height: 56px;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      position: relative;
+    }
+    .admin-header::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--accent);
+    }
+    .admin-logo { display: flex; align-items: center; gap: 10px; }
+    .admin-logo h1 {
+      font-family: var(--font-heading); font-size: 18px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: var(--text-primary);
+    }
+    .admin-logo span { font-size: 9px; letter-spacing: 2px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
+    .header-actions { display: flex; gap: 6px; }
+    .btn-back, .btn-logout {
+      padding: 7px 14px; border-radius: 4px; font-size: 12px;
+      font-weight: 500; cursor: pointer; transition: var(--transition);
+      font-family: var(--font-body); text-decoration: none; display: flex; align-items: center; gap: 5px;
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .btn-back {
+      background: none; border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+    .btn-back:hover { background: var(--bg-hover); color: var(--text-primary); }
+    .btn-logout {
+      background: rgba(230, 57, 70, 0.06); border: 1px solid rgba(230, 57, 70, 0.15);
+      color: var(--accent);
+    }
+    .btn-logout:hover { background: rgba(230, 57, 70, 0.12); }
+
+    .login-container {
+      flex: 1; display: flex; align-items: center; justify-content: center; padding: 20px;
+    }
+    .login-box {
+      background: var(--bg-secondary); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 40px; width: 100%; max-width: 400px;
+      box-shadow: var(--shadow-lg); text-align: center;
+    }
+    .login-icon { font-size: 40px; margin-bottom: 14px; opacity: 0.7; }
+    .login-box h2 { font-family: var(--font-heading); font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+    .login-box p { font-size: 13px; color: var(--text-secondary); margin-bottom: 24px; }
+    .login-field {
+      width: 100%; margin-bottom: 12px;
+      background: var(--bg-primary); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 11px 16px;
+      color: var(--text-primary); font-size: 14px; font-family: var(--font-body);
+      outline: none; transition: var(--transition);
+    }
+    .login-field:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-light); }
+    .login-field::placeholder { color: var(--text-muted); }
+    .login-btn {
+      width: 100%; padding: 12px; margin-top: 8px;
+      background: var(--text-primary);
+      color: var(--bg-secondary); font-weight: 600; font-size: 13px;
+      border: none; border-radius: var(--radius-sm);
+      cursor: pointer; transition: var(--transition); font-family: var(--font-body);
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .login-btn:hover { background: var(--accent); }
+    .login-error {
+      display: none; margin-top: 14px; padding: 10px; text-align: center;
+      background: rgba(230, 57, 70, 0.06); border: 1px solid rgba(230, 57, 70, 0.15);
+      border-radius: var(--radius-sm); color: var(--accent); font-size: 13px;
+    }
+
+    .dashboard { display: none; width: 100%; max-width: 800px; padding: 30px 20px; }
+    .dashboard.active { display: block; }
+    .dash-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px;
+    }
+    .stat-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; text-align: center;
+    }
+    .stat-number { font-family: var(--font-heading); font-size: 30px; font-weight: 700; color: var(--accent); }
+    .stat-label { font-size: 11px; color: var(--text-secondary); margin-top: 4px; text-transform: uppercase; letter-spacing: 1px; }
+    .dash-title { font-family: var(--font-heading); font-size: 17px; font-weight: 700; margin-bottom: 16px; }
+
+    .sug-list { display: flex; flex-direction: column; gap: 12px; }
+    .sug-empty {
+      text-align: center; padding: 60px 20px; color: var(--text-muted);
+      font-size: 14px; background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .sug-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; transition: var(--transition);
+    }
+    .sug-card:hover { border-color: #CCC; box-shadow: var(--shadow); }
+    .sug-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .sug-cat { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    .sug-status {
+      font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+      padding: 3px 10px; border-radius: 3px;
+    }
+    .sug-status.pending { background: rgba(255, 152, 0, 0.08); color: #E65100; }
+    .sug-status.accepted { background: rgba(46, 125, 50, 0.08); color: #2E7D32; }
+    .sug-status.rejected { background: rgba(230, 57, 70, 0.06); color: var(--accent); }
+    .sug-card h3 { font-family: var(--font-heading); font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+    .sug-card .detail { font-size: 12px; color: var(--text-secondary); margin-bottom: 3px; }
+    .sug-card .detail a { color: var(--accent); }
+    .sug-card .submitted { font-size: 10px; color: var(--text-muted); margin-top: 8px; }
+    .sug-actions { display: flex; gap: 8px; margin-top: 12px; }
+    .sug-accept, .sug-reject {
+      flex: 1; padding: 9px 14px; border: none; border-radius: var(--radius-sm);
+      font-size: 12px; font-weight: 600; cursor: pointer;
+      transition: var(--transition); font-family: var(--font-body);
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .sug-accept { background: rgba(46, 125, 50, 0.08); color: #2E7D32; }
+    .sug-accept:hover { background: rgba(46, 125, 50, 0.15); }
+    .sug-reject { background: rgba(230, 57, 70, 0.06); color: var(--accent); }
+    .sug-reject:hover { background: rgba(230, 57, 70, 0.12); }
+
+    .filter-tabs { display: flex; gap: 4px; margin-bottom: 20px; flex-wrap: wrap; }
+    .filter-tab {
+      padding: 6px 14px; border-radius: 4px; font-size: 12px;
+      background: none; border: 1px solid var(--border);
+      color: var(--text-secondary); cursor: pointer; transition: var(--transition);
+      font-family: var(--font-body); text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .filter-tab:hover { color: var(--text-primary); border-color: var(--text-muted); }
+    .filter-tab.active { background: var(--text-primary); border-color: var(--text-primary); color: var(--bg-secondary); }
+
+    .settings-section {
+      margin-top: 40px; padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .settings-title { font-family: var(--font-heading); font-size: 15px; font-weight: 600; margin-bottom: 16px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; }
+    .pw-form {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px; max-width: 400px;
+    }
+    .pw-field {
+      width: 100%; margin-bottom: 12px;
+      background: var(--bg-primary); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 10px 14px;
+      color: var(--text-primary); font-size: 14px; font-family: var(--font-body);
+      outline: none; transition: var(--transition);
+    }
+    .pw-field:focus { border-color: var(--accent); }
+    .pw-field::placeholder { color: var(--text-muted); }
+    .pw-label { font-size: 11px; color: var(--text-secondary); margin-bottom: 4px; display: block; text-transform: uppercase; letter-spacing: 0.5px; }
+    .pw-save {
+      padding: 10px 24px; margin-top: 6px;
+      background: var(--text-primary);
+      color: var(--bg-secondary); font-weight: 600; font-size: 12px;
+      border: none; border-radius: var(--radius-sm);
+      cursor: pointer; transition: var(--transition); font-family: var(--font-body);
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .pw-save:hover { background: var(--accent); }
+    .pw-msg {
+      display: none; margin-top: 10px; padding: 8px 12px;
+      border-radius: var(--radius-sm); font-size: 13px;
+    }
+    .pw-msg.success { display: block; background: rgba(46,125,50,0.08); color: #2E7D32; }
+    .pw-msg.error { display: block; background: rgba(230,57,70,0.06); color: var(--accent); }
+
+    @media (max-width: 600px) {
+      .dash-stats { grid-template-columns: 1fr; }
+      .admin-header { flex-wrap: wrap; gap: 8px; height: auto; padding: 8px 16px; }
+      .login-box { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="admin-header">
+    <div class="admin-logo">
+      <span class="logo-icon">🛡️</span>
+      <div>
+        <h1 data-i18n="title">Wien Low Budget</h1>
+        <span data-i18n="adminHeaderSub">ADMIN PANEL</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <div id="language-selector-container"></div>
+      <div id="auth-actions" style="display:none; gap:10px;">
+        <a href="index.html" class="btn-back" data-i18n="adminBackToApp">⬅️ Zur App</a>
+        <button class="btn-logout" id="btn-logout"><span data-i18n="adminLogout">🚪 Logout</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Login -->
+  <div class="login-container" id="login-view">
+    <div class="login-box">
+      <div class="login-icon">🔒</div>
+      <h2 data-i18n="adminLoginTitle">Admin Login</h2>
+      <p data-i18n="adminLoginDesc">Melde dich an, um Vorschläge zu verwalten.</p>
+      <form id="login-form">
+        <input type="text" class="login-field" id="login-user" placeholder="Benutzername" data-i18n-placeholder="adminUserPlaceholder" autocomplete="username" required>
+        <input type="password" class="login-field" id="login-pass" placeholder="Passwort" data-i18n-placeholder="adminPassPlaceholder" autocomplete="current-password" required>
+        <button type="submit" class="login-btn" data-i18n="adminLoginBtn">🔓 Anmelden</button>
+      </form>
+      <div class="login-error" id="login-error" data-i18n="adminLoginError">⚠️ Falscher Benutzername oder Passwort.</div>
+    </div>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="dashboard" id="dashboard">
+    <div class="dash-stats">
+      <div class="stat-card"><div class="stat-number" id="stat-total">0</div><div class="stat-label" data-i18n="adminStatTotalLabel">Gesamt</div></div>
+      <div class="stat-card"><div class="stat-number" id="stat-pending" style="color:#FFD54F">0</div><div class="stat-label" data-i18n="adminStatPendingLabel">Offen</div></div>
+      <div class="stat-card"><div class="stat-number" id="stat-accepted" style="color:#81C784">0</div><div class="stat-label" data-i18n="adminStatAcceptedLabel">Angenommen</div></div>
+    </div>
+
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="pending" data-i18n="adminFilterPendingLabel">⏳ Offen</button>
+      <button class="filter-tab" data-filter="accepted" data-i18n="adminFilterAcceptedLabel">✅ Angenommen</button>
+      <button class="filter-tab" data-filter="rejected" data-i18n="adminFilterRejectedLabel">❌ Abgelehnt</button>
+      <button class="filter-tab" data-filter="all" data-i18n="adminFilterAllLabel">📂 Alle</button>
+    </div>
+
+    <div class="dash-title" id="dash-title" data-i18n="adminDashTitle">Offene Vorschläge</div>
+    <div class="sug-list" id="sug-list"></div>
+
+    <!-- Password Change -->
+    <div class="settings-section">
+      <div class="settings-title" data-i18n="adminSettings">⚙️ Einstellungen</div>
+      <div class="pw-form">
+        <label class="pw-label" data-i18n="adminCurrentPassword">Aktuelles Passwort</label>
+        <input type="password" class="pw-field" id="pw-current" placeholder="Aktuelles Passwort" data-i18n-placeholder="adminCurrentPassword">
+        <label class="pw-label" data-i18n="adminNewPassword">Neues Passwort</label>
+        <input type="password" class="pw-field" id="pw-new" placeholder="Neues Passwort" data-i18n-placeholder="adminNewPassword">
+        <label class="pw-label" data-i18n="adminConfirmPassword">Neues Passwort bestätigen</label>
+        <input type="password" class="pw-field" id="pw-confirm" placeholder="Passwort wiederholen" data-i18n-placeholder="adminConfirmPassword">
+        <button class="pw-save" id="pw-save" data-i18n="adminPasswordChange">🔑 Passwort ändern</button>
+        <div class="pw-msg" id="pw-msg"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    'use strict';
+
+    // ── Auth ─────────────────────────────────────────────
+    const VALID_USER = 'admin';
+    const DEFAULT_HASH = '0d1082ae2166ce8f23d41d3e7598fedfaa68f4712f8624fb970fd219e1521ec4';
+
+    function getPasswordHash() {
+      return localStorage.getItem('wlb-admin-pw') || DEFAULT_HASH;
+    }
+
+    async function sha256(str) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+
+    function isLoggedIn() {
+      return sessionStorage.getItem('wlb-admin') === 'true';
+    }
+
+    function logout() {
+      sessionStorage.removeItem('wlb-admin');
+      showLogin();
+    }
+
+    function showLogin() {
+      document.getElementById('login-view').style.display = 'flex';
+      document.getElementById('dashboard').classList.remove('active');
+      document.getElementById('auth-actions').style.display = 'none';
+      if (window.applyI18n) window.applyI18n();
+    }
+
+    function showDashboard() {
+      document.getElementById('login-view').style.display = 'none';
+      document.getElementById('dashboard').classList.add('active');
+      document.getElementById('auth-actions').style.display = 'flex';
+      renderSuggestions();
+      if (window.applyI18n) window.applyI18n();
+    }
+
+    // ── Suggestions ─────────────────────────────────────
+    let currentFilter = 'pending';
+
+    function getSuggestions() {
+      try { return JSON.parse(localStorage.getItem('wlb-suggestions') || '[]'); }
+      catch { return []; }
+    }
+    function saveSuggestions(arr) {
+      localStorage.setItem('wlb-suggestions', JSON.stringify(arr));
+    }
+
+    const CATEGORIES = {
+      essen: { icon: '🍕', color: '#E8734A', label: 'Essen' },
+      bars: { icon: '🍸', color: '#D44B8A', label: 'Bars & Nachtleben' },
+      museen: { icon: '🏛️', color: '#6B4C9A', label: 'Museen' },
+      unterkunft: { icon: '🛌', color: '#4A90D9', label: 'Unterkünfte' },
+      natur: { icon: '🌳', color: '#4CAF50', label: 'Natur & Aussicht' },
+      einkaufen: { icon: '🛍️', color: '#FF9800', label: 'Einkaufen & Märkte' },
+      baeckerei: { icon: '🥖', color: '#C4813D', label: 'Bäckereien' },
+      kino: { icon: '🎞️', color: '#9C27B0', label: 'Kino' },
+      cafe: { icon: '☕', color: '#795548', label: 'Cafés' },
+      transport: { icon: '🚆', color: '#00BCD4', label: 'Transport' }
+    };
+
+    function renderSuggestions() {
+      const sugs = getSuggestions();
+      const filtered = currentFilter === 'all' ? sugs : sugs.filter(s => s.status === currentFilter);
+      const lang = localStorage.getItem('wlb-lang') || 'de';
+      const t = (I18N[lang] || I18N.de).ui;
+
+      // Stats
+      document.getElementById('stat-total').textContent = sugs.length;
+      document.getElementById('stat-pending').textContent = sugs.filter(s => s.status === 'pending').length;
+      document.getElementById('stat-accepted').textContent = sugs.filter(s => s.status === 'accepted').length;
+
+      const titles = { 
+        pending: t.adminFilterPendingLabel || 'Offen', 
+        accepted: t.adminFilterAcceptedLabel || 'Angenommen', 
+        rejected: t.adminFilterRejectedLabel || 'Abgelehnt', 
+        all: t.adminFilterAllLabel || 'Alle' 
+      };
+      document.getElementById('dash-title').textContent = titles[currentFilter];
+
+      const list = document.getElementById('sug-list');
+      if (!filtered.length) {
+        list.innerHTML = `<div class="sug-empty">${t.adminEmptyMsg || 'Keine Vorschläge vorhanden.'}</div>`;
+        return;
+      }
+
+      list.innerHTML = filtered.map((s, i) => {
+        const realIdx = sugs.indexOf(s);
+        const catConfig = CATEGORIES[s.category] || {};
+        const catLabel = t[`cat${s.category.charAt(0).toUpperCase() + s.category.slice(1)}`] || catConfig.label || s.category;
+        
+        const dateObj = new Date(s.submittedAt);
+        const dateStr = dateObj.toLocaleDateString(lang === 'de' ? 'de-AT' : lang, { 
+          day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' 
+        });
+        const showActions = s.status === 'pending';
+
+        let statusHtml = '';
+        if (s.status === 'pending') statusHtml = `<span class="sug-status pending">⏳ ${t.adminPending || 'Offen'}</span>`;
+        else if (s.status === 'accepted') statusHtml = `<span class="sug-status accepted">✅ ${t.adminStatAccepted || 'Akzeptiert'}</span>`;
+        else statusHtml = `<span class="sug-status rejected">❌ ${t.adminFilterRejected || 'Abgelehnt'}</span>`;
+
+        return `<div class="sug-card">
+          <div class="sug-card-header">
+            <span class="sug-cat" style="color:${catConfig.color || '#999'}; display:flex; align-items:center; gap:6px;">
+              ${catConfig.icon || '📍'} ${catLabel}
+            </span>
+            ${statusHtml}
+          </div>
+          <h3>${s.name}</h3>
+          <p class="detail">📍 ${s.address}, ${s.district}</p>
+          <p class="detail">${s.description}</p>
+          ${s.priceInfo ? `<p class="detail">💰 ${s.priceInfo}</p>` : ''}
+          ${s.openingHours ? `<p class="detail">🕒 ${s.openingHours}</p>` : ''}
+          ${s.website ? `<p class="detail">🌐 <a href="${s.website}" target="_blank">${s.website}</a></p>` : ''}
+          ${s.author ? `<p class="detail">👤 ${s.author}</p>` : ''}
+          <p class="submitted">📅 ${t.updated || 'Eingereicht'}: ${dateStr}</p>
+          ${showActions ? `<div class="sug-actions">
+            <button class="sug-accept" onclick="acceptSug(${realIdx})">✅ ${t.adminAccept || 'Annehmen'}</button>
+            <button class="sug-reject" onclick="rejectSug(${realIdx})">❌ ${t.adminReject || 'Ablehnen'}</button>
+          </div>` : ''}
+        </div>`;
+      }).join('');
+    }
+
+    // Global functions for onclick
+    window.acceptSug = function(idx) {
+      const sugs = getSuggestions();
+      if (!sugs[idx]) return;
+      sugs[idx].status = 'accepted';
+
+      // Add to accepted locations list
+      const newLoc = {
+        id: 1000 + Date.now() % 10000,
+        name: sugs[idx].name,
+        category: sugs[idx].category,
+        address: sugs[idx].address,
+        district: sugs[idx].district,
+        lat: 48.2082 + (Math.random() - 0.5) * 0.04,
+        lng: 16.3738 + (Math.random() - 0.5) * 0.06,
+        description: sugs[idx].description,
+        priceInfo: sugs[idx].priceInfo || '',
+        openingHours: sugs[idx].openingHours || '',
+        website: sugs[idx].website || '',
+        lastUpdated: new Date().toISOString().slice(0, 10),
+        tags: ['community-vorschlag'],
+        userSuggested: true
+      };
+      const accepted = JSON.parse(localStorage.getItem('wlb-accepted') || '[]');
+      accepted.push(newLoc);
+      localStorage.setItem('wlb-accepted', JSON.stringify(accepted));
+
+      saveSuggestions(sugs);
+      renderSuggestions();
+    };
+
+    window.rejectSug = function(idx) {
+      const sugs = getSuggestions();
+      if (!sugs[idx]) return;
+      sugs[idx].status = 'rejected';
+      saveSuggestions(sugs);
+      renderSuggestions();
+    };
+
+    // ── Init ─────────────────────────────────────────────
+    document.getElementById('login-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const user = document.getElementById('login-user').value.trim();
+      const pass = document.getElementById('login-pass').value;
+      const hash = await sha256(pass);
+
+      if (user === VALID_USER && hash === getPasswordHash()) {
+        sessionStorage.setItem('wlb-admin', 'true');
+        document.getElementById('login-error').style.display = 'none';
+        showDashboard();
+      } else {
+        document.getElementById('login-error').style.display = 'block';
+      }
+    });
+
+    document.getElementById('btn-logout').addEventListener('click', logout);
+
+    // Filter tabs
+    document.querySelectorAll('.filter-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        currentFilter = this.dataset.filter;
+        renderSuggestions();
+      });
+    });
+
+    // Password change
+    document.getElementById('pw-save').addEventListener('click', async function() {
+      const msg = document.getElementById('pw-msg');
+      const current = document.getElementById('pw-current').value;
+      const newPw = document.getElementById('pw-new').value;
+      const confirm = document.getElementById('pw-confirm').value;
+
+      msg.className = 'pw-msg';
+      msg.style.display = 'none';
+
+      if (!current || !newPw || !confirm) {
+        msg.textContent = '❌ Bitte alle Felder ausfüllen.';
+        msg.className = 'pw-msg error'; return;
+      }
+      const currentHash = await sha256(current);
+      if (currentHash !== getPasswordHash()) {
+        msg.textContent = '❌ Aktuelles Passwort ist falsch.';
+        msg.className = 'pw-msg error'; return;
+      }
+      if (newPw.length < 4) {
+        msg.textContent = '❌ Neues Passwort muss mindestens 4 Zeichen lang sein.';
+        msg.className = 'pw-msg error'; return;
+      }
+      if (newPw !== confirm) {
+        msg.textContent = '❌ Passwörter stimmen nicht überein.';
+        msg.className = 'pw-msg error'; return;
+      }
+      const newHash = await sha256(newPw);
+      localStorage.setItem('wlb-admin-pw', newHash);
+      msg.textContent = '✅ Passwort erfolgreich geändert!';
+      msg.className = 'pw-msg success';
+      document.getElementById('pw-current').value = '';
+      document.getElementById('pw-new').value = '';
+      document.getElementById('pw-confirm').value = '';
+    });
+
+    // Auto-login if session exists
+    if (isLoggedIn()) showDashboard();
+    else showLogin();
+
+    // Language switcher init
+    if (window.initLanguageSwitcher) {
+      window.initLanguageSwitcher('language-selector-container', (lang) => {
+        if (isLoggedIn()) renderSuggestions();
+      });
+    }
+    if (window.applyI18n) window.applyI18n();
+  })();
+  </script>
+</body>
+</html>

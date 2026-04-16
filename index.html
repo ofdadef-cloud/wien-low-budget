@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wien Low Budget – Dein Sparguide für Wien</title>
+  <meta name="description" content="Interaktive Karte & Liste mit 65+ günstigen Orten in Wien: Essen, Bars, Museen, Natur, Märkte und mehr.">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#E63946">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Wien Budget">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Leaflet MarkerCluster (for OGD layers with 1000+ points) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ─── Header ──────────────────────────────────────── -->
+  <header id="app-header">
+    <div class="header-left">
+      <div class="logo">
+        <span class="logo-icon">🏢</span>
+        <div>
+          <h1 id="app-title" data-i18n="title">Wien Low Budget</h1>
+          <span class="logo-sub" id="app-subtitle" data-i18n="subtitle">DEIN SPARGUIDE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-center">
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Suche..." data-i18n-placeholder="search">
+      </div>
+    </div>
+
+    <div class="header-right">
+      <!-- Language Selector -->
+      <div class="lang-selector" id="lang-selector">
+        <button class="lang-btn" id="lang-btn" title="Sprache / Language">🇦🇹</button>
+        <div class="lang-dropdown" id="lang-dropdown"></div>
+      </div>
+
+      <div class="view-toggle">
+        <button class="view-btn active" id="btn-map">
+          <span class="view-icon">🗺️</span> <span data-i18n="map">Karte</span>
+        </button>
+        <button class="view-btn" id="btn-list">
+          <span class="view-icon">📜</span> <span data-i18n="list">Liste</span>
+        </button>
+        <button class="view-btn" id="btn-videos">
+          <span class="view-icon">🎬</span> <span data-i18n="videos">Videos</span>
+        </button>
+        <button class="view-btn" id="btn-favorites">
+          <span class="view-icon">♡</span> <span>Mein Plan</span>
+          <span class="fav-count-badge" id="fav-count-badge"></span>
+        </button>
+        <button class="view-btn" id="btn-budget">
+          <span class="view-icon">🧮</span> <span>Budget</span>
+        </button>
+        <button class="view-btn suggest-btn" id="btn-suggest" title="Vorschlagen" data-i18n-title="suggestTitle">
+          <span class="view-icon">💡</span> <span data-i18n="suggest">Vorschlag</span>
+        </button>
+        <a href="anreise.html" class="view-btn suggest-btn" title="Anreise" style="text-decoration:none">
+          <span class="view-icon">✈️</span> <span data-i18n="anreiseQuickFlug">Anreise</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── Category Filter Bar ─────────────────────────── -->
+  <div id="category-bar" class="category-bar"></div>
+
+  <!-- ─── Map View ────────────────────────────────────── -->
+  <div id="map-view" class="map-container">
+    <div id="map"></div>
+  </div>
+
+  <!-- ─── List View ───────────────────────────────────── -->
+  <div id="list-view" class="list-container">
+    <div id="list-grid" class="list-grid"></div>
+  </div>
+
+  <!-- ─── Video View ──────────────────────────────────── -->
+  <div id="video-view" class="video-container">
+    <div class="video-header">
+      <h2 data-i18n="videos">🎬 Video-Guides für Wien</h2>
+      <p data-i18n="adminLoginDesc">Erklärvideos zu den wichtigsten Themen rund ums Budget-Reisen in Wien</p>
+    </div>
+    <div id="video-grid" class="video-grid"></div>
+  </div>
+
+  <!-- ─── Favorites View ─────────────────────────────── -->
+  <div id="favorites-view" class="list-container">
+    <div class="fav-header">
+      <h2>♡ Mein Wien-Plan</h2>
+      <p>Deine gespeicherten Orte für den nächsten Trip</p>
+    </div>
+    <div id="fav-grid" class="list-grid"></div>
+  </div>
+
+  <!-- ─── Budget Calculator View ─────────────────────── -->
+  <div id="budget-view" class="budget-container">
+    <div class="budget-header">
+      <h2>🧮 Budget-Rechner</h2>
+      <p>Wie günstig kann dein Wien-Tag werden?</p>
+    </div>
+    <div class="budget-calculator">
+      <div class="budget-row">
+        <div class="budget-category">
+          <span class="budget-cat-icon">🛌</span>
+          <label for="budget-unterkunft">Unterkunft</label>
+        </div>
+        <select id="budget-unterkunft" class="budget-select"></select>
+        <span class="budget-price" id="bp-unterkunft">–</span>
+      </div>
+      <div class="budget-row">
+        <div class="budget-category">
+          <span class="budget-cat-icon">🍕</span>
+          <label for="budget-essen1">Essen #1</label>
+        </div>
+        <select id="budget-essen1" class="budget-select"></select>
+        <span class="budget-price" id="bp-essen1">–</span>
+      </div>
+      <div class="budget-row">
+        <div class="budget-category">
+          <span class="budget-cat-icon">☕</span>
+          <label for="budget-essen2">Essen #2</label>
+        </div>
+        <select id="budget-essen2" class="budget-select"></select>
+        <span class="budget-price" id="bp-essen2">–</span>
+      </div>
+      <div class="budget-row">
+        <div class="budget-category">
+          <span class="budget-cat-icon">🏛️</span>
+          <label for="budget-aktivitaet">Aktivität</label>
+        </div>
+        <select id="budget-aktivitaet" class="budget-select"></select>
+        <span class="budget-price" id="bp-aktivitaet">–</span>
+      </div>
+      <div class="budget-row">
+        <div class="budget-category">
+          <span class="budget-cat-icon">🚆</span>
+          <label for="budget-transport">Transport</label>
+        </div>
+        <select id="budget-transport" class="budget-select">
+          <option value="0">🚶 Zu Fuß (gratis)</option>
+          <option value="2.40">🎫 Einzelfahrt (2,40 €)</option>
+          <option value="5.80" selected>🎫 24h-Karte (5,80 €)</option>
+          <option value="14.10">🎫 48h-Karte (14,10 €)</option>
+          <option value="17.10">🎫 72h-Karte (17,10 €)</option>
+          <option value="8.20">🎫 Wochenkarte (÷7 = 8,20 €)</option>
+        </select>
+        <span class="budget-price" id="bp-transport">5,80 €</span>
+      </div>
+      <div class="budget-total-bar">
+        <span class="budget-total-label">Dein Tagesbudget:</span>
+        <span class="budget-total-amount" id="budget-total">–</span>
+      </div>
+      <div class="budget-verdict" id="budget-verdict"></div>
+    </div>
+  </div>
+
+  <!-- ─── Suggestion Modal ────────────────────────────── -->
+  <div id="suggest-modal" class="modal-overlay">
+    <div class="modal-content suggest-modal">
+      <button class="modal-close" id="suggest-close">&times;</button>
+      <h2 id="suggest-modal-title" data-i18n="suggestTitle">💡 Neuen Ort vorschlagen</h2>
+      <form id="suggest-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="suggestName">Name des Orts</label>
+            <input type="text" id="sug-name" required>
+          </div>
+          <div class="form-group">
+            <label data-i18n="suggestCategory">Kategorie</label>
+            <select id="sug-category" required>
+              <option value="essen">Essen</option>
+              <option value="bars">Bars & Nachtleben</option>
+              <option value="museen">Museen</option>
+              <option value="unterkunft">Unterkünfte</option>
+              <option value="natur">Natur & Aussicht</option>
+              <option value="einkaufen">Einkaufen & Märkte</option>
+              <option value="baeckerei">Bäckereien</option>
+              <option value="kino">Kino</option>
+              <option value="cafe">Cafés</option>
+              <option value="transport">Transport</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="suggestAddress">Adresse</label>
+            <input type="text" id="sug-address" required>
+          </div>
+          <div class="form-group">
+            <label data-i18n="suggestDistrict">Bezirk</label>
+            <input type="text" id="sug-district" placeholder="z.B. 1060 Wien" required>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label data-i18n="suggestDesc">Beschreibung</label>
+          <textarea id="sug-desc" rows="3" required></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="suggestPrice">Preisinformation</label>
+            <input type="text" id="sug-price" placeholder="z.B. Margherita 5 €">
+          </div>
+          <div class="form-group">
+            <label data-i18n="suggestHours">Öffnungszeiten</label>
+            <input type="text" id="sug-hours" placeholder="z.B. Mo–Fr 11–22">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="suggestWebsite">Website (optional)</label>
+            <input type="url" id="sug-website" placeholder="https://...">
+          </div>
+          <div class="form-group">
+            <label data-i18n="suggestYourName">Dein Name (optional)</label>
+            <input type="text" id="sug-author">
+          </div>
+        </div>
+        <button type="submit" class="submit-btn" id="sug-submit-btn" data-i18n="suggestSubmit">
+          🚀 Vorschlag senden
+        </button>
+        <div class="sug-success" id="sug-success" data-i18n="suggestSuccess">
+          ✅ Danke für deinen Vorschlag! Er wird geprüft.
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ─── Location Count ──────────────────────────────── -->
+  <div id="loc-count" class="loc-count"></div>
+
+  <!-- ─── OGD Layer Toggle Panel ─────────────────────── -->
+  <div id="ogd-panel" class="ogd-panel">
+    <button id="ogd-toggle-btn" class="ogd-toggle-btn" title="Stadt Wien Daten">
+      <span class="ogd-toggle-icon">🏛️</span>
+      <span class="ogd-toggle-label">Stadt Wien</span>
+    </button>
+    <div id="ogd-dropdown" class="ogd-dropdown">
+      <div class="ogd-dropdown-header">
+        <span class="ogd-dropdown-title">🏛️ Stadt Wien Open Data</span>
+        <span class="ogd-dropdown-sub">Live-Daten der Stadt Wien</span>
+      </div>
+      <div id="ogd-layers" class="ogd-layers"></div>
+      <div class="ogd-attribution">
+        Daten: <a href="https://data.wien.gv.at" target="_blank" rel="noopener">Stadt Wien – data.wien.gv.at</a> · CC BY 4.0
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Detail Panel (Mobile) ───────────────────────── -->
+  <div id="detail-panel" class="detail-panel">
+    <div class="detail-inner">
+      <button id="detail-close" class="detail-close">✕</button>
+      <div id="detail-content"></div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="i18n.js"></script>
+  <script src="translations.js"></script>
+  <script src="data.js"></script>
+  <script src="ogd-wien.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('[PWA] Service Worker registered:', reg.scope))
+          .catch(err => console.warn('[PWA] SW registration failed:', err));
+      });
+    }
+  </script>
+</body>
+</html>

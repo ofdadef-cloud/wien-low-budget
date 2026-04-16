@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wien Low Budget – Anreise nach Wien</title>
+  <meta name="description" content="Günstig nach Wien reisen: Flüge, Züge, Fernbusse, Mitfahrgelegenheiten und Tipps für die Anreise.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏙️</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #FAFAF8;
+      --bg-secondary: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-hover: #F5F5F3;
+      --text-primary: #1A1A1A;
+      --text-secondary: #6B6B6B;
+      --text-muted: #A0A0A0;
+      --accent: #E63946;
+      --accent-light: rgba(230, 57, 70, 0.08);
+      --border: #E8E8E8;
+      --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.08);
+      --radius: 6px;
+      --radius-sm: 4px;
+      --transition: 0.2s ease;
+      --font-heading: 'Space Grotesk', -apple-system, sans-serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 15px; scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #D0D0D0; border-radius: 3px; }
+
+    .page-header {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 56px;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+    }
+    .page-header::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--accent);
+    }
+    .logo-area { display: flex; align-items: center; gap: 10px; }
+    .logo-area h1 {
+      font-family: var(--font-heading); font-size: 18px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: var(--text-primary);
+    }
+    .logo-sub { font-size: 8px; letter-spacing: 3px; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
+    .header-nav { display: flex; gap: 4px; }
+    .nav-link {
+      padding: 7px 14px; border-radius: 4px; font-size: 12px;
+      font-weight: 500; cursor: pointer; transition: var(--transition);
+      font-family: var(--font-body); text-decoration: none; display: flex;
+      align-items: center; gap: 5px;
+      background: none; border: 1px solid var(--border);
+      color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .nav-link:hover { background: var(--bg-hover); color: var(--text-primary); border-color: var(--text-muted); }
+    .nav-link.active {
+      background: var(--text-primary);
+      color: var(--bg-secondary); border-color: var(--text-primary); font-weight: 600;
+    }
+
+    .hero {
+      text-align: center; padding: 60px 24px 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-icon { font-size: 48px; margin-bottom: 14px; opacity: 0.8; }
+    .hero h2 {
+      font-family: var(--font-heading); font-size: 32px; font-weight: 700;
+      letter-spacing: 0.5px; color: var(--text-primary); margin-bottom: 10px;
+    }
+    .hero p { color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.7; font-size: 14px; }
+
+    .quick-nav {
+      display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+      padding: 24px 24px 32px;
+    }
+    .quick-chip {
+      display: flex; align-items: center; gap: 6px;
+      padding: 8px 16px; border-radius: 4px;
+      background: var(--bg-card); border: 1px solid var(--border);
+      color: var(--text-secondary); font-size: 12px; font-weight: 500;
+      cursor: pointer; transition: var(--transition);
+      text-decoration: none; font-family: var(--font-body);
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .quick-chip:hover {
+      border-color: var(--text-muted); color: var(--text-primary);
+      transform: translateY(-1px); box-shadow: var(--shadow);
+    }
+    .quick-chip .chip-emoji { font-size: 16px; }
+
+    .content { max-width: 800px; margin: 0 auto; padding: 0 24px 80px; }
+
+    .transport-section { margin-bottom: 40px; scroll-margin-top: 70px; }
+    .section-header {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 18px; padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-icon {
+      width: 44px; height: 44px; border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; flex-shrink: 0;
+    }
+    .section-header h3 { font-family: var(--font-heading); font-size: 20px; font-weight: 700; }
+    .section-header .section-subtitle { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+    .section-body { display: flex; flex-direction: column; gap: 12px; }
+
+    .info-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px; transition: var(--transition);
+    }
+    .info-card:hover { border-color: #CCC; box-shadow: var(--shadow); }
+    .info-card h4 {
+      font-family: var(--font-heading); font-size: 15px; font-weight: 600;
+      margin-bottom: 6px; display: flex; align-items: center; gap: 8px;
+    }
+    .info-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 10px; }
+    .info-card p:last-child { margin-bottom: 0; }
+
+    .price-tag {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 3px 8px; border-radius: 3px; font-size: 10px; font-weight: 600;
+      background: rgba(46,125,50,0.08); color: #2E7D32;
+    }
+    .price-tag.warn { background: rgba(255,152,0,0.08); color: #E65100; }
+    .price-tag.expensive { background: rgba(230,57,70,0.06); color: var(--accent); }
+
+    .price-badge {
+      display: inline-block; padding: 4px 10px; border-radius: 3px;
+      font-size: 13px; font-weight: 700; margin-top: 8px;
+    }
+    .price-badge.best { background: rgba(46,125,50,0.08); color: #2E7D32; }
+    .price-badge.ok { background: rgba(255,152,0,0.08); color: #E65100; }
+    .price-badge.bad { background: rgba(230,57,70,0.06); color: var(--accent); }
+
+    .tip-box {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 12px 16px; margin-top: 10px;
+      background: rgba(21,101,192,0.04); border: 1px solid rgba(21,101,192,0.12);
+      border-radius: var(--radius-sm); font-size: 12px; color: #1565C0; line-height: 1.5;
+    }
+    .tip-box .tip-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+    .warn-box {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 12px 16px; margin-top: 10px;
+      background: rgba(230,57,70,0.04); border: 1px solid rgba(230,57,70,0.12);
+      border-radius: var(--radius-sm); font-size: 12px; color: var(--accent); line-height: 1.5;
+    }
+    .warn-box .warn-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+    .search-cta {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 20px; border-radius: 4px;
+      font-size: 12px; font-weight: 600; text-decoration: none;
+      transition: var(--transition); font-family: var(--font-body);
+      cursor: pointer; border: none; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .search-cta.primary { background: var(--text-primary); color: var(--bg-secondary); }
+    .search-cta.primary:hover { background: var(--accent); transform: translateY(-1px); }
+    .search-cta.secondary { background: none; border: 1px solid var(--border); color: var(--text-primary); }
+    .search-cta.secondary:hover { border-color: var(--text-muted); background: var(--bg-hover); }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+
+    .compare-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px; }
+    .compare-table th {
+      text-align: left; padding: 10px 14px;
+      background: var(--bg-hover); color: var(--text-primary);
+      font-size: 10px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 1.5px; border-bottom: 2px solid var(--border);
+    }
+    .compare-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-secondary); vertical-align: top; }
+    .compare-table tr:hover td { background: var(--bg-hover); }
+    .compare-table .best { color: #2E7D32; font-weight: 600; }
+    .compare-table .ok { color: #E65100; }
+    .compare-table .bad { color: var(--accent); }
+
+    .provider-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+    .provider-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 5px 12px; border-radius: 3px;
+      font-size: 11px; font-weight: 500; text-decoration: none;
+      background: var(--bg-hover); border: 1px solid var(--border);
+      color: var(--text-primary); transition: var(--transition);
+    }
+    .provider-chip:hover { border-color: var(--text-muted); transform: translateY(-1px); }
+
+    .info-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;
+    }
+
+    .summary-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px; margin-bottom: 40px;
+    }
+    .summary-card h3 {
+      font-family: var(--font-heading); font-size: 16px; font-weight: 700;
+      color: var(--text-primary); margin-bottom: 14px;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+    .summary-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px;
+    }
+    .summary-item { text-align: center; padding: 14px; background: var(--bg-hover); border-radius: var(--radius-sm); }
+    .summary-emoji { font-size: 24px; margin-bottom: 6px; }
+    .summary-label { font-size: 11px; color: var(--text-secondary); margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .summary-value { font-size: 13px; font-weight: 600; color: var(--accent); }
+
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 24px; }
+      .hero { padding: 36px 16px 28px; }
+      .content { padding: 0 16px 60px; }
+      .page-header { flex-wrap: wrap; gap: 8px; padding: 6px 16px; height: auto; }
+      .header-nav { flex-wrap: wrap; }
+      .quick-nav { padding: 16px 16px 24px; }
+      .section-icon { width: 36px; height: 36px; font-size: 18px; }
+      .section-header h3 { font-size: 17px; }
+      .compare-table { font-size: 11px; }
+      .compare-table th, .compare-table td { padding: 8px 8px; }
+      .summary-grid { grid-template-columns: repeat(2, 1fr); }
+      .info-grid { grid-template-columns: 1fr; }
+    }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+    .transport-section { animation: fadeUp 0.35s ease both; }
+    .transport-section:nth-child(2) { animation-delay: 0.06s; }
+    .transport-section:nth-child(3) { animation-delay: 0.12s; }
+    .transport-section:nth-child(4) { animation-delay: 0.18s; }
+    .transport-section:nth-child(5) { animation-delay: 0.24s; }
+    .transport-section:nth-child(6) { animation-delay: 0.3s; }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ───────────────────────────── -->
+  <header class="page-header">
+    <div class="logo-area">
+      <span class="logo-icon">🏢</span>
+      <div>
+        <h1 data-i18n="title">Wien Low Budget</h1>
+        <div class="logo-sub" data-i18n="adminHeaderSub">ANREISE-GUIDE</div>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <!-- Language Selector -->
+      <div class="lang-selector" id="lang-selector" style="position:relative; margin-right:8px;">
+        <button class="lang-btn" id="lang-btn" title="Sprache / Language" style="background:none; border:1px solid #E8E8E8; cursor:pointer; padding:6px 10px; border-radius:4px; font-size:18px; display:flex; align-items:center; justify-content:center; transition:0.2s;">🇦🇹</button>
+        <div class="lang-dropdown" id="lang-dropdown" style="display:none; position:absolute; top:calc(100% + 6px); right:0; background:#FFFFFF; border:1px solid #E8E8E8; border-radius:6px; width:180px; box-shadow:0 8px 30px rgba(0,0,0,0.08); z-index:1000; padding:4px 0; max-height:400px; overflow-y:auto;"></div>
+      </div>
+      <a href="index.html" class="nav-link"><span data-i18n="map">🗺️ Zur App</span></a>
+      <a href="anreise.html" class="nav-link active"><span data-i18n="anreiseQuickFlug">✈️ Anreise</span></a>
+      <a href="admin.html" class="nav-link"><span data-i18n="adminTitle">🛡️ Admin</span></a>
+    </nav>
+  </header>
+
+  <!-- i18n Scripts -->
+  <script src="i18n.js"></script>
+  <script src="translations.js"></script>
+  <script>
+    (function() {
+      'use strict';
+      const currentLang = localStorage.getItem('wlb-lang') || 'de';
+      
+      if (window.initLanguageSwitcher) {
+        window.initLanguageSwitcher('lang-selector', (lang) => {
+          if (window.applyI18n) window.applyI18n(lang);
+        });
+      }
+      
+      if (window.applyI18n) {
+        window.applyI18n(currentLang);
+      }
+
+      // Add styles for lang items
+      if (!document.getElementById('anreise-styles')) {
+        const style = document.createElement('style');
+        style.id = 'anreise-styles';
+        style.textContent = `
+          .lang-item:hover { background: rgba(255,255,255,0.05); }
+          .lang-item.active { background: rgba(212,168,75,0.1) !important; color: var(--gold) !important; }
+        `;
+        document.head.appendChild(style);
+      }
+    })();
+  </script>
+
+  <!-- ── Hero ─────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-icon" style="color:var(--gold); display:flex; gap:16px; justify-content:center;">
+      ✈️🚄🚌
+    </div>
+    <h2 data-i18n="anreiseHeroTitle">Günstig nach Wien</h2>
+    <p data-i18n="anreiseHeroDesc">Alle Wege nach Wien im Überblick – mit Preisvergleichen, Suchmaschinen und Insidertipps, damit du das meiste aus deinem Budget rausholst.</p>
+  </section>
+
+  <!-- ── Quick Navigation ─────────────────── -->
+  <nav class="quick-nav">
+    <a href="#flug" class="quick-chip" style="--chip-accent:#64B5F6"><span class="chip-emoji">✈️</span> <span data-i18n="anreiseQuickFlug">Flugzeug</span></a>
+    <a href="#zug" class="quick-chip" style="--chip-accent:#E74C3C"><span class="chip-emoji">🚆</span> <span data-i18n="anreiseQuickZug">Zug</span></a>
+    <a href="#bus" class="quick-chip" style="--chip-accent:#4CAF50"><span class="chip-emoji">🚌</span> <span data-i18n="anreiseQuickBus">Fernbus</span></a>
+    <a href="#mitfahr" class="quick-chip" style="--chip-accent:#9C27B0"><span class="chip-emoji">🚗</span> <span data-i18n="anreiseQuickMitfahr">Mitfahrgelegenheit</span></a>
+    <a href="#auto" class="quick-chip" style="--chip-accent:#FF9800"><span class="chip-emoji">🚙</span> <span data-i18n="anreiseQuickAuto">Eigenes Auto</span></a>
+    <a href="#flughafen" class="quick-chip" style="--chip-accent:#00BCD4"><span class="chip-emoji">🛬</span> <span data-i18n="anreiseQuickFlughafen">Vom Flughafen</span></a>
+  </nav>
+
+  <!-- ── Content ──────────────────────────── -->
+  <main class="content">
+
+    <!-- Summary -->
+    <div class="summary-card">
+      <h3 data-i18n="anreiseSummaryTitle">⚡ Preisübersicht auf einen Blick</h3>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <div class="summary-emoji">✈️</div>
+          <div class="summary-label" data-i18n="anreiseQuickFlug">Flug</div>
+          <div class="summary-value">ab ~30 €</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-emoji">🚆</div>
+          <div class="summary-label" data-i18n="anreiseQuickZug">Zug</div>
+          <div class="summary-value">ab ~19 €</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-emoji">🚌</div>
+          <div class="summary-label" data-i18n="anreiseQuickBus">Fernbus</div>
+          <div class="summary-value">ab ~9 €</div>
+        </div>
+        <div class="summary-item">
+          <div class="summary-emoji">🚗</div>
+          <div class="summary-label" data-i18n="anreiseQuickMitfahr">Mitfahrt</div>
+          <div class="summary-value">ab ~15 €</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- FLUG -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="transport-section" id="flug">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(100,181,246,0.15); color:#64B5F6">✈️</div>
+        <div>
+          <h3 data-i18n="anreiseByPlane">Per Flugzeug</h3>
+          <div class="section-subtitle" data-i18n="anreiseByPlaneSub">Schnell, manchmal überraschend günstig</div>
+        </div>
+      </div>
+      <div class="section-body">
+
+        <div class="info-card">
+          <h4 data-i18n="anreisePlaneSearch">🔍 Flüge suchen & vergleichen</h4>
+          <p data-i18n="anreisePlaneSearchDesc">Nutze Meta-Suchmaschinen, um die besten Preise zu finden. Diese durchsuchen Hunderte Airlines gleichzeitig und zeigen dir, wann Flüge besonders günstig sind:</p>
+          <div class="cta-row">
+            <a href="https://www.swoodoo.com/flug/?from=&to=VIE" target="_blank" rel="noopener" class="search-cta primary">🔎 Swoodoo</a>
+            <a href="https://www.skyscanner.at/transport/flights-to/vien/cheapest-flights-to-vienna.html" target="_blank" rel="noopener" class="search-cta secondary">🌐 Skyscanner</a>
+            <a href="https://www.google.com/travel/flights?q=Fl%C3%BCge%20nach%20Wien" target="_blank" rel="noopener" class="search-cta secondary">✈️ Google Flights</a>
+          </div>
+          <div class="tip-box">
+            <span class="tip-icon">💡</span>
+            <div><strong data-i18n="anreisePlaneTipTitle">Tipp:</strong> <span data-i18n="anreisePlaneTipDesc">Aktiviere Preisbenachrichtigungen! Alle drei Suchmaschinen bieten Alerts an, die dich informieren wenn dein Wunschflug günstiger wird. Flexible Daten? Nutze die „ganzer Monat"-Ansicht um den günstigsten Tag zu finden.</span></div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h4 data-i18n="anreiseBudgetAirlines">💰 Budget-Airlines nach Wien</h4>
+          <p data-i18n="anreiseBudgetAirlinesDesc">Wien wird von mehreren Low-Cost-Airlines regelmäßig angeflogen:</p>
+          <div class="provider-chips">
+            <a href="https://www.ryanair.com/de/de/gunstige-fluge-nach-wien" target="_blank" rel="noopener" class="provider-chip">🟡 Ryanair</a>
+            <a href="https://wizzair.com/" target="_blank" rel="noopener" class="provider-chip">🟣 Wizz Air</a>
+            <a href="https://www.eurowings.com/" target="_blank" rel="noopener" class="provider-chip">🟠 Eurowings</a>
+            <a href="https://www.volotea.com/" target="_blank" rel="noopener" class="provider-chip">🟢 Volotea</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZUG -->
+    <section class="transport-section" id="zug">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(231,76,60,0.15); color:#E74C3C">🚆</div>
+        <div>
+          <h3 data-i18n="anreiseByTrain">Per Zug</h3>
+          <div class="section-subtitle" data-i18n="anreiseByTrainSub">Bequem, umweltfreundlich, oft überraschend günstig</div>
+        </div>
+      </div>
+      <div class="section-body">
+
+        <div class="info-card">
+          <h4 data-i18n="anreiseTrainSearch">🔍 Zugverbindungen suchen</h4>
+          <p data-i18n="anreiseTrainSearchDesc">Der Wiener Hauptbahnhof (Wien Hbf) ist ein wichtiger Knotenpunkt Europas. Von dort fahren Züge in fast jede Richtung:</p>
+          <div class="cta-row">
+            <a href="https://shop.oebbtickets.at/de/ticket" target="_blank" rel="noopener" class="search-cta primary">🚄 ÖBB Tickets</a>
+            <a href="https://www.bahn.de/" target="_blank" rel="noopener" class="search-cta secondary">🇩🇪 Deutsche Bahn</a>
+            <a href="https://www.thetrainline.com/" target="_blank" rel="noopener" class="search-cta secondary">🌍 Trainline</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <div class="info-card">
+          <h4 data-i18n="anreiseTrainTipsTitle">💰 Die besten Zug-Spartipps</h4>
+          <table class="compare-table">
+            <thead><tr><th data-i18n="anreiseTableTicket">Ticket</th><th data-i18n="anreiseTablePrice">Preis</th><th data-i18n="anreiseTableDetails">Details</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>ÖBB Sparschiene</strong></td>
+                <td class="best">ab 19 €</td>
+                <td>Frühbucher-Tickets, zuggebunden, nicht stornierbar. Am besten 3–6 Wochen vorher buchen!</td>
+              </tr>
+              <tr>
+                <td><strong>DB Sparpreis Europa</strong></td>
+                <td class="best">ab 19,90 €</td>
+                <td>Von deutschen Städten direkt nach Wien. Frühbucher-Preis über bahn.de</td>
+              </tr>
+              <tr>
+                <td><strong>ÖBB Nightjet</strong></td>
+                <td class="ok">ab 29,90 €</td>
+                <td>Nachtzug! Spart Hotelkosten. Z.B. ab Hamburg, Berlin, Amsterdam, Zürich, Rom</td>
+              </tr>
+              <tr>
+                <td><strong>Interrail / Eurail</strong></td>
+                <td class="ok">ab ~200 €</td>
+                <td>Nur bei Rundreisen sinnvoll. Pass für mehrere Länder/Tage</td>
+              </tr>
+              <tr>
+                <td><strong>Einfach-Raus-Ticket (ÖBB)</strong></td>
+                <td class="best">ab 22 € (2–5 Pers.)</td>
+                <td>Innerhalb Österreichs mit Regionalbahnen. Gruppenticket!</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="tip-box">
+            <span class="tip-icon">💡</span>
+            <div><strong data-i18n="anreisePlaneTipTitle">Tipp:</strong> <span data-i18n="anreiseTrainTipNightjet">Der <strong>ÖBB Nightjet</strong> ist ein Geheimtipp! Du sparst dir eine Hotelübernachtung und bist morgens direkt am Wien Hbf. Sitzplatz ab 29,90 €, Liegewagen ab 49,90 €, Schlafwagen ab 69,90 €.</span></div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h4 data-i18n="anreiseConnectionsTitle">🗺️ Wichtige Direktverbindungen</h4>
+          <table class="compare-table">
+            <thead><tr><th data-i18n="anreiseTableFrom">Von</th><th data-i18n="anreiseTableDuration">Dauer</th><th data-i18n="anreiseTableMinPrice">Ab-Preis</th><th data-i18n="anreiseTableProvider">Anbieter</th></tr></thead>
+            <tbody>
+              <tr><td>München</td><td>~4h</td><td class="best">ab 19 €</td><td>ÖBB / DB</td></tr>
+              <tr><td>Berlin</td><td>~9h (Nightjet ~11h)</td><td class="best">ab 19 €</td><td>ÖBB Nightjet / DB</td></tr>
+              <tr><td>Budapest</td><td>~2,5h</td><td class="best">ab 15 €</td><td>ÖBB Railjet</td></tr>
+              <tr><td>Prag</td><td>~4h</td><td class="best">ab 15 €</td><td>ÖBB / RegioJet</td></tr>
+              <tr><td>Bratislava</td><td>~1h</td><td class="best">ab 9 €</td><td>ÖBB</td></tr>
+              <tr><td>Zürich</td><td>~8h (Nightjet)</td><td class="ok">ab 29 €</td><td>ÖBB Nightjet</td></tr>
+              <tr><td>Salzburg</td><td>~2,5h</td><td class="best">ab 19 €</td><td>ÖBB / Westbahn</td></tr>
+              <tr><td>Hamburg</td><td>Nightjet ~12h</td><td class="ok">ab 29,90 €</td><td>ÖBB Nightjet</td></tr>
+            </tbody>
+          </table>
+          <div class="provider-chips">
+            <a href="https://westbahn.at/" target="_blank" rel="noopener" class="provider-chip">🚆 Westbahn (ab Salzburg)</a>
+            <a href="https://www.regiojet.com/" target="_blank" rel="noopener" class="provider-chip">🟡 RegioJet (ab Prag)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- BUS -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="transport-section" id="bus">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(76,175,80,0.15); color:#4CAF50">🚌</div>
+        <div>
+          <h3 data-i18n="anreiseByBus">Per Fernbus</h3>
+          <div class="section-subtitle" data-i18n="anreiseByBusSub">Die günstigste Option, etwas mehr Geduld nötig</div>
+        </div>
+      </div>
+      <div class="section-body">
+
+        <div class="info-card">
+          <h4 data-i18n="anreiseBusSearch">🔍 Busverbindungen suchen</h4>
+          <p data-i18n="anreiseBusSearchDesc">Fernbusse sind oft die günstigste Art zu reisen. Wien wird von mehreren Fernbus-Anbietern angefahren – Ankunft meist am Vienna International Busterminal (VIB) beim Hauptbahnhof oder Erdberg.</p>
+          <div class="cta-row">
+            <a href="https://www.flixbus.at/busverbindung-nach-wien" target="_blank" rel="noopener" class="search-cta primary">🟢 FlixBus</a>
+            <a href="https://busliniensuche.de/suche?from=&to=Wien" target="_blank" rel="noopener" class="search-cta secondary">🔎 Busliniensuche.de</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- MITFAHRGELEGENHEIT -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="transport-section" id="mitfahr">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(156,39,176,0.15); color:#9C27B0">🚗</div>
+        <div>
+          <h3 data-i18n="anreiseByRide">Per Mitfahrgelegenheit</h3>
+          <div class="section-subtitle" data-i18n="anreiseByRideSub">Günstig, flexibel & du lernst Leute kennen</div>
+        </div>
+      </div>
+      <div class="section-body">
+
+        <div class="info-card">
+          <h4 data-i18n="anreiseRideSearch">🔍 Mitfahrten suchen</h4>
+          <p data-i18n="anreiseRideSearchDesc">BlaBlaCar ist die größte Plattform für Mitfahrgelegenheiten in Europa. Fahrer bieten freie Plätze an, die Kosten werden geteilt.</p>
+          <div class="cta-row">
+            <a href="https://www.blablacar.at/ride-sharing/to-wien" target="_blank" rel="noopener" class="search-cta primary">🚀 BlaBlaCar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- AUTO -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="transport-section" id="auto">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(255,152,0,0.15); color:#FFB74D">🚙</div>
+        <div>
+          <h3 data-i18n="anreiseCarHeader">Mit dem eigenen Auto</h3>
+          <div class="section-subtitle" data-i18n="anreiseCarSub">Flexibel, aber Achtung: Parkkosten und Maut!</div>
+        </div>
+      </div>
+      <div class="section-body">
+
+        <div class="info-card">
+          <h4 data-i18n="anreiseCarInfoTitle">📋 Was du wissen musst</h4>
+          <p data-i18n="anreiseCarInfoDesc">Mit dem Auto nach Wien ist praktisch für Familien oder wenn ihr Gepäck mitnehmt. Aber beachte die Kosten vor Ort!</p>
+          <table class="compare-table">
+            <thead><tr><th data-i18n="anreiseTableItem">Posten</th><th data-i18n="anreiseTablePrice">Kosten</th><th data-i18n="anreiseTableDetails">Details</th></tr></thead>
+            <tbody>
+              <tr>
+                <td data-i18n="anreiseCarVignette">🛣️ Autobahn-Vignette</td>
+                <td class="ok" data-i18n="anreiseCarPriceVignette">9,90 € (10 Tage)</td>
+                <td data-i18n="anreiseCarVignetteDesc">Pflicht auf österr. Autobahnen! Digital über asfinag.at oder an der Grenze</td>
+              </tr>
+              <tr>
+                <td data-i18n="anreiseCarParking">🅿️ Kurzparkzone</td>
+                <td class="bad" data-i18n="anreiseCarPriceParking">2,40 €/h (max 2h)</td>
+                <td data-i18n="anreiseCarParkingDesc">Innenstadt & viele Bezirke! Mo–Fr 9–22 Uhr. Strafen: 36 €!</td>
+              </tr>
+              <tr>
+                <td data-i18n="anreiseCarPR">🏨 Park & Ride</td>
+                <td class="best" data-i18n="anreiseCarPricePR">3,60 €/Tag</td>
+                <td data-i18n="anreiseCarPRDesc">Am besten P+R nutzen! Z.B. Erdberg, Hütteldorf, Leopoldau</td>
+              </tr>
+              <tr>
+                <td data-i18n="anreiseCarFuel">⛽ Sprit</td>
+                <td class="ok" data-i18n="anreiseCarPriceFuel">~1,55 €/L</td>
+                <td data-i18n="anreiseCarFuelDesc">Vor der Grenze tanken ist oft günstiger!</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="cta-row">
+            <a href="https://www.asfinag.at/maut-vignette/vignette/" target="_blank" rel="noopener" class="search-cta secondary" data-i18n="anreiseCarVignetteCTA">🛣️ Digitale Vignette kaufen</a>
+            <a href="https://www.wienerlinien.at/park-ride" target="_blank" rel="noopener" class="search-cta secondary" data-i18n="anreiseCarPRCTA">🅿️ P+R Standorte</a>
+          </div>
+          <div class="warn-box">
+            <span class="warn-icon">⚠️</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- VOM FLUGHAFEN -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="transport-section" id="flughafen">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(0,188,212,0.15); color:#00BCD4">🛬</div>
+        <div>
+          <h3 data-i18n="anreiseFromAirport">Vom Flughafen ins Zentrum</h3>
+          <div class="section-subtitle" data-i18n="anreiseFromAirportSub">Günstig und schnell vom Flughafen Wien-Schwechat in die Stadt</div>
+        </div>
+      </div>
+      <div class="section-body">
+
+        <div class="info-card">
+          <h4 data-i18n="anreiseAirportHeader">🚉 Die günstigsten Optionen</h4>
+          <table class="compare-table">
+            <thead><tr><th data-i18n="anreiseConnectionsTitle">Verbindung</th><th data-i18n="anreiseTablePrice">Preis</th><th data-i18n="anreiseTableDuration">Dauer</th><th data-i18n="anreisePlaneTipTitle">Tipp</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>S-Bahn S7</strong></td>
+                <td class="best" data-i18n="anreiseAirportS7Desc">ab 2,40 € (mit VOR Ticket)</td>
+                <td>~25 Min. nach Wien Mitte</td>
+                <td>🏆 Günstigster Weg! Mit Wiener Linien Ticket sogar gratis</td>
+              </tr>
+              <tr>
+                <td><strong>ÖBB Railjet / S-Bahn</strong></td>
+                <td class="best" data-i18n="anreiseAirportRailjetDesc">~4,40 €</td>
+                <td>~15 Min. nach Wien Hbf</td>
+                <td>Schnell und bequem, auch zum Hbf</td>
+              </tr>
+              <tr>
+                <td><strong>CAT (City Airport Train)</strong></td>
+                <td class="bad" data-i18n="anreiseAirportCATDesc">14,90 € (einfach)</td>
+                <td>~16 Min. nach Wien Mitte</td>
+                <td>⚠️ Touristenfalle! Kaum schneller als S7</td>
+              </tr>
+              <tr>
+                <td><strong>Vienna Airport Lines (Bus)</strong></td>
+                <td class="ok" data-i18n="anreiseAirportBusDesc">~9 €</td>
+                <td>30–45 Min.</td>
+                <td>Zum Morzinplatz/Schwedenplatz</td>
+              </tr>
+              <tr>
+                <td><strong>Taxi / Flughafentransfer</strong></td>
+                <td class="bad" data-i18n="anreiseAirportBus">~38 €</td>
+                <td>20–40 Min.</td>
+                <td>Fix-Preis, Vorsicht vor überteuerten Angeboten!</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="warn-box">
+            <span class="warn-icon">⚠️</span>
+            <div><strong>Falle vermeiden:</strong> Der <strong>CAT (City Airport Train)</strong> ist eine bekannte Touristenfalle! Er kostet 14,90 € und spart dir nur 5–10 Minuten gegenüber der S7, die nur 2,40 € kostet. Nimm die <strong>S7</strong> oder den <strong>ÖBB Zug</strong>!</div>
+          </div>
+          <div class="tip-box">
+            <span class="tip-icon">💡</span>
+            <div><strong>Pro-Tipp:</strong> Wenn du eine <strong>Vienna City Card</strong> oder ein <strong>Wiener Linien Ticket</strong> (Zone 100+) hast, ist die S7 im Preis enthalten! Einfach einsteigen.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- GESAMTVERGLEICH -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="transport-section" id="vergleich">
+      <div class="section-header">
+        <div class="section-icon" style="background:rgba(212,168,75,0.15); color:var(--gold)">⚖️</div>
+        <div>
+          <h3 data-i18n="anreiseCompareTitle">Gesamtvergleich</h3>
+          <div class="section-subtitle" data-i18n="anreiseCompareSub">Welches Transportmittel passt zu dir?</div>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="info-card">
+          <table class="compare-table">
+            <thead><tr><th data-i18n="anreiseCompareHeader">Kriterium</th><th data-i18n="anreiseQuickFlug">✈️ Flug</th><th data-i18n="anreiseQuickZug">🚄 Zug</th><th data-i18n="anreiseQuickBus">🚌 Bus</th><th data-i18n="anreiseQuickMitfahr">🚗 Mitfahrt</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Preis</strong></td>
+                <td class="ok">ab 30 €</td>
+                <td class="best">ab 19 €</td>
+                <td class="best">ab 9 €</td>
+                <td class="best">ab 15 €</td>
+              </tr>
+              <tr>
+                <td><strong>Komfort</strong></td>
+                <td>⭐⭐⭐</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td>⭐⭐⭐</td>
+                <td>⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td><strong>Umwelt</strong></td>
+                <td class="bad">🌍 Hoch</td>
+                <td class="best">🌿 Niedrig</td>
+                <td class="ok">🌎 Mittel</td>
+                <td class="ok">🌎 Mittel</td>
+              </tr>
+              <tr>
+                <td><strong>Flexibilität</strong></td>
+                <td>Gering</td>
+                <td>Mittel</td>
+                <td>Mittel</td>
+                <td>Hoch</td>
+              </tr>
+              <tr>
+                <td><strong>Gepäck</strong></td>
+                <td class="bad">Aufpreis!</td>
+                <td class="best">Gratis</td>
+                <td class="ok">1 Koffer</td>
+                <td class="ok">Nach Absprache</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+name: Weekly Auto-Crawler
+
+on:
+  schedule:
+    # Jeden Freitagmorgen um 02:00 Uhr UTC
+    - cron: '0 2 * * 5'
+  workflow_dispatch:
+    # Erlaubt das manuelle Starten über den Button auf GitHub
+
+jobs:
+  run-crawler:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Wichtig, damit der Roboter pushen darf
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Holt den gesamten Verlauf
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Crawler (Essen)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python scripts/crawl_and_plan.py --category essen
+          
+      # Bei Bedarf hier mehr Crawler-Befehle hinzufügen
+      # z.B. python scripts/crawl_and_plan.py --category unterkunft
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Prüfen ob data.js verändert wurde
+          if git diff --quiet data.js; then
+            echo "Keine neuen Orte gefunden. Nichts zu committen."
+          else
+            git add data.js
+            git commit -m "🤖 Auto-Update: Neue Orte durch Groq AI Crawler hinzugefügt"
+            git push
+            echo "Neue Orte erfolgreich gepushed!"
+          fi
