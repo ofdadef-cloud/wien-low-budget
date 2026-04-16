@@ -1,23 +1,24 @@
-name: Weekly Auto-Crawler
+name: Auto-Crawler (Daily & Weekly)
 
 on:
   schedule:
-    # Jeden Freitagmorgen um 02:00 Uhr UTC
-    - cron: '0 2 * * 5'
+    # Täglich um 02:00 UTC (Für Deals)
+    - cron: '0 2 * * *'
+    # Wöchentlich Freitag 03:00 UTC (Für alle anderen Kategorien)
+    - cron: '0 3 * * 5'
   workflow_dispatch:
-    # Erlaubt das manuelle Starten über den Button auf GitHub
 
 jobs:
   run-crawler:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Wichtig, damit der Roboter pushen darf
+      contents: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Holt den gesamten Verlauf
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -30,26 +31,34 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Crawler (Essen)
+      - name: Run Crawler (Deals - Daily)
+        if: github.event.schedule == '0 2 * * *' || github.event_name == 'workflow_dispatch'
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          python scripts/crawl_and_plan.py --category essen
-          
-      # Bei Bedarf hier mehr Crawler-Befehle hinzufügen
-      # z.B. python scripts/crawl_and_plan.py --category unterkunft
+          python scripts/crawl_and_plan.py --category deals
+
+      - name: Run Crawler (All Other Categories - Weekly)
+        if: github.event.schedule == '0 3 * * 5' || github.event_name == 'workflow_dispatch'
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          # Führt nacheinander einen Crawl für alle relevanten Kategorien aus
+          for CAT in essen bars museen unterkunft natur einkaufen baeckerei kino cafe transport; do
+            echo "Starte Crawler für $CAT..."
+            python scripts/crawl_and_plan.py --category $CAT
+          done
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Prüfen ob data.js verändert wurde
           if git diff --quiet data.js; then
             echo "Keine neuen Orte gefunden. Nichts zu committen."
           else
             git add data.js
-            git commit -m "🤖 Auto-Update: Neue Orte durch Groq AI Crawler hinzugefügt"
+            git commit -m "🤖 Auto-Update: Kategorien durch Groq AI aktualisiert"
             git push
-            echo "Neue Orte erfolgreich gepushed!"
+            echo "Änderungen erfolgreich gepushed!"
           fi

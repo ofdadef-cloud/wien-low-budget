@@ -185,19 +185,7 @@ if __name__ == "__main__":
     
     # Auto-generate search query if not provided
     if not args.query:
-        query_map = {
-            'essen': 'günstig essen Wien 2026 Tipps',
-            'unterkunft': 'günstige Hostels Wien 2026',
-            'bars': 'günstige Bars Wien Nachtleben 2026',
-            'museen': 'günstige Museen Wien gratis 2026',
-            'natur': 'gratis Natur Aussicht Wien 2026',
-            'einkaufen': 'günstig einkaufen Märkte Wien 2026',
-            'baeckerei': 'günstige Bäckerei Wien 2026',
-            'kino': 'günstiges Kino Wien 2026',
-            'cafe': 'günstige Cafés Wien 2026',
-            'transport': 'günstig Transport Wien 2026',
-        }
-        args.query = query_map.get(args.category, f'günstig {args.category} Wien 2026')
+        args.query = f'Wien {args.category} günstig site:1000things.at OR site:falter.at OR site:thefork.at OR site:tripadvisor.at OR site:wien.info'
 
     print(f"\n🕷️  Wien Low Budget – Automatischer Crawler")
     print(f"   Kategorie: {args.category}")

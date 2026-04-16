@@ -1,5 +1,6 @@
 // Wien Low Budget – Strukturierte Ortsdaten (aktualisiert März 2026)
 const CATEGORIES = {
+  deals: { icon: '🔥', color: '#FF3D00', label: 'Heute Deals!' },
   essen: { icon: '🍕', color: '#E8734A', label: 'Essen' },
   bars: { icon: '🍸', color: '#D44B8A', label: 'Bars & Nachtleben' },
   museen: { icon: '🏛️', color: '#6B4C9A', label: 'Museen' },
@@ -9,10 +10,10 @@ const CATEGORIES = {
   baeckerei: { icon: '🥖', color: '#C4813D', label: 'Bäckereien' },
   kino: { icon: '🎞️', color: '#9C27B0', label: 'Kino' },
   cafe: { icon: '☕', color: '#795548', label: 'Cafés' },
-  transport: { icon: '🚆', color: '#00BCD4', label: 'Transport' },
-  deals: { icon: '🔥', color: '#FF3D00', label: 'Heute Deals!' }
+  transport: { icon: '🚆', color: '#00BCD4', label: 'Transport' }
 };
 const LOCATIONS = [
+  // ─── DEALS ───────────────────────────────────────────────
   // ─── ESSEN ───────────────────────────────────────────────
   {
     id: 1108,
