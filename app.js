@@ -5,7 +5,7 @@
   // ── State ────────────────────────────────────────────────
   let map;
   let markers = [];
-  let activeCategory = 'all';
+  let activeCategories = new Set(['all']);
   let searchQuery = '';
   let currentView = 'map';
   let currentLang = localStorage.getItem('wlb-lang') || 'de';
@@ -359,13 +359,13 @@
 
   // ── Category Chips ───────────────────────────────────
   function renderCategoryChips() {
-    let html = `<button class="category-chip chip-all${activeCategory === 'all' ? ' active' : ''}" data-cat="all">
+    let html = `<button class="category-chip chip-all${activeCategories.has('all') ? ' active' : ''}" data-cat="all">
       <span class="chip-icon">🗂️</span> ${t('all')}
     </button>`;
     const catKeys = Object.keys(CATEGORIES);
     catKeys.forEach((key) => {
       const cat = CATEGORIES[key];
-      const active = activeCategory === key ? ' active' : '';
+      const active = activeCategories.has(key) ? ' active' : '';
       html += `<button class="category-chip${active}" data-cat="${key}" style="--chip-color: ${cat.color}">
         <span class="chip-icon">${cat.icon}</span> ${catLabel(key)}
       </button>`;
@@ -496,11 +496,15 @@
   function getFilteredLocations() {
     const todayNum = new Date().getDay();
     return LOCATIONS.filter(loc => {
-      if (activeCategory === 'deals') {
-        if (!loc.dailyDeals || !loc.dailyDeals[todayNum]) return false;
-      } else if (activeCategory !== 'all' && loc.category !== activeCategory) {
-        return false;
+      let matchesCat = false;
+      if (activeCategories.has('all')) {
+        matchesCat = true;
+      } else {
+        if (activeCategories.has('deals') && loc.dailyDeals && loc.dailyDeals[todayNum]) matchesCat = true;
+        if (activeCategories.has(loc.category)) matchesCat = true;
       }
+      if (!matchesCat) return false;
+
       if (!searchQuery) return true;
       const q = searchQuery.toLowerCase();
       return loc.name.toLowerCase().includes(q) || loc.description.toLowerCase().includes(q) ||
@@ -592,9 +596,20 @@
     categoryBar.addEventListener('click', e => {
       const chip = e.target.closest('.category-chip');
       if (!chip) return;
-      activeCategory = chip.dataset.cat;
-      categoryBar.querySelectorAll('.category-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
+      const cat = chip.dataset.cat;
+      if (cat === 'all') {
+        activeCategories.clear();
+        activeCategories.add('all');
+      } else {
+        if (activeCategories.has('all')) activeCategories.delete('all');
+        if (activeCategories.has(cat)) {
+          activeCategories.delete(cat);
+          if (activeCategories.size === 0) activeCategories.add('all');
+        } else {
+          activeCategories.add(cat);
+        }
+      }
+      renderCategoryChips();
       if (currentView === 'videos') switchView('list');
       else refresh();
     });

@@ -31,12 +31,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Crawler (Deals - Daily)
+      - name: Run Crawler (Deals & Kino - Daily)
         if: github.event.schedule == '0 2 * * *' || github.event_name == 'workflow_dispatch'
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           python scripts/crawl_and_plan.py --category deals
+          python scripts/crawl_and_plan.py --category kino
 
       - name: Run Crawler (All Other Categories - Weekly)
         if: github.event.schedule == '0 3 * * 5' || github.event_name == 'workflow_dispatch'
@@ -44,7 +45,7 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           # Führt nacheinander einen Crawl für alle relevanten Kategorien aus
-          for CAT in essen bars museen unterkunft natur einkaufen baeckerei kino cafe transport; do
+          for CAT in essen bars museen unterkunft natur einkaufen baeckerei cafe transport; do
             echo "Starte Crawler für $CAT..."
             python scripts/crawl_and_plan.py --category $CAT
           done
