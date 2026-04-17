@@ -13,8 +13,84 @@ const CATEGORIES = {
   transport: { icon: '🚆', color: '#00BCD4', label: 'Transport' }
 };
 const LOCATIONS = [
+  
   // ─── DEALS ───────────────────────────────────────────────
-  // ─── ESSEN ───────────────────────────────────────────────
+  {
+  id: 1,
+  name: 'Wien Museum',
+  category: 'deals',
+  address: 'Karlsplatz 8',
+  district: '1040 Wien',
+  lat: 48.1983,
+  lng: 16.3681,
+  description: 'Stadtmuseum mit kostenlosen Eintritt am ersten Sonntag im Monat.',
+  priceInfo: 'kostenlos am ersten Sonntag im Monat',
+  website: 'https://www.wienmuseum.at',
+  lastUpdated: '2026-04-10',
+  tags: ['museum', 'kostenlos', 'kultur']
+}
+
+{
+  id: 2,
+  name: 'Naschmarkt',
+  category: 'deals',
+  address: 'Naschmarkt',
+  district: '1060 Wien',
+  lat: 48.1983,
+  lng: 16.3681,
+  description: 'Großer Markt mit günstigen Essens- und Getränkeoptionen.',
+  priceInfo: 'Preise variieren',
+  website: 'https://www.naschmarkt.at',
+  lastUpdated: '2026-04-10',
+  tags: ['markt', 'essen', 'trinken']
+}
+
+{
+  id: 3,
+  name: 'Stadtpark',
+  category: 'deals',
+  address: 'Stadtpark',
+  district: '1030 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: 'Großer Park mit kostenlosen Eintritt und vielen Freizeitaktivitäten.',
+  priceInfo: 'kostenlos',
+  website: 'https://www.wien.gv.at',
+  lastUpdated: '2026-04-10',
+  tags: ['park', 'kostenlos', 'freizeit']
+}
+
+{
+  id: 4,
+  name: 'Hostel Ruthensteiner',
+  category: 'deals',
+  address: 'Robert-Hamerling-Gasse 24',
+  district: '1150 Wien',
+  lat: 48.1933,
+  lng: 16.3131,
+  description: 'Günstiges Hostel mit freundlichem Personal.',
+  priceInfo: 'Ab ~20 € / Nacht',
+  website: 'https://www.hostelruthensteiner.com',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'günstig', 'freundlich']
+}
+
+{
+  id: 5,
+  name: 'Café Central',
+  category: 'deals',
+  address: 'Herrengasse 14',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3681,
+  description: 'Historisches Café mit günstigen Getränkeoptionen.',
+  priceInfo: 'Preise variieren',
+  website: 'https://www.cafecentral.wien',
+  lastUpdated: '2026-04-10',
+  tags: ['café', 'historisch', 'günstig']
+}
+
+// ─── ESSEN ───────────────────────────────────────────────
   {
     id: 1108,
     name: 'Pitaraz',
@@ -1018,51 +1094,112 @@ const LOCATIONS = [
     tags: ['bäckerei', 'spätabend', 'türkisch']
   },
 
+  
   // ─── KINO ────────────────────────────────────────────────
   {
-    id: 70,
-    name: 'Volxkino (Open Air)',
-    category: 'kino',
-    address: 'Wechselnde Standorte',
-    district: 'Wien',
-    lat: 48.2082,
-    lng: 16.3738,
-    description: 'Gratis Freiluftkino an wechselnden Plätzen in Wien im Sommer. Ein absolutes Highlight!',
-    priceInfo: 'Gratis',
-    website: 'http://volxkino.at/',
-    lastUpdated: '2026-03-19',
-    tags: ['kino', 'open-air', 'gratis', 'sommer']
-  },
-  {
-    id: 71,
-    name: 'Kino unter Sternen',
-    category: 'kino',
-    address: 'Karlsplatz',
-    district: '1040 Wien',
-    lat: 48.1988,
-    lng: 16.3700,
-    description: 'Open-Air-Kino am Karlsplatz im Juli. Programmbeginn 20:30, Film ab 21:30 Uhr.',
-    priceInfo: 'Gratis',
-    website: 'http://kinountersternen.at/',
-    openingHours: 'Juli, 20:30 Uhr',
-    lastUpdated: '2026-03-19',
-    tags: ['kino', 'open-air', 'sommer', 'karlsplatz']
-  },
-  {
-    id: 72,
-    name: 'Rathausplatz Film Festival',
-    category: 'kino',
-    address: 'Rathausplatz',
-    district: '1010 Wien',
-    lat: 48.2106,
-    lng: 16.3589,
-    description: 'Im Sommer (Juli–September) wird der Rathausplatz zur Open-Air-Kinoleinwand mit Gratis-Filmvorführungen und Food-Ständen.',
-    priceInfo: 'Gratis',
-    lastUpdated: '2026-03-19',
-    tags: ['kino', 'open-air', 'sommer', 'gratis', 'rathausplatz']
-  },
+  id: 70,
+  name: 'Volxkino (Open Air)',
+  category: 'kino',
+  address: 'Wechselnde Standorte',
+  district: 'Wien',
+  lat: 48.2082,
+  lng: 16.3738,
+  description: 'Gratis Freiluftkino an wechselnden Plätzen in Wien im Sommer. Ein absolutes Highlight!',
+  priceInfo: 'Gratis',
+  website: 'http://volxkino.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'open-air', 'gratis', 'sommer']
+}
 
-  // ─── CAFÉS ───────────────────────────────────────────────
+{
+  id: 71,
+  name: 'Kino unter Sternen',
+  category: 'kino',
+  address: 'Karlsplatz',
+  district: '1040 Wien',
+  lat: 48.1988,
+  lng: 16.3700,
+  description: 'Open-Air-Kino am Karlsplatz im Juli. Programmbeginn 20:30, Film ab 21:30 Uhr.',
+  priceInfo: 'Gratis',
+  website: 'http://kinountersternen.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'open-air', 'sommer', 'karlsplatz']
+}
+
+{
+  id: 72,
+  name: 'Rathausplatz Film Festival',
+  category: 'kino',
+  address: 'Rathausplatz',
+  district: '1010 Wien',
+  lat: 48.2106,
+  lng: 16.3589,
+  description: 'Im Sommer (Juli–September) wird der Rathausplatz zur Open-Air-Kinoleinwand mit Gratis-Filmvorführungen und Food-Ständen.',
+  priceInfo: 'Gratis',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'open-air', 'sommer', 'gratis', 'rathausplatz']
+}
+
+{
+  id: 120,
+  name: 'Wiener Staatsoper – Stehplätze',
+  category: 'kino',
+  address: 'Opernring 2',
+  district: '1010 Wien',
+  lat: 48.2028,
+  lng: 16.3690,
+  description: 'Weltklasse-Oper ab 13 € mit Stehplatz! Ca. 80 Minuten vor Vorstellungsbeginn anstellen. Balkon-Stehplätze bieten sogar gute Sicht. Ein Muss für Kulturliebhaber mit kleinem Budget.',
+  priceInfo: 'Stehplatz: 13–18 €',
+  website: 'https://www.wiener-staatsoper.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['oper', 'stehplatz', 'kultur', 'günstig']
+}
+
+{
+  id: 126,
+  name: 'Sommernachtkonzert Schönbrunn (gratis!)',
+  category: 'kino',
+  address: 'Schloss Schönbrunn',
+  district: '1130 Wien',
+  lat: 48.1845,
+  lng: 16.3122,
+  description: 'Jedes Jahr im Juni: Die Wiener Philharmoniker spielen ein kostenloses Open-Air-Konzert im Schlosspark Schönbrunn. Eines der größten Gratis-Klassik-Events weltweit!',
+  priceInfo: 'GRATIS',
+  lastUpdated: '2026-04-10',
+  tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
+}
+
+{
+  id: 127,
+  name: 'Filmcasino',
+  category: 'kino',
+  address: 'Margaretenstraße 78',
+  district: '1050 Wien',
+  lat: 48.1922,
+  lng: 16.3622,
+  description: 'Ein charmantes Kino mit einer großen Auswahl an Filmen. Preise ab 8,50 €.',
+  priceInfo: 'Ab 8,50 €',
+  website: 'https://www.filmcasino.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'günstig', 'charmant']
+}
+
+{
+  id: 128,
+  name: 'Artis International',
+  category: 'kino',
+  address: 'Burggasse 71-73',
+  district: '1070 Wien',
+  lat: 48.2103,
+  lng: 16.3364,
+  description: 'Ein Kino mit einer großen Auswahl an internationalen Filmen. Preise ab 9,50 €.',
+  priceInfo: 'Ab 9,50 €',
+  website: 'https://www.artis.international/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'international', 'günstig']
+}
+
+// ─── CAFÉS ───────────────────────────────────────────────
   {
     id: 80,
     name: 'Café Kafka',
