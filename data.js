@@ -14,6 +14,7 @@ const CATEGORIES = {
 };
 const LOCATIONS = [
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -88,6 +89,51 @@ const LOCATIONS = [
   website: 'https://www.cafecentral.wien',
   lastUpdated: '2026-04-10',
   tags: ['café', 'historisch', 'günstig']
+}
+
+{
+  id: 6,
+  name: 'MuseumsQuartier',
+  category: 'deals',
+  address: 'Museumsplatz 1',
+  district: '1070 Wien',
+  lat: 48.2083,
+  lng: 16.3581,
+  description: 'Kulturelles Zentrum mit kostenlosen Eintritt in einige Museen.',
+  priceInfo: 'kostenlos in einigen Museen',
+  website: 'https://www.mqw.at',
+  lastUpdated: '2026-04-10',
+  tags: ['museum', 'kostenlos', 'kultur']
+}
+
+{
+  id: 7,
+  name: 'Prater',
+  category: 'deals',
+  address: 'Prater',
+  district: '1020 Wien',
+  lat: 48.2183,
+  lng: 16.4081,
+  description: 'Großer Vergnügungspark mit günstigen Eintrittspreisen.',
+  priceInfo: 'Preise variieren',
+  website: 'https://www.prater.at',
+  lastUpdated: '2026-04-10',
+  tags: ['vergnügungspark', 'günstig', 'freizeit']
+}
+
+{
+  id: 8,
+  name: 'Wien Mitte',
+  category: 'deals',
+  address: 'Landstraßer Hauptstraße 1',
+  district: '1030 Wien',
+  lat: 48.2033,
+  lng: 16.3831,
+  description: 'Einkaufszentrum mit günstigen Essens- und Getränkeoptionen.',
+  priceInfo: 'Preise variieren',
+  website: 'https://www.wienmitte.at',
+  lastUpdated: '2026-04-10',
+  tags: ['einkaufszentrum', 'essen', 'trinken']
 }
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1095,6 +1141,7 @@ const LOCATIONS = [
   },
 
   
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
@@ -1141,35 +1188,6 @@ const LOCATIONS = [
 }
 
 {
-  id: 120,
-  name: 'Wiener Staatsoper – Stehplätze',
-  category: 'kino',
-  address: 'Opernring 2',
-  district: '1010 Wien',
-  lat: 48.2028,
-  lng: 16.3690,
-  description: 'Weltklasse-Oper ab 13 € mit Stehplatz! Ca. 80 Minuten vor Vorstellungsbeginn anstellen. Balkon-Stehplätze bieten sogar gute Sicht. Ein Muss für Kulturliebhaber mit kleinem Budget.',
-  priceInfo: 'Stehplatz: 13–18 €',
-  website: 'https://www.wiener-staatsoper.at/',
-  lastUpdated: '2026-04-10',
-  tags: ['oper', 'stehplatz', 'kultur', 'günstig']
-}
-
-{
-  id: 126,
-  name: 'Sommernachtkonzert Schönbrunn (gratis!)',
-  category: 'kino',
-  address: 'Schloss Schönbrunn',
-  district: '1130 Wien',
-  lat: 48.1845,
-  lng: 16.3122,
-  description: 'Jedes Jahr im Juni: Die Wiener Philharmoniker spielen ein kostenloses Open-Air-Konzert im Schlosspark Schönbrunn. Eines der größten Gratis-Klassik-Events weltweit!',
-  priceInfo: 'GRATIS',
-  lastUpdated: '2026-04-10',
-  tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
-}
-
-{
   id: 127,
   name: 'Filmcasino',
   category: 'kino',
@@ -1197,6 +1215,36 @@ const LOCATIONS = [
   website: 'https://www.artis.international/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'international', 'günstig']
+}
+
+{
+  id: 129,
+  name: 'Top Kino',
+  category: 'kino',
+  address: 'Rahlgasse 1',
+  district: '1060 Wien',
+  lat: 48.1953,
+  lng: 16.3444,
+  description: 'Ein modernes Kino mit einer großen Auswahl an Filmen. Preise ab 10,50 €.',
+  priceInfo: 'Ab 10,50 €',
+  website: 'https://www.topkino.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'modern', 'günstig']
+}
+
+{
+  id: 130,
+  name: 'Breitwand',
+  category: 'kino',
+  address: 'Müllnergasse 10',
+  district: '1060 Wien',
+  lat: 48.1962,
+  lng: 16.3467,
+  description: 'Ein Kino mit einer großen Auswahl an Filmen. Preise ab 9,00 €.',
+  priceInfo: 'Ab 9,00 €',
+  website: 'https://www.breitwand.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'günstig', 'vielfältig']
 }
 
 // ─── CAFÉS ───────────────────────────────────────────────
