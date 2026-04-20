@@ -16,6 +16,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -165,6 +166,66 @@ const LOCATIONS = [
   website: 'https://www.wien.gv.at',
   lastUpdated: '2026-04-10',
   tags: ['insel', 'kostenlos', 'freizeit']
+}
+
+{
+  id: 11,
+  name: 'Volksgarten',
+  category: 'deals',
+  address: 'Volksgarten',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3631,
+  description: 'Großer Park mit kostenlosen Eintritt und vielen Freizeitaktivitäten.',
+  priceInfo: 'kostenlos',
+  website: 'https://www.wien.gv.at',
+  lastUpdated: '2026-04-10',
+  tags: ['park', 'kostenlos', 'freizeit']
+}
+
+{
+  id: 12,
+  name: 'Belvedere',
+  category: 'deals',
+  address: 'Rennweg 6',
+  district: '1030 Wien',
+  lat: 48.1933,
+  lng: 16.3831,
+  description: 'Kaiserliche Residenz mit günstigen Führungen.',
+  priceInfo: 'Ab ~15 € / Person',
+  website: 'https://www.belvedere.at',
+  lastUpdated: '2026-04-10',
+  tags: ['schloss', 'günstig', 'kultur']
+}
+
+{
+  id: 13,
+  name: 'Hofburg',
+  category: 'deals',
+  address: 'Michaelerkuppel',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3681,
+  description: 'Kaiserliche Residenz mit günstigen Führungen.',
+  priceInfo: 'Ab ~15 € / Person',
+  website: 'https://www.hofburg.at',
+  lastUpdated: '2026-04-10',
+  tags: ['schloss', 'günstig', 'kultur']
+}
+
+{
+  id: 14,
+  name: 'Mozarthaus',
+  category: 'deals',
+  address: 'Domgasse 5',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: 'Museum über das Leben von Wolfgang Amadeus Mozart.',
+  priceInfo: 'Ab ~10 € / Person',
+  website: 'https://www.mozarthaus.at',
+  lastUpdated: '2026-04-10',
+  tags: ['museum', 'günstig', 'kultur']
 }
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1174,6 +1235,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
@@ -1280,35 +1342,6 @@ const LOCATIONS = [
 }
 
 {
-  id: 120,
-  name: 'Wiener Staatsoper – Stehplätze',
-  category: 'kino',
-  address: 'Opernring 2',
-  district: '1010 Wien',
-  lat: 48.2028,
-  lng: 16.3690,
-  description: 'Weltklasse-Oper ab 13 € mit Stehplatz! Ca. 80 Minuten vor Vorstellungsbeginn anstellen. Balkon-Stehplätze bieten sogar gute Sicht. Ein Muss für Kulturliebhaber mit kleinem Budget.',
-  priceInfo: 'Stehplatz: 13–18 €',
-  website: 'https://www.wiener-staatsoper.at/',
-  lastUpdated: '2026-04-10',
-  tags: ['oper', 'stehplatz', 'kultur', 'günstig']
-}
-
-{
-  id: 126,
-  name: 'Sommernachtkonzert Schönbrunn (gratis!)',
-  category: 'kino',
-  address: 'Schloss Schönbrunn',
-  district: '1130 Wien',
-  lat: 48.1845,
-  lng: 16.3122,
-  description: 'Jedes Jahr im Juni: Die Wiener Philharmoniker spielen ein kostenloses Open-Air-Konzert im Schlosspark Schönbrunn. Eines der größten Gratis-Klassik-Events weltweit!',
-  priceInfo: 'GRATIS',
-  lastUpdated: '2026-04-10',
-  tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
-}
-
-{
   id: 131,
   name: 'Cinema Paradiso',
   category: 'kino',
@@ -1321,6 +1354,21 @@ const LOCATIONS = [
   website: 'https://www.cinemaparadiso.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'charmant']
+}
+
+{
+  id: 132,
+  name: 'Haydn Kino',
+  category: 'kino',
+  address: 'Marxergasse 19',
+  district: '1030 Wien',
+  lat: 48.1932,
+  lng: 16.3945,
+  description: 'Ein traditionsreiches Kino mit einer großen Auswahl an Filmen. Preise ab 9,50 €.',
+  priceInfo: 'Ab 9,50 €',
+  website: 'https://www.haydnkino.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'traditionell', 'günstig']
 }
 
 // ─── CAFÉS ───────────────────────────────────────────────
