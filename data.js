@@ -17,6 +17,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -226,6 +227,66 @@ const LOCATIONS = [
   website: 'https://www.mozarthaus.at',
   lastUpdated: '2026-04-10',
   tags: ['museum', 'günstig', 'kultur']
+}
+
+{
+  id: 15,
+  name: 'Wien Hauptbahnhof',
+  category: 'deals',
+  address: 'Südtiroler Platz 1',
+  district: '1100 Wien',
+  lat: 48.1833,
+  lng: 16.3731,
+  description: 'Großer Bahnhof mit günstigen Essens- und Getränkeoptionen.',
+  priceInfo: 'Preise variieren',
+  website: 'https://www.wienhauptbahnhof.at',
+  lastUpdated: '2026-04-10',
+  tags: ['bahnhof', 'essen', 'trinken']
+}
+
+{
+  id: 16,
+  name: 'Kunsthistorisches Museum',
+  category: 'deals',
+  address: 'Maria-Theresien-Platz',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3631,
+  description: 'Museum mit günstigen Eintrittspreisen.',
+  priceInfo: 'Ab ~15 € / Person',
+  website: 'https://www.khm.at',
+  lastUpdated: '2026-04-10',
+  tags: ['museum', 'günstig', 'kultur']
+}
+
+{
+  id: 17,
+  name: 'Naturhistorisches Museum',
+  category: 'deals',
+  address: 'Burgring 7',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3631,
+  description: 'Museum mit günstigen Eintrittspreisen.',
+  priceInfo: 'Ab ~15 € / Person',
+  website: 'https://www.nhm-wien.at',
+  lastUpdated: '2026-04-10',
+  tags: ['museum', 'günstig', 'natur']
+}
+
+{
+  id: 18,
+  name: 'St. Stephen\'s Cathedral',
+  category: 'deals',
+  address: 'Stephansplatz 3',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: 'Historische Kathedrale mit günstigen Führungen.',
+  priceInfo: 'Ab ~10 € / Person',
+  website: 'https://www.stephansdom.at',
+  lastUpdated: '2026-04-10',
+  tags: ['kirche', 'günstig', 'kultur']
 }
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1236,6 +1297,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
@@ -1369,6 +1431,35 @@ const LOCATIONS = [
   website: 'https://www.haydnkino.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'traditionell', 'günstig']
+}
+
+{
+  id: 120,
+  name: 'Wiener Staatsoper – Stehplätze',
+  category: 'kino',
+  address: 'Opernring 2',
+  district: '1010 Wien',
+  lat: 48.2028,
+  lng: 16.3690,
+  description: 'Weltklasse-Oper ab 13 € mit Stehplatz! Ca. 80 Minuten vor Vorstellungsbeginn anstellen. Balkon-Stehplätze bieten sogar gute Sicht. Ein Muss für Kulturliebhaber mit kleinem Budget.',
+  priceInfo: 'Stehplatz: 13–18 €',
+  website: 'https://www.wiener-staatsoper.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['oper', 'stehplatz', 'kultur', 'günstig']
+}
+
+{
+  id: 126,
+  name: 'Sommernachtkonzert Schönbrunn (gratis!)',
+  category: 'kino',
+  address: 'Schloss Schönbrunn',
+  district: '1130 Wien',
+  lat: 48.1845,
+  lng: 16.3122,
+  description: 'Jedes Jahr im Juni: Die Wiener Philharmoniker spielen ein kostenloses Open-Air-Konzert im Schlosspark Schönbrunn. Eines der größten Gratis-Klassik-Events weltweit!',
+  priceInfo: 'GRATIS',
+  lastUpdated: '2026-04-10',
+  tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
 }
 
 // ─── CAFÉS ───────────────────────────────────────────────
