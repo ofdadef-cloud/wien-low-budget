@@ -18,6 +18,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -287,6 +288,36 @@ const LOCATIONS = [
   website: 'https://www.stephansdom.at',
   lastUpdated: '2026-04-10',
   tags: ['kirche', 'günstig', 'kultur']
+}
+
+{
+  id: 19,
+  name: 'Meidlinger Markt',
+  category: 'deals',
+  address: 'Meidlinger Markt',
+  district: '1120 Wien',
+  lat: 48.1833,
+  lng: 16.3231,
+  description: 'Großer Markt mit günstigen Essens- und Getränkeoptionen.',
+  priceInfo: 'Preise variieren',
+  website: 'https://www.meidlingermarkt.at',
+  lastUpdated: '2026-04-10',
+  tags: ['markt', 'essen', 'trinken']
+}
+
+{
+  id: 20,
+  name: 'Brunnenmarkt',
+  category: 'deals',
+  address: 'Brunnenmarkt',
+  district: '1160 Wien',
+  lat: 48.2233,
+  lng: 16.3431,
+  description: 'Großer Markt mit günstigen Essens- und Getränkeoptionen.',
+  priceInfo: 'Preise variieren',
+  website: 'https://www.brunnenmarkt.at',
+  lastUpdated: '2026-04-10',
+  tags: ['markt', 'essen', 'trinken']
 }
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1298,6 +1329,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
@@ -1434,32 +1466,33 @@ const LOCATIONS = [
 }
 
 {
-  id: 120,
-  name: 'Wiener Staatsoper – Stehplätze',
+  id: 133,
+  name: 'Wiener Urania',
   category: 'kino',
-  address: 'Opernring 2',
+  address: 'Uraniastraße 1',
   district: '1010 Wien',
-  lat: 48.2028,
-  lng: 16.3690,
-  description: 'Weltklasse-Oper ab 13 € mit Stehplatz! Ca. 80 Minuten vor Vorstellungsbeginn anstellen. Balkon-Stehplätze bieten sogar gute Sicht. Ein Muss für Kulturliebhaber mit kleinem Budget.',
-  priceInfo: 'Stehplatz: 13–18 €',
-  website: 'https://www.wiener-staatsoper.at/',
+  lat: 48.2122,
+  lng: 16.3778,
+  description: 'Ein Kino mit einer großen Auswahl an Filmen und Veranstaltungen. Preise ab 10,00 €.',
+  priceInfo: 'Ab 10,00 €',
+  website: 'https://www.urania.at/',
   lastUpdated: '2026-04-10',
-  tags: ['oper', 'stehplatz', 'kultur', 'günstig']
+  tags: ['kino', 'günstig', 'vielfältig']
 }
 
 {
-  id: 126,
-  name: 'Sommernachtkonzert Schönbrunn (gratis!)',
+  id: 134,
+  name: 'Votiv Kino',
   category: 'kino',
-  address: 'Schloss Schönbrunn',
-  district: '1130 Wien',
-  lat: 48.1845,
-  lng: 16.3122,
-  description: 'Jedes Jahr im Juni: Die Wiener Philharmoniker spielen ein kostenloses Open-Air-Konzert im Schlosspark Schönbrunn. Eines der größten Gratis-Klassik-Events weltweit!',
-  priceInfo: 'GRATIS',
+  address: 'Währinger Straße 12',
+  district: '1090 Wien',
+  lat: 48.2211,
+  lng: 16.3544,
+  description: 'Ein Kino mit einer großen Auswahl an Filmen. Preise ab 9,50 €.',
+  priceInfo: 'Ab 9,50 €',
+  website: 'https://www.votivkino.at/',
   lastUpdated: '2026-04-10',
-  tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
+  tags: ['kino', 'günstig', 'vielfältig']
 }
 
 // ─── CAFÉS ───────────────────────────────────────────────
