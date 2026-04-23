@@ -19,6 +19,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -318,6 +319,51 @@ const LOCATIONS = [
   website: 'https://www.brunnenmarkt.at',
   lastUpdated: '2026-04-10',
   tags: ['markt', 'essen', 'trinken']
+}
+
+{
+  id: 21,
+  name: 'Wien Museum Neu',
+  category: 'deals',
+  address: 'Karlsplatz 8',
+  district: '1040 Wien',
+  lat: 48.1983,
+  lng: 16.3681,
+  description: 'Neues Stadtmuseum mit kostenlosen Eintritt am ersten Sonntag im Monat.',
+  priceInfo: 'kostenlos am ersten Sonntag im Monat',
+  website: 'https://www.wienmuseum.at',
+  lastUpdated: '2026-04-10',
+  tags: ['museum', 'kostenlos', 'kultur']
+}
+
+{
+  id: 22,
+  name: 'Street Food Markt',
+  category: 'deals',
+  address: 'Naschmarkt',
+  district: '1060 Wien',
+  lat: 48.1983,
+  lng: 16.3681,
+  description: 'Großer Street Food Markt mit günstigen Essens- und Getränkeoptionen.',
+  priceInfo: 'Preise variieren',
+  website: 'https://www.streetfoodmarkt.at',
+  lastUpdated: '2026-04-10',
+  tags: ['markt', 'essen', 'trinken']
+}
+
+{
+  id: 23,
+  name: 'Wien Bike',
+  category: 'deals',
+  address: 'Wien',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: 'Günstige Fahrradvermietung in Wien.',
+  priceInfo: 'Ab ~10 € / Tag',
+  website: 'https://www.wienbike.at',
+  lastUpdated: '2026-04-10',
+  tags: ['fahrrad', 'günstig', 'vermietung']
 }
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1330,6 +1376,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
@@ -1493,6 +1540,35 @@ const LOCATIONS = [
   website: 'https://www.votivkino.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
+}
+
+{
+  id: 120,
+  name: 'Wiener Staatsoper – Stehplätze',
+  category: 'kino',
+  address: 'Opernring 2',
+  district: '1010 Wien',
+  lat: 48.2028,
+  lng: 16.3690,
+  description: 'Weltklasse-Oper ab 13 € mit Stehplatz! Ca. 80 Minuten vor Vorstellungsbeginn anstellen. Balkon-Stehplätze bieten sogar gute Sicht. Ein Muss für Kulturliebhaber mit kleinem Budget.',
+  priceInfo: 'Stehplatz: 13–18 €',
+  website: 'https://www.wiener-staatsoper.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['oper', 'stehplatz', 'kultur', 'günstig']
+}
+
+{
+  id: 126,
+  name: 'Sommernachtkonzert Schönbrunn (gratis!)',
+  category: 'kino',
+  address: 'Schloss Schönbrunn',
+  district: '1130 Wien',
+  lat: 48.1845,
+  lng: 16.3122,
+  description: 'Jedes Jahr im Juni: Die Wiener Philharmoniker spielen ein kostenloses Open-Air-Konzert im Schlosspark Schönbrunn. Eines der größten Gratis-Klassik-Events weltweit!',
+  priceInfo: 'GRATIS',
+  lastUpdated: '2026-04-10',
+  tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
 }
 
 // ─── CAFÉS ───────────────────────────────────────────────
