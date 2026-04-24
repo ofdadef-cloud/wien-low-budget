@@ -35,8 +35,7 @@ const LOCATIONS = [
   website: 'https://www.wienmuseum.at',
   lastUpdated: '2026-04-10',
   tags: ['museum', 'kostenlos', 'kultur']
-}
-
+},
 {
   id: 2,
   name: 'Naschmarkt',
@@ -50,8 +49,7 @@ const LOCATIONS = [
   website: 'https://www.naschmarkt.at',
   lastUpdated: '2026-04-10',
   tags: ['markt', 'essen', 'trinken']
-}
-
+},
 {
   id: 3,
   name: 'Stadtpark',
@@ -65,8 +63,7 @@ const LOCATIONS = [
   website: 'https://www.wien.gv.at',
   lastUpdated: '2026-04-10',
   tags: ['park', 'kostenlos', 'freizeit']
-}
-
+},
 {
   id: 4,
   name: 'Hostel Ruthensteiner',
@@ -80,8 +77,7 @@ const LOCATIONS = [
   website: 'https://www.hostelruthensteiner.com',
   lastUpdated: '2026-04-10',
   tags: ['hostel', 'günstig', 'freundlich']
-}
-
+},
 {
   id: 5,
   name: 'Café Central',
@@ -95,8 +91,7 @@ const LOCATIONS = [
   website: 'https://www.cafecentral.wien',
   lastUpdated: '2026-04-10',
   tags: ['café', 'historisch', 'günstig']
-}
-
+},
 {
   id: 6,
   name: 'MuseumsQuartier',
@@ -110,8 +105,7 @@ const LOCATIONS = [
   website: 'https://www.mqw.at',
   lastUpdated: '2026-04-10',
   tags: ['museum', 'kostenlos', 'kultur']
-}
-
+},
 {
   id: 7,
   name: 'Prater',
@@ -125,8 +119,7 @@ const LOCATIONS = [
   website: 'https://www.prater.at',
   lastUpdated: '2026-04-10',
   tags: ['vergnügungspark', 'günstig', 'freizeit']
-}
-
+},
 {
   id: 8,
   name: 'Wien Mitte',
@@ -140,8 +133,7 @@ const LOCATIONS = [
   website: 'https://www.wienmitte.at',
   lastUpdated: '2026-04-10',
   tags: ['einkaufszentrum', 'essen', 'trinken']
-}
-
+},
 {
   id: 9,
   name: 'Schönbrunn Palace',
@@ -155,8 +147,7 @@ const LOCATIONS = [
   website: 'https://www.schoenbrunn.at',
   lastUpdated: '2026-04-10',
   tags: ['schloss', 'günstig', 'kultur']
-}
-
+},
 {
   id: 10,
   name: 'Donauinsel',
@@ -170,8 +161,7 @@ const LOCATIONS = [
   website: 'https://www.wien.gv.at',
   lastUpdated: '2026-04-10',
   tags: ['insel', 'kostenlos', 'freizeit']
-}
-
+},
 {
   id: 11,
   name: 'Volksgarten',
@@ -185,8 +175,7 @@ const LOCATIONS = [
   website: 'https://www.wien.gv.at',
   lastUpdated: '2026-04-10',
   tags: ['park', 'kostenlos', 'freizeit']
-}
-
+},
 {
   id: 12,
   name: 'Belvedere',
@@ -200,8 +189,7 @@ const LOCATIONS = [
   website: 'https://www.belvedere.at',
   lastUpdated: '2026-04-10',
   tags: ['schloss', 'günstig', 'kultur']
-}
-
+},
 {
   id: 13,
   name: 'Hofburg',
@@ -215,8 +203,7 @@ const LOCATIONS = [
   website: 'https://www.hofburg.at',
   lastUpdated: '2026-04-10',
   tags: ['schloss', 'günstig', 'kultur']
-}
-
+},
 {
   id: 14,
   name: 'Mozarthaus',
@@ -230,8 +217,7 @@ const LOCATIONS = [
   website: 'https://www.mozarthaus.at',
   lastUpdated: '2026-04-10',
   tags: ['museum', 'günstig', 'kultur']
-}
-
+},
 {
   id: 15,
   name: 'Wien Hauptbahnhof',
@@ -245,8 +231,7 @@ const LOCATIONS = [
   website: 'https://www.wienhauptbahnhof.at',
   lastUpdated: '2026-04-10',
   tags: ['bahnhof', 'essen', 'trinken']
-}
-
+},
 {
   id: 16,
   name: 'Kunsthistorisches Museum',
@@ -260,8 +245,7 @@ const LOCATIONS = [
   website: 'https://www.khm.at',
   lastUpdated: '2026-04-10',
   tags: ['museum', 'günstig', 'kultur']
-}
-
+},
 {
   id: 17,
   name: 'Naturhistorisches Museum',
@@ -275,8 +259,7 @@ const LOCATIONS = [
   website: 'https://www.nhm-wien.at',
   lastUpdated: '2026-04-10',
   tags: ['museum', 'günstig', 'natur']
-}
-
+},
 {
   id: 18,
   name: 'St. Stephen\'s Cathedral',
@@ -290,8 +273,7 @@ const LOCATIONS = [
   website: 'https://www.stephansdom.at',
   lastUpdated: '2026-04-10',
   tags: ['kirche', 'günstig', 'kultur']
-}
-
+},
 {
   id: 19,
   name: 'Meidlinger Markt',
@@ -305,8 +287,7 @@ const LOCATIONS = [
   website: 'https://www.meidlingermarkt.at',
   lastUpdated: '2026-04-10',
   tags: ['markt', 'essen', 'trinken']
-}
-
+},
 {
   id: 20,
   name: 'Brunnenmarkt',
@@ -320,8 +301,7 @@ const LOCATIONS = [
   website: 'https://www.brunnenmarkt.at',
   lastUpdated: '2026-04-10',
   tags: ['markt', 'essen', 'trinken']
-}
-
+},
 {
   id: 21,
   name: 'Wien Museum Neu',
@@ -335,8 +315,7 @@ const LOCATIONS = [
   website: 'https://www.wienmuseum.at',
   lastUpdated: '2026-04-10',
   tags: ['museum', 'kostenlos', 'kultur']
-}
-
+},
 {
   id: 22,
   name: 'Street Food Markt',
@@ -350,8 +329,7 @@ const LOCATIONS = [
   website: 'https://www.streetfoodmarkt.at',
   lastUpdated: '2026-04-10',
   tags: ['markt', 'essen', 'trinken']
-}
-
+},
 {
   id: 23,
   name: 'Wien Bike',
@@ -365,8 +343,7 @@ const LOCATIONS = [
   website: 'https://www.wienbike.at',
   lastUpdated: '2026-04-10',
   tags: ['fahrrad', 'günstig', 'vermietung']
-}
-
+},
 {
   id: 24,
   name: 'Hostel Europa',
@@ -380,8 +357,7 @@ const LOCATIONS = [
   website: 'https://www.hosteleuropa.at',
   lastUpdated: '2026-04-10',
   tags: ['hostel', 'günstig', 'zentral']
-}
-
+},
 {
   id: 25,
   name: 'Café Landtmann',
@@ -412,8 +388,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['pita', 'streetfood', 'mittagessen']
-}
-
+},
 {
   id: 1109,
   name: 'Imbiss Radetzky',
@@ -428,8 +403,7 @@ const LOCATIONS = [
   openingHours: 'Unter der Woche tagsüber (Sa/So meist geschlossen)',
   lastUpdated: '2026-04-10',
   tags: ['polnisch', 'pierogi', 'geheimtipp']
-}
-
+},
 {
   id: 1110,
   name: 'Kimzn Burgers',
@@ -444,8 +418,7 @@ const LOCATIONS = [
   openingHours: 'Täglich 12:00–21:00',
   lastUpdated: '2026-04-10',
   tags: ['burger', 'smashburger', 'fastfood']
-}
-
+},
 {
   id: 1100,
   name: 'Schachtelwirt',
@@ -459,8 +432,7 @@ const LOCATIONS = [
   website: 'https://www.schachtelwirt.at/',
   lastUpdated: '2026-04-10',
   tags: ['mittagessen', 'österreichisch', 'zentral']
-}
-
+},
 {
   id: 1101,
   name: 'Kolar',
@@ -474,8 +446,7 @@ const LOCATIONS = [
   website: 'http://www.kolar-beisl.at/',
   lastUpdated: '2026-04-10',
   tags: ['fladen', 'mittagessen', 'urig']
-}
-
+},
 {
   id: 1102,
   name: 'Bros Pizza',
@@ -489,8 +460,7 @@ const LOCATIONS = [
   website: 'https://www.brospizza.at/',
   lastUpdated: '2026-04-10',
   tags: ['pizza', 'schnell', 'mittagessen']
-}
-
+},
 {
   id: 1,
   name: 'Pizzeria Mafiosi',
@@ -505,8 +475,7 @@ const LOCATIONS = [
   openingHours: 'Täglich 11:00–24:00',
   lastUpdated: '2026-04-10',
   tags: ['pizza', 'günstig', 'institution']
-}
-
+},
 {
   id: 2,
   name: 'Foco Forno',
@@ -520,8 +489,7 @@ const LOCATIONS = [
   openingHours: 'Mi–Fr 11:00–22:00',
   lastUpdated: '2026-04-10',
   tags: ['pizza', 'günstig', 'italienisch']
-}
-
+},
 {
   id: 3,
   name: 'Hao Han Restaurant',
@@ -535,8 +503,7 @@ const LOCATIONS = [
   openingHours: 'Mittagsbüffet 11:00–15:00',
   lastUpdated: '2026-04-10',
   tags: ['asiatisch', 'buffet', 'all-you-can-eat', 'chinesisch']
-}
-
+},
 {
   id: 4,
   name: 'Sternzeichen – The Mall',
@@ -550,8 +517,7 @@ const LOCATIONS = [
   openingHours: 'Mo–So: 11:00–23:00',
   lastUpdated: '2026-04-10',
   tags: ['asiatisch', '50%-rabatt', 'monatsangebot']
-}
-
+},
 {
   id: 5,
   name: 'Deewan',
@@ -567,8 +533,7 @@ const LOCATIONS = [
   tips: 'Seit August 2025 rein pflanzliches Buffet. U2 Schottentor (Ausgang Hohenstaufengasse).',
   lastUpdated: '2026-04-10',
   tags: ['pakistanisch', 'pay-what-you-want', 'vegan', 'vegetarisch', 'wifi']
-}
-
+},
 {
   id: 6,
   name: 'Side Döner',
@@ -581,8 +546,7 @@ const LOCATIONS = [
   priceInfo: 'Bier ab ~1,50 €',
   lastUpdated: '2026-04-10',
   tags: ['döner', 'spätabend', 'günstig']
-}
-
+},
 {
   id: 7,
   name: 'Berliner Döner',
@@ -597,8 +561,7 @@ const LOCATIONS = [
   tips: 'Perfekt als Mitternachtssnack am Wochenende!',
   lastUpdated: '2026-04-10',
   tags: ['döner', 'studenten', 'riesig', 'günstig']
-}
-
+},
 {
   id: 8,
   name: 'Kolar Beisl',
@@ -614,8 +577,7 @@ const LOCATIONS = [
   tips: 'Dazu unbedingt ein hauseigenes Kolar-Bier bestellen!',
   lastUpdated: '2026-04-10',
   tags: ['beisl', 'österreichisch', 'geheimtipp', 'fladenbrot']
-}
-
+},
 {
   id: 9,
   name: 'Schachtelwirt',
@@ -630,8 +592,7 @@ const LOCATIONS = [
   tips: 'Perfekt für die Mittagspause beim Sightseeing im 1. Bezirk.',
   lastUpdated: '2026-04-10',
   tags: ['österreichisch', 'fast-food', 'regional']
-}
-
+},
 {
   id: 70,
   name: 'Bros. Pizza',
@@ -647,8 +608,7 @@ const LOCATIONS = [
   tips: 'Alte Nintendo-Konsolen zum Zocken während man wartet!',
   lastUpdated: '2026-04-10',
   tags: ['pizza', 'sauerteig', 'hipster', 'kraftbier']
-}
-
+},
 {
   id: 71,
   name: 'Swing Kitchen',
@@ -663,8 +623,7 @@ const LOCATIONS = [
   tips: 'Nuggets und Sweet Potato Fries sind ein Muss.',
   lastUpdated: '2026-04-10',
   tags: ['vegan', 'burger', 'fast-food', 'nachhaltig']
-}
-
+},
 {
   id: 72,
   name: 'Gasthaus Kopp',
@@ -680,8 +639,7 @@ const LOCATIONS = [
   tips: 'Am Wochenende unbedingt vorher reservieren, es ist immer gerammelt voll!',
   lastUpdated: '2026-04-10',
   tags: ['schnitzel', 'österreichisch', 'beisl', 'institution', 'günstig']
-}
-
+},
 {
   id: 1104,
   name: 'Radatz am Karmelitermarkt',
@@ -696,8 +654,7 @@ const LOCATIONS = [
   openingHours: 'Mo–Sa 07:30–18:00 (Sa bis 13:00)',
   lastUpdated: '2026-04-10',
   tags: ['mittagessen', 'österreichisch', 'fleisch']
-}
-
+},
 {
   id: 1105,
   name: 'Die Muse – Micheles Mensa',
@@ -712,8 +669,7 @@ const LOCATIONS = [
   openingHours: 'Mo–Fr 08:30–16:30',
   lastUpdated: '2026-04-10',
   tags: ['mensa', 'mittagessen', 'geheimtipp', 'günstig']
-}
-
+},
 {
   id: 1106,
   name: 'Gasthaus Woracziczky',
@@ -722,8 +678,26 @@ const LOCATIONS = [
   district: '1050 Wien',
   lat: 48.1882,
   lng: 16.3533,
-  description: 'Tolles Lokal im 5. Bezirk nahe U4. Ein echtes 2-Gänge-Mittagsmenü (z.B. Suppe + Kalbsleber oder Hascheehörnchen) unter 10 Euro. Preis/Leistung ist sensationell
-
+  description: 'Tolles Lokal im 5. Bezirk nahe U4. Ein echtes 2-Gänge-Mittagsmenü (z.B. Suppe + Kalbsleber oder Hascheehörnchen) unter 10 Euro. Preis/Leistung ist sensationell.',
+  priceInfo: '2-Gänge-Menü 9,50 €',
+  website: 'https://woracziczky.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['mittagessen', 'österreichisch', '2-gänge']
+},
+{
+  id: 1107,
+  name: 'Gasthaus Haller',
+  category: 'essen',
+  address: 'Wallensteinstraße 49',
+  district: '1200 Wien',
+  lat: 48.2323,
+  lng: 16.3712,
+  description: 'Eines der klassischen Wiener Gasthäuser in der Brigittenau, bei dem die Inflation nicht angekommen ist. Vegetarisches Mittagsmenü unter 10 Euro, Fleischmenü knapp darüber.',
+  priceInfo: 'Menüs ca. 9,20 – 11,00 €',
+  website: 'https://gasthaus-haller.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['mittagessen', 'österreichisch', 'beisl']
+}
 
   // ─── BARS & NACHTLEBEN ──────────────────────────────────
   {
@@ -739,8 +713,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['café', 'nachtleben', 'günstig', 'institution']
-}
-
+},
 {
   id: 13,
   name: 'Soho',
@@ -754,8 +727,7 @@ const LOCATIONS = [
   website: 'http://www.soho-vienna.at',
   lastUpdated: '2026-04-10',
   tags: ['karaoke', 'cocktails', 'millennium-city']
-}
-
+},
 {
   id: 14,
   name: 'Marea Alta',
@@ -769,8 +741,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['alternativ', 'queer-friendly', 'cocktails', 'partykeller']
-}
-
+},
 {
   id: 105,
   name: 'Travel Shack',
@@ -784,8 +755,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'party', 'günstig', 'studenten']
-}
-
+},
 {
   id: 106,
   name: 'Bukowski The Pub',
@@ -799,8 +769,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['pub', 'studenten', 'happy-hour', 'günstig', 'spätabend']
-}
-
+},
 {
   id: 107,
   name: 'Kaffeebar',
@@ -814,8 +783,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['kaffee', 'günstig', 'gemütlich']
-}
-
+},
 {
   id: 108,
   name: 'Barfly',
@@ -846,8 +814,7 @@ const LOCATIONS = [
   website: 'https://www.albertina.at/',
   lastUpdated: '2026-04-10',
   tags: ['kunst', 'gratis-u19', 'bundesmuseum']
-}
-
+},
 {
   id: 21,
   name: 'Belvedere',
@@ -861,8 +828,7 @@ const LOCATIONS = [
   website: 'https://www.belvedere.at/',
   lastUpdated: '2026-04-10',
   tags: ['kunst', 'klimt', 'gratis-u19', 'schloss']
-}
-
+},
 {
   id: 22,
   name: 'Kunsthistorisches Museum',
@@ -876,8 +842,7 @@ const LOCATIONS = [
   website: 'https://www.khm.at/',
   lastUpdated: '2026-04-10',
   tags: ['kunst', 'gratis-u19', 'bundesmuseum']
-}
-
+},
 {
   id: 23,
   name: 'MAK – Museum für angewandte Kunst',
@@ -891,8 +856,7 @@ const LOCATIONS = [
   website: 'https://www.mak.at/',
   lastUpdated: '2026-04-10',
   tags: ['kunst', 'dienstag-ermäßigt', 'gegenwartskunst']
-}
-
+},
 {
   id: 24,
   name: 'mumok – Museum Moderner Kunst',
@@ -906,8 +870,7 @@ const LOCATIONS = [
   website: 'https://www.mumok.at/',
   lastUpdated: '2026-04-10',
   tags: ['moderne-kunst', 'gratis-u19', 'museumsquartier']
-}
-
+},
 {
   id: 25,
   name: 'Naturhistorisches Museum',
@@ -921,8 +884,7 @@ const LOCATIONS = [
   website: 'https://www.nhm-wien.ac.at/',
   lastUpdated: '2026-04-10',
   tags: ['naturkunde', 'gratis-u19', 'bundesmuseum']
-}
-
+},
 {
   id: 26,
   name: 'Technisches Museum',
@@ -936,8 +898,7 @@ const LOCATIONS = [
   website: 'https://www.technischesmuseum.at/',
   lastUpdated: '2026-04-10',
   tags: ['technik', 'gratis-u19', 'kinder']
-}
-
+},
 {
   id: 27,
   name: 'Wien Museum am Karlsplatz',
@@ -951,8 +912,7 @@ const LOCATIONS = [
   website: 'https://www.wienmuseum.at/',
   lastUpdated: '2026-04-10',
   tags: ['stadtgeschichte', 'gratis', 'gratis-u19', 'top-tipp']
-}
-
+},
 {
   id: 28,
   name: 'TBA21 – Augarten',
@@ -965,8 +925,7 @@ const LOCATIONS = [
   priceInfo: 'Oft gratis',
   lastUpdated: '2026-04-10',
   tags: ['gegenwartskunst', 'augarten', 'gratis']
-}
-
+},
 {
   id: 29,
   name: 'Heeresgeschichtliches Museum',
@@ -980,8 +939,7 @@ const LOCATIONS = [
   website: 'https://www.hgm.at/',
   lastUpdated: '2026-04-10',
   tags: ['militärgeschichte', '1-sonntag-gratis', 'gratis-u19']
-}
-
+},
 {
   id: 112,
   name: 'MUSA Museum',
@@ -995,8 +953,7 @@ const LOCATIONS = [
   website: 'https://www.wienmuseum.at/musa',
   lastUpdated: '2026-04-10',
   tags: ['gegenwartskunst', 'gratis', 'wien-museum']
-}
-
+},
 {
   id: 114,
   name: 'Geldmuseum',
@@ -1009,8 +966,7 @@ const LOCATIONS = [
   priceInfo: 'GRATIS',
   lastUpdated: '2026-04-10',
   tags: ['museum', 'gratis', 'geld', 'nationalbank']
-}
-
+},
 {
   id: 124,
   name: 'Sisi Ticket (Kombiticket)',
@@ -1024,8 +980,7 @@ const LOCATIONS = [
   website: 'https://www.schoenbrunn.at/',
   lastUpdated: '2026-04-10',
   tags: ['kombiticket', 'schönbrunn', 'hofburg', 'sparticket']
-}
-
+},
 {
   id: 130,
   name: 'Leopold Museum',
@@ -1432,8 +1387,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['markt', 'gemüse', 'günstig', 'türkisch']
-}
-
+},
 {
   id: 51,
   name: 'Meidlinger Markt',
@@ -1447,8 +1401,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['markt', 'gemüse', 'günstig']
-}
-
+},
 {
   id: 52,
   name: 'Naschmarkt',
@@ -1462,8 +1415,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['markt', 'touristisch', 'sehenswürdigkeit']
-}
-
+},
 {
   id: 125,
   name: 'Too Good To Go – Überraschungstüten',
@@ -1477,8 +1429,7 @@ const LOCATIONS = [
   website: 'https://www.toogoodtogo.com/',
   lastUpdated: '2026-04-10',
   tags: ['toogoodtogo', 'lebensmittelrettung', 'günstig', 'app']
-}
-
+},
 {
   id: 126,
   name: 'Hofer',
@@ -1492,8 +1443,7 @@ const LOCATIONS = [
   website: 'https://www.hofer.at/',
   lastUpdated: '2026-04-10',
   tags: ['supermarkt', 'günstig']
-}
-
+},
 {
   id: 127,
   name: 'SPAR',
@@ -1524,8 +1474,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'türkisch']
-}
-
+},
 {
   id: 61,
   name: 'Bäckerei Gül',
@@ -1539,8 +1488,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'türkisch']
-}
-
+},
 {
   id: 62,
   name: 'Bäckerei Lale Han',
@@ -1554,8 +1502,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'brunnenmarkt']
-}
-
+},
 {
   id: 63,
   name: 'Trabzon Ekmek Fırını',
@@ -1569,8 +1516,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'brunnenmarkt']
-}
-
+},
 {
   id: 64,
   name: 'Anadolu (Siebenbrunnengasse)',
@@ -1584,8 +1530,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'spätabend', 'türkisch']
-}
-
+},
 {
   id: 65,
   name: 'Özdemir Bäckerei',
@@ -1599,8 +1544,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'türkisch']
-}
-
+},
 {
   id: 66,
   name: 'Saray Bäckerei',
@@ -1840,8 +1784,7 @@ const LOCATIONS = [
   website: 'https://cafe-kafka.at',
   lastUpdated: '2026-04-10',
   tags: ['café', 'kaffeehaus', 'lesen', 'frühstück']
-}
-
+},
 {
   id: 103,
   name: 'Justizcafé',
@@ -1855,8 +1798,7 @@ const LOCATIONS = [
   website: 'https://justizcafe.at',
   lastUpdated: '2026-04-10',
   tags: ['café', 'aussicht', 'geheimtipp', 'kantine', 'günstig']
-}
-
+},
 {
   id: 200,
   name: 'Café Central',
@@ -1870,8 +1812,7 @@ const LOCATIONS = [
   website: 'https://cafe-central.at',
   lastUpdated: '2026-04-10',
   tags: ['café', 'kaffeehaus', 'traditionell']
-}
-
+},
 {
   id: 250,
   name: 'Vollpension',
@@ -1902,8 +1843,7 @@ const LOCATIONS = [
   website: 'https://www.wienerlinien.at/wienmobil-rad',
   lastUpdated: '2026-04-10',
   tags: ['fahrrad', 'nextbike', 'e-bike', 'wienmobil']
-}
-
+},
 {
   id: 91,
   name: 'Wiener Linien – Tickets',
@@ -1917,8 +1857,7 @@ const LOCATIONS = [
   website: 'https://www.wienerlinien.at/',
   lastUpdated: '2026-04-10',
   tags: ['öffis', 'u-bahn', 'straßenbahn', 'bus']
-}
-
+},
 {
   id: 92,
   name: 'Flughafen → Stadt (S-Bahn/ÖBB)',
@@ -1932,8 +1871,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['flughafen', 's-bahn', 'railjet', 'budget-transfer']
-}
-
+},
 {
   id: 93,
   name: 'Park+Ride Erdberg',
@@ -1947,8 +1885,7 @@ const LOCATIONS = [
   website: 'http://www.parkandride.at/',
   lastUpdated: '2026-04-10',
   tags: ['parken', 'park-and-ride', 'günstig']
-}
-
+},
 {
   id: 122,
   name: 'Ringstraße per Tram (Linie 1 oder 71)',
@@ -1962,8 +1899,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['tram', 'sightseeing', 'günstig', 'ringstraße']
-}
-
+},
 {
   id: 123,
   name: 'Vienna City Card',
@@ -1977,8 +1913,7 @@ const LOCATIONS = [
   website: 'https://www.viennacitycard.at/',
   lastUpdated: '2026-04-10',
   tags: ['citycard', 'ermäßigung', 'öffis', 'museen']
-}
-
+},
 {
   id: 124,
   name: 'E-Auto-Sharing Wien',
@@ -1992,8 +1927,7 @@ const LOCATIONS = [
   website: 'https://www.e-auto-sharing-wien.at',
   lastUpdated: '2026-04-10',
   tags: ['e-auto', 'sharing', 'günstig']
-}
-
+},
 // ─── NEUE EINTRÄGE (März 2026) ───────────────────────────
   {
     id: 100,

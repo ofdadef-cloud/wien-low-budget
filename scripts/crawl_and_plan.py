@@ -2,6 +2,7 @@ import os
 import sys
 import re
 import requests
+import time
 from bs4 import BeautifulSoup
 from groq import Groq
 from dotenv import load_dotenv
@@ -147,24 +148,57 @@ Beispiel-Format:
     website: 'https://example.com',
     lastUpdated: '2026-04-10',
     tags: ['günstig', 'zentral']
+  }},
+  {{
+    id: 31,
+    name: 'Weiteres Beispiel',
+    category: '{category}',
+    address: 'Musterstraße 2',
+    district: '1010 Wien',
+    lat: 48.2084,
+    lng: 16.3732,
+    description: 'Noch ein tolles Budget-Hostel.',
+    priceInfo: 'Ab ~20 € / Nacht',
+    website: 'https://example.com/2',
+    lastUpdated: '2026-04-10',
+    tags: ['günstig', 'ruhig']
   }}"""
 
-    response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=4000,
-        temperature=0.3,
-    )
-    
-    result = response.choices[0].message.content.strip()
-    
-    # Remove markdown code fences if present
-    if result.startswith("```"):
-        result = "\n".join(result.split("\n")[1:])
-    if result.endswith("```"):
-        result = "\n".join(result.split("\n")[:-1])
-    
-    return result.strip()
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=4000,
+                temperature=0.3,
+            )
+            
+            result = response.choices[0].message.content.strip()
+            
+            # Remove markdown code fences if present
+            if result.startswith("```"):
+                result = "\n".join(result.split("\n")[1:])
+            if result.endswith("```"):
+                result = "\n".join(result.split("\n")[:-1])
+            
+            return result.strip()
+            
+        except Exception as e:
+            if "Rate limit" in str(e) or "429" in str(e):
+                if attempt < max_retries - 1:
+                    wait_time = 15.0 * (attempt + 1)
+                    match = re.search(r'try again in (\d+(?:\.\d+)?)s', str(e))
+                    if match:
+                        wait_time = float(match.group(1)) + 2.0
+                        
+                    print(f"  Warnung: Rate Limit erreicht. Warte {wait_time:.1f} Sekunden (Versuch {attempt + 1}/{max_retries})...")
+                    time.sleep(wait_time)
+                else:
+                    print("  Fehler: Maximale Anzahl an Retries wegen Rate Limit erreicht.")
+                    raise e
+            else:
+                raise e
 
 # ── Main ─────────────────────────────────────────────────────
 if __name__ == "__main__":
