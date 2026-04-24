@@ -1,5 +1,5 @@
 // Wien Low Budget – Service Worker (Offline-fähig)
-const CACHE_NAME = 'wlb-cache-v2';
+const CACHE_NAME = 'wlb-cache-v3';
 
 const PRECACHE_URLS = [
   './',

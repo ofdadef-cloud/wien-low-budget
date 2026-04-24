@@ -371,7 +371,7 @@ const LOCATIONS = [
   website: 'https://www.cafelandtmann.at',
   lastUpdated: '2026-04-10',
   tags: ['café', 'historisch', 'günstig']
-}
+},
 
 
   // ─── ESSEN ───────────────────────────────────────────────
@@ -697,7 +697,7 @@ const LOCATIONS = [
   website: 'https://gasthaus-haller.at/',
   lastUpdated: '2026-04-10',
   tags: ['mittagessen', 'österreichisch', 'beisl']
-}
+},
 
   // ─── BARS & NACHTLEBEN ──────────────────────────────────
   {
@@ -797,7 +797,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'trendy', 'gemütlich']
-}
+},
 
 
   // ─── MUSEEN ──────────────────────────────────────────────
@@ -994,7 +994,7 @@ const LOCATIONS = [
   website: 'https://www.leopoldmuseum.org/',
   lastUpdated: '2026-04-10',
   tags: ['moderne-kunst', 'donnerstag-ermäßigt', 'museumsquartier']
-}
+},
 
 
   // ─── UNTERKÜNFTE ─────────────────────────────────────────
@@ -1101,7 +1101,7 @@ const LOCATIONS = [
     website: 'https://www.hostelvienna.at',
     lastUpdated: '2026-04-10',
     tags: ['hostel', 'ruhig', 'günstig']
-  }
+  },
 
 
   // ─── NATUR & AUSSICHT ────────────────────────────────────
@@ -1370,7 +1370,7 @@ const LOCATIONS = [
     website: 'https://www.belvedere.at/',
     lastUpdated: '2026-04-10',
     tags: ['schloss', 'garten', 'barock', 'kunst']
-  }
+  },
 
 
   // ─── EINKAUFEN & MÄRKTE ──────────────────────────────────
@@ -1457,7 +1457,7 @@ const LOCATIONS = [
   website: 'https://www.spar.at/',
   lastUpdated: '2026-04-10',
   tags: ['supermarkt', 'günstig']
-}
+},
 
 
   // ─── BÄCKEREIEN (24h) ────────────────────────────────────
@@ -1558,7 +1558,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'türkisch']
-}
+},
 
 // ─── KINO ────────────────────────────────────────────────
   {
@@ -1767,7 +1767,7 @@ const LOCATIONS = [
   priceInfo: 'GRATIS',
   lastUpdated: '2026-04-10',
   tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
-}
+},
 
 
   // ─── CAFÉS ───────────────────────────────────────────────
@@ -1826,7 +1826,7 @@ const LOCATIONS = [
   website: 'https://vollpension.at',
   lastUpdated: '2026-04-10',
   tags: ['café', 'frühstück', 'kaffee']
-}
+},
 
 
   // ─── TRANSPORT ───────────────────────────────────────────
