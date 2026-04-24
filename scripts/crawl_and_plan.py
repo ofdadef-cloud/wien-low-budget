@@ -119,6 +119,10 @@ def apply_update(file_path, category, new_entries_js, original_content, location
 def plan_update(category_entries, category, web_context):
     print(f"  KI plant Verbesserungen für Kategorie '{category}'...")
 
+    extra_instructions = ""
+    if category == 'deals':
+        extra_instructions = "\nACHTUNG WICHTIG: Die Kategorie 'deals' ist AUSSCHLIESSLICH für kurzfristige, tagesaktuelle Rabatte und Specials (z.B. 'Heute 50% Rabatt', '2-für-1 am Mittwoch'). Orte, die dauerhaft kostenlos sind (wie Parks, Museen mit generellem Gratis-Eintritt etc.), dürfen hier AUF KEINEN FALL rein! Lösche alle Einträge, die keine echten Deals sind."
+
     prompt = f"""Du bist ein Experte für kostengünstiges Reisen in Wien.
 
 Aktuelle Datenbank-Einträge für die Kategorie '{category}':
@@ -128,6 +132,7 @@ Aktuelle Datenbank-Einträge für die Kategorie '{category}':
 
 Neue Web-Recherche für '{category}' in Wien (2026):
 {web_context}
+{extra_instructions}
 
 AUFGABE:
 1. Identifiziere veraltete oder geschlossene Orte in den obigen Einträgen.
