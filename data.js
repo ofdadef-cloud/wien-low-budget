@@ -20,6 +20,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -364,6 +365,36 @@ const LOCATIONS = [
   website: 'https://www.wienbike.at',
   lastUpdated: '2026-04-10',
   tags: ['fahrrad', 'günstig', 'vermietung']
+}
+
+{
+  id: 24,
+  name: 'Hostel Europa',
+  category: 'deals',
+  address: 'Rechte Bahngasse 13',
+  district: '1020 Wien',
+  lat: 48.2133,
+  lng: 16.3831,
+  description: 'Günstiges Hostel im Zentrum von Wien.',
+  priceInfo: 'Ab ~25 € / Nacht',
+  website: 'https://www.hosteleuropa.at',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'günstig', 'zentral']
+}
+
+{
+  id: 25,
+  name: 'Café Landtmann',
+  category: 'deals',
+  address: 'Universitätsring 4',
+  district: '1010 Wien',
+  lat: 48.2133,
+  lng: 16.3631,
+  description: 'Historisches Café mit günstigen Getränkeoptionen.',
+  priceInfo: 'Preise variieren',
+  website: 'https://www.cafelandtmann.at',
+  lastUpdated: '2026-04-10',
+  tags: ['café', 'historisch', 'günstig']
 }
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1377,6 +1408,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
@@ -1391,8 +1423,8 @@ const LOCATIONS = [
   website: 'http://volxkino.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'gratis', 'sommer']
-}
-
+},
+ 
 {
   id: 71,
   name: 'Kino unter Sternen',
@@ -1406,8 +1438,8 @@ const LOCATIONS = [
   website: 'http://kinountersternen.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'sommer', 'karlsplatz']
-}
-
+},
+ 
 {
   id: 72,
   name: 'Rathausplatz Film Festival',
@@ -1420,8 +1452,8 @@ const LOCATIONS = [
   priceInfo: 'Gratis',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'sommer', 'gratis', 'rathausplatz']
-}
-
+},
+ 
 {
   id: 127,
   name: 'Filmcasino',
@@ -1435,8 +1467,8 @@ const LOCATIONS = [
   website: 'https://www.filmcasino.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'charmant']
-}
-
+},
+ 
 {
   id: 128,
   name: 'Artis International',
@@ -1450,8 +1482,8 @@ const LOCATIONS = [
   website: 'https://www.artis.international/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'international', 'günstig']
-}
-
+},
+ 
 {
   id: 129,
   name: 'Top Kino',
@@ -1465,8 +1497,8 @@ const LOCATIONS = [
   website: 'https://www.topkino.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'modern', 'günstig']
-}
-
+},
+ 
 {
   id: 130,
   name: 'Breitwand',
@@ -1480,8 +1512,8 @@ const LOCATIONS = [
   website: 'https://www.breitwand.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
-}
-
+},
+ 
 {
   id: 131,
   name: 'Cinema Paradiso',
@@ -1495,8 +1527,8 @@ const LOCATIONS = [
   website: 'https://www.cinemaparadiso.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'charmant']
-}
-
+},
+ 
 {
   id: 132,
   name: 'Haydn Kino',
@@ -1510,8 +1542,8 @@ const LOCATIONS = [
   website: 'https://www.haydnkino.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'traditionell', 'günstig']
-}
-
+},
+ 
 {
   id: 133,
   name: 'Wiener Urania',
@@ -1525,8 +1557,8 @@ const LOCATIONS = [
   website: 'https://www.urania.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
-}
-
+},
+ 
 {
   id: 134,
   name: 'Votiv Kino',
@@ -1540,8 +1572,23 @@ const LOCATIONS = [
   website: 'https://www.votivkino.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
-}
-
+},
+ 
+{
+  id: 135,
+  name: 'Arena',
+  category: 'kino',
+  address: 'Erdbergstraße 26',
+  district: '1030 Wien',
+  lat: 48.1935,
+  lng: 16.4039,
+  description: 'Ein Kino mit einer großen Auswahl an Filmen und Veranstaltungen. Preise ab 8,50 €.',
+  priceInfo: 'Ab 8,50 €',
+  website: 'https://www.arena.wien/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'günstig', 'vielfältig']
+},
+ 
 {
   id: 120,
   name: 'Wiener Staatsoper – Stehplätze',
@@ -1555,8 +1602,8 @@ const LOCATIONS = [
   website: 'https://www.wiener-staatsoper.at/',
   lastUpdated: '2026-04-10',
   tags: ['oper', 'stehplatz', 'kultur', 'günstig']
-}
-
+},
+ 
 {
   id: 126,
   name: 'Sommernachtkonzert Schönbrunn (gratis!)',
