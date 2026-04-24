@@ -397,684 +397,650 @@ const LOCATIONS = [
   tags: ['café', 'historisch', 'günstig']
 }
 
-// ─── ESSEN ───────────────────────────────────────────────
+
+  // ─── ESSEN ───────────────────────────────────────────────
   {
-    id: 1108,
-    name: 'Pitaraz',
-    category: 'essen',
-    address: 'Hubergasse 9',
-    district: '1160 Wien',
-    lat: 48.2120,
-    lng: 16.3260,
-    description: 'Neuer Hotspot in Ottakring! Großartiges Streetfood.',
-    priceInfo: 'Günstig',
-    website: '',
-    lastUpdated: '2026-04-14',
-    tags: ['pita', 'streetfood', 'mittagessen']
-  },
-  {
-    id: 1109,
-    name: 'Imbiss Radetzky',
-    category: 'essen',
-    address: 'Radetzkystraße 10',
-    district: '1030 Wien',
-    lat: 48.2114,
-    lng: 16.3899,
-    description: 'Klein, unscheinbar und grandios: Hier gibt es hervorragende polnische Hausmannskost. Hausgemachte Pierogi (Teigtaschen), Borschtsch und Pelmeni zu super Preisen.',
-    priceInfo: 'Hauptgerichte ab ~7,50 €',
-    website: '',
-    openingHours: 'Unter der Woche tagsüber (Sa/So meist geschlossen)',
-    lastUpdated: '2026-04-14',
-    tags: ['polnisch', 'pierogi', 'geheimtipp']
-  },
-  {
-    id: 1110,
-    name: 'Kimzn Burgers',
-    category: 'essen',
-    address: 'Wallensteinstraße 46',
-    district: '1200 Wien',
-    lat: 48.2320,
-    lng: 16.3718,
-    description: 'Einer der besten Budget-Burgerspots im 20. Bezirk. Frisches Chuck-Beef, hausgemachte Saucen und Brioche Buns. Klasse Smash-Burger und vegetarische Optionen ohne viel Schnickschnack.',
-    priceInfo: 'Burger ab ~8,00 €',
-    website: 'https://kimzn.at',
-    openingHours: 'Täglich 12:00–21:00',
-    lastUpdated: '2026-04-14',
-    tags: ['burger', 'smashburger', 'fastfood']
-  },
-  {
-    id: 1100,
-    name: 'Schachtelwirt',
-    category: 'essen',
-    address: 'Judengasse 5',
-    district: '1010 Wien',
-    lat: 48.2115,
-    lng: 16.3752,
-    description: 'Moderne österreichische Küche "aus der Schachtel". Fantastischer Schweinsbraten und vegetarische Knödelgerichte, meist um oder knapp unter 10 Euro. Ideal für ein schnelles Mittagessen mitten in der Stadt!',
-    priceInfo: 'Mittagsgerichte ca. 8,50 – 10,50 €',
-    website: 'https://www.schachtelwirt.at/',
-    lastUpdated: '2026-04-10',
-    tags: ['mittagessen', 'österreichisch', 'zentral']
-  },
-  {
-    id: 1101,
-    name: 'Kolar',
-    category: 'essen',
-    address: 'Kleeblattgasse 5',
-    district: '1010 Wien',
-    lat: 48.2096,
-    lng: 16.3713,
-    description: 'Bekannt für die frischen Fladen (gefüllte Fladenbrote) frisch aus dem Ofen. Perfekt für ein enorm sättigendes und günstiges Mittag- oder Abendessen im 1. Bezirk.',
-    priceInfo: 'Gefüllte Fladen ca. 6,50 – 9,50 €',
-    website: 'http://www.kolar-beisl.at/',
-    lastUpdated: '2026-04-10',
-    tags: ['fladen', 'mittagessen', 'urig']
-  },
-  {
-    id: 1102,
-    name: 'Bros Pizza',
-    category: 'essen',
-    address: 'Zollergasse 2',
-    district: '1070 Wien',
-    lat: 48.1994,
-    lng: 16.3496,
-    description: 'Großartige Sourdough-Pizza Slices auf die Hand. Super stylischer Laden und perfekt für ein Mittagessen oder einen Snack on the go. Zwei Slices machen extrem satt.',
-    priceInfo: 'Slices ab 4,50 €',
-    website: 'https://www.brospizza.at/',
-    lastUpdated: '2026-04-10',
-    tags: ['pizza', 'schnell', 'mittagessen']
-  },
-  {
-    id: 1,
-    name: 'Pizzeria Mafiosi',
-    category: 'essen',
-    address: 'Reindorfgasse 7',
-    district: '1150 Wien',
-    lat: 48.1930,
-    lng: 16.3330,
-    description: 'Institution in Wien mit Riesenpizzen. Urig-dunkles Ambiente mit zusammengewürfelter Deko. Tipp: Fragt nach etwas mehr Belag! Täglich 11–24 Uhr geöffnet.',
-    priceInfo: 'Margherita 6,20 € · Pizzen 6,20–8,00 €',
-    website: 'http://pizzeria-mafiosi.at/',
-    openingHours: 'Täglich 11:00–24:00',
-    lastUpdated: '2026-03-26',
-    tags: ['pizza', 'günstig', 'institution'],
-    deals: ['thefork']
-  },
-  {
-    id: 2,
-    name: 'Foco Forno',
-    category: 'essen',
-    address: 'Barmherzigengasse 9',
-    district: '1030 Wien',
-    lat: 48.2010,
-    lng: 16.3940,
-    description: 'Nachfolger der Pizzeria Ciao. Italienische Pizzeria mit knuspriger, gut belegter Pizza und freundlichem Service.',
-    priceInfo: 'Günstige Pizzen',
-    openingHours: 'Mi–Fr 11:00–22:00',
-    lastUpdated: '2026-03-19',
-    tags: ['pizza', 'günstig', 'italienisch']
-  },
-  {
-    id: 3,
-    name: 'Hao Han Restaurant',
-    category: 'essen',
-    address: 'Gumpendorfer Straße 41',
-    district: '1060 Wien',
-    lat: 48.1943,
-    lng: 16.3548,
-    description: 'Ehemals Zhong Huan – jetzt Hao Han Restaurant. Asiatisches All-you-can-eat Mittagsbüffet mit chinesischen Spezialitäten.',
-    priceInfo: 'All you can eat Mittag: ~8 €',
-    openingHours: 'Mittagsbüffet 11:00–15:00',
-    lastUpdated: '2026-03-19',
-    tags: ['asiatisch', 'buffet', 'all-you-can-eat', 'chinesisch']
-  },
-  {
-    id: 4,
-    name: 'Sternzeichen – The Mall',
-    category: 'essen',
-    address: 'Landstraßer Hauptstraße 1b, 1. Stock',
-    district: '1030 Wien',
-    lat: 48.2050,
-    lng: 16.3880,
-    description: 'Asiatisches Restaurant in Wien Mitte The Mall. Jeden Monat zwei Menüs für 50% Rabatt – große Hauptgerichte mit Reis um die 5–7 €.',
-    priceInfo: 'Monatsmenüs ab ~5 €',
-    openingHours: 'Mo–So: 11:00–23:00',
-    lastUpdated: '2026-03-19',
-    tags: ['asiatisch', '50%-rabatt', 'monatsangebot'],
-    deals: ['thefork']
-  },
-  {
-    id: 5,
-    name: 'Deewan',
-    category: 'essen',
-    address: 'Liechtensteinstraße 10',
-    district: '1090 Wien',
-    lat: 48.2170,
-    lng: 16.3610,
-    description: 'Einzigartiges Konzept: Esst so viel ihr wollt und bezahlt, was ihr möchtet! Seit 2005 bewährtes Modell. Seit August 2025 komplett vegetarisch/vegan! Wasser gratis, Liegewiese und Free WiFi.',
-    priceInfo: 'Zahle was du willst (Richtpreise angegeben)',
-    website: 'http://deewan.at/',
-    openingHours: 'Mo–Sa 11:30–22:30, So geschlossen',
-    tips: 'Seit August 2025 rein pflanzliches Buffet. U2 Schottentor (Ausgang Hohenstaufengasse).',
-    lastUpdated: '2026-03-26',
-    tags: ['pakistanisch', 'pay-what-you-want', 'vegan', 'vegetarisch', 'wifi'],
-    deals: ['toogoodtogo']
-  },
-  {
-    id: 6,
-    name: 'Side Döner',
-    category: 'essen',
-    address: 'Pilgramgasse 24',
-    district: '1050 Wien',
-    lat: 48.1910,
-    lng: 16.3530,
-    description: 'Günstige Anlaufstelle nach Ladenschluss. Bier und ordentlicher Döner. Ideal, wenn andere Geschäfte schon geschlossen haben.',
-    priceInfo: 'Bier ab ~1,50 €',
-    lastUpdated: '2026-03-19',
-    tags: ['döner', 'spätabend', 'günstig']
-  },
-  {
-    id: 7,
-    name: 'Berliner Döner',
-    category: 'essen',
-    address: 'Zieglergasse 33A',
-    district: '1070 Wien',
-    lat: 48.1995,
-    lng: 16.3450,
-    description: 'Der wohl beliebteste Döner Wiens! Riesige Portionen, frisches Brot und exzellente Soßen. Ein absoluter Hotspot für Studenten im 7. Bezirk – Warteschlangen zur Stoßzeit einplanen!',
-    priceInfo: 'Döner Sandwich ~6,00 €',
-    openingHours: 'Mo–So ab 09:30 Uhr (Fr/Sa bis 1:00 Uhr!)',
-    tips: 'Perfekt als Mitternachtssnack am Wochenende!',
-    lastUpdated: '2026-03-26',
-    tags: ['döner', 'studenten', 'riesig', 'günstig']
-  },
-  {
-    id: 8,
-    name: 'Kolar Beisl',
-    category: 'essen',
-    address: 'Kleeblattgasse 5',
-    district: '1010 Wien',
-    lat: 48.2098,
-    lng: 16.3712,
-    description: 'Wahres Beisl-Flair direkt in der teuren Innenstadt! Berühmt für ihre warmen, gefüllten Fladenbrote zu absoluten Low-Budget-Preisen. Sehr studentisch, eng und laut – aber unglaublich gemütlich.',
-    priceInfo: 'Gefülltes Fladenbrot ~7–9 €',
-    website: 'https://kolar-beisl.at',
-    openingHours: 'Mo–Do 11–24 Uhr, Fr/Sa 11–1 Uhr',
-    tips: 'Dazu unbedingt ein hauseigenes Kolar-Bier bestellen!',
-    lastUpdated: '2026-03-26',
-    tags: ['beisl', 'österreichisch', 'geheimtipp', 'fladenbrot']
-  },
-  {
-    id: 9,
-    name: 'Schachtelwirt',
-    category: 'essen',
-    address: 'Judengasse 5',
-    district: '1010 Wien',
-    lat: 48.2115,
-    lng: 16.3758,
-    description: 'Moderne Wiener Hausmannskost (z. B. Schweinsbraten) in einer praktischen "Schachtel" serviert. Hochwertige, regionale Zutaten mitten im "Bermudadreieck". Schnelles, ehrliches Essen.',
-    priceInfo: 'Hauptgericht ~10–13 €',
-    openingHours: 'Mo–Sa 11:30–21:00, So geschlossen',
-    tips: 'Perfekt für die Mittagspause beim Sightseeing im 1. Bezirk.',
-    lastUpdated: '2026-03-26',
-    tags: ['österreichisch', 'fast-food', 'regional']
-  },
-  {
-    id: 70,
-    name: 'Bros. Pizza',
-    category: 'essen',
-    address: 'Zollergasse 2',
-    district: '1070 Wien',
-    lat: 48.2012,
-    lng: 16.3501,
-    description: 'Sensationelle Sauerteigpizza aus dem Holzofen! Dünner Boden, hochwertigste regionale Zutaten. Zwar preislich am oberen Rand der Low-Budget-Skala, aber die Qualität ist herausragend. Lässige Musik und Atmosphäre.',
-    priceInfo: 'Pizza ~10–13 €',
-    website: 'https://pizzabros.at',
-    openingHours: 'Täglich geöffnet (meist bis 21 oder 23 Uhr)',
-    tips: 'Alte Nintendo-Konsolen zum Zocken während man wartet!',
-    lastUpdated: '2026-03-26',
-    tags: ['pizza', 'sauerteig', 'hipster', 'kraftbier']
-  },
-  {
-    id: 71,
-    name: 'Swing Kitchen',
-    category: 'essen',
-    address: 'Schottenfeldgasse 3',
-    district: '1070 Wien',
-    lat: 48.1991,
-    lng: 16.3429,
-    description: '100% vegane Burger-Kette, die auch Fleischesser überzeugt. Die "Chicken"-Patties (Planties) und die Saucen (z. B. Knoblauch) sind extrem gut. Sehr effizient, kein Plastik, cooler Swing-Sound.',
-    priceInfo: 'Burger ~9,40 €',
-    openingHours: 'Täglich',
-    tips: 'Nuggets und Sweet Potato Fries sind ein Muss.',
-    lastUpdated: '2026-03-26',
-    tags: ['vegan', 'burger', 'fast-food', 'nachhaltig']
-  },
-  {
-    id: 72,
-    name: 'Gasthaus Kopp',
-    category: 'essen',
-    address: 'Engerthstraße 104',
-    district: '1200 Wien',
-    lat: 48.2415,
-    lng: 16.3812,
-    description: 'Ein Urgestein unter Wiens Beisln! Wer ein klassisches, riesiges und super günstiges Wiener Schnitzel essen will, muss hierher. Echtes Wirtshausflair der alten Schule.',
-    priceInfo: 'Riesige Hauptgerichte zu Spottpreisen',
-    website: 'https://gasthaus-kopp.at',
-    openingHours: 'Mi–So 10:00–23:00, Mo/Di Ruhetag',
-    tips: 'Am Wochenende unbedingt vorher reservieren, es ist immer gerammelt voll!',
-    lastUpdated: '2026-03-26',
-    tags: ['schnitzel', 'österreichisch', 'beisl', 'institution', 'günstig']
-  },
-  {
-    id: 1104,
-    name: 'Radatz am Karmelitermarkt',
-    category: 'essen',
-    address: 'Im Werd 1',
-    district: '1020 Wien',
-    lat: 48.2173,
-    lng: 16.3768,
-    description: 'Typisch Wienerische Fleischhackerei (Metzgerei) Filiale. Das täglich wechselnde Mittagsmenü ist preislich kaum zu schlagen. Von gebackenem Kabeljau bis zu gegrillten Ripperln.',
-    priceInfo: 'Mittagsmenüs ca. 7,90 – 9,70 €',
-    website: 'https://radatz.at/',
-    openingHours: 'Mo–Sa 07:30–18:00 (Sa bis 13:00)',
-    lastUpdated: '2026-04-12',
-    tags: ['mittagessen', 'österreichisch', 'fleisch']
-  },
-  {
-    id: 1105,
-    name: 'Die Muse – Micheles Mensa',
-    category: 'essen',
-    address: 'Schillerplatz 3',
-    district: '1010 Wien',
-    lat: 48.2016,
-    lng: 16.3653,
-    description: 'Versteckt in der Akademie der bildenden Künste. Die tolle Mensa steht auch allen von außen offen! Geniales Wochenteller-Angebot in coolem Studenten/Künstler-Ambiente.',
-    priceInfo: 'Hauptspeise & Suppe ab 6,50 – 7,50 €',
-    website: 'https://micheles.at/muse',
-    openingHours: 'Mo–Fr 08:30–16:30',
-    lastUpdated: '2026-04-12',
-    tags: ['mensa', 'mittagessen', 'geheimtipp', 'günstig']
-  },
-  {
-    id: 1106,
-    name: 'Gasthaus Woracziczky',
-    category: 'essen',
-    address: 'Spengergasse 52',
-    district: '1050 Wien',
-    lat: 48.1882,
-    lng: 16.3533,
-    description: 'Tolles Lokal im 5. Bezirk nahe U4. Ein echtes 2-Gänge-Mittagsmenü (z.B. Suppe + Kalbsleber oder Hascheehörnchen) unter 10 Euro. Preis/Leistung ist sensationell.',
-    priceInfo: '2-Gänge-Menü 9,50 €',
-    website: 'https://woracziczky.at/',
-    lastUpdated: '2026-04-12',
-    tags: ['mittagessen', 'österreichisch', '2-gänge']
-  },
-  {
-    id: 1107,
-    name: 'Gasthaus Haller',
-    category: 'essen',
-    address: 'Wallensteinstraße 49',
-    district: '1200 Wien',
-    lat: 48.2323,
-    lng: 16.3712,
-    description: 'Eines der klassischen Wiener Gasthäuser in der Brigittenau, bei dem die Inflation nicht angekommen ist. Vegetarisches Mittagsmenü unter 10 Euro, Fleischmenü knapp darüber.',
-    priceInfo: 'Menüs ca. 9,20 – 11,00 €',
-    website: 'https://gasthaus-haller.at/',
-    lastUpdated: '2026-04-12',
-    tags: ['mittagessen', 'österreichisch', 'beisl']
-  },
+  id: 1108,
+  name: 'Pitaraz',
+  category: 'essen',
+  address: 'Hubergasse 9',
+  district: '1160 Wien',
+  lat: 48.2120,
+  lng: 16.3260,
+  description: 'Neuer Hotspot in Ottakring! Großartiges Streetfood.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['pita', 'streetfood', 'mittagessen']
+}
+
+{
+  id: 1109,
+  name: 'Imbiss Radetzky',
+  category: 'essen',
+  address: 'Radetzkystraße 10',
+  district: '1030 Wien',
+  lat: 48.2114,
+  lng: 16.3899,
+  description: 'Klein, unscheinbar und grandios: Hier gibt es hervorragende polnische Hausmannskost. Hausgemachte Pierogi (Teigtaschen), Borschtsch und Pelmeni zu super Preisen.',
+  priceInfo: 'Hauptgerichte ab ~7,50 €',
+  website: '',
+  openingHours: 'Unter der Woche tagsüber (Sa/So meist geschlossen)',
+  lastUpdated: '2026-04-10',
+  tags: ['polnisch', 'pierogi', 'geheimtipp']
+}
+
+{
+  id: 1110,
+  name: 'Kimzn Burgers',
+  category: 'essen',
+  address: 'Wallensteinstraße 46',
+  district: '1200 Wien',
+  lat: 48.2320,
+  lng: 16.3718,
+  description: 'Einer der besten Budget-Burgerspots im 20. Bezirk. Frisches Chuck-Beef, hausgemachte Saucen und Brioche Buns. Klasse Smash-Burger und vegetarische Optionen ohne viel Schnickschnack.',
+  priceInfo: 'Burger ab ~8,00 €',
+  website: 'https://kimzn.at',
+  openingHours: 'Täglich 12:00–21:00',
+  lastUpdated: '2026-04-10',
+  tags: ['burger', 'smashburger', 'fastfood']
+}
+
+{
+  id: 1100,
+  name: 'Schachtelwirt',
+  category: 'essen',
+  address: 'Judengasse 5',
+  district: '1010 Wien',
+  lat: 48.2115,
+  lng: 16.3752,
+  description: 'Moderne österreichische Küche "aus der Schachtel". Fantastischer Schweinsbraten und vegetarische Knödelgerichte, meist um oder knapp unter 10 Euro. Ideal für ein schnelles Mittagessen mitten in der Stadt!',
+  priceInfo: 'Mittagsgerichte ca. 8,50 – 10,50 €',
+  website: 'https://www.schachtelwirt.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['mittagessen', 'österreichisch', 'zentral']
+}
+
+{
+  id: 1101,
+  name: 'Kolar',
+  category: 'essen',
+  address: 'Kleeblattgasse 5',
+  district: '1010 Wien',
+  lat: 48.2096,
+  lng: 16.3713,
+  description: 'Bekannt für die frischen Fladen (gefüllte Fladenbrote) frisch aus dem Ofen. Perfekt für ein enorm sättigendes und günstiges Mittag- oder Abendessen im 1. Bezirk.',
+  priceInfo: 'Gefüllte Fladen ca. 6,50 – 9,50 €',
+  website: 'http://www.kolar-beisl.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['fladen', 'mittagessen', 'urig']
+}
+
+{
+  id: 1102,
+  name: 'Bros Pizza',
+  category: 'essen',
+  address: 'Zollergasse 2',
+  district: '1070 Wien',
+  lat: 48.1994,
+  lng: 16.3496,
+  description: 'Großartige Sourdough-Pizza Slices auf die Hand. Super stylischer Laden und perfekt für ein Mittagessen oder einen Snack on the go. Zwei Slices machen extrem satt.',
+  priceInfo: 'Slices ab 4,50 €',
+  website: 'https://www.brospizza.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['pizza', 'schnell', 'mittagessen']
+}
+
+{
+  id: 1,
+  name: 'Pizzeria Mafiosi',
+  category: 'essen',
+  address: 'Reindorfgasse 7',
+  district: '1150 Wien',
+  lat: 48.1930,
+  lng: 16.3330,
+  description: 'Institution in Wien mit Riesenpizzen. Urig-dunkles Ambiente mit zusammengewürfelter Deko. Tipp: Fragt nach etwas mehr Belag! Täglich 11–24 Uhr geöffnet.',
+  priceInfo: 'Margherita 6,20 € · Pizzen 6,20–8,00 €',
+  website: 'http://pizzeria-mafiosi.at/',
+  openingHours: 'Täglich 11:00–24:00',
+  lastUpdated: '2026-04-10',
+  tags: ['pizza', 'günstig', 'institution']
+}
+
+{
+  id: 2,
+  name: 'Foco Forno',
+  category: 'essen',
+  address: 'Barmherzigengasse 9',
+  district: '1030 Wien',
+  lat: 48.2010,
+  lng: 16.3940,
+  description: 'Nachfolger der Pizzeria Ciao. Italienische Pizzeria mit knuspriger, gut belegter Pizza und freundlichem Service.',
+  priceInfo: 'Günstige Pizzen',
+  openingHours: 'Mi–Fr 11:00–22:00',
+  lastUpdated: '2026-04-10',
+  tags: ['pizza', 'günstig', 'italienisch']
+}
+
+{
+  id: 3,
+  name: 'Hao Han Restaurant',
+  category: 'essen',
+  address: 'Gumpendorfer Straße 41',
+  district: '1060 Wien',
+  lat: 48.1943,
+  lng: 16.3548,
+  description: 'Ehemals Zhong Huan – jetzt Hao Han Restaurant. Asiatisches All-you-can-eat Mittagsbüffet mit chinesischen Spezialitäten.',
+  priceInfo: 'All you can eat Mittag: ~8 €',
+  openingHours: 'Mittagsbüffet 11:00–15:00',
+  lastUpdated: '2026-04-10',
+  tags: ['asiatisch', 'buffet', 'all-you-can-eat', 'chinesisch']
+}
+
+{
+  id: 4,
+  name: 'Sternzeichen – The Mall',
+  category: 'essen',
+  address: 'Landstraßer Hauptstraße 1b, 1. Stock',
+  district: '1030 Wien',
+  lat: 48.2050,
+  lng: 16.3880,
+  description: 'Asiatisches Restaurant in Wien Mitte The Mall. Jeden Monat zwei Menüs für 50% Rabatt – große Hauptgerichte mit Reis um die 5–7 €.',
+  priceInfo: 'Monatsmenüs ab ~5 €',
+  openingHours: 'Mo–So: 11:00–23:00',
+  lastUpdated: '2026-04-10',
+  tags: ['asiatisch', '50%-rabatt', 'monatsangebot']
+}
+
+{
+  id: 5,
+  name: 'Deewan',
+  category: 'essen',
+  address: 'Liechtensteinstraße 10',
+  district: '1090 Wien',
+  lat: 48.2170,
+  lng: 16.3610,
+  description: 'Einzigartiges Konzept: Esst so viel ihr wollt und bezahlt, was ihr möchtet! Seit 2005 bewährtes Modell. Seit August 2025 komplett vegetarisch/vegan! Wasser gratis, Liegewiese und Free WiFi.',
+  priceInfo: 'Zahle was du willst (Richtpreise angegeben)',
+  website: 'http://deewan.at/',
+  openingHours: 'Mo–Sa 11:30–22:30, So geschlossen',
+  tips: 'Seit August 2025 rein pflanzliches Buffet. U2 Schottentor (Ausgang Hohenstaufengasse).',
+  lastUpdated: '2026-04-10',
+  tags: ['pakistanisch', 'pay-what-you-want', 'vegan', 'vegetarisch', 'wifi']
+}
+
+{
+  id: 6,
+  name: 'Side Döner',
+  category: 'essen',
+  address: 'Pilgramgasse 24',
+  district: '1050 Wien',
+  lat: 48.1910,
+  lng: 16.3530,
+  description: 'Günstige Anlaufstelle nach Ladenschluss. Bier und ordentlicher Döner. Ideal, wenn andere Geschäfte schon geschlossen haben.',
+  priceInfo: 'Bier ab ~1,50 €',
+  lastUpdated: '2026-04-10',
+  tags: ['döner', 'spätabend', 'günstig']
+}
+
+{
+  id: 7,
+  name: 'Berliner Döner',
+  category: 'essen',
+  address: 'Zieglergasse 33A',
+  district: '1070 Wien',
+  lat: 48.1995,
+  lng: 16.3450,
+  description: 'Der wohl beliebteste Döner Wiens! Riesige Portionen, frisches Brot und exzellente Soßen. Ein absoluter Hotspot für Studenten im 7. Bezirk – Warteschlangen zur Stoßzeit einplanen!',
+  priceInfo: 'Döner Sandwich ~6,00 €',
+  openingHours: 'Mo–So ab 09:30 Uhr (Fr/Sa bis 1:00 Uhr!)',
+  tips: 'Perfekt als Mitternachtssnack am Wochenende!',
+  lastUpdated: '2026-04-10',
+  tags: ['döner', 'studenten', 'riesig', 'günstig']
+}
+
+{
+  id: 8,
+  name: 'Kolar Beisl',
+  category: 'essen',
+  address: 'Kleeblattgasse 5',
+  district: '1010 Wien',
+  lat: 48.2098,
+  lng: 16.3712,
+  description: 'Wahres Beisl-Flair direkt in der teuren Innenstadt! Berühmt für ihre warmen, gefüllten Fladenbrote zu absoluten Low-Budget-Preisen. Sehr studentisch, eng und laut – aber unglaublich gemütlich.',
+  priceInfo: 'Gefülltes Fladenbrot ~7–9 €',
+  website: 'https://kolar-beisl.at',
+  openingHours: 'Mo–Do 11–24 Uhr, Fr/Sa 11–1 Uhr',
+  tips: 'Dazu unbedingt ein hauseigenes Kolar-Bier bestellen!',
+  lastUpdated: '2026-04-10',
+  tags: ['beisl', 'österreichisch', 'geheimtipp', 'fladenbrot']
+}
+
+{
+  id: 9,
+  name: 'Schachtelwirt',
+  category: 'essen',
+  address: 'Judengasse 5',
+  district: '1010 Wien',
+  lat: 48.2115,
+  lng: 16.3758,
+  description: 'Moderne Wiener Hausmannskost (z. B. Schweinsbraten) in einer praktischen "Schachtel" serviert. Hochwertige, regionale Zutaten mitten im "Bermudadreieck". Schnelles, ehrliches Essen.',
+  priceInfo: 'Hauptgericht ~10–13 €',
+  openingHours: 'Mo–Sa 11:30–21:00, So geschlossen',
+  tips: 'Perfekt für die Mittagspause beim Sightseeing im 1. Bezirk.',
+  lastUpdated: '2026-04-10',
+  tags: ['österreichisch', 'fast-food', 'regional']
+}
+
+{
+  id: 70,
+  name: 'Bros. Pizza',
+  category: 'essen',
+  address: 'Zollergasse 2',
+  district: '1070 Wien',
+  lat: 48.2012,
+  lng: 16.3501,
+  description: 'Sensationelle Sauerteigpizza aus dem Holzofen! Dünner Boden, hochwertigste regionale Zutaten. Zwar preislich am oberen Rand der Low-Budget-Skala, aber die Qualität ist herausragend. Lässige Musik und Atmosphäre.',
+  priceInfo: 'Pizza ~10–13 €',
+  website: 'https://pizzabros.at',
+  openingHours: 'Täglich geöffnet (meist bis 21 oder 23 Uhr)',
+  tips: 'Alte Nintendo-Konsolen zum Zocken während man wartet!',
+  lastUpdated: '2026-04-10',
+  tags: ['pizza', 'sauerteig', 'hipster', 'kraftbier']
+}
+
+{
+  id: 71,
+  name: 'Swing Kitchen',
+  category: 'essen',
+  address: 'Schottenfeldgasse 3',
+  district: '1070 Wien',
+  lat: 48.1991,
+  lng: 16.3429,
+  description: '100% vegane Burger-Kette, die auch Fleischesser überzeugt. Die "Chicken"-Patties (Planties) und die Saucen (z. B. Knoblauch) sind extrem gut. Sehr effizient, kein Plastik, cooler Swing-Sound.',
+  priceInfo: 'Burger ~9,40 €',
+  openingHours: 'Täglich',
+  tips: 'Nuggets und Sweet Potato Fries sind ein Muss.',
+  lastUpdated: '2026-04-10',
+  tags: ['vegan', 'burger', 'fast-food', 'nachhaltig']
+}
+
+{
+  id: 72,
+  name: 'Gasthaus Kopp',
+  category: 'essen',
+  address: 'Engerthstraße 104',
+  district: '1200 Wien',
+  lat: 48.2415,
+  lng: 16.3812,
+  description: 'Ein Urgestein unter Wiens Beisln! Wer ein klassisches, riesiges und super günstiges Wiener Schnitzel essen will, muss hierher. Echtes Wirtshausflair der alten Schule.',
+  priceInfo: 'Riesige Hauptgerichte zu Spottpreisen',
+  website: 'https://gasthaus-kopp.at',
+  openingHours: 'Mi–So 10:00–23:00, Mo/Di Ruhetag',
+  tips: 'Am Wochenende unbedingt vorher reservieren, es ist immer gerammelt voll!',
+  lastUpdated: '2026-04-10',
+  tags: ['schnitzel', 'österreichisch', 'beisl', 'institution', 'günstig']
+}
+
+{
+  id: 1104,
+  name: 'Radatz am Karmelitermarkt',
+  category: 'essen',
+  address: 'Im Werd 1',
+  district: '1020 Wien',
+  lat: 48.2173,
+  lng: 16.3768,
+  description: 'Typisch Wienerische Fleischhackerei (Metzgerei) Filiale. Das täglich wechselnde Mittagsmenü ist preislich kaum zu schlagen. Von gebackenem Kabeljau bis zu gegrillten Ripperln.',
+  priceInfo: 'Mittagsmenüs ca. 7,90 – 9,70 €',
+  website: 'https://radatz.at/',
+  openingHours: 'Mo–Sa 07:30–18:00 (Sa bis 13:00)',
+  lastUpdated: '2026-04-10',
+  tags: ['mittagessen', 'österreichisch', 'fleisch']
+}
+
+{
+  id: 1105,
+  name: 'Die Muse – Micheles Mensa',
+  category: 'essen',
+  address: 'Schillerplatz 3',
+  district: '1010 Wien',
+  lat: 48.2016,
+  lng: 16.3653,
+  description: 'Versteckt in der Akademie der bildenden Künste. Die tolle Mensa steht auch allen von außen offen! Geniales Wochenteller-Angebot in coolem Studenten/Künstler-Ambiente.',
+  priceInfo: 'Hauptspeise & Suppe ab 6,50 – 7,50 €',
+  website: 'https://micheles.at/muse',
+  openingHours: 'Mo–Fr 08:30–16:30',
+  lastUpdated: '2026-04-10',
+  tags: ['mensa', 'mittagessen', 'geheimtipp', 'günstig']
+}
+
+{
+  id: 1106,
+  name: 'Gasthaus Woracziczky',
+  category: 'essen',
+  address: 'Spengergasse 52',
+  district: '1050 Wien',
+  lat: 48.1882,
+  lng: 16.3533,
+  description: 'Tolles Lokal im 5. Bezirk nahe U4. Ein echtes 2-Gänge-Mittagsmenü (z.B. Suppe + Kalbsleber oder Hascheehörnchen) unter 10 Euro. Preis/Leistung ist sensationell
+
 
   // ─── BARS & NACHTLEBEN ──────────────────────────────────
   {
-    id: 10,
-    name: 'Stehbeisl',
-    category: 'bars',
-    address: 'Windmühlgasse 6',
-    district: '1060 Wien',
-    lat: 48.1970,
-    lng: 16.3550,
-    description: 'Seit 1976 eine Institution – gemütliches Wiener Beisl mit rockig-alternativer Musik. Das Highlight: Happy Hour täglich von 0–1 Uhr – 2-für-1 auf Longdrinks und Shots!',
-    priceInfo: 'Happy Hour: 2 für 1 (Longdrinks & Shots)',
-    openingHours: 'Mo–Sa 18–4 Uhr, So 20–4 Uhr',
-    tips: 'Tisch reservieren empfohlen! Nähe U3 Neubaugasse. Am Wochenende wird es zur Partyzone.',
-    lastUpdated: '2026-03-26',
-    tags: ['beisl', 'happy-hour', 'rock', 'alternativ'],
-    dailyDeals: {
-      0: '2-für-1 auf Longdrinks und Shots (0-1 Uhr)',
-      1: '2-für-1 auf Longdrinks und Shots (0-1 Uhr)',
-      2: '2-für-1 auf Longdrinks und Shots (0-1 Uhr)',
-      3: '2-für-1 auf Longdrinks und Shots (0-1 Uhr)',
-      4: '2-für-1 auf Longdrinks und Shots (0-1 Uhr)',
-      5: '2-für-1 auf Longdrinks und Shots (0-1 Uhr)',
-      6: '2-für-1 auf Longdrinks und Shots (0-1 Uhr)'
-    }
-  },
-  {
-    id: 11,
-    name: 'Locobar',
-    category: 'bars',
-    address: 'Währinger Gürtel 172–174',
-    district: '1090 Wien',
-    lat: 48.2290,
-    lng: 16.3470,
-    description: 'Die verrückteste Bar Wiens! Berühmt für die gestaffelte Happy Hour (z.B. Cocktails ab 1,40 €). Riesige Auswahl, sehr beliebt bei Studenten.',
-    priceInfo: 'Gestaffelte Happy Hour (ab 1,40 €)',
-    website: 'https://www.locobar.at/',
-    openingHours: 'Mo–Sa 19–4 Uhr, So ab 19 Uhr',
-    tips: 'Tagespreise vorher auf der Webseite checken! Mi = Erasmus Karaoke Night. U6 Nußdorfer Straße.',
-    lastUpdated: '2026-03-26',
-    tags: ['cocktails', 'happy-hour', 'günstig', 'party', 'erasmus'],
-    dailyDeals: {
-      0: 'Cocktails extrem billig bis 23 Uhr',
-      1: 'Cocktails extrem billig bis 23 Uhr',
-      2: 'Cocktails extrem billig bis 23 Uhr',
-      3: 'Erasmus Karaoke Night: Drinks ab 0,90 €',
-      4: 'Cocktails extrem billig bis 23 Uhr',
-      5: 'Cocktails extrem billig bis 23 Uhr',
-      6: 'Cocktails extrem billig bis 23 Uhr'
-    }
-  },
-  {
-    id: 12,
-    name: 'Café Anzengruber',
-    category: 'bars',
-    address: 'Schleifmühlgasse 19',
-    district: '1040 Wien',
-    lat: 48.1968,
-    lng: 16.3650,
-    description: 'Legendäres Wiener Nachtkaffeehaus am Naschmarkt. Günstige Biere, Raucherkneipe mit Flair, beliebt bei Studenten und Nachtschwärmern. Bis 4 Uhr geöffnet!',
-    priceInfo: 'Bier ab ~3 €',
-    openingHours: 'Täglich bis 4 Uhr',
-    lastUpdated: '2026-03-19',
-    tags: ['café', 'nachtleben', 'günstig', 'institution']
-  },
-  {
-    id: 13,
-    name: 'Soho',
-    category: 'bars',
-    address: 'Handelskai 94–96',
-    district: '1200 Wien',
-    lat: 48.2380,
-    lng: 16.3800,
-    description: 'Cocktail- und Karaoke-Bar in der Millennium City. Am Freitag und Samstag Cocktails ab 1,80 €.',
-    priceInfo: 'Cocktails ab 1,80 € (Fr/Sa)',
-    website: 'http://www.soho-vienna.at',
-    tips: 'Online-Gutschein reservieren!',
-    lastUpdated: '2026-03-19',
-    tags: ['karaoke', 'cocktails', 'millennium-city']
-  },
-  {
-    id: 14,
-    name: 'Marea Alta',
-    category: 'bars',
-    address: 'Gumpendorferstr. 28',
-    district: '1060 Wien',
-    lat: 48.1945,
-    lng: 16.3560,
-    description: 'Alternative-queere Bar mit Partykeller, Vernissagen, Karaoke und Performances. Gute Musik, gute Stimmung, Wuzzler (Tischfußball) und kleine Snacks wie Tacos/Burritos.',
-    priceInfo: 'Cocktail-Happy-Hour: ~5 €',
-    openingHours: 'Mo–Do 19–2 Uhr, Fr–Sa 19–4 Uhr',
-    tips: 'Nähe U4 Kettenbrückengasse. Ab 18 Jahren.',
-    lastUpdated: '2026-03-19',
-    tags: ['alternativ', 'queer-friendly', 'cocktails', 'partykeller']
-  },
-  {
-    id: 15,
-    name: 'Bricks',
-    category: 'bars',
-    address: 'Taborstraße 38',
-    district: '1020 Wien',
-    lat: 48.2170,
-    lng: 16.3830,
-    description: '26 verschiedene Cocktails und wöchentliche Specials. Happy Hour 20–22 Uhr mit Cocktails für 5 €. Wechselnde Musik und Punch der Woche.',
-    priceInfo: 'Happy Hour Cocktails: 5 €',
-    website: 'http://www.bricks.co.at',
-    openingHours: 'Do 18–4 Uhr, Fr–Sa 20–4 Uhr',
-    tips: 'U2 Taborstraße.',
-    lastUpdated: '2026-03-26',
-    tags: ['cocktails', 'happy-hour', 'punch'],
-    dailyDeals: {
-      4: 'Happy Hour (20-22 Uhr): Cocktails 5 €',
-      5: 'Happy Hour (20-22 Uhr): Cocktails 5 €',
-      6: 'Happy Hour (20-22 Uhr): Cocktails 5 €'
-    }
-  },
-  {
-    id: 16,
-    name: 'Funky Monkey',
-    category: 'bars',
-    address: 'Sterngasse 11',
-    district: '1010 Wien',
-    lat: 48.2120,
-    lng: 16.3720,
-    description: 'Tropical Jungle-Deko, kreative Cocktails und DJs mit Funky Jazz bis Partysounds. Happy-Hour-Specials täglich 20–3 Uhr. Gratis Popcorn!',
-    priceInfo: '2 Longdrinks: 5,50 €',
-    website: 'http://www.funkymonkeybar.at',
-    openingHours: 'Do 19–2 Uhr, Fr–Sa 19–4 Uhr, So–Mi geschlossen',
-    tips: 'Ab 18 Jahren. Reservierung: office@funkymonkey.at',
-    lastUpdated: '2026-03-26',
-    tags: ['cocktails', 'popcorn', 'happy-hour', 'innere-stadt', 'dj'],
-    dailyDeals: {
-      4: 'Happy-Hour 20–3 Uhr & Gratis Popcorn',
-      5: 'Happy-Hour 20–3 Uhr & Gratis Popcorn',
-      6: 'Happy-Hour 20–3 Uhr & Gratis Popcorn'
-    }
-  },
-  {
-    id: 17,
-    name: 'U4 Club',
-    category: 'bars',
-    address: 'Schönbrunner Str. 222',
-    district: '1120 Wien',
-    lat: 48.1834,
-    lng: 16.3312,
-    description: 'Eine absolute Legende im Wiener Nachtleben (Falco war hier Stammgast). Jeden Dienstag gibt es den berühmten "U4 Campus", bei dem Studenten kostenlosen Eintritt vor Mitternacht haben.',
-    priceInfo: 'Dienstag: Gratis Eintritt (Studenten bis 24h)',
-    website: 'http://www.u4.at',
-    openingHours: 'Di, Do, Fr, Sa 23:00–06:00, So/Mo/Mi geschlossen (Änderungen vorbehalten)',
-    tips: 'Unbedingt Studentenausweis mitnehmen am Dienstag!',
-    lastUpdated: '2026-03-26',
-    tags: ['club', 'studenten', 'gratis-eintritt', 'nachtleben', 'institution'],
-    dailyDeals: {
-      2: 'U4 Campus: Gratis Eintritt für Studenten bis 24 Uhr!'
-    }
-  },
-  {
-    id: 18,
-    name: 'Travel Shack',
-    category: 'bars',
-    address: 'Mariahilfer Gürtel 21',
-    district: '1150 Wien',
-    lat: 48.1925,
-    lng: 16.3382,
-    description: 'Die wohl internationalste Party-Bar in Wien. Extrem beliebt bei Backpackern und Erasmus-Studenten. Jeden Tag gibt es andere Aktionen wie den Tequila Tuesday oder das Pub Quiz am Mittwoch.',
-    priceInfo: 'Sehr günstige Deal-Tage',
-    website: 'https://travelshackvienna.com',
-    openingHours: 'So–Mo 17–2 Uhr, Di–Sa 17–4 Uhr',
-    tips: 'Kostenloses Tischfußball und Billard vorhanden!',
-    lastUpdated: '2026-03-26',
-    tags: ['party', 'erasmus', 'pubquiz', 'themenpartys', 'internationals'],
-    dailyDeals: {
-      0: 'Happy Hour 17-19h (Bier/Spritzer 2€)',
-      1: 'Happy Hour 17-19h & 19-21h: 2-for-1 Longdrinks',
-      2: 'Tequila Tuesday (Gratis Eintritt & Bingo, 2 Tequila 4€)',
-      3: 'Pub Quiz (gratis Eintritt) & 19-21h 2-for-1 Drinks',
-      4: 'Captains Thursday (Longdrink Deals)',
-      5: 'Happy Hour 17-19h (Bier/Spritzer 2€)',
-      6: 'Happy Hour 17-19h (Bier/Spritzer 2€)'
-    }
-  },
-  {
-    id: 19,
-    name: 'Dick Mack\'s Irish Pub',
-    category: 'bars',
-    address: 'Marc-Aurel-Straße 7',
-    district: '1010 Wien',
-    lat: 48.2128,
-    lng: 16.3742,
-    description: 'Riesiges Irish Pub auf zwei Stockwerken. Bekannt für sein extrem studentenfreundliches Preisniveau, besonders während der täglichen Happy Hour von 18 bis 20 Uhr.',
-    priceInfo: 'Happy Hour: Bier/Longdrinks ~2,50 €',
-    openingHours: 'So–Do 20:00–02:00, Fr/Sa 18:00–04:00',
-    tips: 'Täglich Happy Hour von 18 bis 20 Uhr (am Do sogar schon ab den früheren Öffnungszeiten oft Specials!).',
-    lastUpdated: '2026-03-26',
-    tags: ['irish-pub', 'happy-hour', 'studenten', 'günstig'],
-    dailyDeals: {
-      0: 'Happy Hour 18-20 Uhr: Pints & Longdrinks ab 2,50 €',
-      1: 'Happy Hour 18-20 Uhr: Pints & Longdrinks ab 2,50 €',
-      2: 'Happy Hour 18-20 Uhr: Pints & Longdrinks ab 2,50 €',
-      3: 'Happy Hour 18-20 Uhr: Pints & Longdrinks ab 2,50 €',
-      4: 'Happy Hour 18-20 Uhr: Pints & Longdrinks ab 2,50 €',
-      5: 'Happy Hour 18-20 Uhr: Pints & Longdrinks ab 2,50 €',
-      6: 'Happy Hour 18-20 Uhr: Pints & Longdrinks ab 2,50 €'
-    }
-  },
+  id: 12,
+  name: 'Café Anzengruber',
+  category: 'bars',
+  address: 'Schleifmühlgasse 19',
+  district: '1040 Wien',
+  lat: 48.1968,
+  lng: 16.3650,
+  description: 'Legendäres Wiener Nachtkaffeehaus am Naschmarkt. Günstige Biere, Raucherkneipe mit Flair, beliebt bei Studenten und Nachtschwärmern. Bis 4 Uhr geöffnet!',
+  priceInfo: 'Bier ab ~3 €',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['café', 'nachtleben', 'günstig', 'institution']
+}
+
+{
+  id: 13,
+  name: 'Soho',
+  category: 'bars',
+  address: 'Handelskai 94–96',
+  district: '1200 Wien',
+  lat: 48.2380,
+  lng: 16.3800,
+  description: 'Cocktail- und Karaoke-Bar in der Millennium City. Am Freitag und Samstag Cocktails ab 1,80 €.',
+  priceInfo: 'Cocktails ab 1,80 € (Fr/Sa)',
+  website: 'http://www.soho-vienna.at',
+  lastUpdated: '2026-04-10',
+  tags: ['karaoke', 'cocktails', 'millennium-city']
+}
+
+{
+  id: 14,
+  name: 'Marea Alta',
+  category: 'bars',
+  address: 'Gumpendorferstr. 28',
+  district: '1060 Wien',
+  lat: 48.1945,
+  lng: 16.3560,
+  description: 'Alternative-queere Bar mit Partykeller, Vernissagen, Karaoke und Performances. Gute Musik, gute Stimmung, Wuzzler (Tischfußball) und kleine Snacks wie Tacos/Burritos.',
+  priceInfo: 'Cocktail-Happy-Hour: ~5 €',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['alternativ', 'queer-friendly', 'cocktails', 'partykeller']
+}
+
+{
+  id: 105,
+  name: 'Travel Shack',
+  category: 'bars',
+  address: 'Mariahilfer Gürtel 21',
+  district: '1060 Wien',
+  lat: 48.1985,
+  lng: 16.3430,
+  description: 'Top-Adresse für günstige Drinks und lange Nächte. Beliebt bei Reisenden und Studenten. Tolle Stimmung, billige Cocktails.',
+  priceInfo: 'Cocktails ab ~4 €',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['cocktails', 'party', 'günstig', 'studenten']
+}
+
+{
+  id: 106,
+  name: 'Bukowski The Pub',
+  category: 'bars',
+  address: 'Siebensterngasse 8',
+  district: '1070 Wien',
+  lat: 48.2010,
+  lng: 16.3500,
+  description: 'Klassiker unter den Studentenlokalen im 7. Bezirk. Gemütlich, günstig und mit Happy Hours. Bier ab 2,50 €. Täglich ab 15 Uhr bis 6 Uhr früh!',
+  priceInfo: 'Bier ab 2,50 € · Happy Hour Cocktails',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['pub', 'studenten', 'happy-hour', 'günstig', 'spätabend']
+}
+
+{
+  id: 107,
+  name: 'Kaffeebar',
+  category: 'bars',
+  address: 'Neubaugasse 40',
+  district: '1070 Wien',
+  lat: 48.2020,
+  lng: 16.3510,
+  description: 'Gemütliche Kaffeebar mit einer großen Auswahl an Kaffeespezialitäten und kleinen Snacks.',
+  priceInfo: 'Kaffee ab ~2 €',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['kaffee', 'günstig', 'gemütlich']
+}
+
+{
+  id: 108,
+  name: 'Barfly',
+  category: 'bars',
+  address: 'Marxergasse 17',
+  district: '1030 Wien',
+  lat: 48.1930,
+  lng: 16.3810,
+  description: 'Trendige Bar mit einer großen Auswahl an Cocktails und einer gemütlichen Atmosphäre.',
+  priceInfo: 'Cocktails ab ~6 €',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['cocktails', 'trendy', 'gemütlich']
+}
+
 
   // ─── MUSEEN ──────────────────────────────────────────────
   {
-    id: 20,
-    name: 'Albertina',
-    category: 'museen',
-    address: 'Albertinaplatz 1',
-    district: '1010 Wien',
-    lat: 48.2044,
-    lng: 16.3688,
-    description: 'Eines der größten Museen Wiens mit weltberühmter Grafik-Sammlung. Freier Eintritt für alle unter 19 Jahren. Tipp: Social-Media-Specials checken!',
-    priceInfo: 'Gratis unter 19 · Erwachsene ~18 €',
-    website: 'https://www.albertina.at/',
-    lastUpdated: '2026-03-19',
-    tags: ['kunst', 'gratis-u19', 'bundesmuseum']
-  },
-  {
-    id: 21,
-    name: 'Belvedere',
-    category: 'museen',
-    address: 'Prinz Eugen-Straße 27',
-    district: '1030 Wien',
-    lat: 48.1914,
-    lng: 16.3808,
-    description: 'Barockes Schloss mit Klimts „Der Kuss". Freier Eintritt unter 19. Schloss und Gärten von außen komplett kostenlos zu besichtigen.',
-    priceInfo: 'Gratis unter 19 · Garten gratis',
-    website: 'https://www.belvedere.at/',
-    lastUpdated: '2026-03-19',
-    tags: ['kunst', 'klimt', 'gratis-u19', 'schloss']
-  },
-  {
-    id: 22,
-    name: 'Kunsthistorisches Museum',
-    category: 'museen',
-    address: 'Maria-Theresien-Platz',
-    district: '1010 Wien',
-    lat: 48.2037,
-    lng: 16.3614,
-    description: 'Eines der bedeutendsten Kunstmuseen der Welt. Freier Eintritt für alle unter 19 Jahren.',
-    priceInfo: 'Gratis unter 19',
-    website: 'https://www.khm.at/',
-    lastUpdated: '2026-03-19',
-    tags: ['kunst', 'gratis-u19', 'bundesmuseum']
-  },
-  {
-    id: 23,
-    name: 'MAK – Museum für angewandte Kunst',
-    category: 'museen',
-    address: 'Stubenring 5',
-    district: '1010 Wien',
-    lat: 48.2080,
-    lng: 16.3810,
-    description: 'Wiener Kunst & Gegenwartskunst. Dienstagabend 18–21 Uhr ermäßigt (8,50 € online). Gratis unter 19, für Arbeitslose und Menschen mit Behinderung. Spezielle Gratis-Tage über das Jahr verteilt.',
-    priceInfo: 'Di ab 18 Uhr: 8,50 € · Regulär: 18 € · Gratis unter 19',
-    website: 'https://www.mak.at/',
-    openingHours: 'Di 10–21, Mi–So 10–18, Mo geschlossen',
-    tips: 'Nicht mehr komplett gratis am Dienstag! Aber Gratis-Tage prüfen (z.B. 26.12, 4.5., 28.12.2025).',
-    lastUpdated: '2026-03-19',
-    tags: ['kunst', 'dienstag-ermäßigt', 'gegenwartskunst']
-  },
-  {
-    id: 24,
-    name: 'mumok – Museum Moderner Kunst',
-    category: 'museen',
-    address: 'Museumsplatz 1',
-    district: '1070 Wien',
-    lat: 48.2035,
-    lng: 16.3574,
-    description: 'Museum Moderner Kunst im Museumsquartier. Freier Eintritt für alle unter 19 Jahren.',
-    priceInfo: 'Gratis unter 19',
-    website: 'https://www.mumok.at/',
-    lastUpdated: '2026-03-19',
-    tags: ['moderne-kunst', 'gratis-u19', 'museumsquartier']
-  },
-  {
-    id: 25,
-    name: 'Naturhistorisches Museum',
-    category: 'museen',
-    address: 'Burgring 7',
-    district: '1010 Wien',
-    lat: 48.2052,
-    lng: 16.3594,
-    description: 'Naturkundliche Sammlung von Weltrang. Freier Eintritt für alle unter 19 Jahren.',
-    priceInfo: 'Gratis unter 19',
-    website: 'https://www.nhm-wien.ac.at/',
-    lastUpdated: '2026-03-19',
-    tags: ['naturkunde', 'gratis-u19', 'bundesmuseum']
-  },
-  {
-    id: 26,
-    name: 'Technisches Museum',
-    category: 'museen',
-    address: 'Mariahilfer Straße 212',
-    district: '1140 Wien',
-    lat: 48.1917,
-    lng: 16.3171,
-    description: 'Technik und Naturwissenschaften zum Anfassen. Freier Eintritt für alle unter 19 Jahren.',
-    priceInfo: 'Gratis unter 19',
-    website: 'https://www.technischesmuseum.at/',
-    lastUpdated: '2026-03-19',
-    tags: ['technik', 'gratis-u19', 'kinder']
-  },
-  {
-    id: 27,
-    name: 'Wien Museum am Karlsplatz',
-    category: 'museen',
-    address: 'Karlsplatz 8',
-    district: '1040 Wien',
-    lat: 48.1985,
-    lng: 16.3710,
-    description: 'Stadtmuseum Wien – seit der Neueröffnung ist die Dauerausstellung „Wien. Meine Geschichte" für ALLE komplett GRATIS! Sonderausstellungen können Eintritt kosten. Jeden 1. Sonntag im Monat auch Sonderausstellungen gratis.',
-    priceInfo: 'Dauerausstellung: GRATIS für alle!',
-    website: 'https://www.wienmuseum.at/',
-    openingHours: 'Di–So 10–18 Uhr, Mo geschlossen',
-    tips: '1. Sonntag im Monat alles gratis. Nationalfeiertag (26.10.) ebenfalls gratis.',
-    lastUpdated: '2026-03-19',
-    tags: ['stadtgeschichte', 'gratis', 'gratis-u19', 'top-tipp']
-  },
-  {
-    id: 28,
-    name: 'TBA21 – Augarten',
-    category: 'museen',
-    address: 'Scherzergasse 1A',
-    district: '1020 Wien',
-    lat: 48.2230,
-    lng: 16.3780,
-    description: 'Ausstellungsort für Gegenwartskunst im Augarten. Viele Ausstellungen sind kostenlos!',
-    priceInfo: 'Oft gratis',
-    tips: 'Nahe U2 Taborstraße oder Straßenbahn 2/5 bis „Am Tabor".',
-    lastUpdated: '2026-03-19',
-    tags: ['gegenwartskunst', 'augarten', 'gratis']
-  },
-  {
-    id: 29,
-    name: 'Heeresgeschichtliches Museum',
-    category: 'museen',
-    address: 'Arsenal Objekt 1',
-    district: '1030 Wien',
-    lat: 48.1845,
-    lng: 16.3880,
-    description: 'Militärhistorisches Museum. Jeden 1. Sonntag im Monat freier Eintritt. Unter 19 immer gratis.',
-    priceInfo: '1. Sonntag gratis · Gratis unter 19',
-    website: 'https://www.hgm.at/',
-    lastUpdated: '2026-03-19',
-    tags: ['militärgeschichte', '1-sonntag-gratis', 'gratis-u19']
-  },
+  id: 20,
+  name: 'Albertina',
+  category: 'museen',
+  address: 'Albertinaplatz 1',
+  district: '1010 Wien',
+  lat: 48.2044,
+  lng: 16.3688,
+  description: 'Eines der größten Museen Wiens mit weltberühmter Grafik-Sammlung. Freier Eintritt für alle unter 19 Jahren. Tipp: Social-Media-Specials checken!',
+  priceInfo: 'Gratis unter 19 · Erwachsene ~18 €',
+  website: 'https://www.albertina.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kunst', 'gratis-u19', 'bundesmuseum']
+}
+
+{
+  id: 21,
+  name: 'Belvedere',
+  category: 'museen',
+  address: 'Prinz Eugen-Straße 27',
+  district: '1030 Wien',
+  lat: 48.1914,
+  lng: 16.3808,
+  description: 'Barockes Schloss mit Klimts „Der Kuss". Freier Eintritt unter 19. Schloss und Gärten von außen komplett kostenlos zu besichtigen.',
+  priceInfo: 'Gratis unter 19 · Garten gratis',
+  website: 'https://www.belvedere.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kunst', 'klimt', 'gratis-u19', 'schloss']
+}
+
+{
+  id: 22,
+  name: 'Kunsthistorisches Museum',
+  category: 'museen',
+  address: 'Maria-Theresien-Platz',
+  district: '1010 Wien',
+  lat: 48.2037,
+  lng: 16.3614,
+  description: 'Eines der bedeutendsten Kunstmuseen der Welt. Freier Eintritt für alle unter 19 Jahren.',
+  priceInfo: 'Gratis unter 19',
+  website: 'https://www.khm.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kunst', 'gratis-u19', 'bundesmuseum']
+}
+
+{
+  id: 23,
+  name: 'MAK – Museum für angewandte Kunst',
+  category: 'museen',
+  address: 'Stubenring 5',
+  district: '1010 Wien',
+  lat: 48.2080,
+  lng: 16.3810,
+  description: 'Wiener Kunst & Gegenwartskunst. Dienstagabend 18–21 Uhr ermäßigt (8,50 € online). Gratis unter 19, für Arbeitslose und Menschen mit Behinderung. Spezielle Gratis-Tage über das Jahr verteilt.',
+  priceInfo: 'Di ab 18 Uhr: 8,50 € · Regulär: 18 € · Gratis unter 19',
+  website: 'https://www.mak.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kunst', 'dienstag-ermäßigt', 'gegenwartskunst']
+}
+
+{
+  id: 24,
+  name: 'mumok – Museum Moderner Kunst',
+  category: 'museen',
+  address: 'Museumsplatz 1',
+  district: '1070 Wien',
+  lat: 48.2035,
+  lng: 16.3574,
+  description: 'Museum Moderner Kunst im Museumsquartier. Freier Eintritt für alle unter 19 Jahren.',
+  priceInfo: 'Gratis unter 19',
+  website: 'https://www.mumok.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['moderne-kunst', 'gratis-u19', 'museumsquartier']
+}
+
+{
+  id: 25,
+  name: 'Naturhistorisches Museum',
+  category: 'museen',
+  address: 'Burgring 7',
+  district: '1010 Wien',
+  lat: 48.2052,
+  lng: 16.3594,
+  description: 'Naturkundliche Sammlung von Weltrang. Freier Eintritt für alle unter 19 Jahren.',
+  priceInfo: 'Gratis unter 19',
+  website: 'https://www.nhm-wien.ac.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['naturkunde', 'gratis-u19', 'bundesmuseum']
+}
+
+{
+  id: 26,
+  name: 'Technisches Museum',
+  category: 'museen',
+  address: 'Mariahilfer Straße 212',
+  district: '1140 Wien',
+  lat: 48.1917,
+  lng: 16.3171,
+  description: 'Technik und Naturwissenschaften zum Anfassen. Freier Eintritt für alle unter 19 Jahren.',
+  priceInfo: 'Gratis unter 19',
+  website: 'https://www.technischesmuseum.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['technik', 'gratis-u19', 'kinder']
+}
+
+{
+  id: 27,
+  name: 'Wien Museum am Karlsplatz',
+  category: 'museen',
+  address: 'Karlsplatz 8',
+  district: '1040 Wien',
+  lat: 48.1985,
+  lng: 16.3710,
+  description: 'Stadtmuseum Wien – seit der Neueröffnung ist die Dauerausstellung „Wien. Meine Geschichte" für ALLE komplett GRATIS! Sonderausstellungen können Eintritt kosten. Jeden 1. Sonntag im Monat auch Sonderausstellungen gratis.',
+  priceInfo: 'Dauerausstellung: GRATIS für alle!',
+  website: 'https://www.wienmuseum.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['stadtgeschichte', 'gratis', 'gratis-u19', 'top-tipp']
+}
+
+{
+  id: 28,
+  name: 'TBA21 – Augarten',
+  category: 'museen',
+  address: 'Scherzergasse 1A',
+  district: '1020 Wien',
+  lat: 48.2230,
+  lng: 16.3780,
+  description: 'Ausstellungsort für Gegenwartskunst im Augarten. Viele Ausstellungen sind kostenlos!',
+  priceInfo: 'Oft gratis',
+  lastUpdated: '2026-04-10',
+  tags: ['gegenwartskunst', 'augarten', 'gratis']
+}
+
+{
+  id: 29,
+  name: 'Heeresgeschichtliches Museum',
+  category: 'museen',
+  address: 'Arsenal Objekt 1',
+  district: '1030 Wien',
+  lat: 48.1845,
+  lng: 16.3880,
+  description: 'Militärhistorisches Museum. Jeden 1. Sonntag im Monat freier Eintritt. Unter 19 immer gratis.',
+  priceInfo: '1. Sonntag gratis · Gratis unter 19',
+  website: 'https://www.hgm.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['militärgeschichte', '1-sonntag-gratis', 'gratis-u19']
+}
+
+{
+  id: 112,
+  name: 'MUSA Museum',
+  category: 'museen',
+  address: 'Felderstraße 6–8',
+  district: '1010 Wien',
+  lat: 48.2110,
+  lng: 16.3575,
+  description: 'Zeitgenössische Wiener Kunst – und das komplett GRATIS! Wechselnde Ausstellungen mit Fokus auf junge Wiener Künstler.',
+  priceInfo: 'GRATIS',
+  website: 'https://www.wienmuseum.at/musa',
+  lastUpdated: '2026-04-10',
+  tags: ['gegenwartskunst', 'gratis', 'wien-museum']
+}
+
+{
+  id: 114,
+  name: 'Geldmuseum',
+  category: 'museen',
+  address: 'Otto-Wagner-Platz 3',
+  district: '1090 Wien',
+  lat: 48.2162,
+  lng: 16.3592,
+  description: 'Das Museum der Österreichischen Nationalbank. Alles rund ums Geld – immer gratis!',
+  priceInfo: 'GRATIS',
+  lastUpdated: '2026-04-10',
+  tags: ['museum', 'gratis', 'geld', 'nationalbank']
+}
+
+{
+  id: 124,
+  name: 'Sisi Ticket (Kombiticket)',
+  category: 'museen',
+  address: 'Schloss Schönbrunn / Hofburg / Möbelmuseum',
+  district: '1010/1130 Wien',
+  lat: 48.2060,
+  lng: 16.3660,
+  description: 'Kombiticket für Schönbrunn, Hofburg Sisi Museum UND Möbelmuseum. Spart ca. 30% gegenüber Einzeltickets! Online noch günstiger.',
+  priceInfo: '~36 € (online günstiger) · Spart ~30%',
+  website: 'https://www.schoenbrunn.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kombiticket', 'schönbrunn', 'hofburg', 'sparticket']
+}
+
+{
+  id: 130,
+  name: 'Leopold Museum',
+  category: 'museen',
+  address: 'Museumsplatz 1',
+  district: '1070 Wien',
+  lat: 48.2033,
+  lng: 16.3579,
+  description: 'Museum für moderne österreichische Kunst. Jeden Donnerstagabend von 18 bis 21 Uhr reduzierter Eintrittspreis.',
+  priceInfo: 'Do ab 18 Uhr reduziert',
+  website: 'https://www.leopoldmuseum.org/',
+  lastUpdated: '2026-04-10',
+  tags: ['moderne-kunst', 'donnerstag-ermäßigt', 'museumsquartier']
+}
+
 
   // ─── UNTERKÜNFTE ─────────────────────────────────────────
   {
@@ -1088,10 +1054,11 @@ const LOCATIONS = [
     description: 'Extrem modernes und stylisches Hostel direkt im IKEA am Westbahnhof. Bietet eine tolle Dachterrasse für Gäste und einen lebendigen Social-Vibe.',
     priceInfo: 'Ab ~25 € / Nacht',
     website: 'https://www.joandjoe.com/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-10',
     tags: ['hostel', 'dachterrasse', 'modern']
   },
-  {
+ 
+{
     id: 31,
     name: 'Hostel Ruthensteiner',
     category: 'unterkunft',
@@ -1102,11 +1069,11 @@ const LOCATIONS = [
     description: 'Familiäres und sehr entspanntes Independent-Hostel. Tolle Gemeinschaftsküche und ein wunderbarer Vibe im hauseigenen Garten (Oase mitten in der Stadt).',
     priceInfo: 'Ab ~22 € / Nacht',
     website: 'https://www.hostelruthensteiner.com/',
-    tips: 'Ideal für Alleinreisende, die leicht Kontakte knüpfen wollen.',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-10',
     tags: ['hostel', 'garten', 'solo-traveller']
   },
-  {
+ 
+{
     id: 32,
     name: 'St Christopher\'s Inn Vienna',
     category: 'unterkunft',
@@ -1117,11 +1084,11 @@ const LOCATIONS = [
     description: 'Das bekannte "Party-Hostel" südlich des Hauptbahnhofs. Gut angebunden und bekannt für seine hauseigene Belushi\'s Bar mit günstigen Drinks.',
     priceInfo: 'Ab ~20 € / Nacht',
     website: 'https://www.st-christophers.co.uk/',
-    tips: 'Abends viel los in der hauseigenen Bar.',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-10',
     tags: ['hostel', 'party', 'bar']
   },
-  {
+ 
+{
     id: 33,
     name: 'Wombat\'s City Hostel – Naschmarkt',
     category: 'unterkunft',
@@ -1132,10 +1099,11 @@ const LOCATIONS = [
     description: 'Ein echter Klassiker in Top-Lage direkt am Naschmarkt (Das "The Lounge" Habitat existiert nicht mehr, dieses hier ist nun DAS Wombats in Wien!). Legendäre WomBar inbegriffen.',
     priceInfo: 'Ab ~24 € / Nacht',
     website: 'https://www.wombats-hostels.com/vienna',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-10',
     tags: ['hostel', 'zentral', 'naschmarkt']
   },
-  {
+ 
+{
     id: 34,
     name: 'MEININGER Hotel Wien Downtown Franz',
     category: 'unterkunft',
@@ -1146,10 +1114,11 @@ const LOCATIONS = [
     description: 'Ein guter Mix aus Hotel und Hostel im hippen 2. Bezirk (Leopoldstadt). Sehr saubere Zimmer und professionell geführt. Ideal auch für kleine Gruppen.',
     priceInfo: 'Ab ~28 € / Nacht',
     website: 'https://www.meininger-hotels.com/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-10',
     tags: ['hostel', 'hotel-mix', 'leopoldstadt']
   },
-  {
+ 
+{
     id: 35,
     name: 'A&O Hostel Wien Hauptbahnhof',
     category: 'unterkunft',
@@ -1160,9 +1129,25 @@ const LOCATIONS = [
     description: 'Riesiges und verlässliches Budget-Hostel direkt hinter dem Hauptbahnhof. Funktionale Zimmer und meist unschlagbar günstige Betten im Dorm.',
     priceInfo: 'Ab ~15 € / Nacht',
     website: 'https://www.aohostels.com/at/wien/wien-hauptbahnhof/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-10',
     tags: ['hostel', 'hauptbahnhof', 'sehr-günstig']
   },
+ 
+{
+    id: 36,
+    name: 'Hostel Vienna',
+    category: 'unterkunft',
+    address: 'Myrthengasse 10',
+    district: '1150 Wien',
+    lat: 48.1922,
+    lng: 16.3356,
+    description: 'Ein einfaches, aber sauberes Hostel in einem ruhigen Viertel. Ideal für Budget-Reisende, die Wert auf eine gute Nachtruhe legen.',
+    priceInfo: 'Ab ~18 € / Nacht',
+    website: 'https://www.hostelvienna.at',
+    lastUpdated: '2026-04-10',
+    tags: ['hostel', 'ruhig', 'günstig']
+  }
+
 
   // ─── NATUR & AUSSICHT ────────────────────────────────────
   {
@@ -1175,7 +1160,8 @@ const LOCATIONS = [
     lng: 16.4100,
     description: 'Riesige Freizeitinsel mitten in der Donau. Perfekt zum Schwimmen, Radfahren, Grillen und Chillen. Komplett gratis! Im Juni findet hier das Donauinselfest statt (gratis!).',
     priceInfo: 'Gratis',
-    lastUpdated: '2026-03-19',
+    website: '',
+    lastUpdated: '2026-04-10',
     tags: ['insel', 'schwimmen', 'radfahren', 'gratis', 'donauinselfest']
   },
   {
@@ -1188,7 +1174,8 @@ const LOCATIONS = [
     lng: 16.4000,
     description: 'Riesiger Grünraum mit dem berühmten Riesenrad. Der Grüne Prater ist komplett gratis – ideal für Joggen, Radfahren und Spaziergänge. Nur die Fahrgeschäfte kosten.',
     priceInfo: 'Park gratis · Fahrgeschäfte kostenpflichtig',
-    lastUpdated: '2026-03-19',
+    website: '',
+    lastUpdated: '2026-04-10',
     tags: ['park', 'riesenrad', 'joggen', 'gratis']
   },
   {
@@ -1201,7 +1188,8 @@ const LOCATIONS = [
     lng: 16.2780,
     description: 'Aussichtsturm in Ottakring mit grandiosem Panoramablick über ganz Wien. Einer der besten kostenlosen Aussichtspunkte.',
     priceInfo: 'Gratis',
-    lastUpdated: '2026-03-19',
+    website: '',
+    lastUpdated: '2026-04-10',
     tags: ['aussicht', 'panorama', 'ottakring']
   },
   {
@@ -1212,10 +1200,10 @@ const LOCATIONS = [
     district: '1190 Wien',
     lat: 48.2720,
     lng: 16.3330,
-    description: 'Wien ist die einzige Großstadt der Welt mit großem Weinanbaugebiet. Wandert durch die Weinberge und genießt daanch einen günstigen Heurigen.',
+    description: 'Wien ist die einzige Großstadt der Welt mit großem Weinanbaugebiet. Wandert durch die Weinberge und genießt danach einen günstigen Heurigen.',
     priceInfo: 'Gratis (Wanderung)',
-    tips: 'Mit Straßenbahnlinie D bis Nussdorf, dann wandern.',
-    lastUpdated: '2026-03-19',
+    website: '',
+    lastUpdated: '2026-04-10',
     tags: ['weinberge', 'wandern', 'aussicht', 'heuriger']
   },
   {
@@ -1228,7 +1216,8 @@ const LOCATIONS = [
     lng: 16.5600,
     description: 'Wien ist die einzige Großstadt Europas mit einem Nationalpark! Unberührte Auen-Landschaft direkt vor der Stadt.',
     priceInfo: 'Gratis',
-    lastUpdated: '2026-03-19',
+    website: '',
+    lastUpdated: '2026-04-10',
     tags: ['nationalpark', 'natur', 'donau']
   },
   {
@@ -1241,7 +1230,8 @@ const LOCATIONS = [
     lng: 16.2490,
     description: 'Ehemaliges kaiserliches Jagdgebiet – riesiges Naturschutzgebiet mit Wildschweinen und Hirschen. Die Hermesvilla liegt mittendrin (1. So/Monat gratis).',
     priceInfo: 'Gratis',
-    lastUpdated: '2026-03-19',
+    website: '',
+    lastUpdated: '2026-04-10',
     tags: ['tiergarten', 'wandern', 'wildtiere']
   },
   {
@@ -1254,7 +1244,8 @@ const LOCATIONS = [
     lng: 16.3740,
     description: 'Ältester barocker Garten Wiens mit den markanten Flaktürmen. Perfekt zum Picknicken.',
     priceInfo: 'Gratis',
-    lastUpdated: '2026-03-19',
+    website: '',
+    lastUpdated: '2026-04-10',
     tags: ['park', 'barock', 'picknick']
   },
   {
@@ -1267,8 +1258,8 @@ const LOCATIONS = [
     lng: 16.3560,
     description: 'Geheimtipp! Die Kantine im Justizpalast bietet einen tollen Ausblick über Wien.',
     priceInfo: 'Gratis Aussicht',
-    openingHours: 'Bis ca. 17 Uhr',
-    lastUpdated: '2026-03-19',
+    website: '',
+    lastUpdated: '2026-04-10',
     tags: ['aussicht', 'geheimtipp', 'innere-stadt']
   },
   {
@@ -1281,135 +1272,351 @@ const LOCATIONS = [
     lng: 16.3122,
     description: 'Die weitläufigen Barockgärten von Schönbrunn mit Gloriette-Aussicht sind komplett gratis zu besichtigen! Nur der Palast kostet Eintritt.',
     priceInfo: 'Gärten: Gratis',
-    lastUpdated: '2026-03-19',
+    website: '',
+    lastUpdated: '2026-04-10',
     tags: ['schloss', 'garten', 'gratis', 'gloriette', 'aussicht']
   },
+  {
+    id: 107,
+    name: 'Donaukanal Street Art',
+    category: 'natur',
+    address: 'Donaukanal',
+    district: '1010/1020 Wien',
+    lat: 48.2130,
+    lng: 16.3750,
+    description: 'Wechselnde Graffiti und Wandmalereien entlang des Donaukanals. Eine der größten legalen Graffiti-Wände Europas. Im Sommer Strandbar-Feeling!',
+    priceInfo: 'Gratis',
+    website: '',
+    lastUpdated: '2026-04-10',
+    tags: ['street-art', 'graffiti', 'gratis', 'donaukanal']
+  },
+  {
+    id: 108,
+    name: 'Botanischer Garten',
+    category: 'natur',
+    address: 'Mechelgasse 2',
+    district: '1030 Wien',
+    lat: 48.1920,
+    lng: 16.3840,
+    description: 'Der Botanische Garten der Universität Wien mit über 11.000 Pflanzenarten. Eintritt komplett gratis!',
+    priceInfo: 'Gratis',
+    website: '',
+    lastUpdated: '2026-04-10',
+    tags: ['garten', 'gratis', 'natur', 'pflanzen']
+  },
+  {
+    id: 109,
+    name: 'Hundertwasserhaus',
+    category: 'natur',
+    address: 'Kegelgasse 36–38',
+    district: '1030 Wien',
+    lat: 48.2074,
+    lng: 16.3944,
+    description: 'Friedensreich Hundertwassers buntes Wohnhaus – ein architektonisches Kunstwerk. Gratis von außen zu besichtigen (Wohnhaus, kein Eintritt möglich).',
+    priceInfo: 'Gratis (Außenbesichtigung)',
+    website: '',
+    lastUpdated: '2026-04-10',
+    tags: ['architektur', 'kunst', 'gratis', 'sehenswürdigkeit']
+  },
+  {
+    id: 110,
+    name: 'Stephansdom',
+    category: 'natur',
+    address: 'Stephansplatz 1',
+    district: '1010 Wien',
+    lat: 48.2085,
+    lng: 16.3731,
+    description: 'Wiens Wahrzeichen! Der Hauptraum des gotischen Doms ist komplett gratis zugänglich. Nur Turmbesteigung und Katakomben kosten.',
+    priceInfo: 'Eingang gratis · Turm: ~6 €',
+    website: '',
+    lastUpdated: '2026-04-10',
+    tags: ['dom', 'gotik', 'gratis', 'wahrzeichen']
+  },
+  {
+    id: 111,
+    name: 'Volksgarten',
+    category: 'natur',
+    address: 'Volksgarten',
+    district: '1010 Wien',
+    lat: 48.2075,
+    lng: 16.3610,
+    description: 'Einer der elegantesten Parks Wiens – berühmt für seine Rosengärten (über 3.000 Rosenstöcke!). Perfekt für ein Picknick nahe der Hofburg.',
+    priceInfo: 'Gratis',
+    website: '',
+    lastUpdated: '2026-04-10',
+    tags: ['park', 'rosen', 'gratis', 'picknick']
+  },
+  {
+    id: 113,
+    name: 'Parlament (gratis Führung)',
+    category: 'natur',
+    address: 'Dr.-Karl-Renner-Ring 3',
+    district: '1010 Wien',
+    lat: 48.2088,
+    lng: 16.3583,
+    description: 'Das neu renovierte Parlamentsgebäude kann mit kostenlosen Führungen (Mo–Sa) besichtigt werden! Beeindruckende Architektur im griechischen Stil.',
+    priceInfo: 'Gratis (mit Voranmeldung)',
+    website: 'https://www.parlament.gv.at/',
+    lastUpdated: '2026-04-10',
+    tags: ['architektur', 'gratis', 'führung', 'sehenswürdigkeit']
+  },
+  {
+    id: 121,
+    name: 'Free Walking Tour Wien',
+    category: 'natur',
+    address: 'Albertinaplatz (Treffpunkt)',
+    district: '1010 Wien',
+    lat: 48.2042,
+    lng: 16.3690,
+    description: 'Kostenlose Stadtführungen auf Deutsch und Englisch. Guides arbeiten auf Trinkgeld-Basis – zahlt was es euch wert war! Täglich mehrere Touren: Altstadt, Ringstraße, verstecktes Wien.',
+    priceInfo: 'Gratis (Trinkgeld-Basis)',
+    website: 'https://www.freewalkingtourvienna.at/',
+    lastUpdated: '2026-04-10',
+    tags: ['führung', 'gratis', 'walking-tour', 'altstadt']
+  },
+  {
+    id: 127,
+    name: 'Rathaus – Gratis-Führungen',
+    category: 'natur',
+    address: 'Friedrich-Schmidt-Platz 1',
+    district: '1010 Wien',
+    lat: 48.2106,
+    lng: 16.3565,
+    description: 'Kostenlose Führungen durch das Wiener Rathaus an Werktagen (Mo, Mi, Fr um 13 Uhr). Beeindruckende neugotische Architektur und Festsaal!',
+    priceInfo: 'GRATIS',
+    website: '',
+    lastUpdated: '2026-04-10',
+    tags: ['rathaus', 'gratis', 'führung', 'neugotik']
+  },
+  {
+    id: 128,
+    name: 'Stadtpark',
+    category: 'natur',
+    address: 'Stadtpark',
+    district: '1030 Wien',
+    lat: 48.2067,
+    lng: 16.3833,
+    description: 'Ein beliebter Park in Wien mit vielen Grünflächen, Wegen und einem See. Perfekt für Spaziergänge und Picknicks.',
+    priceInfo: 'Gratis',
+    website: '',
+    lastUpdated: '2026-04-10',
+    tags: ['park', 'grünfläche', 'see', 'picknick']
+  },
+  {
+    id: 129,
+    name: 'Belvedere',
+    category: 'natur',
+    address: 'Rennweg 6',
+    district: '1030 Wien',
+    lat: 48.1922,
+    lng: 16.3833,
+    description: 'Ein barockes Schloss mit wunderschönen Gärten. Die Gärten sind kostenlos zugänglich, der Eintritt in das Schloss kostet jedoch.',
+    priceInfo: 'Gärten: Gratis, Schloss: ~15 €',
+    website: 'https://www.belvedere.at/',
+    lastUpdated: '2026-04-10',
+    tags: ['schloss', 'garten', 'barock', 'kunst']
+  }
+
 
   // ─── EINKAUFEN & MÄRKTE ──────────────────────────────────
   {
-    id: 50,
-    name: 'Brunnenmarkt',
-    category: 'einkaufen',
-    address: 'Brunnengasse',
-    district: '1160 Wien',
-    lat: 48.2110,
-    lng: 16.3380,
-    description: 'Wiens längster Straßenmarkt – viel günstiger als der Naschmarkt und weniger touristisch. Türkische und griechische Stände.',
-    priceInfo: 'Sehr günstig',
-    tips: 'Abends kurz vor Abbau besonders günstig! Gözleme an der Ecke Grundsteingasse. U6 Josefstädter Straße.',
-    lastUpdated: '2026-03-19',
-    tags: ['markt', 'gemüse', 'günstig', 'türkisch']
-  },
-  {
-    id: 51,
-    name: 'Meidlinger Markt',
-    category: 'einkaufen',
-    address: 'Meidlinger Markt',
-    district: '1120 Wien',
-    lat: 48.1830,
-    lng: 16.3300,
-    description: 'Gemütlicher Markt im 12. Bezirk mit frischem Obst und Gemüse zu fairen Preisen.',
-    priceInfo: 'Günstig',
-    tips: 'U6 Niederhofstraße.',
-    lastUpdated: '2026-03-19',
-    tags: ['markt', 'gemüse', 'günstig']
-  },
-  {
-    id: 52,
-    name: 'Naschmarkt',
-    category: 'einkaufen',
-    address: 'Naschmarkt',
-    district: '1060 Wien',
-    lat: 48.1980,
-    lng: 16.3630,
-    description: 'Wiens größter und bekanntester Markt. Vorsicht: Oft touristisch überteuert. Eher zum Schauen und für die Atmosphäre.',
-    priceInfo: 'Eher teuer',
-    tips: 'Lieber Brunnenmarkt zum günstigen Einkaufen!',
-    lastUpdated: '2026-03-19',
-    tags: ['markt', 'touristisch', 'sehenswürdigkeit']
-  },
+  id: 50,
+  name: 'Brunnenmarkt',
+  category: 'einkaufen',
+  address: 'Brunnengasse',
+  district: '1160 Wien',
+  lat: 48.2110,
+  lng: 16.3380,
+  description: 'Wiens längster Straßenmarkt – viel günstiger als der Naschmarkt und weniger touristisch. Türkische und griechische Stände.',
+  priceInfo: 'Sehr günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['markt', 'gemüse', 'günstig', 'türkisch']
+}
+
+{
+  id: 51,
+  name: 'Meidlinger Markt',
+  category: 'einkaufen',
+  address: 'Meidlinger Markt',
+  district: '1120 Wien',
+  lat: 48.1830,
+  lng: 16.3300,
+  description: 'Gemütlicher Markt im 12. Bezirk mit frischem Obst und Gemüse zu fairen Preisen.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['markt', 'gemüse', 'günstig']
+}
+
+{
+  id: 52,
+  name: 'Naschmarkt',
+  category: 'einkaufen',
+  address: 'Naschmarkt',
+  district: '1060 Wien',
+  lat: 48.1980,
+  lng: 16.3630,
+  description: 'Wiens größter und bekanntester Markt. Vorsicht: Oft touristisch überteuert. Eher zum Schauen und für die Atmosphäre.',
+  priceInfo: 'Eher teuer',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['markt', 'touristisch', 'sehenswürdigkeit']
+}
+
+{
+  id: 125,
+  name: 'Too Good To Go – Überraschungstüten',
+  category: 'einkaufen',
+  address: 'Diverse Standorte (App)',
+  district: 'Wien',
+  lat: 48.2100,
+  lng: 16.3700,
+  description: 'Lebensmittel retten und sparen! Über die TGTG-App kauft ihr Überraschungstüten von Bäckereien, Supermärkten und Restaurants für 3–5 €. Inhalt im Wert von mindestens dem Dreifachen!',
+  priceInfo: '3–5 € pro Tüte (Wert: 9–15 €)',
+  website: 'https://www.toogoodtogo.com/',
+  lastUpdated: '2026-04-10',
+  tags: ['toogoodtogo', 'lebensmittelrettung', 'günstig', 'app']
+}
+
+{
+  id: 126,
+  name: 'Hofer',
+  category: 'einkaufen',
+  address: 'Diverse Standorte',
+  district: 'Wien',
+  lat: 48.2000,
+  lng: 16.3500,
+  description: 'Günstiger Supermarkt mit einer Vielzahl an Produkten.',
+  priceInfo: 'Günstig',
+  website: 'https://www.hofer.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['supermarkt', 'günstig']
+}
+
+{
+  id: 127,
+  name: 'SPAR',
+  category: 'einkaufen',
+  address: 'Diverse Standorte',
+  district: 'Wien',
+  lat: 48.2100,
+  lng: 16.3600,
+  description: 'Günstiger Supermarkt mit einer Vielzahl an Produkten.',
+  priceInfo: 'Günstig',
+  website: 'https://www.spar.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['supermarkt', 'günstig']
+}
+
 
   // ─── BÄCKEREIEN (24h) ────────────────────────────────────
   {
-    id: 60,
-    name: 'Backshop 24',
-    category: 'baeckerei',
-    address: 'Neubaugürtel 25',
-    district: '1150 Wien',
-    lat: 48.2000,
-    lng: 16.3390,
-    description: 'Türkische Bäckerei mit 24-Stunden-Öffnungszeit! Frisches Gebäck, Brot – auch am Sonntag.',
-    priceInfo: 'Günstig',
-    openingHours: '24 Stunden, auch Sonntag',
-    lastUpdated: '2026-03-19',
-    tags: ['bäckerei', '24h', 'türkisch']
-  },
-  {
-    id: 61,
-    name: 'Bäckerei Gül',
-    category: 'baeckerei',
-    address: 'Rechte Wienzeile 45',
-    district: '1050 Wien',
-    lat: 48.1960,
-    lng: 16.3580,
-    description: 'Türkische 24h-Bäckerei an der Wienzeile.',
-    priceInfo: 'Günstig',
-    openingHours: '24 Stunden',
-    lastUpdated: '2026-03-19',
-    tags: ['bäckerei', '24h', 'türkisch']
-  },
-  {
-    id: 62,
-    name: 'Bäckerei Lale Han',
-    category: 'baeckerei',
-    address: 'Brunnengasse 51',
-    district: '1160 Wien',
-    lat: 48.2120,
-    lng: 16.3370,
-    description: 'Türkische Bäckerei am Brunnenmarkt mit 24-Stunden-Betrieb.',
-    priceInfo: 'Günstig',
-    openingHours: '24 Stunden',
-    lastUpdated: '2026-03-19',
-    tags: ['bäckerei', '24h', 'brunnenmarkt']
-  },
-  {
-    id: 63,
-    name: 'Trabzon Ekmek Fırını',
-    category: 'baeckerei',
-    address: 'Brunnengasse 65',
-    district: '1160 Wien',
-    lat: 48.2130,
-    lng: 16.3360,
-    description: 'Weitere 24h-Bäckerei in der Brunnengasse. Authentisches türkisches Brot und Gebäck.',
-    priceInfo: 'Günstig',
-    openingHours: '24 Stunden',
-    lastUpdated: '2026-03-19',
-    tags: ['bäckerei', '24h', 'brunnenmarkt']
-  },
-  {
-    id: 64,
-    name: 'Anadolu (Siebenbrunnengasse)',
-    category: 'baeckerei',
-    address: 'Siebenbrunnengasse 55–57',
-    district: '1050 Wien',
-    lat: 48.1880,
-    lng: 16.3600,
-    description: 'Türkische Konditorei/Bäckerei, bis 24 Uhr geöffnet. Gebäck, Brot und manchmal auch Kebap.',
-    priceInfo: 'Günstig',
-    openingHours: 'Bis 24 Uhr',
-    lastUpdated: '2026-03-19',
-    tags: ['bäckerei', 'spätabend', 'türkisch']
-  },
+  id: 60,
+  name: 'Backshop 24',
+  category: 'baeckerei',
+  address: 'Neubaugürtel 25',
+  district: '1150 Wien',
+  lat: 48.2000,
+  lng: 16.3390,
+  description: 'Türkische Bäckerei mit 24-Stunden-Öffnungszeit! Frisches Gebäck, Brot – auch am Sonntag.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', '24h', 'türkisch']
+}
 
-  
-  
-  
-  
-  
-  
-  
-  
-  // ─── KINO ────────────────────────────────────────────────
+{
+  id: 61,
+  name: 'Bäckerei Gül',
+  category: 'baeckerei',
+  address: 'Rechte Wienzeile 45',
+  district: '1050 Wien',
+  lat: 48.1960,
+  lng: 16.3580,
+  description: 'Türkische 24h-Bäckerei an der Wienzeile.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', '24h', 'türkisch']
+}
+
+{
+  id: 62,
+  name: 'Bäckerei Lale Han',
+  category: 'baeckerei',
+  address: 'Brunnengasse 51',
+  district: '1160 Wien',
+  lat: 48.2120,
+  lng: 16.3370,
+  description: 'Türkische Bäckerei am Brunnenmarkt mit 24-Stunden-Betrieb.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', '24h', 'brunnenmarkt']
+}
+
+{
+  id: 63,
+  name: 'Trabzon Ekmek Fırını',
+  category: 'baeckerei',
+  address: 'Brunnengasse 65',
+  district: '1160 Wien',
+  lat: 48.2130,
+  lng: 16.3360,
+  description: 'Weitere 24h-Bäckerei in der Brunnengasse. Authentisches türkisches Brot und Gebäck.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', '24h', 'brunnenmarkt']
+}
+
+{
+  id: 64,
+  name: 'Anadolu (Siebenbrunnengasse)',
+  category: 'baeckerei',
+  address: 'Siebenbrunnengasse 55–57',
+  district: '1050 Wien',
+  lat: 48.1880,
+  lng: 16.3600,
+  description: 'Türkische Konditorei/Bäckerei, bis 24 Uhr geöffnet. Gebäck, Brot und manchmal auch Kebap.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', 'spätabend', 'türkisch']
+}
+
+{
+  id: 65,
+  name: 'Özdemir Bäckerei',
+  category: 'baeckerei',
+  address: 'Gürtel 43',
+  district: '1150 Wien',
+  lat: 48.1990,
+  lng: 16.3380,
+  description: 'Türkische Bäckerei mit frischem Gebäck und Brot.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', 'türkisch']
+}
+
+{
+  id: 66,
+  name: 'Saray Bäckerei',
+  category: 'baeckerei',
+  address: 'Mariahilfer Straße 123',
+  district: '1060 Wien',
+  lat: 48.1940,
+  lng: 16.3510,
+  description: 'Türkische Bäckerei mit einer großen Auswahl an Gebäck und Brot.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', 'türkisch']
+}
+
+// ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
   name: 'Volxkino (Open Air)',
@@ -1618,83 +1825,176 @@ const LOCATIONS = [
   tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
 }
 
-// ─── CAFÉS ───────────────────────────────────────────────
+
+  // ─── CAFÉS ───────────────────────────────────────────────
   {
-    id: 80,
-    name: 'Café Kafka',
-    category: 'cafe',
-    address: 'Capistrangasse 8',
-    district: '1060 Wien',
-    lat: 48.1930,
-    lng: 16.3510,
-    description: 'Gemütliches Wiener Kaffeehaus mit Bücherregal und Zeitungen. Perfekt zum Lesen und Arbeiten. Kuchen und Frühstück zu fairen Preisen.',
-    priceInfo: 'Kaffee ab ~3 €',
-    openingHours: 'Mo–Fr 8–22, Sa–So 9–22 Uhr',
-    lastUpdated: '2026-03-19',
-    tags: ['café', 'kaffeehaus', 'lesen', 'frühstück']
-  },
+  id: 80,
+  name: 'Café Kafka',
+  category: 'cafe',
+  address: 'Capistrangasse 8',
+  district: '1060 Wien',
+  lat: 48.1930,
+  lng: 16.3510,
+  description: 'Gemütliches Wiener Kaffeehaus mit Bücherregal und Zeitungen. Perfekt zum Lesen und Arbeiten. Kuchen und Frühstück zu fairen Preisen.',
+  priceInfo: 'Kaffee ab ~3 €',
+  website: 'https://cafe-kafka.at',
+  lastUpdated: '2026-04-10',
+  tags: ['café', 'kaffeehaus', 'lesen', 'frühstück']
+}
+
+{
+  id: 103,
+  name: 'Justizcafé',
+  category: 'cafe',
+  address: 'Schmerlingplatz 10–11 (Dachgeschoss)',
+  district: '1010 Wien',
+  lat: 48.2092,
+  lng: 16.3562,
+  description: 'Geheimtipp! Öffentliche Kantine auf dem Dach des Justizpalasts mit grandiosem Panoramablick vom Rathaus bis zum Museumsquartier. Günstige Menüs!',
+  priceInfo: 'Menü ~7–9 €',
+  website: 'https://justizcafe.at',
+  lastUpdated: '2026-04-10',
+  tags: ['café', 'aussicht', 'geheimtipp', 'kantine', 'günstig']
+}
+
+{
+  id: 200,
+  name: 'Café Central',
+  category: 'cafe',
+  address: 'Herrengasse 14',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3631,
+  description: 'Traditionelles Wiener Kaffeehaus mit reicher Geschichte und prächtiger Architektur. Perfekt für Kaffee und Kuchen.',
+  priceInfo: 'Kaffee ab ~4 €',
+  website: 'https://cafe-central.at',
+  lastUpdated: '2026-04-10',
+  tags: ['café', 'kaffeehaus', 'traditionell']
+}
+
+{
+  id: 250,
+  name: 'Vollpension',
+  category: 'cafe',
+  address: 'Mariahilfer Straße 115',
+  district: '1060 Wien',
+  lat: 48.1942,
+  lng: 16.3462,
+  description: 'Gemütliches Café mit großem Angebot an Kaffee, Kuchen und Frühstück. Perfekt für ein entspanntes Frühstück oder einen Kaffee.',
+  priceInfo: 'Kaffee ab ~3 €',
+  website: 'https://vollpension.at',
+  lastUpdated: '2026-04-10',
+  tags: ['café', 'frühstück', 'kaffee']
+}
+
 
   // ─── TRANSPORT ───────────────────────────────────────────
   {
-    id: 90,
-    name: 'WienMobil Rad (ehem. CityBike)',
-    category: 'transport',
-    address: 'Diverse Standorte',
-    district: 'Wien',
-    lat: 48.2082,
-    lng: 16.3738,
-    description: 'Das alte CityBike-System wurde 2022 durch WienMobil Rad (Nextbike) ersetzt. 1 € Anmeldung. Standard: 0,75 €/30 Min. Mit Wiener-Linien-Jahreskarte günstiger (0,35 €/30 Min). Auch E-Bikes verfügbar (3 €/30 Min).',
-    priceInfo: '0,75 €/30 Min · Jahreskarte: 0,35 €/30 Min',
-    website: 'https://www.wienerlinien.at/wienmobil-rad',
-    tips: 'Jahres-Abo (59 €): erste 30 Min jeder Fahrt gratis! E-Bikes seit Juli 2025 als Pilot.',
-    lastUpdated: '2026-03-19',
-    tags: ['fahrrad', 'nextbike', 'e-bike', 'wienmobil']
-  },
-  {
-    id: 91,
-    name: 'Wiener Linien – Tickets',
-    category: 'transport',
-    address: 'Diverse U-Bahn-Stationen',
-    district: 'Wien',
-    lat: 48.2000,
-    lng: 16.3700,
-    description: 'Seit 1.1.2026 neue Preise: Einzelfahrt 3,20 € (digital 3,00 €). 24h-Ticket 10,20 € (digital 9,70 €). Kinder unter 6 gratis. 48h/72h-Tickets wurden abgeschafft!',
-    priceInfo: 'Einzelfahrt 3,20 € · 24h: 10,20 €',
-    website: 'https://www.wienerlinien.at/',
-    tips: 'IMMER digital kaufen – billiger! 48h/72h-Tickets gibt es nicht mehr. Kinder unter 6 gratis, unter 15 an So/Fei/Ferien gratis.',
-    lastUpdated: '2026-03-19',
-    tags: ['öffis', 'u-bahn', 'straßenbahn', 'bus']
-  },
-  {
-    id: 92,
-    name: 'Flughafen → Stadt (S-Bahn/ÖBB)',
-    category: 'transport',
-    address: 'Flughafen Wien (VIE)',
-    district: 'Schwechat',
-    lat: 48.1103,
-    lng: 16.5697,
-    description: 'NICHT den überteuerten CAT nehmen (14,90 €)! S7 zum Praterstern/Wien Mitte dauert ~25 Min für ~5,40 €. ÖBB Railjet zum Hbf nur ~15 Min. Airport-Bus ist auch eine Option.',
-    priceInfo: 'S7: ~5,40 € · CAT: 14,90 € (Touristenfalle!)',
-    tips: 'S7 oder ÖBB Railjet = beste Budget-Option. Wenn ihr schon eine Tageskarte habt, braucht ihr nur das Außenzonen-Ticket (~2,20 €).',
-    lastUpdated: '2026-03-19',
-    tags: ['flughafen', 's-bahn', 'railjet', 'budget-transfer']
-  },
-  {
-    id: 93,
-    name: 'Park+Ride Erdberg',
-    category: 'transport',
-    address: 'Park+Ride U3 Erdberg',
-    district: '1030 Wien',
-    lat: 48.1910,
-    lng: 16.4070,
-    description: 'Günstiges P+R Parkhaus an der U3. Während anderswo eine Stunde so viel kostet!',
-    priceInfo: '~4 € / Tag',
-    website: 'http://www.parkandride.at/',
-    lastUpdated: '2026-03-19',
-    tags: ['parken', 'park-and-ride', 'günstig']
-  },
+  id: 90,
+  name: 'WienMobil Rad (ehem. CityBike)',
+  category: 'transport',
+  address: 'Diverse Standorte',
+  district: 'Wien',
+  lat: 48.2082,
+  lng: 16.3738,
+  description: 'Das alte CityBike-System wurde 2022 durch WienMobil Rad (Nextbike) ersetzt. 1 € Anmeldung. Standard: 0,75 €/30 Min. Mit Wiener-Linien-Jahreskarte günstiger (0,35 €/30 Min). Auch E-Bikes verfügbar (3 €/30 Min).',
+  priceInfo: '0,75 €/30 Min · Jahreskarte: 0,35 €/30 Min',
+  website: 'https://www.wienerlinien.at/wienmobil-rad',
+  lastUpdated: '2026-04-10',
+  tags: ['fahrrad', 'nextbike', 'e-bike', 'wienmobil']
+}
 
-  // ─── NEUE EINTRÄGE (März 2026) ───────────────────────────
+{
+  id: 91,
+  name: 'Wiener Linien – Tickets',
+  category: 'transport',
+  address: 'Diverse U-Bahn-Stationen',
+  district: 'Wien',
+  lat: 48.2000,
+  lng: 16.3700,
+  description: 'Seit 1.1.2026 neue Preise: Einzelfahrt 3,20 € (digital 3,00 €). 24h-Ticket 10,20 € (digital 9,70 €). Kinder unter 6 gratis. 48h/72h-Tickets wurden abgeschafft!',
+  priceInfo: 'Einzelfahrt 3,20 € · 24h: 10,20 €',
+  website: 'https://www.wienerlinien.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['öffis', 'u-bahn', 'straßenbahn', 'bus']
+}
+
+{
+  id: 92,
+  name: 'Flughafen → Stadt (S-Bahn/ÖBB)',
+  category: 'transport',
+  address: 'Flughafen Wien (VIE)',
+  district: 'Schwechat',
+  lat: 48.1103,
+  lng: 16.5697,
+  description: 'NICHT den überteuerten CAT nehmen (14,90 €)! S7 zum Praterstern/Wien Mitte dauert ~25 Min für ~5,40 €. ÖBB Railjet zum Hbf nur ~15 Min. Airport-Bus ist auch eine Option.',
+  priceInfo: 'S7: ~5,40 € · CAT: 14,90 € (Touristenfalle!)',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['flughafen', 's-bahn', 'railjet', 'budget-transfer']
+}
+
+{
+  id: 93,
+  name: 'Park+Ride Erdberg',
+  category: 'transport',
+  address: 'Park+Ride U3 Erdberg',
+  district: '1030 Wien',
+  lat: 48.1910,
+  lng: 16.4070,
+  description: 'Günstiges P+R Parkhaus an der U3. Während anderswo eine Stunde so viel kostet!',
+  priceInfo: '~4 € / Tag',
+  website: 'http://www.parkandride.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['parken', 'park-and-ride', 'günstig']
+}
+
+{
+  id: 122,
+  name: 'Ringstraße per Tram (Linie 1 oder 71)',
+  category: 'transport',
+  address: 'Schwedenplatz (Start)',
+  district: '1010 Wien',
+  lat: 48.2115,
+  lng: 16.3780,
+  description: 'Günstige Sightseeing-Tour! Die Straßenbahnlinie 1 oder 71 fährt entlang der Ringstraße, vorbei an Staatsoper, Parlament, Rathaus, Burgtheater und Universität. Gültig mit jedem Wiener-Linien-Ticket!',
+  priceInfo: 'Normaler Fahrschein: 3,20 € (digital 3,00 €)',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['tram', 'sightseeing', 'günstig', 'ringstraße']
+}
+
+{
+  id: 123,
+  name: 'Vienna City Card',
+  category: 'transport',
+  address: 'Erhältlich an Verkaufsstellen (Hbf, Flughafen etc.)',
+  district: 'Wien',
+  lat: 48.1960,
+  lng: 16.3780,
+  description: 'Gratis Öffis + bis zu 50% Ermäßigung bei über 200 Attraktionen. Lohnt sich, wenn ihr 2–3 Museen besuchen wollt. Auch Online günstiger als vor Ort.',
+  priceInfo: '24h: ~17 € · 48h: ~25 € · 72h: ~29 €',
+  website: 'https://www.viennacitycard.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['citycard', 'ermäßigung', 'öffis', 'museen']
+}
+
+{
+  id: 124,
+  name: 'E-Auto-Sharing Wien',
+  category: 'transport',
+  address: 'Diverse Standorte',
+  district: 'Wien',
+  lat: 48.2082,
+  lng: 16.3738,
+  description: 'Günstige E-Auto-Sharing-Option in Wien. Ab 0,25 € pro Minute.',
+  priceInfo: 'Ab 0,25 € pro Minute',
+  website: 'https://www.e-auto-sharing-wien.at',
+  lastUpdated: '2026-04-10',
+  tags: ['e-auto', 'sharing', 'günstig']
+}
+
+// ─── NEUE EINTRÄGE (März 2026) ───────────────────────────
   {
     id: 100,
     name: 'Maschu Maschu',
