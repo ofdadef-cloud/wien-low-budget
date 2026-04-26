@@ -21,8 +21,66 @@ const LOCATIONS = [
   
   
   
-  // ─── DEALS ───────────────────────────────────────────────
   
+  // ─── DEALS ───────────────────────────────────────────────
+  {
+  id: 1,
+  name: 'Wien-Ticket',
+  category: 'deals',
+  address: 'Karlsplatz 1',
+  district: '1010 Wien',
+  lat: 48.2017,
+  lng: 16.3731,
+  description: 'Tageskarte für öffentliche Verkehrsmittel und Ermäßigungen bei verschiedenen Sehenswürdigkeiten.',
+  priceInfo: 'Ab ~8 € / Tag',
+  website: 'https://www.wien.info/de/besuchen/ticket',
+  lastUpdated: '2026-04-10',
+  tags: ['günstig', 'öffentlich']
+},
+{
+  id: 2,
+  name: 'Museumssommer',
+  category: 'deals',
+  address: 'Mariahilfer Straße 1',
+  district: '1060 Wien',
+  lat: 48.2013,
+  lng: 16.3583,
+  description: 'Freier Eintritt in verschiedene Museen während der Sommermonate.',
+  priceInfo: 'kostenlos',
+  website: 'https://www.museumsommer.at',
+  lastUpdated: '2026-04-10',
+  tags: ['kostenlos', 'museum']
+},
+{
+  id: 3,
+  name: 'Wien-Card',
+  category: 'deals',
+  address: 'Friedrich-Schmidt-Platz 1',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: 'Karte mit verschiedenen Ermäßigungen und Gratis-Leistungen für Touristen.',
+  priceInfo: 'Ab ~20 € / 24h',
+  website: 'https://www.wien.info/de/besuchen/wien-card',
+  lastUpdated: '2026-04-10',
+  tags: ['günstig', 'touristen']
+},
+{
+  id: 4,
+  name: 'Heurigen-Abend',
+  category: 'deals',
+  address: 'Grinzinger Straße 1',
+  district: '1190 Wien',
+  lat: 48.2417,
+  lng: 16.3514,
+  description: 'Abend mit Wein und Musik in einem traditionellen Heurigen.',
+  priceInfo: 'Ab ~30 € / Person',
+  website: 'https://www.heurigen.at',
+  lastUpdated: '2026-04-10',
+  tags: ['günstig', 'wein']
+},
+
+
   // ─── ESSEN ───────────────────────────────────────────────
   {
   id: 1108,
@@ -327,26 +385,8 @@ const LOCATIONS = [
   district: '1050 Wien',
   lat: 48.1882,
   lng: 16.3533,
-  description: 'Tolles Lokal im 5. Bezirk nahe U4. Ein echtes 2-Gänge-Mittagsmenü (z.B. Suppe + Kalbsleber oder Hascheehörnchen) unter 10 Euro. Preis/Leistung ist sensationell.',
-  priceInfo: '2-Gänge-Menü 9,50 €',
-  website: 'https://woracziczky.at/',
-  lastUpdated: '2026-04-10',
-  tags: ['mittagessen', 'österreichisch', '2-gänge']
-},
-{
-  id: 1107,
-  name: 'Gasthaus Haller',
-  category: 'essen',
-  address: 'Wallensteinstraße 49',
-  district: '1200 Wien',
-  lat: 48.2323,
-  lng: 16.3712,
-  description: 'Eines der klassischen Wiener Gasthäuser in der Brigittenau, bei dem die Inflation nicht angekommen ist. Vegetarisches Mittagsmenü unter 10 Euro, Fleischmenü knapp darüber.',
-  priceInfo: 'Menüs ca. 9,20 – 11,00 €',
-  website: 'https://gasthaus-haller.at/',
-  lastUpdated: '2026-04-10',
-  tags: ['mittagessen', 'österreichisch', 'beisl']
-},
+  description: 'Tolles Lokal im 5. Bezirk nahe U4. Ein echtes 2-Gänge-Mittagsmenü (z.B. Suppe + Kalbsleber oder Hascheehörnchen) unter 10 Euro. Preis/Leistung ist sensationell,
+
 
   // ─── BARS & NACHTLEBEN ──────────────────────────────────
   {
@@ -363,6 +403,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['café', 'nachtleben', 'günstig', 'institution']
 },
+ 
 {
   id: 13,
   name: 'Soho',
@@ -377,6 +418,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['karaoke', 'cocktails', 'millennium-city']
 },
+ 
 {
   id: 14,
   name: 'Marea Alta',
@@ -391,6 +433,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['alternativ', 'queer-friendly', 'cocktails', 'partykeller']
 },
+ 
 {
   id: 105,
   name: 'Travel Shack',
@@ -405,6 +448,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'party', 'günstig', 'studenten']
 },
+ 
 {
   id: 106,
   name: 'Bukowski The Pub',
@@ -419,6 +463,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['pub', 'studenten', 'happy-hour', 'günstig', 'spätabend']
 },
+ 
 {
   id: 107,
   name: 'Kaffeebar',
@@ -433,6 +478,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kaffee', 'günstig', 'gemütlich']
 },
+ 
 {
   id: 108,
   name: 'Barfly',
@@ -446,6 +492,36 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'trendy', 'gemütlich']
+},
+ 
+{
+  id: 109,
+  name: 'Das Loft',
+  category: 'bars',
+  address: 'Lerchenfelder Straße 35',
+  district: '1070 Wien',
+  lat: 48.2120,
+  lng: 16.3540,
+  description: 'Stilvolle Bar mit einer großen Auswahl an Cocktails und einer tollen Aussicht auf die Stadt.',
+  priceInfo: 'Cocktails ab ~8 €',
+  website: 'https://www.dasloft.at',
+  lastUpdated: '2026-04-10',
+  tags: ['cocktails', 'trendy', 'aussicht']
+},
+ 
+{
+  id: 110,
+  name: 'The Sign',
+  category: 'bars',
+  address: 'Marxergasse 24',
+  district: '1030 Wien',
+  lat: 48.1930,
+  lng: 16.3810,
+  description: 'Moderne Bar mit einer großen Auswahl an Cocktails und einer gemütlichen Atmosphäre.',
+  priceInfo: 'Cocktails ab ~7 €',
+  website: 'https://www.thesign.bar',
+  lastUpdated: '2026-04-10',
+  tags: ['cocktails', 'modern', 'gemütlich']
 },
 
 
@@ -661,8 +737,7 @@ const LOCATIONS = [
     lastUpdated: '2026-04-10',
     tags: ['hostel', 'dachterrasse', 'modern']
   },
- 
-{
+  {
     id: 31,
     name: 'Hostel Ruthensteiner',
     category: 'unterkunft',
@@ -676,8 +751,7 @@ const LOCATIONS = [
     lastUpdated: '2026-04-10',
     tags: ['hostel', 'garten', 'solo-traveller']
   },
- 
-{
+  {
     id: 32,
     name: 'St Christopher\'s Inn Vienna',
     category: 'unterkunft',
@@ -691,8 +765,7 @@ const LOCATIONS = [
     lastUpdated: '2026-04-10',
     tags: ['hostel', 'party', 'bar']
   },
- 
-{
+  {
     id: 33,
     name: 'Wombat\'s City Hostel – Naschmarkt',
     category: 'unterkunft',
@@ -706,8 +779,7 @@ const LOCATIONS = [
     lastUpdated: '2026-04-10',
     tags: ['hostel', 'zentral', 'naschmarkt']
   },
- 
-{
+  {
     id: 34,
     name: 'MEININGER Hotel Wien Downtown Franz',
     category: 'unterkunft',
@@ -721,8 +793,7 @@ const LOCATIONS = [
     lastUpdated: '2026-04-10',
     tags: ['hostel', 'hotel-mix', 'leopoldstadt']
   },
- 
-{
+  {
     id: 35,
     name: 'A&O Hostel Wien Hauptbahnhof',
     category: 'unterkunft',
@@ -736,8 +807,7 @@ const LOCATIONS = [
     lastUpdated: '2026-04-10',
     tags: ['hostel', 'hauptbahnhof', 'sehr-günstig']
   },
- 
-{
+  {
     id: 36,
     name: 'Hostel Vienna',
     category: 'unterkunft',
@@ -750,6 +820,20 @@ const LOCATIONS = [
     website: 'https://www.hostelvienna.at',
     lastUpdated: '2026-04-10',
     tags: ['hostel', 'ruhig', 'günstig']
+  },
+  {
+    id: 37,
+    name: 'Safestay Vienna',
+    category: 'unterkunft',
+    address: 'Dorotheergasse 7',
+    district: '1010 Wien',
+    lat: 48.2083,
+    lng: 16.3731,
+    description: 'Ein modernes und sicheres Hostel im Zentrum von Wien. Bietet eine tolle Atmosphäre und eine gute Verbindung zu den öffentlichen Verkehrsmitteln.',
+    priceInfo: 'Ab ~22 € / Nacht',
+    website: 'https://www.safestay.com/vienna/',
+    lastUpdated: '2026-04-10',
+    tags: ['hostel', 'zentral', 'sicher']
   },
 
 
@@ -1037,6 +1121,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['markt', 'gemüse', 'günstig', 'türkisch']
 },
+ 
 {
   id: 51,
   name: 'Meidlinger Markt',
@@ -1051,6 +1136,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['markt', 'gemüse', 'günstig']
 },
+ 
 {
   id: 52,
   name: 'Naschmarkt',
@@ -1065,6 +1151,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['markt', 'touristisch', 'sehenswürdigkeit']
 },
+ 
 {
   id: 125,
   name: 'Too Good To Go – Überraschungstüten',
@@ -1079,6 +1166,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['toogoodtogo', 'lebensmittelrettung', 'günstig', 'app']
 },
+ 
 {
   id: 126,
   name: 'Hofer',
@@ -1093,6 +1181,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['supermarkt', 'günstig']
 },
+ 
 {
   id: 127,
   name: 'SPAR',
@@ -1208,6 +1297,34 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'türkisch']
 },
+{
+  id: 67,
+  name: 'Bäckerei Istanbul',
+  category: 'baeckerei',
+  address: 'Favoritenstraße 12',
+  district: '1040 Wien',
+  lat: 48.1920,
+  lng: 16.3620,
+  description: 'Günstige türkische Bäckerei mit frischem Gebäck und Brot.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', 'türkisch', 'günstig']
+},
+{
+  id: 68,
+  name: 'Bäckerei Anatolia',
+  category: 'baeckerei',
+  address: 'Längenfeldgasse 15',
+  district: '1120 Wien',
+  lat: 48.1850,
+  lng: 16.3150,
+  description: 'Türkische Bäckerei mit einer großen Auswahl an Gebäck und Brot.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', 'türkisch', 'günstig']
+},
 
 // ─── KINO ────────────────────────────────────────────────
   {
@@ -1224,7 +1341,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'gratis', 'sommer']
 },
- 
 {
   id: 71,
   name: 'Kino unter Sternen',
@@ -1239,7 +1355,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'sommer', 'karlsplatz']
 },
- 
 {
   id: 72,
   name: 'Rathausplatz Film Festival',
@@ -1253,7 +1368,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'sommer', 'gratis', 'rathausplatz']
 },
- 
 {
   id: 127,
   name: 'Filmcasino',
@@ -1268,7 +1382,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'charmant']
 },
- 
 {
   id: 128,
   name: 'Artis International',
@@ -1283,7 +1396,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'international', 'günstig']
 },
- 
 {
   id: 129,
   name: 'Top Kino',
@@ -1298,7 +1410,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'modern', 'günstig']
 },
- 
 {
   id: 130,
   name: 'Breitwand',
@@ -1313,7 +1424,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
- 
 {
   id: 131,
   name: 'Cinema Paradiso',
@@ -1328,7 +1438,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'charmant']
 },
- 
 {
   id: 132,
   name: 'Haydn Kino',
@@ -1343,7 +1452,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'traditionell', 'günstig']
 },
- 
 {
   id: 133,
   name: 'Wiener Urania',
@@ -1358,7 +1466,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
- 
 {
   id: 134,
   name: 'Votiv Kino',
@@ -1373,7 +1480,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
- 
 {
   id: 135,
   name: 'Arena',
@@ -1388,7 +1494,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
- 
 {
   id: 120,
   name: 'Wiener Staatsoper – Stehplätze',
@@ -1403,7 +1508,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['oper', 'stehplatz', 'kultur', 'günstig']
 },
- 
 {
   id: 126,
   name: 'Sommernachtkonzert Schönbrunn (gratis!)',
@@ -1476,6 +1580,20 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['café', 'frühstück', 'kaffee']
 },
+{
+  id: 300,
+  name: 'Café Sperl',
+  category: 'cafe',
+  address: 'Gumpendorfer Straße 11',
+  district: '1060 Wien',
+  lat: 48.1953,
+  lng: 16.3392,
+  description: 'Traditionelles Wiener Kaffeehaus mit gemütlicher Atmosphäre. Perfekt für Kaffee, Kuchen und Gespräche.',
+  priceInfo: 'Kaffee ab ~3,50 €',
+  website: 'https://cafesperl.at',
+  lastUpdated: '2026-04-10',
+  tags: ['café', 'kaffeehaus', 'traditionell']
+},
 
 
   // ─── TRANSPORT ───────────────────────────────────────────
@@ -1493,6 +1611,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['fahrrad', 'nextbike', 'e-bike', 'wienmobil']
 },
+ 
 {
   id: 91,
   name: 'Wiener Linien – Tickets',
@@ -1507,6 +1626,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['öffis', 'u-bahn', 'straßenbahn', 'bus']
 },
+ 
 {
   id: 92,
   name: 'Flughafen → Stadt (S-Bahn/ÖBB)',
@@ -1521,6 +1641,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['flughafen', 's-bahn', 'railjet', 'budget-transfer']
 },
+ 
 {
   id: 93,
   name: 'Park+Ride Erdberg',
@@ -1535,6 +1656,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['parken', 'park-and-ride', 'günstig']
 },
+ 
 {
   id: 122,
   name: 'Ringstraße per Tram (Linie 1 oder 71)',
@@ -1549,6 +1671,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['tram', 'sightseeing', 'günstig', 'ringstraße']
 },
+ 
 {
   id: 123,
   name: 'Vienna City Card',
@@ -1563,6 +1686,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['citycard', 'ermäßigung', 'öffis', 'museen']
 },
+ 
 {
   id: 124,
   name: 'E-Auto-Sharing Wien',
@@ -1577,6 +1701,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['e-auto', 'sharing', 'günstig']
 },
+
 // ─── NEUE EINTRÄGE (März 2026) ───────────────────────────
   {
     id: 100,
