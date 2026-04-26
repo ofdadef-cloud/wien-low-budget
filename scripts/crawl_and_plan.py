@@ -102,11 +102,17 @@ def apply_update(file_path, category, new_entries_js, original_content, location
     if next_section == -1:
         next_section = len(locations_block)
     
+    # Extract the comment line dynamically
+    end_of_comment = locations_block.find('\n', cat_start)
+    if end_of_comment == -1:
+        end_of_comment = len(locations_block)
+    comment_line = locations_block[cat_start:end_of_comment]
+
     # Ensure the block ends with a comma to not break the JS array
     if not new_entries_js.rstrip().endswith(','):
         new_entries_js = new_entries_js.rstrip() + ','
         
-    new_block = f"\n  {comment_line}  {new_entries_js}\n\n"
+    new_block = f"\n  {comment_line}\n  {new_entries_js}\n\n"
     
     new_locations = locations_block[:cat_start] + new_block + locations_block[next_section:]
     new_content = original_content[:locations_start] + new_locations + original_content[locations_end:]
