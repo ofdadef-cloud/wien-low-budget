@@ -22,6 +22,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -37,20 +38,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'öffentlich']
 },
-{
-  id: 2,
-  name: 'Museumssommer',
-  category: 'deals',
-  address: 'Mariahilfer Straße 1',
-  district: '1060 Wien',
-  lat: 48.2013,
-  lng: 16.3583,
-  description: 'Freier Eintritt in verschiedene Museen während der Sommermonate.',
-  priceInfo: 'kostenlos',
-  website: 'https://www.museumsommer.at',
-  lastUpdated: '2026-04-10',
-  tags: ['kostenlos', 'museum']
-},
+ 
 {
   id: 3,
   name: 'Wien-Card',
@@ -65,6 +53,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'touristen']
 },
+ 
 {
   id: 4,
   name: 'Heurigen-Abend',
@@ -79,9 +68,38 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'wein']
 },
+ 
+{
+  id: 5,
+  name: 'Mittwochs-Rabatt',
+  category: 'deals',
+  address: 'Mariahilfer Straße 100',
+  district: '1060 Wien',
+  lat: 48.2013,
+  lng: 16.3583,
+  description: '10% Rabatt auf alle Produkte im Laden.',
+  priceInfo: '10% Rabatt',
+  website: 'https://www.mittwochs-rabatt.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'mittwoch']
+},
+ 
+{
+  id: 6,
+  name: 'Happy-Hour',
+  category: 'deals',
+  address: 'Kärntner Straße 10',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: '2-für-1 auf alle Getränke zwischen 17 und 19 Uhr.',
+  priceInfo: '2-für-1',
+  website: 'https://www.happy-hour.at',
+  lastUpdated: '2026-04-10',
+  tags: ['happy-hour', 'getränke']
+},
 
-
-  // ─── ESSEN ───────────────────────────────────────────────
+// ─── ESSEN ───────────────────────────────────────────────
   {
   id: 1108,
   name: 'Pitaraz',
@@ -1326,7 +1344,8 @@ const LOCATIONS = [
   tags: ['bäckerei', 'türkisch', 'günstig']
 },
 
-// ─── KINO ────────────────────────────────────────────────
+
+  // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
   name: 'Volxkino (Open Air)',
@@ -1522,8 +1541,7 @@ const LOCATIONS = [
   tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
 },
 
-
-  // ─── CAFÉS ───────────────────────────────────────────────
+// ─── CAFÉS ───────────────────────────────────────────────
   {
   id: 80,
   name: 'Café Kafka',
