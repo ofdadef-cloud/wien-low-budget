@@ -23,6 +23,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -38,7 +39,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'öffentlich']
 },
- 
 {
   id: 3,
   name: 'Wien-Card',
@@ -53,7 +53,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'touristen']
 },
- 
 {
   id: 4,
   name: 'Heurigen-Abend',
@@ -68,22 +67,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'wein']
 },
- 
-{
-  id: 5,
-  name: 'Mittwochs-Rabatt',
-  category: 'deals',
-  address: 'Mariahilfer Straße 100',
-  district: '1060 Wien',
-  lat: 48.2013,
-  lng: 16.3583,
-  description: '10% Rabatt auf alle Produkte im Laden.',
-  priceInfo: '10% Rabatt',
-  website: 'https://www.mittwochs-rabatt.at',
-  lastUpdated: '2026-04-10',
-  tags: ['rabatt', 'mittwoch']
-},
- 
 {
   id: 6,
   name: 'Happy-Hour',
@@ -97,6 +80,20 @@ const LOCATIONS = [
   website: 'https://www.happy-hour.at',
   lastUpdated: '2026-04-10',
   tags: ['happy-hour', 'getränke']
+},
+{
+  id: 7,
+  name: 'Mittwochs-Rabatt im Café Central',
+  category: 'deals',
+  address: 'Herrengasse 14',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3631,
+  description: '10% Rabatt auf alle Getränke und Speisen im Café Central.',
+  priceInfo: '10% Rabatt',
+  website: 'https://www.cafe-central.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'mittwoch']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1345,6 +1342,7 @@ const LOCATIONS = [
 },
 
 
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
@@ -1514,7 +1512,7 @@ const LOCATIONS = [
   tags: ['kino', 'günstig', 'vielfältig']
 },
 {
-  id: 120,
+  id: 136,
   name: 'Wiener Staatsoper – Stehplätze',
   category: 'kino',
   address: 'Opernring 2',
@@ -1528,7 +1526,7 @@ const LOCATIONS = [
   tags: ['oper', 'stehplatz', 'kultur', 'günstig']
 },
 {
-  id: 126,
+  id: 137,
   name: 'Sommernachtkonzert Schönbrunn (gratis!)',
   category: 'kino',
   address: 'Schloss Schönbrunn',
