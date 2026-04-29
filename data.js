@@ -24,6 +24,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -94,6 +95,34 @@ const LOCATIONS = [
   website: 'https://www.cafe-central.at',
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'mittwoch']
+},
+{
+  id: 8,
+  name: 'Donnerstag-Deal im Restaurant',
+  category: 'deals',
+  address: 'Mariahilfer Straße 1',
+  district: '1060 Wien',
+  lat: 48.2017,
+  lng: 16.3531,
+  description: '20% Rabatt auf alle Gerichte am Donnerstag.',
+  priceInfo: '20% Rabatt',
+  website: 'https://www.restaurant.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'donnerstag']
+},
+{
+  id: 9,
+  name: 'Freitag-Feier im Club',
+  category: 'deals',
+  address: 'Rechte Wienzeile 1',
+  district: '1050 Wien',
+  lat: 48.1917,
+  lng: 16.3631,
+  description: 'Eintritt frei vor 22 Uhr am Freitag.',
+  priceInfo: 'Eintritt frei',
+  website: 'https://www.club.at',
+  lastUpdated: '2026-04-10',
+  tags: ['frei', 'freitag']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1343,6 +1372,7 @@ const LOCATIONS = [
 
 
   
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
@@ -1537,6 +1567,34 @@ const LOCATIONS = [
   priceInfo: 'GRATIS',
   lastUpdated: '2026-04-10',
   tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
+},
+{
+  id: 138,
+  name: 'Cineplexx Donauplex',
+  category: 'kino',
+  address: 'Wagramer Straße 79',
+  district: '1220 Wien',
+  lat: 48.2432,
+  lng: 16.4144,
+  description: 'Ein modernes Kino mit einer großen Auswahl an Filmen. Preise ab 10,50 €.',
+  priceInfo: 'Ab 10,50 €',
+  website: 'https://www.cineplexx.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'modern', 'günstig']
+},
+{
+  id: 139,
+  name: 'Hollywood Megaplex',
+  category: 'kino',
+  address: 'Marxergasse 24',
+  district: '1030 Wien',
+  lat: 48.1935,
+  lng: 16.3945,
+  description: 'Ein großes Kino mit einer großen Auswahl an Filmen. Preise ab 12,00 €.',
+  priceInfo: 'Ab 12,00 €',
+  website: 'https://www.hollywood-megaplex.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'groß', 'günstig']
 },
 
 // ─── CAFÉS ───────────────────────────────────────────────
