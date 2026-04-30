@@ -25,6 +25,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -40,6 +41,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'öffentlich']
 },
+ 
 {
   id: 3,
   name: 'Wien-Card',
@@ -54,6 +56,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'touristen']
 },
+ 
 {
   id: 4,
   name: 'Heurigen-Abend',
@@ -68,6 +71,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'wein']
 },
+ 
 {
   id: 6,
   name: 'Happy-Hour',
@@ -82,6 +86,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['happy-hour', 'getränke']
 },
+ 
 {
   id: 7,
   name: 'Mittwochs-Rabatt im Café Central',
@@ -96,6 +101,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'mittwoch']
 },
+ 
 {
   id: 8,
   name: 'Donnerstag-Deal im Restaurant',
@@ -110,6 +116,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'donnerstag']
 },
+ 
 {
   id: 9,
   name: 'Freitag-Feier im Club',
@@ -123,6 +130,36 @@ const LOCATIONS = [
   website: 'https://www.club.at',
   lastUpdated: '2026-04-10',
   tags: ['frei', 'freitag']
+},
+ 
+{
+  id: 10,
+  name: 'Sonnntag-Brunch',
+  category: 'deals',
+  address: 'Opernring 1',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: '10% Rabatt auf alle Brunch-Gerichte am Sonntag.',
+  priceInfo: '10% Rabatt',
+  website: 'https://www.sonnntag-brunch.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'sonntag']
+},
+ 
+{
+  id: 11,
+  name: 'Dienstag-Deal im Kino',
+  category: 'deals',
+  address: 'Marxergasse 1',
+  district: '1030 Wien',
+  lat: 48.1917,
+  lng: 16.3831,
+  description: '20% Rabatt auf alle Kinotickets am Dienstag.',
+  priceInfo: '20% Rabatt',
+  website: 'https://www.kino.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'dienstag']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1373,6 +1410,7 @@ const LOCATIONS = [
 
   
   
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
@@ -1595,6 +1633,20 @@ const LOCATIONS = [
   website: 'https://www.hollywood-megaplex.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'groß', 'günstig']
+},
+{
+  id: 140,
+  name: 'Filmarchiv Austria',
+  category: 'kino',
+  address: 'Spiegelgasse 2',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: 'Ein Kino mit einer großen Auswahl an klassischen Filmen. Preise ab 8,00 €.',
+  priceInfo: 'Ab 8,00 €',
+  website: 'https://www.filmarchiv.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'klassisch', 'günstig']
 },
 
 // ─── CAFÉS ───────────────────────────────────────────────
