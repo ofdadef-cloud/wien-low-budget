@@ -26,6 +26,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -41,7 +42,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'öffentlich']
 },
- 
 {
   id: 3,
   name: 'Wien-Card',
@@ -56,7 +56,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'touristen']
 },
- 
 {
   id: 4,
   name: 'Heurigen-Abend',
@@ -71,7 +70,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'wein']
 },
- 
 {
   id: 6,
   name: 'Happy-Hour',
@@ -86,7 +84,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['happy-hour', 'getränke']
 },
- 
 {
   id: 7,
   name: 'Mittwochs-Rabatt im Café Central',
@@ -101,7 +98,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'mittwoch']
 },
- 
 {
   id: 8,
   name: 'Donnerstag-Deal im Restaurant',
@@ -116,7 +112,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'donnerstag']
 },
- 
 {
   id: 9,
   name: 'Freitag-Feier im Club',
@@ -131,7 +126,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['frei', 'freitag']
 },
- 
 {
   id: 10,
   name: 'Sonnntag-Brunch',
@@ -146,7 +140,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'sonntag']
 },
- 
 {
   id: 11,
   name: 'Dienstag-Deal im Kino',
@@ -160,6 +153,20 @@ const LOCATIONS = [
   website: 'https://www.kino.at',
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'dienstag']
+},
+{
+  id: 12,
+  name: 'Wochenend-Deal im Hotel',
+  category: 'deals',
+  address: 'Schottenring 1',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: '15% Rabatt auf alle Zimmer am Wochenende.',
+  priceInfo: '15% Rabatt',
+  website: 'https://www.hotel.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'wochenende']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1411,6 +1418,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
@@ -1426,6 +1434,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'gratis', 'sommer']
 },
+ 
 {
   id: 71,
   name: 'Kino unter Sternen',
@@ -1440,6 +1449,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'sommer', 'karlsplatz']
 },
+ 
 {
   id: 72,
   name: 'Rathausplatz Film Festival',
@@ -1453,6 +1463,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'sommer', 'gratis', 'rathausplatz']
 },
+ 
 {
   id: 127,
   name: 'Filmcasino',
@@ -1467,6 +1478,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'charmant']
 },
+ 
 {
   id: 128,
   name: 'Artis International',
@@ -1481,6 +1493,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'international', 'günstig']
 },
+ 
 {
   id: 129,
   name: 'Top Kino',
@@ -1495,6 +1508,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'modern', 'günstig']
 },
+ 
 {
   id: 130,
   name: 'Breitwand',
@@ -1509,6 +1523,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
+ 
 {
   id: 131,
   name: 'Cinema Paradiso',
@@ -1523,6 +1538,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'charmant']
 },
+ 
 {
   id: 132,
   name: 'Haydn Kino',
@@ -1537,6 +1553,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'traditionell', 'günstig']
 },
+ 
 {
   id: 133,
   name: 'Wiener Urania',
@@ -1551,6 +1568,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
+ 
 {
   id: 134,
   name: 'Votiv Kino',
@@ -1565,6 +1583,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
+ 
 {
   id: 135,
   name: 'Arena',
@@ -1579,6 +1598,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
+ 
 {
   id: 136,
   name: 'Wiener Staatsoper – Stehplätze',
@@ -1593,6 +1613,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['oper', 'stehplatz', 'kultur', 'günstig']
 },
+ 
 {
   id: 137,
   name: 'Sommernachtkonzert Schönbrunn (gratis!)',
@@ -1606,6 +1627,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
 },
+ 
 {
   id: 138,
   name: 'Cineplexx Donauplex',
@@ -1620,6 +1642,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'modern', 'günstig']
 },
+ 
 {
   id: 139,
   name: 'Hollywood Megaplex',
@@ -1634,6 +1657,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'groß', 'günstig']
 },
+ 
 {
   id: 140,
   name: 'Filmarchiv Austria',
@@ -1647,6 +1671,21 @@ const LOCATIONS = [
   website: 'https://www.filmarchiv.at/',
   lastUpdated: '2026-04-10',
   tags: ['kino', 'klassisch', 'günstig']
+},
+ 
+{
+  id: 141,
+  name: 'Das Kino',
+  category: 'kino',
+  address: 'Lichtenstegg 1-3',
+  district: '1140 Wien',
+  lat: 48.1942,
+  lng: 16.2722,
+  description: 'Ein charmantes Kino mit einer großen Auswahl an Filmen. Preise ab 9,00 €.',
+  priceInfo: 'Ab 9,00 €',
+  website: 'https://www.daskino.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['kino', 'charmant', 'günstig']
 },
 
 // ─── CAFÉS ───────────────────────────────────────────────
