@@ -169,7 +169,8 @@ const LOCATIONS = [
   tags: ['rabatt', 'wochenende']
 },
 
-// ─── ESSEN ───────────────────────────────────────────────
+
+  // ─── ESSEN ───────────────────────────────────────────────
   {
   id: 1108,
   name: 'Pitaraz',
@@ -466,14 +467,16 @@ const LOCATIONS = [
   tags: ['mensa', 'mittagessen', 'geheimtipp', 'günstig']
 },
 {
-  id: 1106,
-  name: 'Gasthaus Woracziczky',
+  id: 100,
+  name: 'Maschu Maschu',
   category: 'essen',
-  address: 'Spengergasse 52',
-  district: '1050 Wien',
-  lat: 48.1882,
-  lng: 16.3533,
-  description: 'Tolles Lokal im 5. Bezirk nahe U4. Ein echtes 2-Gänge-Mittagsmenü (z.B. Suppe + Kalbsleber oder Hascheehörnchen) unter 10 Euro. Preis/Leistung ist sensationell,
+  address: 'Neubaugasse 20',
+  district: '1070 Wien',
+  lat: 48.1990,
+  lng: 16.3510,
+  description: 'Israelische Küche: Falafel, Hummus, Shakshuka und frische Salate. Schnell, günstig und lecker. Sehr beliebt in der Mittagszeit!',
+  priceInfo: 'Falafel-Teller ~8 €',
+  openingHours: 'Mo–Sa,
 
 
   // ─── BARS & NACHTLEBEN ──────────────────────────────────
@@ -491,7 +494,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['café', 'nachtleben', 'günstig', 'institution']
 },
- 
 {
   id: 13,
   name: 'Soho',
@@ -506,7 +508,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['karaoke', 'cocktails', 'millennium-city']
 },
- 
 {
   id: 14,
   name: 'Marea Alta',
@@ -521,7 +522,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['alternativ', 'queer-friendly', 'cocktails', 'partykeller']
 },
- 
 {
   id: 105,
   name: 'Travel Shack',
@@ -536,7 +536,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'party', 'günstig', 'studenten']
 },
- 
 {
   id: 106,
   name: 'Bukowski The Pub',
@@ -551,7 +550,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['pub', 'studenten', 'happy-hour', 'günstig', 'spätabend']
 },
- 
 {
   id: 107,
   name: 'Kaffeebar',
@@ -566,7 +564,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kaffee', 'günstig', 'gemütlich']
 },
- 
 {
   id: 108,
   name: 'Barfly',
@@ -581,7 +578,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'trendy', 'gemütlich']
 },
- 
 {
   id: 109,
   name: 'Das Loft',
@@ -596,7 +592,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'trendy', 'aussicht']
 },
- 
 {
   id: 110,
   name: 'The Sign',
@@ -610,6 +605,34 @@ const LOCATIONS = [
   website: 'https://www.thesign.bar',
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'modern', 'gemütlich']
+},
+{
+  id: 111,
+  name: 'Florian',
+  category: 'bars',
+  address: 'Spiegelgasse 10',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: 'Günstige Bar mit einer großen Auswahl an Bieren und Cocktails.',
+  priceInfo: 'Bier ab ~3 €, Cocktails ab ~5 €',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['günstig', 'bier', 'cocktails']
+},
+{
+  id: 112,
+  name: 'Café Central',
+  category: 'bars',
+  address: 'Herrengasse 14',
+  district: '1010 Wien',
+  lat: 48.2084,
+  lng: 16.3732,
+  description: 'Historisches Café mit einer großen Auswahl an Kaffeespezialitäten und kleinen Snacks.',
+  priceInfo: 'Kaffee ab ~4 €',
+  website: 'https://www.cafecentral.wien',
+  lastUpdated: '2026-04-10',
+  tags: ['kaffee', 'historisch', 'gemütlich']
 },
 
 
@@ -922,6 +945,20 @@ const LOCATIONS = [
     website: 'https://www.safestay.com/vienna/',
     lastUpdated: '2026-04-10',
     tags: ['hostel', 'zentral', 'sicher']
+  },
+  {
+    id: 38,
+    name: 'Hostel One Vienna',
+    category: 'unterkunft',
+    address: 'Hütteldorfer Straße 80',
+    district: '1150 Wien',
+    lat: 48.1944,
+    lng: 16.3294,
+    description: 'Ein gemütliches Hostel mit einer tollen Atmosphäre und einer guten Verbindung zu den öffentlichen Verkehrsmitteln.',
+    priceInfo: 'Ab ~20 € / Nacht',
+    website: 'https://www.hostelone.com/vienna/',
+    lastUpdated: '2026-04-10',
+    tags: ['hostel', 'gemütlich', 'günstig']
   },
 
 
@@ -1284,6 +1321,36 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['supermarkt', 'günstig']
 },
+ 
+{
+  id: 128,
+  name: 'Lidl',
+  category: 'einkaufen',
+  address: 'Diverse Standorte',
+  district: 'Wien',
+  lat: 48.2200,
+  lng: 16.3800,
+  description: 'Günstiger Supermarkt mit einer Vielzahl an Produkten.',
+  priceInfo: 'Günstig',
+  website: 'https://www.lidl.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['supermarkt', 'günstig']
+},
+ 
+{
+  id: 129,
+  name: 'Penny',
+  category: 'einkaufen',
+  address: 'Diverse Standorte',
+  district: 'Wien',
+  lat: 48.2300,
+  lng: 16.3900,
+  description: 'Günstiger Supermarkt mit einer Vielzahl an Produkten.',
+  priceInfo: 'Günstig',
+  website: 'https://www.penny.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['supermarkt', 'günstig']
+},
 
 
   // ─── BÄCKEREIEN (24h) ────────────────────────────────────
@@ -1300,7 +1367,8 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'türkisch']
-},
+}
+ 
 {
   id: 61,
   name: 'Bäckerei Gül',
@@ -1314,7 +1382,8 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'türkisch']
-},
+}
+ 
 {
   id: 62,
   name: 'Bäckerei Lale Han',
@@ -1328,7 +1397,8 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'brunnenmarkt']
-},
+}
+ 
 {
   id: 63,
   name: 'Trabzon Ekmek Fırını',
@@ -1342,7 +1412,8 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'brunnenmarkt']
-},
+}
+ 
 {
   id: 64,
   name: 'Anadolu (Siebenbrunnengasse)',
@@ -1356,7 +1427,8 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'spätabend', 'türkisch']
-},
+}
+ 
 {
   id: 65,
   name: 'Özdemir Bäckerei',
@@ -1370,7 +1442,8 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'türkisch']
-},
+}
+ 
 {
   id: 66,
   name: 'Saray Bäckerei',
@@ -1384,7 +1457,8 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'türkisch']
-},
+}
+ 
 {
   id: 67,
   name: 'Bäckerei Istanbul',
@@ -1398,7 +1472,8 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'türkisch', 'günstig']
-},
+}
+ 
 {
   id: 68,
   name: 'Bäckerei Anatolia',
@@ -1414,12 +1489,7 @@ const LOCATIONS = [
   tags: ['bäckerei', 'türkisch', 'günstig']
 },
 
-
-  
-  
-  
-  
-  // ─── KINO ────────────────────────────────────────────────
+// ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
   name: 'Volxkino (Open Air)',
@@ -1688,7 +1758,8 @@ const LOCATIONS = [
   tags: ['kino', 'charmant', 'günstig']
 },
 
-// ─── CAFÉS ───────────────────────────────────────────────
+
+  // ─── CAFÉS ───────────────────────────────────────────────
   {
   id: 80,
   name: 'Café Kafka',
@@ -1703,6 +1774,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['café', 'kaffeehaus', 'lesen', 'frühstück']
 },
+ 
 {
   id: 103,
   name: 'Justizcafé',
@@ -1717,6 +1789,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['café', 'aussicht', 'geheimtipp', 'kantine', 'günstig']
 },
+ 
 {
   id: 200,
   name: 'Café Central',
@@ -1731,6 +1804,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['café', 'kaffeehaus', 'traditionell']
 },
+ 
 {
   id: 250,
   name: 'Vollpension',
@@ -1745,6 +1819,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['café', 'frühstück', 'kaffee']
 },
+ 
 {
   id: 300,
   name: 'Café Sperl',
