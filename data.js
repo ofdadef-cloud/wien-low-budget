@@ -27,6 +27,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -168,9 +169,22 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'wochenende']
 },
+{
+  id: 13,
+  name: 'Neuer Deal im Café',
+  category: 'deals',
+  address: 'Neubaugasse 1',
+  district: '1070 Wien',
+  lat: 48.2017,
+  lng: 16.3514,
+  description: '15% Rabatt auf alle Getränke und Speisen am Mittwoch.',
+  priceInfo: '15% Rabatt',
+  website: 'https://www.neues-cafe.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'mittwoch']
+},
 
-
-  // ─── ESSEN ───────────────────────────────────────────────
+// ─── ESSEN ───────────────────────────────────────────────
   {
   id: 1108,
   name: 'Pitaraz',
@@ -1489,7 +1503,8 @@ const LOCATIONS = [
   tags: ['bäckerei', 'türkisch', 'günstig']
 },
 
-// ─── KINO ────────────────────────────────────────────────
+
+  // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
   name: 'Volxkino (Open Air)',
@@ -1504,7 +1519,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'gratis', 'sommer']
 },
- 
 {
   id: 71,
   name: 'Kino unter Sternen',
@@ -1519,7 +1533,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'sommer', 'karlsplatz']
 },
- 
 {
   id: 72,
   name: 'Rathausplatz Film Festival',
@@ -1533,7 +1546,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'open-air', 'sommer', 'gratis', 'rathausplatz']
 },
- 
 {
   id: 127,
   name: 'Filmcasino',
@@ -1548,7 +1560,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'charmant']
 },
- 
 {
   id: 128,
   name: 'Artis International',
@@ -1563,7 +1574,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'international', 'günstig']
 },
- 
 {
   id: 129,
   name: 'Top Kino',
@@ -1578,7 +1588,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'modern', 'günstig']
 },
- 
 {
   id: 130,
   name: 'Breitwand',
@@ -1593,7 +1602,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
- 
 {
   id: 131,
   name: 'Cinema Paradiso',
@@ -1608,7 +1616,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'charmant']
 },
- 
 {
   id: 132,
   name: 'Haydn Kino',
@@ -1623,7 +1630,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'traditionell', 'günstig']
 },
- 
 {
   id: 133,
   name: 'Wiener Urania',
@@ -1638,7 +1644,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
- 
 {
   id: 134,
   name: 'Votiv Kino',
@@ -1653,7 +1658,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
- 
 {
   id: 135,
   name: 'Arena',
@@ -1668,7 +1672,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'günstig', 'vielfältig']
 },
- 
 {
   id: 136,
   name: 'Wiener Staatsoper – Stehplätze',
@@ -1683,7 +1686,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['oper', 'stehplatz', 'kultur', 'günstig']
 },
- 
 {
   id: 137,
   name: 'Sommernachtkonzert Schönbrunn (gratis!)',
@@ -1697,7 +1699,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
 },
- 
 {
   id: 138,
   name: 'Cineplexx Donauplex',
@@ -1712,7 +1713,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'modern', 'günstig']
 },
- 
 {
   id: 139,
   name: 'Hollywood Megaplex',
@@ -1727,7 +1727,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'groß', 'günstig']
 },
- 
 {
   id: 140,
   name: 'Filmarchiv Austria',
@@ -1742,7 +1741,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kino', 'klassisch', 'günstig']
 },
- 
 {
   id: 141,
   name: 'Das Kino',
@@ -1758,8 +1756,7 @@ const LOCATIONS = [
   tags: ['kino', 'charmant', 'günstig']
 },
 
-
-  // ─── CAFÉS ───────────────────────────────────────────────
+// ─── CAFÉS ───────────────────────────────────────────────
   {
   id: 80,
   name: 'Café Kafka',
