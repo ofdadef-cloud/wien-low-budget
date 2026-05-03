@@ -28,6 +28,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -170,18 +171,18 @@ const LOCATIONS = [
   tags: ['rabatt', 'wochenende']
 },
 {
-  id: 13,
-  name: 'Neuer Deal im Café',
+  id: 14,
+  name: 'Neuer Mittwoch-Deal im Biergarten',
   category: 'deals',
-  address: 'Neubaugasse 1',
-  district: '1070 Wien',
-  lat: 48.2017,
-  lng: 16.3514,
-  description: '15% Rabatt auf alle Getränke und Speisen am Mittwoch.',
+  address: 'Praterstraße 1',
+  district: '1020 Wien',
+  lat: 48.2117,
+  lng: 16.3831,
+  description: '15% Rabatt auf alle Bier und Speisen am Mittwoch.',
   priceInfo: '15% Rabatt',
-  website: 'https://www.neues-cafe.at',
+  website: 'https://www.biergarten.at',
   lastUpdated: '2026-04-10',
-  tags: ['rabatt', 'mittwoch']
+  tags: ['rabatt', 'mittwoch', 'biergarten']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1504,6 +1505,7 @@ const LOCATIONS = [
 },
 
 
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
