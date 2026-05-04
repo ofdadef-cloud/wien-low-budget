@@ -29,6 +29,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -183,6 +184,34 @@ const LOCATIONS = [
   website: 'https://www.biergarten.at',
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'mittwoch', 'biergarten']
+},
+{
+  id: 15,
+  name: 'Frühstücks-Deal im Café',
+  category: 'deals',
+  address: 'Mariahilfer Straße 10',
+  district: '1060 Wien',
+  lat: 48.2017,
+  lng: 16.3531,
+  description: '10% Rabatt auf alle Frühstücks-Gerichte vor 11 Uhr.',
+  priceInfo: '10% Rabatt',
+  website: 'https://www.cafe.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'frühstück']
+},
+{
+  id: 16,
+  name: 'Montags-Deal im Restaurant',
+  category: 'deals',
+  address: 'Kärntner Straße 1',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: '20% Rabatt auf alle Gerichte am Montag.',
+  priceInfo: '20% Rabatt',
+  website: 'https://www.restaurant.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'montag']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1505,6 +1534,7 @@ const LOCATIONS = [
 },
 
 
+  
   
   // ─── KINO ────────────────────────────────────────────────
   {
