@@ -30,6 +30,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -212,6 +213,34 @@ const LOCATIONS = [
   website: 'https://www.restaurant.at',
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'montag']
+},
+{
+  id: 17,
+  name: 'Neuer Donnerstag-Deal im Theater',
+  category: 'deals',
+  address: 'Theatergasse 1',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: '10% Rabatt auf alle Theaterkarten am Donnerstag.',
+  priceInfo: '10% Rabatt',
+  website: 'https://www.theater.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'donnerstag', 'theater']
+},
+{
+  id: 18,
+  name: 'Freitag-Deal im Fitnessstudio',
+  category: 'deals',
+  address: 'Fleischmarkt 1',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: '20% Rabatt auf alle Fitnesskurse am Freitag.',
+  priceInfo: '20% Rabatt',
+  website: 'https://www.fitnessstudio.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'freitag', 'fitness']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1534,6 +1563,7 @@ const LOCATIONS = [
 },
 
 
+  
   
   
   // ─── KINO ────────────────────────────────────────────────
