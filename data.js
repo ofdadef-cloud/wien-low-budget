@@ -32,6 +32,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -47,7 +48,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'öffentlich']
 },
- 
 {
   id: 3,
   name: 'Wien-Card',
@@ -62,7 +62,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'touristen']
 },
- 
 {
   id: 4,
   name: 'Heurigen-Abend',
@@ -77,7 +76,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'wein']
 },
- 
 {
   id: 6,
   name: 'Happy-Hour',
@@ -92,7 +90,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['happy-hour', 'getränke']
 },
- 
 {
   id: 7,
   name: 'Mittwochs-Rabatt im Café Central',
@@ -107,7 +104,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'mittwoch']
 },
- 
 {
   id: 8,
   name: 'Donnerstag-Deal im Restaurant',
@@ -122,7 +118,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'donnerstag']
 },
- 
 {
   id: 9,
   name: 'Freitag-Feier im Club',
@@ -137,7 +132,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['frei', 'freitag']
 },
- 
 {
   id: 10,
   name: 'Sonnntag-Brunch',
@@ -152,7 +146,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'sonntag']
 },
- 
 {
   id: 11,
   name: 'Dienstag-Deal im Kino',
@@ -167,7 +160,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'dienstag']
 },
- 
 {
   id: 12,
   name: 'Wochenend-Deal im Hotel',
@@ -182,7 +174,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'wochenende']
 },
- 
 {
   id: 14,
   name: 'Neuer Mittwoch-Deal im Biergarten',
@@ -197,7 +188,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'mittwoch', 'biergarten']
 },
- 
 {
   id: 15,
   name: 'Frühstücks-Deal im Café',
@@ -212,7 +202,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'frühstück']
 },
- 
 {
   id: 16,
   name: 'Montags-Deal im Restaurant',
@@ -227,7 +216,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'montag']
 },
- 
 {
   id: 17,
   name: 'Neuer Donnerstag-Deal im Theater',
@@ -242,7 +230,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'donnerstag', 'theater']
 },
- 
 {
   id: 18,
   name: 'Freitag-Deal im Fitnessstudio',
@@ -256,6 +243,34 @@ const LOCATIONS = [
   website: 'https://www.fitnessstudio.at',
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'freitag', 'fitness']
+},
+{
+  id: 19,
+  name: 'Samstags-Deal im Museum',
+  category: 'deals',
+  address: 'Museumsplatz 1',
+  district: '1070 Wien',
+  lat: 48.2017,
+  lng: 16.3531,
+  description: '15% Rabatt auf alle Eintrittskarten am Samstag.',
+  priceInfo: '15% Rabatt',
+  website: 'https://www.museum.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'samstag', 'museum']
+},
+{
+  id: 20,
+  name: 'Sonntags-Deal im Spa',
+  category: 'deals',
+  address: 'Spastraße 1',
+  district: '1020 Wien',
+  lat: 48.2117,
+  lng: 16.3831,
+  description: '20% Rabatt auf alle Wellness-Angebote am Sonntag.',
+  priceInfo: '20% Rabatt',
+  website: 'https://www.spa.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'sonntag', 'spa']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1578,6 +1593,7 @@ const LOCATIONS = [
 },
 
 
+  
   
   
   
