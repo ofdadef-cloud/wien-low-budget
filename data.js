@@ -302,7 +302,8 @@ const LOCATIONS = [
   tags: ['rabatt', 'donnerstag', 'restaurant']
 },
 
-// ─── ESSEN ───────────────────────────────────────────────
+
+  // ─── ESSEN ───────────────────────────────────────────────
   {
   id: 1108,
   name: 'Pitaraz',
@@ -626,6 +627,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['café', 'nachtleben', 'günstig', 'institution']
 },
+ 
 {
   id: 13,
   name: 'Soho',
@@ -640,6 +642,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['karaoke', 'cocktails', 'millennium-city']
 },
+ 
 {
   id: 14,
   name: 'Marea Alta',
@@ -654,6 +657,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['alternativ', 'queer-friendly', 'cocktails', 'partykeller']
 },
+ 
 {
   id: 105,
   name: 'Travel Shack',
@@ -668,6 +672,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'party', 'günstig', 'studenten']
 },
+ 
 {
   id: 106,
   name: 'Bukowski The Pub',
@@ -682,6 +687,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['pub', 'studenten', 'happy-hour', 'günstig', 'spätabend']
 },
+ 
 {
   id: 107,
   name: 'Kaffeebar',
@@ -696,6 +702,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kaffee', 'günstig', 'gemütlich']
 },
+ 
 {
   id: 108,
   name: 'Barfly',
@@ -710,6 +717,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'trendy', 'gemütlich']
 },
+ 
 {
   id: 109,
   name: 'Das Loft',
@@ -724,6 +732,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'trendy', 'aussicht']
 },
+ 
 {
   id: 110,
   name: 'The Sign',
@@ -738,6 +747,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'modern', 'gemütlich']
 },
+ 
 {
   id: 111,
   name: 'Florian',
@@ -752,6 +762,7 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'bier', 'cocktails']
 },
+ 
 {
   id: 112,
   name: 'Café Central',
@@ -967,131 +978,131 @@ const LOCATIONS = [
 
   // ─── UNTERKÜNFTE ─────────────────────────────────────────
   {
-    id: 30,
-    name: 'JO&JOE Vienna',
-    category: 'unterkunft',
-    address: 'Europaplatz 1/6',
-    district: '1150 Wien',
-    lat: 48.1966,
-    lng: 16.3385,
-    description: 'Extrem modernes und stylisches Hostel direkt im IKEA am Westbahnhof. Bietet eine tolle Dachterrasse für Gäste und einen lebendigen Social-Vibe.',
-    priceInfo: 'Ab ~25 € / Nacht',
-    website: 'https://www.joandjoe.com/',
-    lastUpdated: '2026-04-10',
-    tags: ['hostel', 'dachterrasse', 'modern']
-  },
-  {
-    id: 31,
-    name: 'Hostel Ruthensteiner',
-    category: 'unterkunft',
-    address: 'Robert-Hamerling-Gasse 24',
-    district: '1150 Wien',
-    lat: 48.1916,
-    lng: 16.3383,
-    description: 'Familiäres und sehr entspanntes Independent-Hostel. Tolle Gemeinschaftsküche und ein wunderbarer Vibe im hauseigenen Garten (Oase mitten in der Stadt).',
-    priceInfo: 'Ab ~22 € / Nacht',
-    website: 'https://www.hostelruthensteiner.com/',
-    lastUpdated: '2026-04-10',
-    tags: ['hostel', 'garten', 'solo-traveller']
-  },
-  {
-    id: 32,
-    name: 'St Christopher\'s Inn Vienna',
-    category: 'unterkunft',
-    address: 'Columbusgasse 16',
-    district: '1100 Wien',
-    lat: 48.1798,
-    lng: 16.3768,
-    description: 'Das bekannte "Party-Hostel" südlich des Hauptbahnhofs. Gut angebunden und bekannt für seine hauseigene Belushi\'s Bar mit günstigen Drinks.',
-    priceInfo: 'Ab ~20 € / Nacht',
-    website: 'https://www.st-christophers.co.uk/',
-    lastUpdated: '2026-04-10',
-    tags: ['hostel', 'party', 'bar']
-  },
-  {
-    id: 33,
-    name: 'Wombat\'s City Hostel – Naschmarkt',
-    category: 'unterkunft',
-    address: 'Rechte Wienzeile 35',
-    district: '1040 Wien',
-    lat: 48.1970,
-    lng: 16.3620,
-    description: 'Ein echter Klassiker in Top-Lage direkt am Naschmarkt (Das "The Lounge" Habitat existiert nicht mehr, dieses hier ist nun DAS Wombats in Wien!). Legendäre WomBar inbegriffen.',
-    priceInfo: 'Ab ~24 € / Nacht',
-    website: 'https://www.wombats-hostels.com/vienna',
-    lastUpdated: '2026-04-10',
-    tags: ['hostel', 'zentral', 'naschmarkt']
-  },
-  {
-    id: 34,
-    name: 'MEININGER Hotel Wien Downtown Franz',
-    category: 'unterkunft',
-    address: 'Rembrandtstraße 21',
-    district: '1020 Wien',
-    lat: 48.2223,
-    lng: 16.3687,
-    description: 'Ein guter Mix aus Hotel und Hostel im hippen 2. Bezirk (Leopoldstadt). Sehr saubere Zimmer und professionell geführt. Ideal auch für kleine Gruppen.',
-    priceInfo: 'Ab ~28 € / Nacht',
-    website: 'https://www.meininger-hotels.com/',
-    lastUpdated: '2026-04-10',
-    tags: ['hostel', 'hotel-mix', 'leopoldstadt']
-  },
-  {
-    id: 35,
-    name: 'A&O Hostel Wien Hauptbahnhof',
-    category: 'unterkunft',
-    address: 'Sonnenwendgasse 11',
-    district: '1100 Wien',
-    lat: 48.1850,
-    lng: 16.3770,
-    description: 'Riesiges und verlässliches Budget-Hostel direkt hinter dem Hauptbahnhof. Funktionale Zimmer und meist unschlagbar günstige Betten im Dorm.',
-    priceInfo: 'Ab ~15 € / Nacht',
-    website: 'https://www.aohostels.com/at/wien/wien-hauptbahnhof/',
-    lastUpdated: '2026-04-10',
-    tags: ['hostel', 'hauptbahnhof', 'sehr-günstig']
-  },
-  {
-    id: 36,
-    name: 'Hostel Vienna',
-    category: 'unterkunft',
-    address: 'Myrthengasse 10',
-    district: '1150 Wien',
-    lat: 48.1922,
-    lng: 16.3356,
-    description: 'Ein einfaches, aber sauberes Hostel in einem ruhigen Viertel. Ideal für Budget-Reisende, die Wert auf eine gute Nachtruhe legen.',
-    priceInfo: 'Ab ~18 € / Nacht',
-    website: 'https://www.hostelvienna.at',
-    lastUpdated: '2026-04-10',
-    tags: ['hostel', 'ruhig', 'günstig']
-  },
-  {
-    id: 37,
-    name: 'Safestay Vienna',
-    category: 'unterkunft',
-    address: 'Dorotheergasse 7',
-    district: '1010 Wien',
-    lat: 48.2083,
-    lng: 16.3731,
-    description: 'Ein modernes und sicheres Hostel im Zentrum von Wien. Bietet eine tolle Atmosphäre und eine gute Verbindung zu den öffentlichen Verkehrsmitteln.',
-    priceInfo: 'Ab ~22 € / Nacht',
-    website: 'https://www.safestay.com/vienna/',
-    lastUpdated: '2026-04-10',
-    tags: ['hostel', 'zentral', 'sicher']
-  },
-  {
-    id: 38,
-    name: 'Hostel One Vienna',
-    category: 'unterkunft',
-    address: 'Hütteldorfer Straße 80',
-    district: '1150 Wien',
-    lat: 48.1944,
-    lng: 16.3294,
-    description: 'Ein gemütliches Hostel mit einer tollen Atmosphäre und einer guten Verbindung zu den öffentlichen Verkehrsmitteln.',
-    priceInfo: 'Ab ~20 € / Nacht',
-    website: 'https://www.hostelone.com/vienna/',
-    lastUpdated: '2026-04-10',
-    tags: ['hostel', 'gemütlich', 'günstig']
-  },
+  id: 30,
+  name: 'JO&JOE Vienna',
+  category: 'unterkunft',
+  address: 'Europaplatz 1/6',
+  district: '1150 Wien',
+  lat: 48.1966,
+  lng: 16.3385,
+  description: 'Extrem modernes und stylisches Hostel direkt im IKEA am Westbahnhof. Bietet eine tolle Dachterrasse für Gäste und einen lebendigen Social-Vibe.',
+  priceInfo: 'Ab ~25 € / Nacht',
+  website: 'https://www.joandjoe.com/',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'dachterrasse', 'modern']
+},
+{
+  id: 31,
+  name: 'Hostel Ruthensteiner',
+  category: 'unterkunft',
+  address: 'Robert-Hamerling-Gasse 24',
+  district: '1150 Wien',
+  lat: 48.1916,
+  lng: 16.3383,
+  description: 'Familiäres und sehr entspanntes Independent-Hostel. Tolle Gemeinschaftsküche und ein wunderbarer Vibe im hauseigenen Garten (Oase mitten in der Stadt).',
+  priceInfo: 'Ab ~22 € / Nacht',
+  website: 'https://www.hostelruthensteiner.com/',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'garten', 'solo-traveller']
+},
+{
+  id: 32,
+  name: 'St Christopher\'s Inn Vienna',
+  category: 'unterkunft',
+  address: 'Columbusgasse 16',
+  district: '1100 Wien',
+  lat: 48.1798,
+  lng: 16.3768,
+  description: 'Das bekannte "Party-Hostel" südlich des Hauptbahnhofs. Gut angebunden und bekannt für seine hauseigene Belushi\'s Bar mit günstigen Drinks.',
+  priceInfo: 'Ab ~20 € / Nacht',
+  website: 'https://www.st-christophers.co.uk/',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'party', 'bar']
+},
+{
+  id: 33,
+  name: 'Wombat\'s City Hostel – Naschmarkt',
+  category: 'unterkunft',
+  address: 'Rechte Wienzeile 35',
+  district: '1040 Wien',
+  lat: 48.1970,
+  lng: 16.3620,
+  description: 'Ein echter Klassiker in Top-Lage direkt am Naschmarkt (Das "The Lounge" Habitat existiert nicht mehr, dieses hier ist nun DAS Wombats in Wien!). Legendäre WomBar inbegriffen.',
+  priceInfo: 'Ab ~24 € / Nacht',
+  website: 'https://www.wombats-hostels.com/vienna',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'zentral', 'naschmarkt']
+},
+{
+  id: 34,
+  name: 'MEININGER Hotel Wien Downtown Franz',
+  category: 'unterkunft',
+  address: 'Rembrandtstraße 21',
+  district: '1020 Wien',
+  lat: 48.2223,
+  lng: 16.3687,
+  description: 'Ein guter Mix aus Hotel und Hostel im hippen 2. Bezirk (Leopoldstadt). Sehr saubere Zimmer und professionell geführt. Ideal auch für kleine Gruppen.',
+  priceInfo: 'Ab ~28 € / Nacht',
+  website: 'https://www.meininger-hotels.com/',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'hotel-mix', 'leopoldstadt']
+},
+{
+  id: 35,
+  name: 'A&O Hostel Wien Hauptbahnhof',
+  category: 'unterkunft',
+  address: 'Sonnenwendgasse 11',
+  district: '1100 Wien',
+  lat: 48.1850,
+  lng: 16.3770,
+  description: 'Riesiges und verlässliches Budget-Hostel direkt hinter dem Hauptbahnhof. Funktionale Zimmer und meist unschlagbar günstige Betten im Dorm.',
+  priceInfo: 'Ab ~15 € / Nacht',
+  website: 'https://www.aohostels.com/at/wien/wien-hauptbahnhof/',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'hauptbahnhof', 'sehr-günstig']
+},
+{
+  id: 36,
+  name: 'Hostel Vienna',
+  category: 'unterkunft',
+  address: 'Myrthengasse 10',
+  district: '1150 Wien',
+  lat: 48.1922,
+  lng: 16.3356,
+  description: 'Ein einfaches, aber sauberes Hostel in einem ruhigen Viertel. Ideal für Budget-Reisende, die Wert auf eine gute Nachtruhe legen.',
+  priceInfo: 'Ab ~18 € / Nacht',
+  website: 'https://www.hostelvienna.at',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'ruhig', 'günstig']
+},
+{
+  id: 37,
+  name: 'Safestay Vienna',
+  category: 'unterkunft',
+  address: 'Dorotheergasse 7',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: 'Ein modernes und sicheres Hostel im Zentrum von Wien. Bietet eine tolle Atmosphäre und eine gute Verbindung zu den öffentlichen Verkehrsmitteln.',
+  priceInfo: 'Ab ~22 € / Nacht',
+  website: 'https://www.safestay.com/vienna/',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'zentral', 'sicher']
+},
+{
+  id: 38,
+  name: 'Hostel One Vienna',
+  category: 'unterkunft',
+  address: 'Hütteldorfer Straße 80',
+  district: '1150 Wien',
+  lat: 48.1944,
+  lng: 16.3294,
+  description: 'Ein gemütliches Hostel mit einer tollen Atmosphäre und einer guten Verbindung zu den öffentlichen Verkehrsmitteln.',
+  priceInfo: 'Ab ~20 € / Nacht',
+  website: 'https://www.hostelone.com/vienna/',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'gemütlich', 'günstig']
+},
 
 
   // ─── NATUR & AUSSICHT ────────────────────────────────────
@@ -1499,8 +1510,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'türkisch']
-}
- 
+},
 {
   id: 61,
   name: 'Bäckerei Gül',
@@ -1514,8 +1524,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'türkisch']
-}
- 
+},
 {
   id: 62,
   name: 'Bäckerei Lale Han',
@@ -1529,8 +1538,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'brunnenmarkt']
-}
- 
+},
 {
   id: 63,
   name: 'Trabzon Ekmek Fırını',
@@ -1544,8 +1552,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', '24h', 'brunnenmarkt']
-}
- 
+},
 {
   id: 64,
   name: 'Anadolu (Siebenbrunnengasse)',
@@ -1559,8 +1566,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'spätabend', 'türkisch']
-}
- 
+},
 {
   id: 65,
   name: 'Özdemir Bäckerei',
@@ -1574,8 +1580,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'türkisch']
-}
- 
+},
 {
   id: 66,
   name: 'Saray Bäckerei',
@@ -1589,8 +1594,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'türkisch']
-}
- 
+},
 {
   id: 67,
   name: 'Bäckerei Istanbul',
@@ -1604,8 +1608,7 @@ const LOCATIONS = [
   website: '',
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'türkisch', 'günstig']
-}
- 
+},
 {
   id: 68,
   name: 'Bäckerei Anatolia',
@@ -1620,15 +1623,22 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'türkisch', 'günstig']
 },
+{
+  id: 69,
+  name: 'Bäckerei Wien',
+  category: 'baeckerei',
+  address: 'Kärntner Straße 10',
+  district: '1010 Wien',
+  lat: 48.2080,
+  lng: 16.3730,
+  description: 'Traditionelle Wiener Bäckerei mit einer großen Auswahl an Gebäck und Brot.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', 'traditionell', 'günstig']
+},
 
-
-  
-  
-  
-  
-  
-  
-  // ─── KINO ────────────────────────────────────────────────
+// ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
   name: 'Volxkino (Open Air)',
@@ -1880,7 +1890,8 @@ const LOCATIONS = [
   tags: ['kino', 'charmant', 'günstig']
 },
 
-// ─── CAFÉS ───────────────────────────────────────────────
+
+  // ─── CAFÉS ───────────────────────────────────────────────
   {
   id: 80,
   name: 'Café Kafka',
