@@ -33,6 +33,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -271,6 +272,34 @@ const LOCATIONS = [
   website: 'https://www.spa.at',
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'sonntag', 'spa']
+},
+{
+  id: 21,
+  name: 'Neuer Deal im Café',
+  category: 'deals',
+  address: 'Neubaugasse 1',
+  district: '1070 Wien',
+  lat: 48.2017,
+  lng: 16.3531,
+  description: '15% Rabatt auf alle Getränke und Speisen am Mittwoch.',
+  priceInfo: '15% Rabatt',
+  website: 'https://www.neuescafe.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'mittwoch', 'cafe']
+},
+{
+  id: 22,
+  name: 'Donnerstag-Deal im Restaurant',
+  category: 'deals',
+  address: 'Mariahilfer Straße 10',
+  district: '1060 Wien',
+  lat: 48.2017,
+  lng: 16.3531,
+  description: '25% Rabatt auf alle Gerichte am Donnerstag.',
+  priceInfo: '25% Rabatt',
+  website: 'https://www.restaurant2.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'donnerstag', 'restaurant']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1593,6 +1622,7 @@ const LOCATIONS = [
 },
 
 
+  
   
   
   
