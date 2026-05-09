@@ -34,6 +34,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -301,9 +302,36 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'donnerstag', 'restaurant']
 },
+{
+  id: 23,
+  name: 'Mittwochs-Deal im Biergarten',
+  category: 'deals',
+  address: 'Biergartenstraße 1',
+  district: '1020 Wien',
+  lat: 48.2117,
+  lng: 16.3831,
+  description: '10% Rabatt auf alle Bier und Speisen am Mittwoch.',
+  priceInfo: '10% Rabatt',
+  website: 'https://www.biergarten2.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'mittwoch', 'biergarten']
+},
+{
+  id: 24,
+  name: 'Freitag-Deal im Club',
+  category: 'deals',
+  address: 'Clubstraße 1',
+  district: '1050 Wien',
+  lat: 48.1917,
+  lng: 16.3631,
+  description: 'Eintritt frei vor 22 Uhr am Freitag.',
+  priceInfo: 'Eintritt frei',
+  website: 'https://www.club2.at',
+  lastUpdated: '2026-04-10',
+  tags: ['frei', 'freitag']
+},
 
-
-  // ─── ESSEN ───────────────────────────────────────────────
+// ─── ESSEN ───────────────────────────────────────────────
   {
   id: 1108,
   name: 'Pitaraz',
@@ -1638,7 +1666,8 @@ const LOCATIONS = [
   tags: ['bäckerei', 'traditionell', 'günstig']
 },
 
-// ─── KINO ────────────────────────────────────────────────
+
+  // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
   name: 'Volxkino (Open Air)',
@@ -1890,8 +1919,7 @@ const LOCATIONS = [
   tags: ['kino', 'charmant', 'günstig']
 },
 
-
-  // ─── CAFÉS ───────────────────────────────────────────────
+// ─── CAFÉS ───────────────────────────────────────────────
   {
   id: 80,
   name: 'Café Kafka',
