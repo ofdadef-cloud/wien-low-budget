@@ -35,6 +35,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -329,6 +330,76 @@ const LOCATIONS = [
   website: 'https://www.club2.at',
   lastUpdated: '2026-04-10',
   tags: ['frei', 'freitag']
+},
+{
+  id: 25,
+  name: 'Neuer Deal im Hotel',
+  category: 'deals',
+  address: 'Hotelstraße 1',
+  district: '1010 Wien',
+  lat: 48.2083,
+  lng: 16.3731,
+  description: '20% Rabatt auf alle Zimmer am Wochenende.',
+  priceInfo: '20% Rabatt',
+  website: 'https://www.hotel3.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'wochenende', 'hotel']
+},
+{
+  id: 26,
+  name: 'Dienstag-Deal im Fitnessstudio',
+  category: 'deals',
+  address: 'Fitnessstraße 1',
+  district: '1020 Wien',
+  lat: 48.2117,
+  lng: 16.3831,
+  description: '15% Rabatt auf alle Fitnesskurse am Dienstag.',
+  priceInfo: '15% Rabatt',
+  website: 'https://www.fitnessstudio2.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'dienstag', 'fitness']
+},
+{
+  id: 27,
+  name: 'Mittwochs-Deal im Café',
+  category: 'deals',
+  address: 'Caféstraße 1',
+  district: '1070 Wien',
+  lat: 48.2017,
+  lng: 16.3531,
+  description: '10% Rabatt auf alle Getränke und Speisen am Mittwoch.',
+  priceInfo: '10% Rabatt',
+  website: 'https://www.cafe3.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'mittwoch', 'cafe']
+},
+{
+  id: 28,
+  name: 'Freitag-Deal im Restaurant',
+  category: 'deals',
+  address: 'Restaurantstraße 1',
+  district: '1060 Wien',
+  lat: 48.2017,
+  lng: 16.3531,
+  description: '25% Rabatt auf alle Gerichte am Freitag.',
+  priceInfo: '25% Rabatt',
+  website: 'https://www.restaurant3.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'freitag', 'restaurant']
+},
+{
+  id: 29,
+  name: 'Samstags-Deal im Biergarten',
+  category: 'deals',
+  address: 'Biergartenstraße 2',
+  district: '1020 Wien',
+  lat: 48.2117,
+  lng: 16.3831,
+  description: '15% Rabatt auf alle Bier und Speisen am Samstag.',
+  priceInfo: '15% Rabatt',
+  website: 'https://www.biergarten3.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'samstag', 'biergarten']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1667,6 +1738,7 @@ const LOCATIONS = [
 },
 
 
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
