@@ -36,6 +36,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -400,6 +401,34 @@ const LOCATIONS = [
   website: 'https://www.biergarten3.at',
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'samstag', 'biergarten']
+},
+{
+  id: 30,
+  name: 'Neuer Deal im Hotel',
+  category: 'deals',
+  address: 'Hotelstraße 2',
+  district: '1010 Wien',
+  lat: 48.2084,
+  lng: 16.3732,
+  description: '25% Rabatt auf alle Zimmer am Wochenende.',
+  priceInfo: '25% Rabatt',
+  website: 'https://www.hotel4.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'wochenende', 'hotel']
+},
+{
+  id: 31,
+  name: 'Mittwochs-Deal im Fitnessstudio',
+  category: 'deals',
+  address: 'Fitnessstraße 2',
+  district: '1020 Wien',
+  lat: 48.2118,
+  lng: 16.3832,
+  description: '20% Rabatt auf alle Fitnesskurse am Mittwoch.',
+  priceInfo: '20% Rabatt',
+  website: 'https://www.fitnessstudio3.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'mittwoch', 'fitness']
 },
 
 // ─── ESSEN ───────────────────────────────────────────────
@@ -1738,6 +1767,7 @@ const LOCATIONS = [
 },
 
 
+  
   
   // ─── KINO ────────────────────────────────────────────────
   {
