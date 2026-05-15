@@ -40,6 +40,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -461,6 +462,13 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'freitag', 'theater']
 },
+{
+  id: 34,
+  name: 'Neuer Deal im Café',
+  category: 'deals',
+  address: 'Neue Caféstraße 1',
+  district: '1070 Wien',
+  lat: 48.201,
 
 // ─── ESSEN ───────────────────────────────────────────────
   {
@@ -1798,6 +1806,7 @@ const LOCATIONS = [
 },
 
 
+  
   
   
   
