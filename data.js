@@ -470,7 +470,8 @@ const LOCATIONS = [
   district: '1070 Wien',
   lat: 48.201,
 
-// ─── ESSEN ───────────────────────────────────────────────
+
+  // ─── ESSEN ───────────────────────────────────────────────
   {
   id: 1108,
   name: 'Pitaraz',
@@ -794,7 +795,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['café', 'nachtleben', 'günstig', 'institution']
 },
- 
 {
   id: 13,
   name: 'Soho',
@@ -809,7 +809,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['karaoke', 'cocktails', 'millennium-city']
 },
- 
 {
   id: 14,
   name: 'Marea Alta',
@@ -824,7 +823,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['alternativ', 'queer-friendly', 'cocktails', 'partykeller']
 },
- 
 {
   id: 105,
   name: 'Travel Shack',
@@ -839,7 +837,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'party', 'günstig', 'studenten']
 },
- 
 {
   id: 106,
   name: 'Bukowski The Pub',
@@ -854,7 +851,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['pub', 'studenten', 'happy-hour', 'günstig', 'spätabend']
 },
- 
 {
   id: 107,
   name: 'Kaffeebar',
@@ -869,7 +865,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['kaffee', 'günstig', 'gemütlich']
 },
- 
 {
   id: 108,
   name: 'Barfly',
@@ -884,7 +879,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'trendy', 'gemütlich']
 },
- 
 {
   id: 109,
   name: 'Das Loft',
@@ -899,7 +893,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'trendy', 'aussicht']
 },
- 
 {
   id: 110,
   name: 'The Sign',
@@ -914,7 +907,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['cocktails', 'modern', 'gemütlich']
 },
- 
 {
   id: 111,
   name: 'Florian',
@@ -929,7 +921,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['günstig', 'bier', 'cocktails']
 },
- 
 {
   id: 112,
   name: 'Café Central',
@@ -943,6 +934,34 @@ const LOCATIONS = [
   website: 'https://www.cafecentral.wien',
   lastUpdated: '2026-04-10',
   tags: ['kaffee', 'historisch', 'gemütlich']
+},
+{
+  id: 113,
+  name: 'Würstelprater',
+  category: 'bars',
+  address: 'Riesenradplatz 1',
+  district: '1020 Wien',
+  lat: 48.2167,
+  lng: 16.4022,
+  description: 'Gemütliche Bar mit einer großen Auswahl an Bieren und kleinen Snacks im Herzen des Praters.',
+  priceInfo: 'Bier ab ~4 €',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bier', 'prater', 'gemütlich']
+},
+{
+  id: 114,
+  name: 'Schwarzes Kamel',
+  category: 'bars',
+  address: 'Burggasse 10',
+  district: '1070 Wien',
+  lat: 48.2042,
+  lng: 16.3542,
+  description: 'Günstige Bar mit einer großen Auswahl an Bieren und Cocktails.',
+  priceInfo: 'Bier ab ~3 €, Cocktails ab ~5 €',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['günstig', 'bier', 'cocktails']
 },
 
 
@@ -1270,275 +1289,303 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['hostel', 'gemütlich', 'günstig']
 },
+{
+  id: 39,
+  name: 'Happy Hostel',
+  category: 'unterkunft',
+  address: 'Friedrichstraße 10',
+  district: '1010 Wien',
+  lat: 48.2056,
+  lng: 16.3722,
+  description: 'Ein neues, modernes Hostel im Zentrum von Wien. Bietet eine tolle Atmosphäre und eine gute Verbindung zu den öffentlichen Verkehrsmitteln.',
+  priceInfo: 'Ab ~25 € / Nacht',
+  website: 'https://www.happyhostel.at',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'zentral', 'modern']
+},
+{
+  id: 40,
+  name: 'Budget Hostel',
+  category: 'unterkunft',
+  address: 'Mariahilfer Straße 120',
+  district: '1060 Wien',
+  lat: 48.1983,
+  lng: 16.3542,
+  description: 'Ein einfaches, aber günstiges Hostel in einem ruhigen Viertel. Ideal für Budget-Reisende, die Wert auf eine gute Nachtruhe legen.',
+  priceInfo: 'Ab ~18 € / Nacht',
+  website: 'https://www.budgethostel.at',
+  lastUpdated: '2026-04-10',
+  tags: ['hostel', 'ruhig', 'günstig']
+},
 
 
   // ─── NATUR & AUSSICHT ────────────────────────────────────
   {
-    id: 40,
-    name: 'Donauinsel',
-    category: 'natur',
-    address: 'Donauinsel',
-    district: 'Wien',
-    lat: 48.2300,
-    lng: 16.4100,
-    description: 'Riesige Freizeitinsel mitten in der Donau. Perfekt zum Schwimmen, Radfahren, Grillen und Chillen. Komplett gratis! Im Juni findet hier das Donauinselfest statt (gratis!).',
-    priceInfo: 'Gratis',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['insel', 'schwimmen', 'radfahren', 'gratis', 'donauinselfest']
-  },
-  {
-    id: 41,
-    name: 'Prater',
-    category: 'natur',
-    address: 'Prater',
-    district: '1020 Wien',
-    lat: 48.2170,
-    lng: 16.4000,
-    description: 'Riesiger Grünraum mit dem berühmten Riesenrad. Der Grüne Prater ist komplett gratis – ideal für Joggen, Radfahren und Spaziergänge. Nur die Fahrgeschäfte kosten.',
-    priceInfo: 'Park gratis · Fahrgeschäfte kostenpflichtig',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['park', 'riesenrad', 'joggen', 'gratis']
-  },
-  {
-    id: 42,
-    name: 'Jubiläumswarte',
-    category: 'natur',
-    address: 'Johann-Staud-Straße 80',
-    district: '1160 Wien',
-    lat: 48.2210,
-    lng: 16.2780,
-    description: 'Aussichtsturm in Ottakring mit grandiosem Panoramablick über ganz Wien. Einer der besten kostenlosen Aussichtspunkte.',
-    priceInfo: 'Gratis',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['aussicht', 'panorama', 'ottakring']
-  },
-  {
-    id: 43,
-    name: 'Weinberge Kahlenberg',
-    category: 'natur',
-    address: 'Kahlenberg',
-    district: '1190 Wien',
-    lat: 48.2720,
-    lng: 16.3330,
-    description: 'Wien ist die einzige Großstadt der Welt mit großem Weinanbaugebiet. Wandert durch die Weinberge und genießt danach einen günstigen Heurigen.',
-    priceInfo: 'Gratis (Wanderung)',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['weinberge', 'wandern', 'aussicht', 'heuriger']
-  },
-  {
-    id: 44,
-    name: 'Donau-Auen Nationalpark',
-    category: 'natur',
-    address: 'Nationalpark Donau-Auen',
-    district: 'Wien / NÖ',
-    lat: 48.1500,
-    lng: 16.5600,
-    description: 'Wien ist die einzige Großstadt Europas mit einem Nationalpark! Unberührte Auen-Landschaft direkt vor der Stadt.',
-    priceInfo: 'Gratis',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['nationalpark', 'natur', 'donau']
-  },
-  {
-    id: 45,
-    name: 'Lainzer Tiergarten',
-    category: 'natur',
-    address: 'Lainzer Tiergarten',
-    district: '1130 Wien',
-    lat: 48.1770,
-    lng: 16.2490,
-    description: 'Ehemaliges kaiserliches Jagdgebiet – riesiges Naturschutzgebiet mit Wildschweinen und Hirschen. Die Hermesvilla liegt mittendrin (1. So/Monat gratis).',
-    priceInfo: 'Gratis',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['tiergarten', 'wandern', 'wildtiere']
-  },
-  {
-    id: 46,
-    name: 'Augarten',
-    category: 'natur',
-    address: 'Augarten',
-    district: '1020 Wien',
-    lat: 48.2240,
-    lng: 16.3740,
-    description: 'Ältester barocker Garten Wiens mit den markanten Flaktürmen. Perfekt zum Picknicken.',
-    priceInfo: 'Gratis',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['park', 'barock', 'picknick']
-  },
-  {
-    id: 47,
-    name: 'Kantine am Justizpalast (Aussicht)',
-    category: 'natur',
-    address: 'Schmerlingplatz 10–11',
-    district: '1010 Wien',
-    lat: 48.2090,
-    lng: 16.3560,
-    description: 'Geheimtipp! Die Kantine im Justizpalast bietet einen tollen Ausblick über Wien.',
-    priceInfo: 'Gratis Aussicht',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['aussicht', 'geheimtipp', 'innere-stadt']
-  },
-  {
-    id: 48,
-    name: 'Schönbrunn Gärten',
-    category: 'natur',
-    address: 'Schloss Schönbrunn',
-    district: '1130 Wien',
-    lat: 48.1845,
-    lng: 16.3122,
-    description: 'Die weitläufigen Barockgärten von Schönbrunn mit Gloriette-Aussicht sind komplett gratis zu besichtigen! Nur der Palast kostet Eintritt.',
-    priceInfo: 'Gärten: Gratis',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['schloss', 'garten', 'gratis', 'gloriette', 'aussicht']
-  },
-  {
-    id: 107,
-    name: 'Donaukanal Street Art',
-    category: 'natur',
-    address: 'Donaukanal',
-    district: '1010/1020 Wien',
-    lat: 48.2130,
-    lng: 16.3750,
-    description: 'Wechselnde Graffiti und Wandmalereien entlang des Donaukanals. Eine der größten legalen Graffiti-Wände Europas. Im Sommer Strandbar-Feeling!',
-    priceInfo: 'Gratis',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['street-art', 'graffiti', 'gratis', 'donaukanal']
-  },
-  {
-    id: 108,
-    name: 'Botanischer Garten',
-    category: 'natur',
-    address: 'Mechelgasse 2',
-    district: '1030 Wien',
-    lat: 48.1920,
-    lng: 16.3840,
-    description: 'Der Botanische Garten der Universität Wien mit über 11.000 Pflanzenarten. Eintritt komplett gratis!',
-    priceInfo: 'Gratis',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['garten', 'gratis', 'natur', 'pflanzen']
-  },
-  {
-    id: 109,
-    name: 'Hundertwasserhaus',
-    category: 'natur',
-    address: 'Kegelgasse 36–38',
-    district: '1030 Wien',
-    lat: 48.2074,
-    lng: 16.3944,
-    description: 'Friedensreich Hundertwassers buntes Wohnhaus – ein architektonisches Kunstwerk. Gratis von außen zu besichtigen (Wohnhaus, kein Eintritt möglich).',
-    priceInfo: 'Gratis (Außenbesichtigung)',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['architektur', 'kunst', 'gratis', 'sehenswürdigkeit']
-  },
-  {
-    id: 110,
-    name: 'Stephansdom',
-    category: 'natur',
-    address: 'Stephansplatz 1',
-    district: '1010 Wien',
-    lat: 48.2085,
-    lng: 16.3731,
-    description: 'Wiens Wahrzeichen! Der Hauptraum des gotischen Doms ist komplett gratis zugänglich. Nur Turmbesteigung und Katakomben kosten.',
-    priceInfo: 'Eingang gratis · Turm: ~6 €',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['dom', 'gotik', 'gratis', 'wahrzeichen']
-  },
-  {
-    id: 111,
-    name: 'Volksgarten',
-    category: 'natur',
-    address: 'Volksgarten',
-    district: '1010 Wien',
-    lat: 48.2075,
-    lng: 16.3610,
-    description: 'Einer der elegantesten Parks Wiens – berühmt für seine Rosengärten (über 3.000 Rosenstöcke!). Perfekt für ein Picknick nahe der Hofburg.',
-    priceInfo: 'Gratis',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['park', 'rosen', 'gratis', 'picknick']
-  },
-  {
-    id: 113,
-    name: 'Parlament (gratis Führung)',
-    category: 'natur',
-    address: 'Dr.-Karl-Renner-Ring 3',
-    district: '1010 Wien',
-    lat: 48.2088,
-    lng: 16.3583,
-    description: 'Das neu renovierte Parlamentsgebäude kann mit kostenlosen Führungen (Mo–Sa) besichtigt werden! Beeindruckende Architektur im griechischen Stil.',
-    priceInfo: 'Gratis (mit Voranmeldung)',
-    website: 'https://www.parlament.gv.at/',
-    lastUpdated: '2026-04-10',
-    tags: ['architektur', 'gratis', 'führung', 'sehenswürdigkeit']
-  },
-  {
-    id: 121,
-    name: 'Free Walking Tour Wien',
-    category: 'natur',
-    address: 'Albertinaplatz (Treffpunkt)',
-    district: '1010 Wien',
-    lat: 48.2042,
-    lng: 16.3690,
-    description: 'Kostenlose Stadtführungen auf Deutsch und Englisch. Guides arbeiten auf Trinkgeld-Basis – zahlt was es euch wert war! Täglich mehrere Touren: Altstadt, Ringstraße, verstecktes Wien.',
-    priceInfo: 'Gratis (Trinkgeld-Basis)',
-    website: 'https://www.freewalkingtourvienna.at/',
-    lastUpdated: '2026-04-10',
-    tags: ['führung', 'gratis', 'walking-tour', 'altstadt']
-  },
-  {
-    id: 127,
-    name: 'Rathaus – Gratis-Führungen',
-    category: 'natur',
-    address: 'Friedrich-Schmidt-Platz 1',
-    district: '1010 Wien',
-    lat: 48.2106,
-    lng: 16.3565,
-    description: 'Kostenlose Führungen durch das Wiener Rathaus an Werktagen (Mo, Mi, Fr um 13 Uhr). Beeindruckende neugotische Architektur und Festsaal!',
-    priceInfo: 'GRATIS',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['rathaus', 'gratis', 'führung', 'neugotik']
-  },
-  {
-    id: 128,
-    name: 'Stadtpark',
-    category: 'natur',
-    address: 'Stadtpark',
-    district: '1030 Wien',
-    lat: 48.2067,
-    lng: 16.3833,
-    description: 'Ein beliebter Park in Wien mit vielen Grünflächen, Wegen und einem See. Perfekt für Spaziergänge und Picknicks.',
-    priceInfo: 'Gratis',
-    website: '',
-    lastUpdated: '2026-04-10',
-    tags: ['park', 'grünfläche', 'see', 'picknick']
-  },
-  {
-    id: 129,
-    name: 'Belvedere',
-    category: 'natur',
-    address: 'Rennweg 6',
-    district: '1030 Wien',
-    lat: 48.1922,
-    lng: 16.3833,
-    description: 'Ein barockes Schloss mit wunderschönen Gärten. Die Gärten sind kostenlos zugänglich, der Eintritt in das Schloss kostet jedoch.',
-    priceInfo: 'Gärten: Gratis, Schloss: ~15 €',
-    website: 'https://www.belvedere.at/',
-    lastUpdated: '2026-04-10',
-    tags: ['schloss', 'garten', 'barock', 'kunst']
-  },
+  id: 40,
+  name: 'Donauinsel',
+  category: 'natur',
+  address: 'Donauinsel',
+  district: 'Wien',
+  lat: 48.2300,
+  lng: 16.4100,
+  description: 'Riesige Freizeitinsel mitten in der Donau. Perfekt zum Schwimmen, Radfahren, Grillen und Chillen. Komplett gratis! Im Juni findet hier das Donauinselfest statt (gratis!).',
+  priceInfo: 'Gratis',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['insel', 'schwimmen', 'radfahren', 'gratis', 'donauinselfest']
+},
+{
+  id: 41,
+  name: 'Prater',
+  category: 'natur',
+  address: 'Prater',
+  district: '1020 Wien',
+  lat: 48.2170,
+  lng: 16.4000,
+  description: 'Riesiger Grünraum mit dem berühmten Riesenrad. Der Grüne Prater ist komplett gratis – ideal für Joggen, Radfahren und Spaziergänge. Nur die Fahrgeschäfte kosten.',
+  priceInfo: 'Park gratis · Fahrgeschäfte kostenpflichtig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['park', 'riesenrad', 'joggen', 'gratis']
+},
+{
+  id: 42,
+  name: 'Jubiläumswarte',
+  category: 'natur',
+  address: 'Johann-Staud-Straße 80',
+  district: '1160 Wien',
+  lat: 48.2210,
+  lng: 16.2780,
+  description: 'Aussichtsturm in Ottakring mit grandiosem Panoramablick über ganz Wien. Einer der besten kostenlosen Aussichtspunkte.',
+  priceInfo: 'Gratis',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['aussicht', 'panorama', 'ottakring']
+},
+{
+  id: 43,
+  name: 'Weinberge Kahlenberg',
+  category: 'natur',
+  address: 'Kahlenberg',
+  district: '1190 Wien',
+  lat: 48.2720,
+  lng: 16.3330,
+  description: 'Wien ist die einzige Großstadt der Welt mit großem Weinanbaugebiet. Wandert durch die Weinberge und genießt danach einen günstigen Heurigen.',
+  priceInfo: 'Gratis (Wanderung)',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['weinberge', 'wandern', 'aussicht', 'heuriger']
+},
+{
+  id: 44,
+  name: 'Donau-Auen Nationalpark',
+  category: 'natur',
+  address: 'Nationalpark Donau-Auen',
+  district: 'Wien / NÖ',
+  lat: 48.1500,
+  lng: 16.5600,
+  description: 'Wien ist die einzige Großstadt Europas mit einem Nationalpark! Unberührte Auen-Landschaft direkt vor der Stadt.',
+  priceInfo: 'Gratis',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['nationalpark', 'natur', 'donau']
+},
+{
+  id: 45,
+  name: 'Lainzer Tiergarten',
+  category: 'natur',
+  address: 'Lainzer Tiergarten',
+  district: '1130 Wien',
+  lat: 48.1770,
+  lng: 16.2490,
+  description: 'Ehemaliges kaiserliches Jagdgebiet – riesiges Naturschutzgebiet mit Wildschweinen und Hirschen. Die Hermesvilla liegt mittendrin (1. So/Monat gratis).',
+  priceInfo: 'Gratis',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['tiergarten', 'wandern', 'wildtiere']
+},
+{
+  id: 46,
+  name: 'Augarten',
+  category: 'natur',
+  address: 'Augarten',
+  district: '1020 Wien',
+  lat: 48.2240,
+  lng: 16.3740,
+  description: 'Ältester barocker Garten Wiens mit den markanten Flaktürmen. Perfekt zum Picknicken.',
+  priceInfo: 'Gratis',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['park', 'barock', 'picknick']
+},
+{
+  id: 47,
+  name: 'Kantine am Justizpalast (Aussicht)',
+  category: 'natur',
+  address: 'Schmerlingplatz 10–11',
+  district: '1010 Wien',
+  lat: 48.2090,
+  lng: 16.3560,
+  description: 'Geheimtipp! Die Kantine im Justizpalast bietet einen tollen Ausblick über Wien.',
+  priceInfo: 'Gratis Aussicht',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['aussicht', 'geheimtipp', 'innere-stadt']
+},
+{
+  id: 48,
+  name: 'Schönbrunn Gärten',
+  category: 'natur',
+  address: 'Schloss Schönbrunn',
+  district: '1130 Wien',
+  lat: 48.1845,
+  lng: 16.3122,
+  description: 'Die weitläufigen Barockgärten von Schönbrunn mit Gloriette-Aussicht sind komplett gratis zu besichtigen! Nur der Palast kostet Eintritt.',
+  priceInfo: 'Gärten: Gratis',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['schloss', 'garten', 'gratis', 'gloriette', 'aussicht']
+},
+{
+  id: 107,
+  name: 'Donaukanal Street Art',
+  category: 'natur',
+  address: 'Donaukanal',
+  district: '1010/1020 Wien',
+  lat: 48.2130,
+  lng: 16.3750,
+  description: 'Wechselnde Graffiti und Wandmalereien entlang des Donaukanals. Eine der größten legalen Graffiti-Wände Europas. Im Sommer Strandbar-Feeling!',
+  priceInfo: 'Gratis',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['street-art', 'graffiti', 'gratis', 'donaukanal']
+},
+{
+  id: 108,
+  name: 'Botanischer Garten',
+  category: 'natur',
+  address: 'Mechelgasse 2',
+  district: '1030 Wien',
+  lat: 48.1920,
+  lng: 16.3840,
+  description: 'Der Botanische Garten der Universität Wien mit über 11.000 Pflanzenarten. Eintritt komplett gratis!',
+  priceInfo: 'Gratis',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['garten', 'gratis', 'natur', 'pflanzen']
+},
+{
+  id: 109,
+  name: 'Hundertwasserhaus',
+  category: 'natur',
+  address: 'Kegelgasse 36–38',
+  district: '1030 Wien',
+  lat: 48.2074,
+  lng: 16.3944,
+  description: 'Friedensreich Hundertwassers buntes Wohnhaus – ein architektonisches Kunstwerk. Gratis von außen zu besichtigen (Wohnhaus, kein Eintritt möglich).',
+  priceInfo: 'Gratis (Außenbesichtigung)',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['architektur', 'kunst', 'gratis', 'sehenswürdigkeit']
+},
+{
+  id: 110,
+  name: 'Stephansdom',
+  category: 'natur',
+  address: 'Stephansplatz 1',
+  district: '1010 Wien',
+  lat: 48.2085,
+  lng: 16.3731,
+  description: 'Wiens Wahrzeichen! Der Hauptraum des gotischen Doms ist komplett gratis zugänglich. Nur Turmbesteigung und Katakomben kosten.',
+  priceInfo: 'Eingang gratis · Turm: ~6 €',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['dom', 'gotik', 'gratis', 'wahrzeichen']
+},
+{
+  id: 111,
+  name: 'Volksgarten',
+  category: 'natur',
+  address: 'Volksgarten',
+  district: '1010 Wien',
+  lat: 48.2075,
+  lng: 16.3610,
+  description: 'Einer der elegantesten Parks Wiens – berühmt für seine Rosengärten (über 3.000 Rosenstöcke!). Perfekt für ein Picknick nahe der Hofburg.',
+  priceInfo: 'Gratis',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['park', 'rosen', 'gratis', 'picknick']
+},
+{
+  id: 113,
+  name: 'Parlament (gratis Führung)',
+  category: 'natur',
+  address: 'Dr.-Karl-Renner-Ring 3',
+  district: '1010 Wien',
+  lat: 48.2088,
+  lng: 16.3583,
+  description: 'Das neu renovierte Parlamentsgebäude kann mit kostenlosen Führungen (Mo–Sa) besichtigt werden! Beeindruckende Architektur im griechischen Stil.',
+  priceInfo: 'Gratis (mit Voranmeldung)',
+  website: 'https://www.parlament.gv.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['architektur', 'gratis', 'führung', 'sehenswürdigkeit']
+},
+{
+  id: 121,
+  name: 'Free Walking Tour Wien',
+  category: 'natur',
+  address: 'Albertinaplatz (Treffpunkt)',
+  district: '1010 Wien',
+  lat: 48.2042,
+  lng: 16.3690,
+  description: 'Kostenlose Stadtführungen auf Deutsch und Englisch. Guides arbeiten auf Trinkgeld-Basis – zahlt was es euch wert war! Täglich mehrere Touren: Altstadt, Ringstraße, verstecktes Wien.',
+  priceInfo: 'Gratis (Trinkgeld-Basis)',
+  website: 'https://www.freewalkingtourvienna.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['führung', 'gratis', 'walking-tour', 'altstadt']
+},
+{
+  id: 127,
+  name: 'Rathaus – Gratis-Führungen',
+  category: 'natur',
+  address: 'Friedrich-Schmidt-Platz 1',
+  district: '1010 Wien',
+  lat: 48.2106,
+  lng: 16.3565,
+  description: 'Kostenlose Führungen durch das Wiener Rathaus an Werktagen (Mo, Mi, Fr um 13 Uhr). Beeindruckende neugotische Architektur und Festsaal!',
+  priceInfo: 'GRATIS',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['rathaus', 'gratis', 'führung', 'neugotik']
+},
+{
+  id: 128,
+  name: 'Stadtpark',
+  category: 'natur',
+  address: 'Stadtpark',
+  district: '1030 Wien',
+  lat: 48.2067,
+  lng: 16.3833,
+  description: 'Ein beliebter Park in Wien mit vielen Grünflächen, Wegen und einem See. Perfekt für Spaziergänge und Picknicks.',
+  priceInfo: 'Gratis',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['park', 'grünfläche', 'see', 'picknick']
+},
+{
+  id: 129,
+  name: 'Belvedere',
+  category: 'natur',
+  address: 'Rennweg 6',
+  district: '1030 Wien',
+  lat: 48.1922,
+  lng: 16.3833,
+  description: 'Ein barockes Schloss mit wunderschönen Gärten. Die Gärten sind kostenlos zugänglich, der Eintritt in das Schloss kostet jedoch.',
+  priceInfo: 'Gärten: Gratis, Schloss: ~15 €',
+  website: 'https://www.belvedere.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['schloss', 'garten', 'barock', 'kunst']
+},
 
 
   // ─── EINKAUFEN & MÄRKTE ──────────────────────────────────
@@ -1556,7 +1603,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['markt', 'gemüse', 'günstig', 'türkisch']
 },
- 
 {
   id: 51,
   name: 'Meidlinger Markt',
@@ -1571,7 +1617,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['markt', 'gemüse', 'günstig']
 },
- 
 {
   id: 52,
   name: 'Naschmarkt',
@@ -1586,7 +1631,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['markt', 'touristisch', 'sehenswürdigkeit']
 },
- 
 {
   id: 125,
   name: 'Too Good To Go – Überraschungstüten',
@@ -1601,7 +1645,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['toogoodtogo', 'lebensmittelrettung', 'günstig', 'app']
 },
- 
 {
   id: 126,
   name: 'Hofer',
@@ -1616,7 +1659,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['supermarkt', 'günstig']
 },
- 
 {
   id: 127,
   name: 'SPAR',
@@ -1631,7 +1673,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['supermarkt', 'günstig']
 },
- 
 {
   id: 128,
   name: 'Lidl',
@@ -1646,7 +1687,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['supermarkt', 'günstig']
 },
- 
 {
   id: 129,
   name: 'Penny',
@@ -1658,6 +1698,20 @@ const LOCATIONS = [
   description: 'Günstiger Supermarkt mit einer Vielzahl an Produkten.',
   priceInfo: 'Günstig',
   website: 'https://www.penny.at/',
+  lastUpdated: '2026-04-10',
+  tags: ['supermarkt', 'günstig']
+},
+{
+  id: 130,
+  name: 'Billa',
+  category: 'einkaufen',
+  address: 'Diverse Standorte',
+  district: 'Wien',
+  lat: 48.2400,
+  lng: 16.4000,
+  description: 'Günstiger Supermarkt mit einer Vielzahl an Produkten.',
+  priceInfo: 'Günstig',
+  website: 'https://www.billa.at/',
   lastUpdated: '2026-04-10',
   tags: ['supermarkt', 'günstig']
 },
@@ -1804,15 +1858,36 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['bäckerei', 'traditionell', 'günstig']
 },
+{
+  id: 70,
+  name: 'Bäckerei Konditorei',
+  category: 'baeckerei',
+  address: 'Opernring 1',
+  district: '1010 Wien',
+  lat: 48.2030,
+  lng: 16.3690,
+  description: 'Traditionelle Wiener Bäckerei und Konditorei mit einer großen Auswahl an Gebäck und Brot.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', 'traditionell', 'günstig']
+},
+{
+  id: 71,
+  name: 'Café Central Bäckerei',
+  category: 'baeckerei',
+  address: 'Herrengasse 14',
+  district: '1010 Wien',
+  lat: 48.2090,
+  lng: 16.3650,
+  description: 'Traditionelle Wiener Bäckerei im Café Central mit einer großen Auswahl an Gebäck und Brot.',
+  priceInfo: 'Günstig',
+  website: '',
+  lastUpdated: '2026-04-10',
+  tags: ['bäckerei', 'traditionell', 'günstig']
+},
 
-
-  
-  
-  
-  
-  
-  
-  // ─── KINO ────────────────────────────────────────────────
+// ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
   name: 'Volxkino (Open Air)',
@@ -2064,7 +2139,8 @@ const LOCATIONS = [
   tags: ['kino', 'charmant', 'günstig']
 },
 
-// ─── CAFÉS ───────────────────────────────────────────────
+
+  // ─── CAFÉS ───────────────────────────────────────────────
   {
   id: 80,
   name: 'Café Kafka',
@@ -2139,6 +2215,21 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['café', 'kaffeehaus', 'traditionell']
 },
+ 
+{
+  id: 400,
+  name: 'Café Landtmann',
+  category: 'cafe',
+  address: 'Dr.-Karl-Lueger-Ring 4',
+  district: '1010 Wien',
+  lat: 48.2103,
+  lng: 16.3731,
+  description: 'Traditionelles Wiener Kaffeehaus mit elegantem Ambiente. Perfekt für Kaffee, Kuchen und Gespräche.',
+  priceInfo: 'Kaffee ab ~4,50 €',
+  website: 'https://cafe-landtmann.at',
+  lastUpdated: '2026-04-10',
+  tags: ['café', 'kaffeehaus', 'traditionell', 'elegant']
+},
 
 
   // ─── TRANSPORT ───────────────────────────────────────────
@@ -2156,7 +2247,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['fahrrad', 'nextbike', 'e-bike', 'wienmobil']
 },
- 
 {
   id: 91,
   name: 'Wiener Linien – Tickets',
@@ -2171,7 +2261,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['öffis', 'u-bahn', 'straßenbahn', 'bus']
 },
- 
 {
   id: 92,
   name: 'Flughafen → Stadt (S-Bahn/ÖBB)',
@@ -2186,7 +2275,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['flughafen', 's-bahn', 'railjet', 'budget-transfer']
 },
- 
 {
   id: 93,
   name: 'Park+Ride Erdberg',
@@ -2201,7 +2289,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['parken', 'park-and-ride', 'günstig']
 },
- 
 {
   id: 122,
   name: 'Ringstraße per Tram (Linie 1 oder 71)',
@@ -2216,7 +2303,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['tram', 'sightseeing', 'günstig', 'ringstraße']
 },
- 
 {
   id: 123,
   name: 'Vienna City Card',
@@ -2231,7 +2317,6 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['citycard', 'ermäßigung', 'öffis', 'museen']
 },
- 
 {
   id: 124,
   name: 'E-Auto-Sharing Wien',
