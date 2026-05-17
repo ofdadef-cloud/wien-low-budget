@@ -42,6 +42,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 1,
@@ -168,20 +169,6 @@ const LOCATIONS = [
   website: 'https://www.kino.at',
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'dienstag']
-},
-{
-  id: 12,
-  name: 'Wochenend-Deal im Hotel',
-  category: 'deals',
-  address: 'Schottenring 1',
-  district: '1010 Wien',
-  lat: 48.2083,
-  lng: 16.3731,
-  description: '15% Rabatt auf alle Zimmer am Wochenende.',
-  priceInfo: '15% Rabatt',
-  website: 'https://www.hotel.at',
-  lastUpdated: '2026-04-10',
-  tags: ['rabatt', 'wochenende']
 },
 {
   id: 14,
@@ -463,6 +450,25 @@ const LOCATIONS = [
   lastUpdated: '2026-04-10',
   tags: ['rabatt', 'freitag', 'theater']
 },
+{
+  id: 34,
+  name: 'Neuer Deal im Café',
+  category: 'deals',
+  address: 'Caféstraße 2',
+  district: '1070 Wien',
+  lat: 48.2017,
+  lng: 16.3531,
+  description: '15% Rabatt auf alle Getränke und Speisen am Mittwoch.',
+  priceInfo: '15% Rabatt',
+  website: 'https://www.neuescafe2.at',
+  lastUpdated: '2026-04-10',
+  tags: ['rabatt', 'mittwoch', 'cafe']
+},
+{
+  id: 35,
+  name: 'Donnerstag-Deal im Restaurant',
+  category: 'deals',
+  address: 'Restaurantstraße 2',
 
 // ─── ESSEN ───────────────────────────────────────────────
   {
@@ -1881,6 +1887,7 @@ const LOCATIONS = [
 },
 
 
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 70,
