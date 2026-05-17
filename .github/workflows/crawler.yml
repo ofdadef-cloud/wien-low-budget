@@ -59,10 +59,11 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
           if git diff --quiet data.js; then
-            echo "Keine neuen Orte gefunden. Nichts zu committen."
+            echo "Keine Änderungen in data.js gefunden. Nichts zu committen."
           else
             git add data.js
-            git commit -m "🤖 Auto-Update: Kategorien durch Groq AI aktualisiert"
+            CHANGED=$(git diff --cached --stat data.js | tail -1)
+            git commit -m "🤖 Auto-Update $(date +%Y-%m-%d): Daten durch Groq AI aktualisiert ($CHANGED)"
             git push
-            echo "Änderungen erfolgreich gepushed!"
+            echo "✅ Änderungen erfolgreich gepushed!"
           fi

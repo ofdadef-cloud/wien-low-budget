@@ -125,9 +125,17 @@ def apply_update(file_path, category, new_entries_js, original_content, location
 def plan_update(category_entries, category, web_context):
     print(f"  KI plant Verbesserungen für Kategorie '{category}'...")
 
+    from datetime import date
+    today = date.today().strftime('%Y-%m-%d')
+
     extra_instructions = ""
     if category == 'deals':
-        extra_instructions = "\nACHTUNG WICHTIG: Die Kategorie 'deals' ist AUSSCHLIESSLICH für kurzfristige, tagesaktuelle Rabatte und Specials (z.B. 'Heute 50% Rabatt', '2-für-1 am Mittwoch'). Orte, die dauerhaft kostenlos sind (wie Parks, Museen mit generellem Gratis-Eintritt etc.), dürfen hier AUF KEINEN FALL rein! Lösche alle Einträge, die keine echten Deals sind."
+        extra_instructions = f"""\nACHTUNG WICHTIG FÜR DEALS:
+- 'deals' sind WIEDERKEHRENDE Rabatte & Specials (z.B. 'Jeden Montag Happy Hour', 'Wöchentlich Di: 50% Eintritt', 'Jeden 1. Sonntag gratis', 'Pay-what-you-want täglich').
+- KEINE einmaligen Tagesaktionen erfinden – nur verifizierbare, regelmäßige Angebote.
+- Gültige Deal-Typen: Happy Hours, Studentenrabatte, wöchentliche/monatliche Specials, Pay-what-you-want, Stehplätze.
+- Setze 'lastUpdated' IMMER auf '{today}' (heutiges Datum).
+- Lösche Einträge nur, wenn das Lokal nachweislich geschlossen ist."""
 
     prompt = f"""Du bist ein Experte für kostengünstiges Reisen in Wien.
 
@@ -141,11 +149,12 @@ Neue Web-Recherche für '{category}' in Wien (2026):
 {extra_instructions}
 
 AUFGABE:
-1. Identifiziere veraltete oder geschlossene Orte in den obigen Einträgen.
-2. Ergänze neue, günstige Optionen aus der Web-Recherche (falls sinnvoll).
-3. Gib die AKTUALISIERTE Liste aller '{category}'-Einträge als einzelne JavaScript-Objekte zurück.
-4. Jedes Objekt MUSS diese Felder haben: id (Zahl), name, category (= '{category}'), address, district, lat, lng, description (auf Deutsch), priceInfo, website, lastUpdated ('2026-04-10'), tags (Array von Strings).
-5. Gib NUR die JavaScript-Objekte zurück (keine Erklärungen, kein Code-Block-Wrapper), getrennt durch Kommas und Leerzeile.
+1. Identifiziere veraltete oder nachweislich geschlossene Orte in den obigen Einträgen und entferne sie.
+2. Ergänze neue, günstige Optionen aus der Web-Recherche (falls sinnvoll und verifizierbar).
+3. Verbessere generische oder nichtssagende Beschreibungen mit konkreten, nützlichen Infos für Budget-Reisende.
+4. Gib die AKTUALISIERTE Liste aller '{category}'-Einträge als einzelne JavaScript-Objekte zurück.
+5. Jedes Objekt MUSS diese Felder haben: id (Zahl), name, category (= '{category}'), address, district, lat, lng, description (auf Deutsch, konkret und nützlich), priceInfo, website, lastUpdated (IMMER '{today}'), tags (Array von Strings).
+6. Gib NUR die JavaScript-Objekte zurück (keine Erklärungen, kein Code-Block-Wrapper), getrennt durch Kommas und Leerzeile.
 
 Beispiel-Format:
   {{
@@ -232,7 +241,12 @@ if __name__ == "__main__":
     
     # Auto-generate search query if not provided
     if not args.query:
-        args.query = f'Wien {args.category} günstig site:1000things.at OR site:falter.at OR site:thefork.at OR site:tripadvisor.at OR site:wien.info'
+        if args.category == 'deals':
+            args.query = f'Wien günstig wiederkehrende Rabatte Happy Hour Studentenrabatt wöchentlich monatlich Specials site:falter.at OR site:wien.info OR site:1000things.at'
+        elif args.category == 'kino':
+            args.query = f'Wien Kino günstig Programmkino Studentenpreis Open-Air 2026 site:falter.at OR site:wien.info OR site:kinowien.at'
+        else:
+            args.query = f'Wien {args.category} günstig 2026 site:1000things.at OR site:falter.at OR site:thefork.at OR site:tripadvisor.at OR site:wien.info'
 
     print(f"\n🕷️  Wien Low Budget – Automatischer Crawler")
     print(f"   Kategorie: {args.category}")
