@@ -37,6 +37,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── DEALS ───────────────────────────────────────────────
   {
   id: 2000,
@@ -49,7 +50,7 @@ const LOCATIONS = [
   description: 'Die Soho Bar bietet jeden Freitag und Samstag Cocktails ab 1,80 € an. Die Karaoke-Bar in der Millennium City ist ein beliebter Treffpunkt für Nachtschwärmer.',
   priceInfo: 'Cocktails ab 1,80 € (Fr & Sa)',
   website: 'http://www.soho-vienna.at',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['cocktails', 'happy-hour', 'wochenende', 'karaoke']
 },
 {
@@ -63,7 +64,7 @@ const LOCATIONS = [
   description: 'Jeden Dienstag von 18–21 Uhr können Sie das MAK für nur 8,50 € besuchen, anstatt den regulären Eintrittspreis von 18 € zu zahlen. Ideal für Kulturinteressierte mit kleinem Budget.',
   priceInfo: 'Di 18–21 Uhr: 8,50 € (statt 18 €)',
   website: 'https://www.mak.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['museum', 'dienstag', 'ermäßigt', 'kunst']
 },
 {
@@ -77,7 +78,7 @@ const LOCATIONS = [
   description: 'Jeden Donnerstag ab 18 Uhr können Sie das Leopold Museum zu einem reduzierten Eintrittspreis besuchen. Das Museum zeigt Werke von Künstlern wie Schiele und Klimt.',
   priceInfo: 'Do ab 18 Uhr: reduziert',
   website: 'https://www.leopoldmuseum.org/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['museum', 'donnerstag', 'ermäßigt', 'museumsquartier']
 },
 {
@@ -91,7 +92,7 @@ const LOCATIONS = [
   description: 'Im asiatischen Restaurant Sternzeichen können Sie jeden Monat zwei ausgewählte Gerichte zum halben Preis genießen. Die Monatsmenüs bieten große Hauptgerichte mit Reis ab etwa 5–7 €.',
   priceInfo: 'Monatsmenüs ab ~5 € (50% Rabatt)',
   website: '',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['asiatisch', '50%-rabatt', 'monatsangebot', 'wien-mitte']
 },
 {
@@ -105,7 +106,7 @@ const LOCATIONS = [
   description: 'Jeden ersten Sonntag im Monat können Sie das Heeresgeschichtliche Museum kostenlos besuchen. Der reguläre Eintrittspreis beträgt 9 €.',
   priceInfo: '1. Sonntag/Monat GRATIS (sonst 9 €)',
   website: 'https://www.hgm.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['museum', 'gratis', '1-sonntag', 'monatlich']
 },
 {
@@ -119,7 +120,7 @@ const LOCATIONS = [
   description: 'Im Restaurant Deewan können Sie täglich essen und selbst bestimmen, was Sie zahlen möchten. Das Konzept ist seit 2005 bewährt und seit 2025 rein vegan/vegetarisch.',
   priceInfo: 'Zahle was du willst!',
   website: 'http://deewan.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['pay-what-you-want', 'vegan', 'täglich', 'top-deal']
 },
 {
@@ -133,7 +134,7 @@ const LOCATIONS = [
   description: 'Im Bukowski The Pub gibt es täglich eine Happy Hour, bei der Cocktails zu Studentenpreisen und Bier ab 2,50 € angeboten werden. Die Bar öffnet täglich um 15 Uhr und schließt um 6 Uhr früh.',
   priceInfo: 'Bier ab 2,50 € · Happy Hour täglich',
   website: '',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['pub', 'happy-hour', 'täglich', 'studenten', 'günstig']
 },
 {
@@ -147,7 +148,7 @@ const LOCATIONS = [
   description: 'In der Wiener Staatsoper können Sie Stehplätze für 13–18 € erwerben. Die Stehplätze sind etwa 80 Minuten vor Vorstellungsbeginn an der Abendkasse erhältlich.',
   priceInfo: 'Stehplatz: 13–18 € (Abendkasse)',
   website: 'https://www.wiener-staatsoper.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['oper', 'stehplatz', 'täglich', 'kultur', 'günstig']
 },
 {
@@ -161,7 +162,7 @@ const LOCATIONS = [
   description: 'Im Café Central können Sie Kaffee ab 2,50 € genießen. Das traditionsreiche Café ist ein beliebter Treffpunkt für Kulturinteressierte und bietet eine gemütliche Atmosphäre.',
   priceInfo: 'Kaffee ab 2,50 €',
   website: 'https://www.cafe-central.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['café', 'kaffee', 'günstig', 'traditionell']
 },
 {
@@ -175,7 +176,7 @@ const LOCATIONS = [
   description: 'Im MuseumsQuartier können Sie jeden ersten Sonntag im Monat kostenlos in die Museen eintritt. Der Eintritt ist an diesem Tag für alle Besucher frei.',
   priceInfo: '1. Sonntag/Monat GRATIS',
   website: 'https://www.mqw.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['museum', 'gratis', '1-sonntag', 'monatlich']
 },
 {
@@ -189,7 +190,7 @@ const LOCATIONS = [
   description: 'Im Flex gibt es täglich eine Happy Hour, bei der Cocktails zu Studentenpreisen und Bier ab 2,50 € angeboten werden. Die Bar öffnet täglich um 15 Uhr und schließt um 6 Uhr früh.',
   priceInfo: 'Bier ab 2,50 € · Happy Hour täglich',
   website: '',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['pub', 'happy-hour', 'täglich', 'studenten', 'günstig']
 },
 {
@@ -203,7 +204,7 @@ const LOCATIONS = [
   description: 'Im Theater an der Wien können Sie Stehplätze für 10–15 € erwerben. Die Stehplätze sind etwa 80 Minuten vor Vorstellungsbeginn an der Abendkasse erhältlich.',
   priceInfo: 'Stehplatz: 10–15 € (Abendkasse)',
   website: 'https://www.theater-wien.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['theater', 'stehplatz', 'täglich', 'kultur', 'günstig']
 },
 {
@@ -217,7 +218,7 @@ const LOCATIONS = [
   description: 'Jeden Mittwoch von 18–21 Uhr können Sie das Kunsthistorische Museum für nur 12 € besuchen, anstatt den regulären Eintrittspreis von 20 € zu zahlen. Ideal für Kulturinteressierte mit kleinem Budget.',
   priceInfo: 'Mi 18–21 Uhr: 12 € (statt 20 €)',
   website: 'https://www.khm.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['museum', 'mittwoch', 'ermäßigt', 'kunst']
 },
 {
@@ -231,7 +232,7 @@ const LOCATIONS = [
   description: 'Im Café Sperl können Sie Kaffee ab 2,80 € genießen. Das traditionsreiche Café ist ein beliebter Treffpunkt für Kulturinteressierte und bietet eine gemütliche Atmosphäre.',
   priceInfo: 'Kaffee ab 2,80 €',
   website: 'https://www.cafesperl.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['café', 'kaffee', 'günstig', 'traditionell']
 },
 {
@@ -245,7 +246,7 @@ const LOCATIONS = [
   description: 'Im Schwarzes Kamel gibt es täglich eine Happy Hour, bei der Cocktails zu Studentenpreisen und Bier ab 2,50 € angeboten werden. Die Bar öffnet täglich um 15 Uhr und schließt um 6 Uhr früh.',
   priceInfo: 'Bier ab 2,50 € · Happy Hour täglich',
   website: '',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['pub', 'happy-hour', 'täglich', 'studenten', 'günstig']
 },
 {
@@ -259,7 +260,7 @@ const LOCATIONS = [
   description: 'Im Volksgarten können Sie jeden Tag kostenlos eintritt. Der Eintritt ist für alle Besucher frei.',
   priceInfo: 'Täglich GRATIS',
   website: 'https://www.volksgarten.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['park', 'gratis', 'täglich']
 },
 
@@ -1542,6 +1543,7 @@ const LOCATIONS = [
   
   
   
+  
   // ─── KINO ────────────────────────────────────────────────
   {
   id: 300,
@@ -1551,10 +1553,10 @@ const LOCATIONS = [
   district: 'Wien',
   lat: 48.2082,
   lng: 16.3738,
-  description: 'Gratis Freiluftkino an wechselnden Plätzen in Wien – jedes Sommer-Highlight! Zeigt internationale Arthouse-Filme und Klassiker unter freiem Himmel.',
+  description: 'Gratis Freiluftkino an wechselnden Plätzen in Wien – jedes Sommer-Highlight! Zeigt internationale Arthouse-Filme und Klassiker unter freiem Himmel. Besucher sollten vorher die Website checken, um den aktuellen Standort zu erfahren.',
   priceInfo: 'Gratis',
   website: 'http://volxkino.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['kino', 'open-air', 'gratis', 'sommer']
 },
  
@@ -1566,10 +1568,10 @@ const LOCATIONS = [
   district: '1020 Wien',
   lat: 48.2230,
   lng: 16.3792,
-  description: 'Beliebtes Open-Air-Kino im Augarten, jeden Sommer im Juli/August. Film beginnt nach Einbruch der Dunkelheit (~21:30 Uhr). Decken mitbringen und unter den Sternen entspannen!',
+  description: 'Beliebtes Open-Air-Kino im Augarten, jeden Sommer im Juli/August. Film beginnt nach Einbruch der Dunkelheit (~21:30 Uhr). Decken mitbringen und unter den Sternen entspannen! Es gibt auch Snack- und Getränkestände vor Ort.',
   priceInfo: 'Gratis (freie Platzwahl)',
   website: 'http://kinountersternen.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['kino', 'open-air', 'sommer', 'augarten', 'gratis']
 },
  
@@ -1581,9 +1583,9 @@ const LOCATIONS = [
   district: '1010 Wien',
   lat: 48.2106,
   lng: 16.3589,
-  description: 'Jedes Jahr Juli–September: Gratis Open-Air-Kinoleinwand am Rathausplatz mit täglich wechselndem Programm (Konzertaufzeichnungen, Oper, Film). Umrahmt von zahlreichen Food-Ständen aus aller Welt.',
+  description: 'Jedes Jahr Juli–September: Gratis Open-Air-Kinoleinwand am Rathausplatz mit täglich wechselndem Programm (Konzertaufzeichnungen, Oper, Film). Umrahmt von zahlreichen Food-Ständen aus aller Welt. Ein perfekter Ort, um Kultur und Essen zu genießen.',
   priceInfo: 'Gratis',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['kino', 'open-air', 'sommer', 'gratis', 'rathausplatz']
 },
  
@@ -1595,10 +1597,10 @@ const LOCATIONS = [
   district: '1050 Wien',
   lat: 48.1922,
   lng: 16.3622,
-  description: 'Kultiges Arthouse-Kino im 5. Bezirk. Zeigt unabhängige und internationale Filme, die man im Multiplex vergeblich sucht. Toller kleiner Kinosaal mit gutem Sitzkomfort. Montag-Specials oft günstiger!',
+  description: 'Kultiges Arthouse-Kino im 5. Bezirk. Zeigt unabhängige und internationale Filme, die man im Multiplex vergeblich sucht. Toller kleiner Kinosaal mit gutem Sitzkomfort. Montag-Specials oft günstiger! Studenten und Senioren erhalten Ermäßigungen.',
   priceInfo: 'Ab 8,50 € · Mo günstiger',
   website: 'https://www.filmcasino.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['kino', 'arthouse', 'indie', 'günstig', '5-bezirk']
 },
  
@@ -1610,10 +1612,10 @@ const LOCATIONS = [
   district: '1060 Wien',
   lat: 48.1953,
   lng: 16.3444,
-  description: 'Verstecktes Kellerkino im 6. Bezirk mit Fokus auf queeres Kino, Doku-Filme und experimentelles Kino. Sehr angesagtes Programmkino mit Kulturveranstaltungen. Oft günstige Abonnements.',
+  description: 'Verstecktes Kellerkino im 6. Bezirk mit Fokus auf queeres Kino, Doku-Filme und experimentelles Kino. Sehr angesagtes Programmkino mit Kulturveranstaltungen. Oft günstige Abonnements. Einzigartige Atmosphäre und eine gute Auswahl an unabhängigen Filmen.',
   priceInfo: 'Ab 8,50 € · Monatspass verfügbar',
   website: 'https://www.topkino.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['kino', 'arthouse', 'queer', 'doku', 'programm-kino']
 },
  
@@ -1625,10 +1627,10 @@ const LOCATIONS = [
   district: '1090 Wien',
   lat: 48.2211,
   lng: 16.3544,
-  description: 'Eines der ältesten noch betriebenen Kinos Wiens (seit 1912!). Tolles Programmkino im 9. Bezirk nahe dem Votivpark – internationale Filme, Retrospektiven und Filmreihen. Historisches Ambiente.',
+  description: 'Eines der ältesten noch betriebenen Kinos Wiens (seit 1912!). Tolles Programmkino im 9. Bezirk nahe dem Votivpark – internationale Filme, Retrospektiven und Filmreihen. Historisches Ambiente und eine gute Akustik.',
   priceInfo: 'Ab 9,50 € · Ermäßigt für Studierende',
   website: 'https://www.votivkino.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['kino', 'historisch', 'arthouse', 'programmkino', 'studierende']
 },
  
@@ -1640,10 +1642,10 @@ const LOCATIONS = [
   district: '1060 Wien',
   lat: 48.1978,
   lng: 16.3482,
-  description: 'Kleines, familiäres Kino direkt an der Mariahilfer Straße. Zeigt englischsprachige OV-Filme und Blockbuster. Beliebt bei Expats und Englischsprachigen in Wien.',
+  description: 'Kleines, familiäres Kino direkt an der Mariahilfer Straße. Zeigt englischsprachige OV-Filme und Blockbuster. Beliebt bei Expats und Englischsprachigen in Wien. Gute Sitzplätze und eine angenehme Atmosphäre.',
   priceInfo: 'Ab 9,50 €',
   website: 'https://www.haydnkino.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['kino', 'ov', 'englisch', 'mariahilfer-strasse']
 },
  
@@ -1655,10 +1657,10 @@ const LOCATIONS = [
   district: '1010 Wien',
   lat: 48.2122,
   lng: 16.3778,
-  description: 'Kulturzentrum direkt am Donaukanal mit Kino, Planetarium und Veranstaltungen. Das Kino zeigt abwechslungsreiche Programme. Tolle Terrasse mit Blick auf den Donaukanal – Kinoeintritt + Aussicht!',
+  description: 'Kulturzentrum direkt am Donaukanal mit Kino, Planetarium und Veranstaltungen. Das Kino zeigt abwechslungsreiche Programme. Tolle Terrasse mit Blick auf den Donaukanal – Kinoeintritt + Aussicht! Ein perfekter Ort, um Kultur und Natur zu genießen.',
   priceInfo: 'Ab 9,50 € · Planetarium extra',
   website: 'https://www.urania.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['kino', 'planetarium', 'donaukanal', 'kulturzentrum']
 },
  
@@ -1670,10 +1672,10 @@ const LOCATIONS = [
   district: '1030 Wien',
   lat: 48.1935,
   lng: 16.4039,
-  description: 'Das Kulturareal Arena im 3. Bezirk hat im Sommer ein Open-Air-Kino! Konzerte, Festivals und Filmvorführungen in einem ehemaligen Schlachthof-Gelände. Einzigartiges Ambiente für Konzert- und Kinobesuche.',
+  description: 'Das Kulturareal Arena im 3. Bezirk hat im Sommer ein Open-Air-Kino! Konzerte, Festivals und Filmvorführungen in einem ehemaligen Schlachthof-Gelände. Einzigartiges Ambiente für Konzert- und Kinobesuche. Gute Auswahl an Getränken und Snacks.',
   priceInfo: 'Ab 8,50 € (OA je nach Programm variiert)',
   website: 'https://www.arena.wien/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['kino', 'open-air', 'sommer', 'kulturareal', 'konzert']
 },
  
@@ -1685,10 +1687,10 @@ const LOCATIONS = [
   district: '1130 Wien',
   lat: 48.1845,
   lng: 16.3122,
-  description: 'Jedes Jahr im Mai/Juni: Die Wiener Philharmoniker spielen ein GRATIS Open-Air-Konzert im Schlosspark Schönbrunn. Eines der größten Gratis-Klassik-Events weltweit! Einfach hinsetzen, Picknick mitbringen und genießen.',
+  description: 'Jedes Jahr im Mai/Juni: Die Wiener Philharmoniker spielen ein GRATIS Open-Air-Konzert im Schlosspark Schönbrunn. Eines der größten Gratis-Klassik-Events weltweit! Einfach hinsetzen, Picknick mitbringen und genießen. Früh kommen, um gute Plätze zu sichern.',
   priceInfo: 'GRATIS',
-  lastUpdated: '2026-06-02',
-  tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn', 'klassik']
+  lastUpdated: '2026-06-03',
+  tags: ['konzert', 'gratis', 'philharmoniker', 'sommer', 'schönbrunn']
 },
  
 {
@@ -1699,10 +1701,10 @@ const LOCATIONS = [
   district: '1010 Wien',
   lat: 48.2028,
   lng: 16.3690,
-  description: 'Weltklasse-Oper ab 13 € mit Stehplatz! Ca. 80 Minuten vor Vorstellungsbeginn anstellen. Balkon-Stehplätze bieten sogar gute Sicht. Ein Muss für Kulturliebhaber mit kleinem Budget.',
+  description: 'Weltklasse-Oper ab 13 € mit Stehplatz! Ca. 80 Minuten vor Vorstellungsbeginn anstellen. Balkon-Stehplätze bieten sogar gute Sicht. Ein Muss für Kulturliebhaber mit kleinem Budget. Parterre-Stehplätze kosten 13 €, Balkon-Stehplätze 17 €.',
   priceInfo: 'Stehplatz: 13–18 €',
   website: 'https://www.wiener-staatsoper.at/',
-  lastUpdated: '2026-06-02',
+  lastUpdated: '2026-06-03',
   tags: ['oper', 'stehplatz', 'kultur', 'günstig']
 },
 
