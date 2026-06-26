@@ -357,7 +357,8 @@ const LOCATIONS = [
   tags: ['restaurant', 'mittagstisch', 'günstig', 'zentral']
 },
 
-// ─── ESSEN ───────────────────────────────────────────────
+
+  // ─── ESSEN ───────────────────────────────────────────────
   {
   id: 1108,
   name: 'Pitaraz',
@@ -369,9 +370,10 @@ const LOCATIONS = [
   description: 'Neuer Hotspot in Ottakring mit großartigem Streetfood, wie Pita und andere internationale Spezialitäten, zu fairen Preisen. Ideal für ein schnelles und leckeres Mittagessen.',
   priceInfo: 'Günstig, ab ~6 €',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['pita', 'streetfood', 'mittagessen', 'günstig']
 },
+ 
 {
   id: 1109,
   name: 'Imbiss Radetzky',
@@ -383,9 +385,10 @@ const LOCATIONS = [
   description: 'Klein, unscheinbar und grandios: Hier gibt es hervorragende polnische Hausmannskost, wie hausgemachte Pierogi und Borschtsch, zu super Preisen. Ein Geheimtipp für alle, die günstig und lecker essen möchten.',
   priceInfo: 'Hauptgerichte ab ~7,50 €',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['polnisch', 'pierogi', 'geheimtipp', 'günstig']
 },
+ 
 {
   id: 1110,
   name: 'Kimzn Burgers',
@@ -397,9 +400,10 @@ const LOCATIONS = [
   description: 'Einer der besten Budget-Burgerspots im 20. Bezirk. Frisches Chuck-Beef, hausgemachte Saucen und Brioche Buns. Klasse Smash-Burger und vegetarische Optionen ohne viel Schnickschnack.',
   priceInfo: 'Burger ab ~8,00 €',
   website: 'https://kimzn.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['burger', 'smashburger', 'fastfood', 'günstig']
 },
+ 
 {
   id: 1100,
   name: 'Schachtelwirt',
@@ -411,9 +415,10 @@ const LOCATIONS = [
   description: 'Moderne österreichische Küche "aus der Schachtel". Fantastischer Schweinsbraten und vegetarische Knödelgerichte, meist um oder knapp unter 10 Euro. Ideal für ein schnelles Mittagessen mitten in der Stadt!',
   priceInfo: 'Mittagsgerichte ca. 8,50 – 10,50 €',
   website: 'https://www.schachtelwirt.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['mittagessen', 'österreichisch', 'zentral', 'günstig']
 },
+ 
 {
   id: 1101,
   name: 'Kolar',
@@ -425,9 +430,10 @@ const LOCATIONS = [
   description: 'Bekannt für die frischen Fladen (gefüllte Fladenbrote) frisch aus dem Ofen. Perfekt für ein enorm sättigendes und günstiges Mittag- oder Abendessen im 1. Bezirk.',
   priceInfo: 'Gefüllte Fladen ca. 6,50 – 9,50 €',
   website: 'http://www.kolar-beisl.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['fladen', 'mittagessen', 'urig', 'günstig']
 },
+ 
 {
   id: 1102,
   name: 'Bros Pizza',
@@ -439,9 +445,10 @@ const LOCATIONS = [
   description: 'Großartige Sourdough-Pizza Slices auf die Hand. Super stylischer Laden und perfekt für ein Mittagessen oder einen Snack on the go. Zwei Slices machen extrem satt.',
   priceInfo: 'Slices ab 4,50 €',
   website: 'https://www.brospizza.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['pizza', 'schnell', 'mittagessen', 'günstig']
 },
+ 
 {
   id: 1,
   name: 'Pizzeria Mafiosi',
@@ -453,9 +460,10 @@ const LOCATIONS = [
   description: 'Institution in Wien mit Riesenpizzen. Urig-dunkles Ambiente mit zusammengewürfelter Deko. Tipp: Fragt nach etwas mehr Belag! Täglich 11–24 Uhr geöffnet.',
   priceInfo: 'Margherita 6,20 € · Pizzen 6,20–8,00 €',
   website: 'http://pizzeria-mafiosi.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['pizza', 'günstig', 'institution']
 },
+ 
 {
   id: 2,
   name: 'Foco Forno',
@@ -466,9 +474,10 @@ const LOCATIONS = [
   lng: 16.3940,
   description: 'Nachfolger der Pizzeria Ciao. Italienische Pizzeria mit knuspriger, gut belegter Pizza und freundlichem Service.',
   priceInfo: 'Günstige Pizzen, ab ~8 €',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['pizza', 'günstig', 'italienisch']
 },
+ 
 {
   id: 3,
   name: 'Hao Han Restaurant',
@@ -479,9 +488,10 @@ const LOCATIONS = [
   lng: 16.3548,
   description: 'Ehemals Zhong Huan – jetzt Hao Han Restaurant. Asiatisches All-you-can-eat Mittagsbüffet mit chinesischen Spezialitäten.',
   priceInfo: 'All you can eat Mittag: ~8 €',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['asiatisch', 'buffet', 'all-you-can-eat', 'chinesisch']
 },
+ 
 {
   id: 4,
   name: 'Sternzeichen – The Mall',
@@ -492,9 +502,10 @@ const LOCATIONS = [
   lng: 16.3880,
   description: 'Asiatisches Restaurant in Wien Mitte The Mall. Jeden Monat zwei Menüs für 50% Rabatt – große Hauptgerichte mit Reis um die 5–7 €.',
   priceInfo: 'Monatsmenüs ab ~5 €',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['asiatisch', '50%-rabatt', 'monatsangebot']
 },
+ 
 {
   id: 5,
   name: 'Deewan',
@@ -506,9 +517,10 @@ const LOCATIONS = [
   description: 'Einzigartiges Konzept: Esst so viel ihr wollt und bezahlt, was ihr möchtet! Seit 2005 bewährtes Modell. Seit August 2025 komplett vegetarisch/vegan! Wasser gratis, Liegewiese und Free WiFi.',
   priceInfo: 'Zahle was du willst (Richtpreise angegeben)',
   website: 'http://deewan.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['pakistanisch', 'pay-what-you-want', 'vegan', 'vegetarisch', 'wifi']
 },
+ 
 {
   id: 6,
   name: 'Side Döner',
@@ -519,9 +531,10 @@ const LOCATIONS = [
   lng: 16.3530,
   description: 'Günstige Anlaufstelle nach Ladenschluss. Bier und ordentlicher Döner. Ideal, wenn andere Geschäfte schon geschlossen haben.',
   priceInfo: 'Bier ab ~1,50 €, Döner ~5 €',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['döner', 'spätabend', 'günstig']
 },
+ 
 {
   id: 7,
   name: 'Berliner Döner',
@@ -532,9 +545,10 @@ const LOCATIONS = [
   lng: 16.3450,
   description: 'Der wohl beliebteste Döner Wiens! Riesige Portionen, frisches Brot und exzellente Soßen. Ein absoluter Hotspot für Studenten im 7. Bezirk – Warteschlangen zur Stoßzeit einplanen!',
   priceInfo: 'Döner Sandwich ~6,00 €',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['döner', 'studenten', 'riesig', 'günstig']
 },
+ 
 {
   id: 8,
   name: 'Kolar Beisl',
@@ -546,9 +560,10 @@ const LOCATIONS = [
   description: 'Wahres Beisl-Flair direkt in der teuren Innenstadt! Berühmt für ihre warmen, gefüllten Fladenbrote zu absoluten Low-Budget-Preisen. Sehr studentisch, eng und laut – aber unglaublich gemütlich.',
   priceInfo: 'Gefülltes Fladenbrot ~7–9 €',
   website: 'https://kolar-beisl.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['beisl', 'österreichisch', 'geheimtipp', 'fladenbrot']
 },
+ 
 {
   id: 9,
   name: 'Schachtelwirt',
@@ -559,9 +574,10 @@ const LOCATIONS = [
   lng: 16.3758,
   description: 'Moderne Wiener Hausmannskost (z. B. Schweinsbraten) in einer praktischen "Schachtel" serviert. Hochwertige, regionale Zutaten mitten im "Bermudadreieck". Schnelles, ehrliches Essen.',
   priceInfo: 'Hauptgericht ~10–13 €',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['österreichisch', 'fast-food', 'regional']
 },
+ 
 {
   id: 70,
   name: 'Bros. Pizza',
@@ -573,9 +589,10 @@ const LOCATIONS = [
   description: 'Sensationelle Sauerteigpizza aus dem Holzofen! Dünner Boden, hochwertigste regionale Zutaten. Zwar preislich am oberen Rand der Low-Budget-Skala, aber die Qualität ist herausragend. Lässige Musik und Atmosphäre.',
   priceInfo: 'Pizza ~10–13 €',
   website: 'https://pizzabros.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['pizza', 'sauerteig', 'hipster', 'kraftbier']
 },
+ 
 {
   id: 71,
   name: 'Swing Kitchen',
@@ -586,9 +603,10 @@ const LOCATIONS = [
   lng: 16.3429,
   description: '100% vegane Burger-Kette, die auch Fleischesser überzeugt. Die "Chicken"-Patties (Planties) und die Saucen (z. B. Knoblauch) sind extrem gut. Sehr effizient, kein Plastik, cooler Swing-Sound.',
   priceInfo: 'Burger ~9,40 €',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['vegan', 'burger', 'fast-food', 'nachhaltig']
 },
+ 
 {
   id: 72,
   name: 'Gasthaus Kopp',
@@ -600,9 +618,10 @@ const LOCATIONS = [
   description: 'Ein Urgestein unter Wiens Beisln! Wer ein klassisches, riesiges und super günstiges Wiener Schnitzel essen will, muss hierher. Echtes Wirtshausflair der alten Schule.',
   priceInfo: 'Riesige Hauptgerichte zu Spottpreisen, ab ~8 €',
   website: 'https://gasthaus-kopp.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['schnitzel', 'österreichisch', 'beisl', 'institution', 'günstig']
 },
+ 
 {
   id: 1104,
   name: 'Radatz am Karmelitermarkt',
@@ -614,9 +633,10 @@ const LOCATIONS = [
   description: 'Typisch Wienerische Fleischhackerei (Metzgerei) Filiale. Das täglich wechselnde Mittagsmenü ist preislich kaum zu schlagen. Von gebackenem Kabeljau bis zu gegrillten Ripperln.',
   priceInfo: 'Mittagsmenüs ca. 7,90 – 9,70 €',
   website: 'https://radatz.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['mittagessen', 'österreichisch', 'fleisch']
 },
+ 
 {
   id: 1105,
   name: 'Die Muse – Micheles Mensa',
@@ -628,9 +648,10 @@ const LOCATIONS = [
   description: 'Versteckt in der Akademie der bildenden Künste. Die tolle Mensa steht auch allen von außen offen! Geniales Wochenteller-Angebot in coolem Studenten/Künstler-Ambiente.',
   priceInfo: 'Hauptspeise & Suppe ab 6,50 – 7,50 €',
   website: 'https://micheles.at/muse',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['mensa', 'mittagessen', 'geheimtipp', 'günstig']
 },
+ 
 {
   id: 100,
   name: 'Maschu Maschu',
@@ -641,9 +662,10 @@ const LOCATIONS = [
   lng: 16.3510,
   description: 'Israelische Küche: Falafel, Hummus, Shakshuka und frische Salate. Schnell, günstig und lecker. Sehr beliebt in der Mittagszeit!',
   priceInfo: 'Falafel-Teller ~8 €',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['israelisch', 'falafel', 'hummus', 'günstig']
 },
+ 
 {
   id: 101,
   name: 'Bausatzlokal Sägewerk',
@@ -655,9 +677,10 @@ const LOCATIONS = [
   description: 'Restaurantkette mit Baukastensystem – stellt euer Essen selbst zusammen. Interaktiv und studentenfreundlich preiswert!',
   priceInfo: 'Zusammenstellen ab ~6 €',
   website: 'http://www.bausatz.co.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['baukastensystem', 'interaktiv', 'günstig', 'studenten']
 },
+ 
 {
   id: 102,
   name: 'Würstelstand LEO',
@@ -668,8 +691,8 @@ const LOCATIONS = [
   lng: 16.3510,
   description: 'Wiens bekanntester Würstelstand! Seit den 1920er Jahren klassische Wiener Würstel. Legendäre Käsekrainer und Burenwurst.',
   priceInfo: 'Käsekrainer ~5 €',
-  lastUpdated: '2026-06-19',
-  tags: ['würstelstand', 'wiener-küche', 'institution', 'käsekrainer'],
+  lastUpdated: '2026-06-26',
+  tags: ['w,
 
 
   // ─── BARS & NACHTLEBEN ──────────────────────────────────
@@ -684,7 +707,7 @@ const LOCATIONS = [
   description: 'Legendäres Wiener Nachtkaffeehaus am Naschmarkt mit günstigen Bieren und einer gemütlichen Atmosphäre. Beliebt bei Studenten und Nachtschwärmern. Bis 4 Uhr geöffnet!',
   priceInfo: 'Bier ab ~3 €',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['café', 'nachtleben', 'günstig', 'institution']
 },
  
@@ -699,7 +722,7 @@ const LOCATIONS = [
   description: 'Cocktail- und Karaoke-Bar in der Millennium City. Am Freitag und Samstag Cocktails ab 1,80 €. Eine gute Adresse für einen unvergesslichen Abend.',
   priceInfo: 'Cocktails ab 1,80 € (Fr/Sa)',
   website: 'http://www.soho-vienna.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['karaoke', 'cocktails', 'millennium-city']
 },
  
@@ -714,7 +737,7 @@ const LOCATIONS = [
   description: 'Alternative-queere Bar mit Partykeller, Vernissagen, Karaoke und Performances. Gute Musik, gute Stimmung, Wuzzler (Tischfußball) und kleine Snacks wie Tacos/Burritos.',
   priceInfo: 'Cocktail-Happy-Hour: ~5 €',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['alternativ', 'queer-friendly', 'cocktails', 'partykeller']
 },
  
@@ -726,10 +749,10 @@ const LOCATIONS = [
   district: '1060 Wien',
   lat: 48.1985,
   lng: 16.3430,
-  description: 'Top-Adresse für günstige Drinks und lange Nächte. Beliebt bei Reisenden und Studenten. Tolle Stimmung, billige Cocktails. Geöffnet von Dienstag bis Samstag von 17 bis 4 Uhr und Sonntag bis Montag von 17 bis 2 Uhr.',
+  description: 'Top-Adresse für günstige Drinks und lange Nächte. Beliebt bei Reisenden und Studenten. Tolle Stimmung, billige Cocktails.',
   priceInfo: 'Cocktails ab ~4 €',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['cocktails', 'party', 'günstig', 'studenten']
 },
  
@@ -744,7 +767,7 @@ const LOCATIONS = [
   description: 'Klassiker unter den Studentenlokalen im 7. Bezirk. Gemütlich, günstig und mit Happy Hours. Bier ab 2,50 €. Täglich ab 15 Uhr bis 6 Uhr früh!',
   priceInfo: 'Bier ab 2,50 € · Happy Hour Cocktails',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['pub', 'studenten', 'happy-hour', 'günstig', 'spätabend']
 },
  
@@ -759,7 +782,7 @@ const LOCATIONS = [
   description: 'Gemütliche Kaffeebar mit einer großen Auswahl an Kaffeespezialitäten und kleinen Snacks. Ein perfekter Ort, um sich zu entspannen und den Tag zu beginnen.',
   priceInfo: 'Kaffee ab ~2 €',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['kaffee', 'günstig', 'gemütlich']
 },
  
@@ -774,7 +797,7 @@ const LOCATIONS = [
   description: 'Trendige Bar mit einer großen Auswahl an Cocktails und einer gemütlichen Atmosphäre. Ein perfekter Ort, um den Abend zu verbringen und neue Leute kennenzulernen.',
   priceInfo: 'Cocktails ab ~6 €',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['cocktails', 'trendy', 'gemütlich']
 },
  
@@ -789,7 +812,7 @@ const LOCATIONS = [
   description: 'Kulturelle Veranstaltungen, günstige Getränke und eine entspannte Atmosphäre. Ein perfekter Ort, um sich zu entspannen und die kulturelle Szene Wiens zu erleben.',
   priceInfo: 'Bier ab ~3,50 €',
   website: 'https://fluc.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['kultur', 'günstig', 'entspannt']
 },
  
@@ -804,7 +827,7 @@ const LOCATIONS = [
   description: 'Kulturelle Veranstaltungen, günstige Getränke und eine entspannte Atmosphäre in einem ehemaligen U-Bahn-Tunnel. Ein einzigartiger Ort, um die kulturelle Szene Wiens zu erleben.',
   priceInfo: 'Bier ab ~3,50 €',
   website: 'https://rhiz.org/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['kultur', 'günstig', 'entspannt', 'unconventional']
 },
 
@@ -821,7 +844,7 @@ const LOCATIONS = [
   description: 'Eines der größten Museen Wiens mit weltberühmter Grafik-Sammlung. Freier Eintritt für alle unter 19 Jahren. Tipp: Social-Media-Specials checken!',
   priceInfo: 'Gratis unter 19 · Erwachsene ~18 €',
   website: 'https://www.albertina.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['kunst', 'gratis-u19', 'bundesmuseum']
 },
 {
@@ -835,7 +858,7 @@ const LOCATIONS = [
   description: 'Barockes Schloss mit Klimts „Der Kuss". Freier Eintritt unter 19. Schloss und Gärten von außen komplett kostenlos zu besichtigen.',
   priceInfo: 'Gratis unter 19 · Garten gratis',
   website: 'https://www.belvedere.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['kunst', 'klimt', 'gratis-u19', 'schloss']
 },
 {
@@ -849,7 +872,7 @@ const LOCATIONS = [
   description: 'Eines der bedeutendsten Kunstmuseen der Welt. Freier Eintritt für alle unter 19 Jahren.',
   priceInfo: 'Gratis unter 19',
   website: 'https://www.khm.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['kunst', 'gratis-u19', 'bundesmuseum']
 },
 {
@@ -863,7 +886,7 @@ const LOCATIONS = [
   description: 'Wiener Kunst & Gegenwartskunst. Dienstagabend 18–21 Uhr ermäßigt (8,50 € online). Gratis unter 19, für Arbeitslose und Menschen mit Behinderung. Spezielle Gratis-Tage über das Jahr verteilt.',
   priceInfo: 'Di ab 18 Uhr: 8,50 € · Regulär: 18 € · Gratis unter 19',
   website: 'https://www.mak.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['kunst', 'dienstag-ermäßigt', 'gegenwartskunst']
 },
 {
@@ -877,7 +900,7 @@ const LOCATIONS = [
   description: 'Museum Moderner Kunst im Museumsquartier. Freier Eintritt für alle unter 19 Jahren.',
   priceInfo: 'Gratis unter 19',
   website: 'https://www.mumok.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['moderne-kunst', 'gratis-u19', 'museumsquartier']
 },
 {
@@ -891,7 +914,7 @@ const LOCATIONS = [
   description: 'Naturkundliche Sammlung von Weltrang. Freier Eintritt für alle unter 19 Jahren.',
   priceInfo: 'Gratis unter 19',
   website: 'https://www.nhm-wien.ac.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['naturkunde', 'gratis-u19', 'bundesmuseum']
 },
 {
@@ -905,7 +928,7 @@ const LOCATIONS = [
   description: 'Technik und Naturwissenschaften zum Anfassen. Freier Eintritt für alle unter 19 Jahren.',
   priceInfo: 'Gratis unter 19',
   website: 'https://www.technischesmuseum.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['technik', 'gratis-u19', 'kinder']
 },
 {
@@ -919,7 +942,7 @@ const LOCATIONS = [
   description: 'Stadtmuseum Wien – seit der Neueröffnung ist die Dauerausstellung „Wien. Meine Geschichte" für ALLE komplett GRATIS! Sonderausstellungen können Eintritt kosten. Jeden 1. Sonntag im Monat auch Sonderausstellungen gratis.',
   priceInfo: 'Dauerausstellung: GRATIS für alle!',
   website: 'https://www.wienmuseum.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['stadtgeschichte', 'gratis', 'gratis-u19', 'top-tipp']
 },
 {
@@ -932,7 +955,7 @@ const LOCATIONS = [
   lng: 16.3780,
   description: 'Ausstellungsort für Gegenwartskunst im Augarten. Viele Ausstellungen sind kostenlos!',
   priceInfo: 'Oft gratis',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['gegenwartskunst', 'augarten', 'gratis']
 },
 {
@@ -946,7 +969,7 @@ const LOCATIONS = [
   description: 'Militärhistorisches Museum. Jeden 1. Sonntag im Monat freier Eintritt. Unter 19 immer gratis.',
   priceInfo: '1. Sonntag gratis · Gratis unter 19',
   website: 'https://www.hgm.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['militärgeschichte', '1-sonntag-gratis', 'gratis-u19']
 },
 {
@@ -960,7 +983,7 @@ const LOCATIONS = [
   description: 'Zeitgenössische Wiener Kunst – und das komplett GRATIS! Wechselnde Ausstellungen mit Fokus auf junge Wiener Künstler.',
   priceInfo: 'GRATIS',
   website: 'https://www.wienmuseum.at/musa',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['gegenwartskunst', 'gratis', 'wien-museum']
 },
 {
@@ -973,7 +996,7 @@ const LOCATIONS = [
   lng: 16.3592,
   description: 'Das Museum der Österreichischen Nationalbank. Alles rund ums Geld – immer gratis!',
   priceInfo: 'GRATIS',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['museum', 'gratis', 'geld', 'nationalbank']
 },
 {
@@ -987,7 +1010,7 @@ const LOCATIONS = [
   description: 'Kombiticket für Schönbrunn, Hofburg Sisi Museum UND Möbelmuseum. Spart ca. 30% gegenüber Einzeltickets! Online noch günstiger.',
   priceInfo: '~36 € (online günstiger) · Spart ~30%',
   website: 'https://www.schoenbrunn.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['kombiticket', 'schönbrunn', 'hofburg', 'sparticket']
 },
 {
@@ -1001,7 +1024,7 @@ const LOCATIONS = [
   description: 'Museum für moderne österreichische Kunst. Jeden Donnerstagabend von 18 bis 21 Uhr reduzierter Eintrittspreis.',
   priceInfo: 'Do ab 18 Uhr reduziert',
   website: 'https://www.leopoldmuseum.org/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['moderne-kunst', 'donnerstag-ermäßigt', 'museumsquartier']
 },
 
@@ -1018,7 +1041,7 @@ const LOCATIONS = [
     description: 'Extrem modernes und stylisches Hostel direkt im IKEA am Westbahnhof. Bietet eine tolle Dachterrasse für Gäste und einen lebendigen Social-Vibe. Ideal für junge Reisende, die Wert auf eine gute Atmosphäre legen. Die Dachterrasse bietet einen atemberaubenden Blick über die Stadt.',
     priceInfo: 'Ab ~25 € / Nacht',
     website: 'https://www.joandjoe.com/',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['hostel', 'dachterrasse', 'modern']
   },
   {
@@ -1032,7 +1055,7 @@ const LOCATIONS = [
     description: 'Familiäres und sehr entspanntes Independent-Hostel. Tolle Gemeinschaftsküche und ein wunderbarer Vibe im hauseigenen Garten, der als Oase mitten in der Stadt dient. Perfekt für Solo-Traveller und Reisende, die Wert auf eine ruhige Atmosphäre legen.',
     priceInfo: 'Ab ~22 € / Nacht',
     website: 'https://www.hostelruthensteiner.com/',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['hostel', 'garten', 'solo-traveller']
   },
   {
@@ -1046,7 +1069,7 @@ const LOCATIONS = [
     description: 'Das bekannte "Party-Hostel" südlich des Hauptbahnhofs. Gut angebunden und bekannt für seine hauseigene Belushi\'s Bar mit günstigen Drinks. Ideal für Reisende, die Wert auf eine lebendige Atmosphäre legen. Die Bar bietet regelmäßig Live-Musik und Veranstaltungen.',
     priceInfo: 'Ab ~20 € / Nacht',
     website: 'https://www.st-christophers.co.uk/',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['hostel', 'party', 'bar']
   },
   {
@@ -1060,7 +1083,7 @@ const LOCATIONS = [
     description: 'Ein echter Klassiker in Top-Lage direkt am Naschmarkt. Legendäre WomBar inbegriffen. Perfekt für Reisende, die Wert auf eine zentrale Lage legen. Der Naschmarkt bietet eine Vielzahl an Restaurants und Cafés.',
     priceInfo: 'Ab ~24 € / Nacht',
     website: 'https://www.wombats-hostels.com/vienna',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['hostel', 'zentral', 'naschmarkt']
   },
   {
@@ -1074,7 +1097,7 @@ const LOCATIONS = [
     description: 'Ein guter Mix aus Hotel und Hostel im hippen 2. Bezirk (Leopoldstadt). Sehr saubere Zimmer und professionell geführt. Ideal auch für kleine Gruppen. Die Nähe zum Stadtzentrum und die gute Anbindung an öffentliche Verkehrsmittel machen es zu einem idealen Ausgangspunkt für die Stadt erkunden.',
     priceInfo: 'Ab ~28 € / Nacht',
     website: 'https://www.meininger-hotels.com/',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['hostel', 'hotel-mix', 'leopoldstadt']
   },
   {
@@ -1088,7 +1111,7 @@ const LOCATIONS = [
     description: 'Riesiges und verlässliches Budget-Hostel direkt hinter dem Hauptbahnhof. Funktionale Zimmer und meist unschlagbar günstige Betten im Dorm. Ideal für Reisende, die Wert auf eine gute Anbindung legen. Die Nähe zum Hauptbahnhof ermöglicht es, leicht und schnell andere Teile der Stadt zu erkunden.',
     priceInfo: 'Ab ~15 € / Nacht',
     website: 'https://www.aohostels.com/at/wien/wien-hauptbahnhof/',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['hostel', 'hauptbahnhof', 'sehr-günstig']
   },
   {
@@ -1102,7 +1125,7 @@ const LOCATIONS = [
     description: 'Ein einfaches, aber sauberes Hostel in einem ruhigen Viertel. Ideal für Budget-Reisende, die Wert auf eine gute Nachtruhe legen. Die ruhige Umgebung und die einfachen, aber funktionellen Zimmer machen es zu einem guten Ausgangspunkt für die Stadt erkunden.',
     priceInfo: 'Ab ~18 € / Nacht',
     website: 'https://www.hostelvienna.at',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['hostel', 'ruhig', 'günstig']
   },
   {
@@ -1116,7 +1139,7 @@ const LOCATIONS = [
     description: 'Ein gemütliches Hostel im 14. Bezirk, ideal für Reisende, die Wert auf eine ruhige Atmosphäre legen. Gute Anbindung an das Stadtzentrum durch öffentliche Verkehrsmittel. Die Nähe zum Wienerwald bietet auch Möglichkeiten für Wanderungen und Ausflüge in die Natur.',
     priceInfo: 'Ab ~20 € / Nacht',
     website: 'https://www.hostelhuetteldorf.at',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['hostel', 'ruhig', 'günstig']
   },
   {
@@ -1130,7 +1153,7 @@ const LOCATIONS = [
     description: 'Ein modernes und stylisches Hostel im Zentrum von Wien. Bietet eine tolle Dachterrasse und einen lebendigen Social-Vibe. Ideal für junge Reisende, die Wert auf eine gute Atmosphäre legen.',
     priceInfo: 'Ab ~25 € / Nacht',
     website: 'https://www.safestay.com/vienna/',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['hostel', 'zentral', 'modern']
   },
   {
@@ -1144,7 +1167,7 @@ const LOCATIONS = [
     description: 'Ein charmantes Hostel im 14. Bezirk, ideal für Reisende, die Wert auf eine ruhige Atmosphäre legen. Gute Anbindung an das Stadtzentrum durch öffentliche Verkehrsmittel.',
     priceInfo: 'Ab ~22 € / Nacht',
     website: 'https://www.hosteldonauwalzer.at',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['hostel', 'ruhig', 'günstig']
   },
 
@@ -1161,7 +1184,7 @@ const LOCATIONS = [
     description: 'Riesige Freizeitinsel mitten in der Donau, perfekt zum Schwimmen, Radfahren, Grillen und Chillen. Im Juni findet hier das Donauinselfest statt, das komplett gratis ist.',
     priceInfo: 'Gratis',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['insel', 'schwimmen', 'radfahren', 'gratis', 'donauinselfest']
   },
   {
@@ -1175,7 +1198,7 @@ const LOCATIONS = [
     description: 'Riesiger Grünraum mit dem berühmten Riesenrad, ideal für Joggen, Radfahren und Spaziergänge. Der Eintritt in den Prater ist kostenlos, nur die Fahrgeschäfte kosten Geld.',
     priceInfo: 'Park gratis · Fahrgeschäfte kostenpflichtig',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['park', 'riesenrad', 'joggen', 'gratis']
   },
   {
@@ -1189,7 +1212,7 @@ const LOCATIONS = [
     description: 'Aussichtsturm in Ottakring mit grandiosem Panoramablick über ganz Wien, einer der besten kostenlosen Aussichtspunkte der Stadt.',
     priceInfo: 'Gratis',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['aussicht', 'panorama', 'ottakring']
   },
   {
@@ -1203,7 +1226,7 @@ const LOCATIONS = [
     description: 'Wien ist die einzige Großstadt der Welt mit großem Weinanbaugebiet. Wandern Sie durch die Weinberge und genießen Sie danach einen günstigen Heurigen.',
     priceInfo: 'Gratis (Wanderung)',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['weinberge', 'wandern', 'aussicht', 'heuriger']
   },
   {
@@ -1217,7 +1240,7 @@ const LOCATIONS = [
     description: 'Wien ist die einzige Großstadt Europas mit einem Nationalpark. Der Donau-Auen Nationalpark bietet unberührte Auen-Landschaft direkt vor der Stadt.',
     priceInfo: 'Gratis',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['nationalpark', 'natur', 'donau']
   },
   {
@@ -1231,7 +1254,7 @@ const LOCATIONS = [
     description: 'Ehemaliges kaiserliches Jagdgebiet, riesiges Naturschutzgebiet mit Wildschweinen und Hirschen. Die Hermesvilla liegt mittendrin und ist am ersten Sonntag im Monat gratis zu besichtigen.',
     priceInfo: 'Gratis',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['tiergarten', 'wandern', 'wildtiere']
   },
   {
@@ -1245,7 +1268,7 @@ const LOCATIONS = [
     description: 'Ältester barocker Garten Wiens mit den markanten Flaktürmen, perfekt zum Picknicken.',
     priceInfo: 'Gratis',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['park', 'barock', 'picknick']
   },
   {
@@ -1259,7 +1282,7 @@ const LOCATIONS = [
     description: 'Geheimtipp! Die Kantine im Justizpalast bietet einen tollen Ausblick über Wien.',
     priceInfo: 'Gratis Aussicht',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['aussicht', 'geheimtipp', 'innere-stadt']
   },
   {
@@ -1273,7 +1296,7 @@ const LOCATIONS = [
     description: 'Die weitläufigen Barockgärten von Schönbrunn mit Gloriette-Aussicht sind komplett gratis zu besichtigen. Nur der Palast selbst kostet Eintritt.',
     priceInfo: 'Gärten: Gratis',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['schloss', 'garten', 'gratis', 'gloriette', 'aussicht']
   },
   {
@@ -1287,7 +1310,7 @@ const LOCATIONS = [
     description: 'Der Botanische Garten der Universität Wien mit über 11.000 Pflanzenarten. Der Eintritt ist komplett gratis.',
     priceInfo: 'Gratis',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['garten', 'gratis', 'natur', 'pflanzen']
   },
   {
@@ -1301,7 +1324,7 @@ const LOCATIONS = [
     description: 'Friedensreich Hundertwassers buntes Wohnhaus, ein architektonisches Kunstwerk, das von außen kostenlos besichtigt werden kann.',
     priceInfo: 'Gratis (Außenbesichtigung)',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['architektur', 'kunst', 'gratis', 'sehenswürdigkeit']
   },
   {
@@ -1315,7 +1338,7 @@ const LOCATIONS = [
     description: 'Wiens Wahrzeichen. Der Hauptraum des gotischen Doms ist kostenlos zugänglich, nur die Turmbesteigung und die Katakomben kosten Eintritt.',
     priceInfo: 'Eingang gratis · Turm: ~6 €',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['dom', 'gotik', 'gratis', 'wahrzeichen']
   },
   {
@@ -1329,7 +1352,7 @@ const LOCATIONS = [
     description: 'Einer der elegantesten Parks Wiens, berühmt für seine Rosengärten mit über 3.000 Rosenstöcken. Perfekt für ein Picknick nahe der Hofburg.',
     priceInfo: 'Gratis',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['park', 'rosen', 'gratis', 'picknick']
   },
   {
@@ -1343,7 +1366,7 @@ const LOCATIONS = [
     description: 'Das neu renovierte Parlamentsgebäude kann mit kostenlosen Führungen besichtigt werden. Beeindruckende Architektur im griechischen Stil.',
     priceInfo: 'Gratis (mit Voranmeldung)',
     website: 'https://www.parlament.gv.at/',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['architektur', 'gratis', 'führung', 'sehenswürdigkeit']
   },
   {
@@ -1357,7 +1380,7 @@ const LOCATIONS = [
     description: 'Kostenlose Stadtführungen auf Deutsch und Englisch. Die Guides arbeiten auf Trinkgeld-Basis.',
     priceInfo: 'Gratis (Trinkgeld-Basis)',
     website: 'https://www.freewalkingtourvienna.at/',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['führung', 'gratis', 'walking-tour', 'altstadt']
   },
   {
@@ -1371,7 +1394,7 @@ const LOCATIONS = [
     description: 'Kostenlose Führungen durch das Wiener Rathaus an Werktagen. Beeindruckende neugotische Architektur und Festsaal.',
     priceInfo: 'GRATIS',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['rathaus', 'gratis', 'führung', 'neugotik']
   },
   {
@@ -1385,7 +1408,7 @@ const LOCATIONS = [
     description: 'Ein beliebter Park in Wien mit vielen Grünflächen, Wegen und einem See. Perfekt für Spaziergänge und Picknicks.',
     priceInfo: 'Gratis',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['park', 'grünfläche', 'see', 'picknick']
   },
   {
@@ -1399,7 +1422,7 @@ const LOCATIONS = [
     description: 'Ein barockes Schloss mit wunderschönen Gärten. Die Gärten sind kostenlos zugänglich, der Eintritt in das Schloss kostet jedoch.',
     priceInfo: 'Gärten: Gratis, Schloss: ~15 €',
     website: 'https://www.belvedere.at/',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['schloss', 'garten', 'barock', 'kunst']
   },
   {
@@ -1413,7 +1436,7 @@ const LOCATIONS = [
     description: 'Wechselnde Graffiti und Wandmalereien entlang des Donaukanals. Eine der größten legalen Graffiti-Wände Europas. Im Sommer Strandbar-Feeling!',
     priceInfo: 'Gratis',
     website: '',
-    lastUpdated: '2026-06-19',
+    lastUpdated: '2026-06-26',
     tags: ['street-art', 'graffiti', 'gratis', 'donaukanal']
   },
 
@@ -1430,7 +1453,7 @@ const LOCATIONS = [
   description: 'Wiens längster Straßenmarkt mit einer Vielzahl an türkischen und griechischen Ständen, die frisches Obst, Gemüse und andere Lebensmittel anbieten. Die Preise sind im Vergleich zum Naschmarkt sehr günstig. Ideal für Selbstversorger und Budget-Reisende.',
   priceInfo: 'Sehr günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['markt', 'gemüse', 'günstig', 'türkisch']
 },
  
@@ -1445,7 +1468,7 @@ const LOCATIONS = [
   description: 'Gemütlicher Markt im 12. Bezirk mit frischem Obst und Gemüse zu fairen Preisen. Ideal für Selbstversorger und Budget-Reisende. Es gibt auch einige günstige Imbisse und Cafes in der Nähe.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['markt', 'gemüse', 'günstig']
 },
  
@@ -1460,7 +1483,7 @@ const LOCATIONS = [
   description: 'Günstiger Supermarkt mit einer Vielzahl an Produkten, von Lebensmitteln bis hin zu Haushaltsartikeln. Ideal für Budget-Reisende und Selbstversorger. Es gibt auch eine eigene Bio-Linie.',
   priceInfo: 'Günstig',
   website: 'https://www.hofer.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['supermarkt', 'günstig', 'bio']
 },
  
@@ -1475,7 +1498,7 @@ const LOCATIONS = [
   description: 'Günstiger Supermarkt mit einer Vielzahl an Produkten, von frischem Obst und Gemüse bis hin zu Haushaltsartikeln. Viele Standorte in Wien. Es gibt auch eine eigene Deluxe-Linie.',
   priceInfo: 'Günstig',
   website: 'https://www.spar.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['supermarkt', 'günstig', 'deluxe']
 },
  
@@ -1490,7 +1513,7 @@ const LOCATIONS = [
   description: 'Lebensmittel retten und sparen! Über die TGTG-App kauft ihr Überraschungstüten von Bäckereien, Supermärkten und Restaurants für 3–5 €. Inhalt im Wert von mindestens dem Dreifachen! Bewertungen in der App checken und Supermärkte wie Anker, Hofer, SPAR und INTERSPAR nutzen.',
   priceInfo: '3–5 € pro Tüte (Wert: 9–15 €)',
   website: 'https://www.toogoodtogo.com/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['toogoodtogo', 'lebensmittelrettung', 'günstig', 'app']
 },
 
@@ -1507,9 +1530,9 @@ const LOCATIONS = [
   description: 'Türkische Bäckerei mit 24-Stunden-Öffnungszeit, bietet frisches Gebäck und Brot, wie z.B. Simit und Börek, sowie türkische Süßigkeiten. Ideal für späte Einkäufe oder ein schnelles Frühstück. Preise ab 1,50 €.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['bäckerei', '24h', 'türkisch']
-},
+}
  
 {
   id: 61,
@@ -1522,9 +1545,9 @@ const LOCATIONS = [
   description: 'Türkische 24h-Bäckerei an der Wienzeile, bietet eine Vielzahl an frischem Gebäck und Brot, wie z.B. Simit, Börek und Lahmacun. Ideal für späte Einkäufe oder ein schnelles Frühstück. Preise ab 2 €.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['bäckerei', '24h', 'türkisch']
-},
+}
  
 {
   id: 62,
@@ -1537,9 +1560,9 @@ const LOCATIONS = [
   description: 'Türkische Bäckerei am Brunnenmarkt mit 24-Stunden-Betrieb, bietet eine Vielzahl an frischem Gebäck und Brot, wie z.B. türkisches Fladenbrot und Süßigkeiten. Beliebte Spezialitäten sind die türkischen Süßigkeiten und das frische Brot. Preise ab 1,50 €.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['bäckerei', '24h', 'brunnenmarkt']
-},
+}
  
 {
   id: 63,
@@ -1552,9 +1575,9 @@ const LOCATIONS = [
   description: 'Weitere 24h-Bäckerei in der Brunnengasse, bekannt für authentisches türkisches Brot und Gebäck, wie z.B. türkisches Fladenbrot und Simit. Bietet eine Vielzahl an frischem Gebäck und Brot. Preise ab 2 €.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['bäckerei', '24h', 'brunnenmarkt']
-},
+}
  
 {
   id: 64,
@@ -1567,9 +1590,9 @@ const LOCATIONS = [
   description: 'Türkische Konditorei/Bäckerei, bis 24 Uhr geöffnet, bietet Gebäck, Brot und manchmal auch Kebap. Ideal für einen späten Snack oder ein schnelles Frühstück. Preise ab 2,50 €.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['bäckerei', 'spätabend', 'türkisch']
-},
+}
  
 {
   id: 65,
@@ -1582,9 +1605,9 @@ const LOCATIONS = [
   description: 'Türkische Bäckerei mit frischem Gebäck und Brot, ideal für einen schnellen Snack oder ein Mittagessen. Bietet eine Vielzahl an türkischen Spezialitäten, wie z.B. Lahmacun und Börek. Preise ab 2 €.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['bäckerei', 'türkisch']
-},
+}
  
 {
   id: 66,
@@ -1597,9 +1620,9 @@ const LOCATIONS = [
   description: 'Türkische Bäckerei mit einer großen Auswahl an Gebäck und Brot, zentral gelegen in der Mariahilfer Straße. Bietet eine Vielzahl an frischem Gebäck und Brot, wie z.B. Simit und Kekse. Preise ab 2,50 €.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['bäckerei', 'türkisch']
-},
+}
  
 {
   id: 67,
@@ -1612,9 +1635,9 @@ const LOCATIONS = [
   description: 'Türkische Bäckerei mit frischem Gebäck und Brot, ideal für einen schnellen Snack oder ein Mittagessen. Bietet eine Vielzahl an türkischen Spezialitäten, wie z.B. Baklava und Knafeh. Preise ab 2,50 €.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['bäckerei', 'türkisch']
-},
+}
  
 {
   id: 68,
@@ -1627,9 +1650,9 @@ const LOCATIONS = [
   description: 'Türkische Bäckerei am Brunnenmarkt mit 24-Stunden-Betrieb, bietet eine Vielzahl an frischem Gebäck und Brot, wie z.B. türkisches Fladenbrot und Süßigkeiten. Beliebte Spezialitäten sind die türkischen Süßigkeiten und das frische Brot. Preise ab 1,50 €.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['bäckerei', '24h', 'brunnenmarkt']
-},
+}
  
 {
   id: 69,
@@ -1642,18 +1665,11 @@ const LOCATIONS = [
   description: 'Türkische Bäckerei mit frischem Gebäck und Brot, ideal für einen schnellen Snack oder ein Mittagessen. Bietet eine Vielzahl an türkischen Spezialitäten, wie z.B. Lahmacun und Börek. Preise ab 2 €.',
   priceInfo: 'Günstig',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['bäckerei', 'türkisch']
 },
 
-
-  
-  
-  
-  
-  
-  
-  // ─── KINO ────────────────────────────────────────────────
+// ─── KINO ────────────────────────────────────────────────
   {
   id: 300,
   name: 'Volxkino (Open Air)',
@@ -1817,7 +1833,8 @@ const LOCATIONS = [
   tags: ['oper', 'stehplatz', 'kultur', 'günstig']
 },
 
-// ─── CAFÉS ───────────────────────────────────────────────
+
+  // ─── CAFÉS ───────────────────────────────────────────────
   {
   id: 80,
   name: 'Café Kafka',
@@ -1829,7 +1846,7 @@ const LOCATIONS = [
   description: 'Gemütliches Wiener Kaffeehaus mit Bücherregal und Zeitungen. Perfekt zum Lesen und Arbeiten. Kuchen und Frühstück zu fairen Preisen, wie z.B. Kaffee ab 3 € und Frühstück ab 5 €.',
   priceInfo: 'Kaffee ab ~3 €, Frühstück ab 5 €',
   website: 'https://cafe-kafka.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['café', 'kaffeehaus', 'lesen', 'frühstück']
 },
  
@@ -1844,7 +1861,7 @@ const LOCATIONS = [
   description: 'Geheimtipp! Öffentliche Kantine auf dem Dach des Justizpalasts mit grandiosem Panoramablick vom Rathaus bis zum Museumsquartier. Günstige Menüs, wie z.B. Mittagessen ab 7 €. Beachten Sie die Sicherheitsschleuse im EG und nehmen Sie Ihren Ausweis mit.',
   priceInfo: 'Menü ~7–9 €',
   website: 'https://justizcafe.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['café', 'aussicht', 'geheimtipp', 'kantine', 'günstig']
 },
  
@@ -1859,7 +1876,7 @@ const LOCATIONS = [
   description: 'Traditionelles Wiener Kaffeehaus mit reicher Geschichte und prächtiger Architektur. Perfekt für Kaffee und Kuchen, wie z.B. Sacher-Torte ab 5 €. Die historische Atmosphäre und die freundliche Bedienung machen es zu einem besonderen Erlebnis.',
   priceInfo: 'Kaffee ab ~4 €, Kuchen ab 5 €',
   website: 'https://cafe-central.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['café', 'kaffeehaus', 'traditionell']
 },
  
@@ -1874,7 +1891,7 @@ const LOCATIONS = [
   description: 'Gemütliches Café mit großem Angebot an Kaffee, Kuchen und Frühstück. Perfekt für ein entspanntes Frühstück oder einen Kaffee, wie z.B. Frühstück ab 6 €. Die freundliche Atmosphäre und die fairen Preise machen es zu einem beliebten Treffpunkt.',
   priceInfo: 'Kaffee ab ~3 €, Frühstück ab 6 €',
   website: 'https://vollpension.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['café', 'frühstück', 'kaffee']
 },
 
@@ -1891,7 +1908,7 @@ const LOCATIONS = [
   description: 'Das alte CityBike-System wurde 2022 durch WienMobil Rad (Nextbike) ersetzt. 1 € Anmeldung. Standard: 0,75 €/30 Min. Mit Wiener-Linien-Jahreskarte günstiger (0,35 €/30 Min). Auch E-Bikes verfügbar (3 €/30 Min).',
   priceInfo: '0,75 €/30 Min · Jahreskarte: 0,35 €/30 Min',
   website: 'https://www.wienerlinien.at/wienmobil-rad',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['fahrrad', 'nextbike', 'e-bike', 'wienmobil']
 },
  
@@ -1906,7 +1923,7 @@ const LOCATIONS = [
   description: 'Seit 1.1.2026 neue Preise: Einzelfahrt 3,20 € (digital 3,00 €). 24h-Ticket 10,20 € (digital 9,70 €). Kinder unter 6 gratis. 48h/72h-Tickets wurden abgeschafft!',
   priceInfo: 'Einzelfahrt 3,20 € · 24h: 10,20 €',
   website: 'https://www.wienerlinien.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['öffis', 'u-bahn', 'straßenbahn', 'bus']
 },
  
@@ -1921,7 +1938,7 @@ const LOCATIONS = [
   description: 'NICHT den überteuerten CAT nehmen (14,90 €)! S7 zum Praterstern/Wien Mitte dauert ~25 Min für ~5,40 €. ÖBB Railjet zum Hbf nur ~15 Min. Airport-Bus ist auch eine Option.',
   priceInfo: 'S7: ~5,40 € · CAT: 14,90 € (Touristenfalle!)',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['flughafen', 's-bahn', 'railjet', 'budget-transfer']
 },
  
@@ -1936,7 +1953,7 @@ const LOCATIONS = [
   description: 'Günstiges P+R Parkhaus an der U3. Während anderswo eine Stunde so viel kostet!',
   priceInfo: '~4 € / Tag',
   website: 'http://www.parkandride.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['parken', 'park-and-ride', 'günstig']
 },
  
@@ -1951,7 +1968,7 @@ const LOCATIONS = [
   description: 'Günstige Sightseeing-Tour! Die Straßenbahnlinie 1 oder 71 fährt entlang der Ringstraße, vorbei an Staatsoper, Parlament, Rathaus, Burgtheater und Universität. Gültig mit jedem Wiener-Linien-Ticket!',
   priceInfo: 'Normaler Fahrschein: 3,20 € (digital 3,00 €)',
   website: '',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['tram', 'sightseeing', 'günstig', 'ringstraße']
 },
  
@@ -1966,7 +1983,7 @@ const LOCATIONS = [
   description: 'Gratis Öffis + bis zu 50% Ermäßigung bei über 200 Attraktionen. Lohnt sich, wenn ihr 2–3 Museen besuchen wollt. Auch Online günstiger als vor Ort.',
   priceInfo: '24h: ~17 € · 48h: ~25 € · 72h: ~29 €',
   website: 'https://www.viennacitycard.at/',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['citycard', 'ermäßigung', 'öffis', 'museen']
 },
  
@@ -1981,7 +1998,7 @@ const LOCATIONS = [
   description: 'Günstige E-Auto-Sharing-Option in Wien. Ab 0,25 € pro Minute.',
   priceInfo: 'Ab 0,25 € pro Minute',
   website: 'https://www.e-auto-sharing-wien.at',
-  lastUpdated: '2026-06-19',
+  lastUpdated: '2026-06-26',
   tags: ['e-auto', 'sharing', 'günstig']
 },
 
